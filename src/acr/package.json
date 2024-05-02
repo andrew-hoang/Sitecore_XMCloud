@@ -1,10 +1,10 @@
 {
-  "name": "sxastarter",
+  "name": "acr",
   "description": "Application utilizing Sitecore JavaScript Services and Next.js",
   "version": "21.7.1",
   "private": true,
   "config": {
-    "appName": "sxastarter",
+    "appName": "acr",
     "rootPlaceholders": [
       "jss-main"
     ],
