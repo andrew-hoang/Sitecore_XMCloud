@@ -6,6 +6,7 @@ export interface ComponentBuilderPluginConfig {
   watch?: boolean;
   packages: PackageDefinition[];
   components: ComponentFile[];
+  componentRootPath?: string;
 }
 
 export interface ComponentBuilderPlugin {
@@ -40,6 +41,7 @@ const defaultConfig: ComponentBuilderPluginConfig = {
   watch: process.argv.some((arg) => arg === '--watch'),
   packages: [],
   components: [],
+  componentRootPath: '',
 };
 
 (Object.values(plugins) as ComponentBuilderPlugin[])

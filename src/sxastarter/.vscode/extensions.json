@@ -5,5 +5,7 @@
     "esbenp.prettier-vscode",
     "mikestead.dotenv",
     "redhat.vscode-yaml",
+    "bradlc.vscode-tailwindcss"
   ]
 }
+

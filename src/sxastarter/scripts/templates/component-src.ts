@@ -4,25 +4,34 @@
  * @returns component src boilerplate as a string
  */
 function generateComponentSrc(componentName: string): string {
-  return `import React from 'react';
-import { ComponentParams, ComponentRendering } from '@sitecore-jss/sitecore-jss-nextjs';
+  return `import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
 
-interface ${componentName}Props {
-  rendering: ComponentRendering & { params: ComponentParams };
-  params: ComponentParams;
-}
+import { ${componentName}Props } from 'components/ACR/${componentName}/${componentName}.props';
 
-export const Default = (props: ${componentName}Props): JSX.Element => {
-  const id = props.params.RenderingIdentifier;
+import { get${componentName}UiProps, getStaticPropsFor${componentName} } from 'components/ACR/${componentName}/${componentName}.util';
 
-  return (
-    <div className={\`component \${props.params.styles}\`} id={id ? id : undefined}>
-      <div className="component-content">
-        <p>${componentName} Component</p>
-      </div>
-    </div>
-  );
+import ${componentName}Base from 'components/ACR/${componentName}/${componentName}Base';
+
+const ${componentName} = (props: ${componentName}Props): JSX.Element => {
+  const uiProps = get${componentName}UiProps(props);
+
+  return <${componentName}Base {...uiProps} />;
 };
+
+/**
+ * "Data" developer method
+ * TODO_SCAFFOLD_BE: If "getStaticProps" was deleted remove "useComponentProps". They work together.
+ * TODO_SCAFFOLD_BE: Populate if needed, remove if not
+ * Will be called during SSG.  Do NOT return null.
+ * @param {ComponentRendering} _rendering
+ * @param {LayoutServiceData} _layoutData
+ * @param {GetStaticPropsContext} _context
+ */
+export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
+  return getStaticPropsFor${componentName}(_rendering, _layoutData);
+};
+
+export default ${componentName};
 `;
 }
 
