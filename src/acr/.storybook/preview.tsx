@@ -1,9 +1,11 @@
+import React from 'react';
 import type { Preview } from '@storybook/react';
 
 import '@radix-ui/themes/styles.css';
 import '../src/assets/main.scss';
 
 import { withFonts, withI18n, withRadixTheme } from './decorators';
+import { Title, Primary, Controls, Stories } from '@storybook/blocks';
 import colorThemes from './radixThemePresets';
 
 export const decorators = [
@@ -27,6 +29,16 @@ const preview: Preview = {
       storySort: {
         order: ['Components', 'Base'],
       },
+    },
+    docs: {
+      page: () => (
+        <>
+          <Title />
+          <Primary />
+          <Controls />
+          <Stories />
+        </>
+      ),
     },
   },
 };

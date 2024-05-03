@@ -6,20 +6,15 @@ export default {
 
 export const Default = {
   render: () => (
-    <Flex
-      direction="column"
-      align="start"
-      gap="4"
-      className="bg-t-background text-t-body p-8 text-body-sm md:p-[100px]"
-    >
+    <Flex direction="column" align="start" gap="4" className="bg-t-background p-12 text-t-body">
       <h1 className="heading-a">Headline text</h1>
       <h2 className="heading-b-serif">Serif headline</h2>
       <p className="sub-heading-c">Sub Heading</p>
       <p className="body-sm">Body copy</p>
-      <Button className="bg-t-primary text-t-btn-text hover:text-t-contrast h-auto cursor-pointer rounded-[6px] px-[15px] py-[12px] font-medium transition-all hover:rounded-tr-[30px] hover:underline">
+      <Button className="h-auto cursor-pointer rounded-[6px] bg-t-primary px-[15px] py-[12px] font-medium text-t-btn-text transition-all hover:rounded-tr-[30px] hover:text-t-contrast hover:underline">
         Explore activities
       </Button>
-      <a href="/" className="text-t-body hover:text-t-link-hover font-medium hover:underline">
+      <a href="/" className="font-medium text-t-body hover:text-t-link-hover hover:underline">
         Link
       </a>
     </Flex>

@@ -4,7 +4,7 @@ import colorThemes from './radixThemePresets';
 
 const { initializeThemeState, pluckThemeFromContext, useThemeParameters } = DecoratorHelpers;
 
-import { Theme, ThemePanel } from '@radix-ui/themes';
+import { Theme } from '@radix-ui/themes';
 
 import { beausite, playFair } from '../src/fonts';
 
@@ -22,7 +22,7 @@ export const withRadixTheme = ({ themes, defaultTheme }) => {
     const radixTheme = colorThemes[selected];
 
     return (
-      <Theme {...radixTheme}>
+      <Theme {...radixTheme} style={{ minHeight: 0 }}>
         <Story />
       </Theme>
     );

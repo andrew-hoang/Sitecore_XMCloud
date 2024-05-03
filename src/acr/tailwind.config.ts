@@ -74,6 +74,9 @@ const config: Config = {
         semibold: '600',
         black: '900',
       },
+      fill: {
+        current: 'currentColor',
+      },
     },
   },
   plugins: [
