@@ -6,7 +6,7 @@ export default {
 
 export const Default = {
   render: () => (
-    <Flex direction="column" align="start" gap="4" className="bg-t-background p-12 text-t-body">
+    <Flex direction="column" align="start" gap="4">
       <h1 className="heading-a">Headline text</h1>
       <h2 className="heading-b-serif">Serif headline</h2>
       <p className="sub-heading-c">Sub Heading</p>

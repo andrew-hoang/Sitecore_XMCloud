@@ -23,7 +23,9 @@ export const withRadixTheme = ({ themes, defaultTheme }) => {
 
     return (
       <Theme {...radixTheme} style={{ minHeight: 0 }}>
-        <Story />
+        <div className="bg-t-background p-12 text-t-body">
+          <Story />
+        </div>
       </Theme>
     );
   };
