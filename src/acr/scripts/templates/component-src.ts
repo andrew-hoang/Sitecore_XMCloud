@@ -13,9 +13,11 @@ import { get${componentName}UiProps, getStaticPropsFor${componentName} } from 'c
 import ${componentName}Base from 'components/ACR/${componentName}/${componentName}Base';
 
 const ${componentName} = (props: ${componentName}Props): JSX.Element => {
+  const { testId } = props;
+
   const uiProps = get${componentName}UiProps(props);
 
-  return <${componentName}Base {...uiProps} />;
+  return <${componentName}Base {...uiProps} testId={testId} />;
 };
 
 /**

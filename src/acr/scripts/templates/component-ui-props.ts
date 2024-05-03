@@ -7,6 +7,7 @@ function generateComponentUiProps(componentName: string): string {
   return `import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { TestProps } from 'src/types/Test.props';
+import { StyleProps } from 'src/types/Style.props';
 
 /**
  * Model used for Sitecore Component integration
@@ -43,7 +44,7 @@ export type ${componentName}Fields = {
 /**
  * UI is developed against this model
  */
-export type ${componentName}BaseProps = {
+export type ${componentName}BaseProps = TestProps & StyleProps & {
     fields: {
       // "UI" developer defines everything else here
       heading: Field<string>; // Sitecore editable text field

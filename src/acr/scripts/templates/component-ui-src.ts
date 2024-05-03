@@ -7,6 +7,8 @@ function generateComponentUiSrc(componentName: string): string {
   return `import { ${componentName}BaseProps } from './${componentName}.props';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
 
+import cn from 'classnames';
+
 const defaultProps = {};
 
 /**
@@ -15,12 +17,12 @@ const defaultProps = {};
  * @returns TODO_SCAFFOLD_FE: a good description of what this component renders
  */
 const ${componentName}Base = (props: ${componentName}BaseProps): JSX.Element => {
-  const { fields } = props;
+  const { fields, testId, styleClasses } = props;
 
   const { heading } = fields ?? {};
 
   return (
-    <div>
+    <div className={cn(styleClasses)} data-testid={testId}>
       <Text tag="h2" field={heading} />
       <p>The ${componentName} Component</p>
     </div>
