@@ -16,15 +16,15 @@
 
 ### Getting started
 
-1. Install LTS version of node from https://nodejs.org/
+1. Install version 20 of node from https://nodejs.org/
 2. You should be able to run the following command after the installation procedure below.
 
 ```
 $ node --version
-v18.19.1
+v20.12.2
 
 $ npm --version
-10.2.4
+10.5.0
 ```
 
 3. Run `npm install`
@@ -66,7 +66,7 @@ This script generates the following files
 
 ### Running connected:mode
 
-To run the project locally against a running Sitecore instance, you can use `npm run start:connected`, which allows you to proxy an instance andd retrieve live data from Sitecore.
+To run the project locally against a running Sitecore instance, you can use `npm run start:connected`, which allows you to proxy an instance and retrieve live data from Sitecore.
 
 Ensure that you have your variables set up in your local environment file, for which values you can get through the XM Cloud Deploy App.
 
