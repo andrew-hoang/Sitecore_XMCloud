@@ -8,6 +8,12 @@
                 "path": "/sitecore/system/Settings/Services/Rendering Hosts/Default",
                 "scope": "singleItem",
                 "allowedPushOperations": "CreateOnly"
+            },
+            {
+                "name": "LocalRenderingHost",
+                "path": "/sitecore/system/Settings/Services/Rendering Hosts/Local",
+                "scope": "singleItem",
+                "allowedPushOperations": "CreateOnly"
             }
         ]
     }
