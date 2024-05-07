@@ -15,7 +15,7 @@
 \* Provide a screenshot of your lighthouse score
 \* How to record your lighthouse score?
   \* You can use the chrome extension `Lighthouse` under the dev tools tab
-  \* You can use this CLI command. Make sure to replace `<URL>` with the URL to your test page. Additional notes, you can replace the `--preset` value with mobile. `npx  lighthouse <URL> --preset=desktop   --view     --throttling-method=simulate   --throttling.rttMs=20 --throttling.throughputKbps=2000 --throttling.requestLatencyMs=100 --throttling.downloadThroughputKbps=2000 --throttling.uploadThroughputKbps=2000 --throttling.cpuSlowdownMultiplier=2`
+  \* You can use this CLI command. Make sure to replace `<URL>` with the URL to your test page. Additional notes, you can replace the `--preset` value with mobile for mobile test results. `npm run lighthouse <URL> -- --preset=desktop`
 
 ## Checklists
 
