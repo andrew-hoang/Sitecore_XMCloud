@@ -1,6 +1,6 @@
 ## Summary
 
-\*Provide the business case for adding this feature work or bug fix. (Explain in layman terms)
+\*Provide the business case for adding this feature work. (Explain in layman terms)
 
 [ACRAR-<###>](https://velir.atlassian.net/browse/ACRAR-<###>)
 
