@@ -124,7 +124,8 @@
     "start:production": "cross-env-shell NODE_ENV=production npm-run-all --serial bootstrap next:build next:start",
     "start:watch-components": "ts-node --project tsconfig.scripts.json scripts/generate-component-builder/index.ts --watch",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "lighthouse": "lighthouse --view --throttling-method=simulate --throttling.rttMs=20 --throttling.throughputKbps=2000 --throttling.requestLatencyMs=100 --throttling.downloadThroughputKbps=2000 --throttling.uploadThroughputKbps=2000 --throttling.cpuSlowdownMultiplier=2 --quiet --output=html --output-path=./lighthouse-results.html"
   },
   "eslintConfig": {
     "extends": [
