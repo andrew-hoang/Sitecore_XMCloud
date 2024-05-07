@@ -31,7 +31,8 @@
       {
         "name": "medialibrary",
         "path": "/sitecore/media library/Project/ACR",
-        "allowedPushOperations": "CreateOnly"        
+        "allowedPushOperations": "CreateOnly",
+        "scope": "ItemAndChildren"
       },
       {
         "name": "medialibraryfeatures",
