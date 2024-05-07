@@ -12,7 +12,11 @@ const beausite = localFont({
   src: [
     { path: '../../public/fonts/BeausiteClassicWeb-Regular.woff2', weight: '400', style: 'normal' },
     { path: '../../public/fonts/BeausiteClassicWeb-Medium.woff2', weight: '500', style: 'normal' },
-    { path: '../../public/fonts/BeausiteClassicWeb-Semibold.woff2', weight: '600', style: 'normal' },
+    {
+      path: '../../public/fonts/BeausiteClassicWeb-Semibold.woff2',
+      weight: '600',
+      style: 'normal',
+    },
     { path: '../../public/fonts/BeausiteClassicWeb-Bold.woff2', weight: '700', style: 'normal' },
   ],
   preload: true,

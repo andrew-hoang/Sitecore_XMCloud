@@ -6,7 +6,21 @@ const { initializeThemeState, pluckThemeFromContext, useThemeParameters } = Deco
 
 import { Theme } from '@radix-ui/themes';
 
-import { beausite, playFair } from '../src/fonts';
+import { playFair } from '../src/fonts';
+
+import localFont from 'next/font/local';
+
+const beausite = localFont({
+  src: [
+    { path: '../../fonts/BeausiteClassicWeb-Regular.woff2', weight: '400', style: 'normal' },
+    { path: '../../fonts/BeausiteClassicWeb-Medium.woff2', weight: '500', style: 'normal' },
+    { path: '../../fonts/BeausiteClassicWeb-Semibold.woff2', weight: '600', style: 'normal' },
+    { path: '../../fonts/BeausiteClassicWeb-Bold.woff2', weight: '700', style: 'normal' },
+  ],
+  preload: true,
+  display: 'swap',
+  variable: '--font-sans',
+});
 
 import { I18nProvider } from 'next-localization';
 

@@ -2,10 +2,6 @@ import { twMerge } from 'tailwind-merge';
 import { IconProps } from './Icon.props';
 import { IconName } from 'src/enumerations/Icon.enum';
 
-const defaultProps = {
-  isAriaHidden: true,
-};
-
 const iconMap: { [key: string]: string } = {
   [IconName.DOWNLOAD]: 'DownloadIcon',
   [IconName.EXTERNAL]: 'ExternalIcon',
@@ -14,7 +10,7 @@ const iconMap: { [key: string]: string } = {
 };
 
 const Icon = (props: IconProps): JSX.Element | null => {
-  const { iconName, className, isAriaHidden, ...rest } = props;
+  const { iconName, className, isAriaHidden = true, ...rest } = props;
 
   const iconType = iconMap[iconName];
 
@@ -26,8 +22,6 @@ const Icon = (props: IconProps): JSX.Element | null => {
     <IconType {...rest} className={twMerge('h-4 w-4', className)} isAriaHidden={isAriaHidden} />
   );
 };
-
-Icon.defaultProps = defaultProps;
 
 export default Icon;
 

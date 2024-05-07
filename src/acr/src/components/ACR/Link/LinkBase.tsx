@@ -10,17 +10,13 @@ import { IconName } from 'src/enumerations/Icon.enum';
 import { twMerge } from 'tailwind-merge';
 import cn from 'classnames';
 
-const defaultProps = {
-  style: ButtonStyle.BUTTON,
-};
-
 /**
  * ACRAR-333
  * @param props The UI data coming from the parent component
  * @returns
  */
 const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
-  const { link, testId, styleClasses, style, hasIcon } = props;
+  const { link, testId, styleClasses, style = ButtonStyle.BUTTON, hasIcon } = props;
 
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
@@ -103,8 +99,6 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
 
   return isPageEditing ? renderEELink() : renderLink();
 };
-
-LinkBase.defaultProps = defaultProps;
 
 export default LinkBase;
 
