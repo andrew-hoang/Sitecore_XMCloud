@@ -8,23 +8,23 @@ import { IconName } from 'src/enumerations/Icon.enum';
 import { useSelect, useMultipleSelection } from 'downshift';
 import cn from 'classnames';
 import { twMerge } from 'tailwind-merge';
+import * as R from 'ramda';
 
 export type SelectItem = { value: string; label: string };
 
-type DropdropProps = InputsProps & {
+type DropdropProps = Omit<InputsProps, 'onChange'> & {
   items: SelectItem[];
-  defaultSelectedItems?: SelectItem[];
+  selectedItems: SelectItem[];
   placeholder?: string;
-  onChange?: (selectedItem: SelectItem | null) => void;
+  onChange: (selectedItems: SelectItem[]) => void;
 };
 
 const MultiSelect = (props: DropdropProps) => {
-  const { label, items, placeholder, className, defaultSelectedItems = [], onChange } = props;
+  const { label, items, placeholder, className, selectedItems = [], onChange } = props;
 
-  const { getDropdownProps, addSelectedItem, removeSelectedItem, selectedItems } =
-    useMultipleSelection({
-      initialSelectedItems: defaultSelectedItems,
-    });
+  const { getDropdownProps } = useMultipleSelection({
+    selectedItems,
+  });
 
   const selectState = useSelect({
     selectedItem: null,
@@ -42,27 +42,21 @@ const MultiSelect = (props: DropdropProps) => {
       }
       return changes;
     },
-    onStateChange: (changes) => {
-      const { type, selectedItem } = changes;
+    onSelectedItemChange: (changes) => {
+      const { selectedItem } = changes;
 
-      switch (type) {
-        case useSelect.stateChangeTypes.ToggleButtonKeyDownEnter:
-        case useSelect.stateChangeTypes.ToggleButtonKeyDownSpaceButton:
-        case useSelect.stateChangeTypes.ItemClick:
-        case useSelect.stateChangeTypes.ToggleButtonBlur:
-          if (selectedItem) {
-            if (selectedItems?.find((selected) => selected?.value === selectedItem?.value)) {
-              removeSelectedItem(selectedItem);
-            } else {
-              addSelectedItem(selectedItem);
-            }
+      if (!selectedItem || !onChange) {
+        return;
+      }
 
-            onChange && onChange(selectedItem);
-          }
+      const index = R.findIndex(R.propEq(selectedItem?.value, 'value'))(selectedItems);
 
-          break;
-        default:
-          break;
+      if (index > 0) {
+        onChange([...selectedItems.slice(0, index), ...selectedItems.slice(index + 1)]);
+      } else if (index === 0) {
+        onChange([...selectedItems.slice(1)]);
+      } else {
+        onChange([...selectedItems, selectedItem]);
       }
     },
   });
