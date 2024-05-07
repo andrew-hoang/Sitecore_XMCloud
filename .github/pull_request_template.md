@@ -30,7 +30,7 @@
 
 ### Front-End
 
-- [ ] Verified accuracy against design in a (pseudo-)page context (using Storybook or `npm run start:connected` proxy)
+- [ ] Verified accuracy against design in a (pseudo-)page context (`npm run start:connected` proxy)
 - [ ] Tested accessibility - automated (aXe, storybook accessibility tab, etc)
 - [ ] Tested accessibility - manual keyboard test
 - [ ] Tested accessibility - manual screenreader test (Voice Over, NVDA, JAWS, etc)
