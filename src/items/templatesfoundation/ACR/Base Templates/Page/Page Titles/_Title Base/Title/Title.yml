@@ -2,7 +2,7 @@
 ID: "d7a642a3-f219-44a3-8d44-d2ead324ac6a"
 Parent: "b00a82cd-4c46-4d49-ba5b-f66aae3ecad8"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Foundation/ACR/Base Templates/Page/Page Titles/_Title Base/Title/Title_required
+Path: /sitecore/templates/Foundation/ACR/Base Templates/Page/Page Titles/_Title Base/Title/Title
 SharedFields:
 - ID: "21828437-ea4b-40a1-8c61-4ce60ea41db6"
   Hint: Validate Button

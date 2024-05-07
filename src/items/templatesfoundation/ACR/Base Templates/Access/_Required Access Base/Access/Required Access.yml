@@ -4,6 +4,9 @@ Parent: "66737354-36a9-4bc0-b90a-c38403f71da4"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
 Path: /sitecore/templates/Foundation/ACR/Base Templates/Access/_Required Access Base/Access/Required Access
 SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: /sitecore/system/Settings/Foundation/ACR/Taxonomy/Core Taxonomy/Access Controls/Required Access
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
   Value: Droplink
@@ -28,11 +31,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e67822d8-89b0-47c9-88b3-8f0c7ac5fa47"
+      Value: "4a7832c4-610c-425d-8c4d-8858a5b4df0f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240506T211258Z
+      Value: 20240507T155845Z

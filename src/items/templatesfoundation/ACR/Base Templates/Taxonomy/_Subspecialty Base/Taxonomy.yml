@@ -6,7 +6,7 @@ Path: /sitecore/templates/Foundation/ACR/Base Templates/Taxonomy/_Subspecialty B
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 200
+  Value: 400
 Languages:
 - Language: en
   Versions:
@@ -25,11 +25,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9a5bd477-7ff2-49a7-ba82-80c5222d1cf1"
+      Value: "fb31deb8-2f94-4b7b-a1a5-6a64041de232"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240506T212824Z
+      Value: 20240507T160717Z

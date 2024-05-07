@@ -3,6 +3,10 @@ ID: "03badaa0-4ad5-48be-b5b4-f5b6cf9e2718"
 Parent: "4970e8e3-e58d-4dd7-a4c2-c5936705e0ff"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
 Path: /sitecore/templates/Foundation/ACR/Base Templates/Taxonomy/_Topic Base/Taxonomy
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 400
 Languages:
 - Language: en
   Versions:
@@ -21,11 +25,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "29146364-b930-4d99-a468-bef50bc5839f"
+      Value: "61642ad2-9fb3-4d11-bb37-d2d2ed498890"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240506T212839Z
+      Value: 20240507T160727Z

@@ -4,6 +4,9 @@ Parent: "5822d3de-6fab-4606-bd67-e99b936c04fd"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
 Path: /sitecore/templates/Foundation/ACR/Base Templates/_Theme Base/Display/Theme
 SharedFields:
+- ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
+  Hint: Source
+  Value: /sitecore/system/Settings/Foundation/ACR/Enumerations/Theme
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
   Value: Droplink
@@ -28,11 +31,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e073f4bf-0c25-43da-946e-93eb661cf1d4"
+      Value: "2f08e2e3-4cd0-462b-b5ba-31cdc113a1ea"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240506T211558Z
+      Value: 20240507T160017Z
