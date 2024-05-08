@@ -10,6 +10,8 @@ const config: StorybookConfig = {
     '@chromatic-com/storybook',
     '@storybook/addon-interactions',
     '@storybook/addon-themes',
+    '@storybook/addon-a11y', 
+    '@whitespace/storybook-addon-html'
   ],
   framework: {
     name: '@storybook/nextjs',
