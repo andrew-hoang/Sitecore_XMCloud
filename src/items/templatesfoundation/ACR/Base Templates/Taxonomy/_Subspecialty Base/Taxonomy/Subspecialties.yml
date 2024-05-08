@@ -2,11 +2,11 @@
 ID: "376751db-c03f-4f35-aaba-9e969a6ad33c"
 Parent: "6cfa6ced-2839-4568-8a75-14ee36124583"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Foundation/ACR/Base Templates/Taxonomy/_Subspecialty Base/Taxonomy/Subspecialties
+Path: /sitecore/templates/Foundation/ACR/Base Templates/Taxonomy/_Subspecialty Base/Taxonomy/subspecialties
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
   Hint: Source
-  Value: "StartSearchLocation={223A52CC-59CF-4C66-A4E3-AEC2C5B990ED}&TemplateFilter={D2923FEE-DA4E-49BE-830C-E27764DFA269}"
+  Value: "StartSearchLocation={37CF3591-15B6-432F-B5DC-2B8D1A8BDDF4}&TemplateFilter={A54D1026-90B9-4295-8D97-A94EDD6AB486}"
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
   Value: Multilist with Search
@@ -15,6 +15,10 @@ SharedFields:
   Value: 500
 Languages:
 - Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Subspecialties
   Versions:
   - Version: 1
     Fields:
@@ -31,11 +35,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4bf00daf-fc6f-48c3-92cc-3864e944a8c5"
+      Value: "4fbc3099-1155-4d38-a536-f25ddd938c2a"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240507T162146Z
+      Value: 20240508T165832Z

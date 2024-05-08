@@ -1,0 +1,23 @@
+﻿---
+ID: "3960f1e4-4bc5-45a2-9655-bcc5c6b19668"
+Parent: "f3ac7974-b86b-4be1-9ad2-0bda1ffe4c6e"
+Template: "f3ac7974-b86b-4be1-9ad2-0bda1ffe4c6e"
+Path: /sitecore/templates/Foundation/ACR/Taxonomy Items/Blog/Blog Category/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240507T204111Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d4591b10-8409-452d-862d-a5e8f4a42e40"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240507T204111Z

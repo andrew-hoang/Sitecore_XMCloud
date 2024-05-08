@@ -2,7 +2,7 @@
 ID: "5a862ea0-9764-4ad8-9aba-94aadae1c34f"
 Parent: "556cb0c1-decb-4b0e-92c8-75fc48a807ae"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Foundation/ACR/Base Templates/Page/Page Titles/_Subtitle Base/Title/Subtitle
+Path: /sitecore/templates/Foundation/ACR/Base Templates/Page/Page Titles/_Subtitle Base/Title/subtitle
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
@@ -12,6 +12,10 @@ SharedFields:
   Value: 400
 Languages:
 - Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Subtitle
   Versions:
   - Version: 1
     Fields:
@@ -28,11 +32,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "02647ecb-dbf9-494c-98d8-cb96563f300e"
+      Value: "cd5ac963-3625-4d89-a339-0f16a545f575"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240507T161043Z
+      Value: 20240508T164139Z

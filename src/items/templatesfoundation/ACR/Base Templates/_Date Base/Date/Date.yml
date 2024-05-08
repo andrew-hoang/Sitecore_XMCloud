@@ -2,7 +2,7 @@
 ID: "5253f002-90c7-4b54-b040-e3711b56b677"
 Parent: "156fb085-9ff0-4909-b7ce-27cdeacbfd30"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Foundation/ACR/Base Templates/_Date Base/Date/Date
+Path: /sitecore/templates/Foundation/ACR/Base Templates/_Date Base/Date/date
 SharedFields:
 - ID: "21828437-ea4b-40a1-8c61-4ce60ea41db6"
   Hint: Validate Button
@@ -24,6 +24,10 @@ SharedFields:
   Value: 100
 Languages:
 - Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Date
   Versions:
   - Version: 1
     Fields:
@@ -40,11 +44,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "bc79cae7-0fa5-426c-8967-53563fd15feb"
+      Value: "a4fe332e-12c4-4fbf-98bf-c8a8ad093298"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240507T192228Z
+      Value: 20240508T165149Z

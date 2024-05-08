@@ -21,17 +21,17 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b0bc0e72-c3f6-412d-b24f-c833bd632980"
+      Value: "f20fd71c-441e-456f-bdcd-93c6e016f6bc"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240507T194019Z
+      Value: 20240508T170509Z
     - ID: "e5ae4185-5680-40bd-9840-432c84228ffb"
-      Hint: Theme
-      Value: "{47680BFB-502F-42EE-AD20-F22FF6B23F4B}"
+      Hint: theme
+      Value: 
     - ID: "fe15d9ac-3767-46c9-ad64-621636e0f3db"
-      Hint: Content Type
-      Value: "{F86A76D4-F14B-41A0-80B8-45391A345849}"
+      Hint: contentType
+      Value: 
