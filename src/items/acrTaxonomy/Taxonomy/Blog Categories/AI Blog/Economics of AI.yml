@@ -1,0 +1,26 @@
+﻿---
+ID: "fe3bb4a5-dfb9-446a-87bf-34461708d367"
+Parent: "2fd142cf-a7bb-4e59-be3a-29701b1b2063"
+Template: "f3ac7974-b86b-4be1-9ad2-0bda1ffe4c6e"
+Path: /sitecore/content/ACR/ACR/Data/Taxonomy/Blog Categories/AI Blog/Economics of AI
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240508T144217Z
+    - ID: "3783b6c0-51e9-487f-ad76-f42718cb6cb4"
+      Hint: title
+      Value: Economics of AI
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "de9d9ec8-8978-4e45-98f3-0da4ec9779c3"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240508T144217Z

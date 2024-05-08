@@ -1,0 +1,26 @@
+﻿---
+ID: "5890e585-4a8a-445b-9777-45300b9617c7"
+Parent: "b086ef99-7a88-4c0e-a2bd-77a63e2f9fd8"
+Template: "48d6923f-2540-4cb4-9a58-a47a13c32771"
+Path: /sitecore/content/ACR/ACR/Data/Taxonomy/Topics/Leadership
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240508T145749Z
+    - ID: "3783b6c0-51e9-487f-ad76-f42718cb6cb4"
+      Hint: title
+      Value: Leadership
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "db0c44fd-56b4-49f4-8fb0-cb670a2ab2cc"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240508T145749Z

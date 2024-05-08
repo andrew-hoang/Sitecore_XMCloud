@@ -57,13 +57,25 @@
               "path": "/ACR/Data",
               "allowedPushOperations": "CreateUpdateAndDelete",
               "scope": "ItemAndChildren"
-            },
+            },            
             {
               "path": "/ACR/Settings",
               "allowedPushOperations": "CreateOnly",
               "scope": "ItemAndDescendants"
             }
-          ]
+          ]          
+        },
+        {
+          "name": "acrTaxonomy",
+          "path": "/sitecore/content/ACR/ACR/Data/Taxonomy",
+          "allowedPushOperations": "CreateUpdateAndDelete",
+          "scope": "ItemAndDescendants"
+        },
+        {
+          "name": "acrEnumerations",
+          "path": "/sitecore/content/ACR/ACR/Data/Enumerations",
+          "allowedPushOperations": "CreateUpdateAndDelete",
+          "scope": "ItemAndDescendants"
         }
       ]
     }
