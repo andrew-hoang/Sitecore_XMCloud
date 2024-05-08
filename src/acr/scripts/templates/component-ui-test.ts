@@ -4,17 +4,16 @@
  * @returns ui component test boilerplate as a string
  */
 function generateComponentUiTest(componentName: string): string {
-  return `import { render, screen, waitFor } from '@testing-library/react';
+  return `import { render, screen } from '@testing-library/react';
 import ${componentName} from 'components/ACR/${componentName}/${componentName}';
 import { defaultMockData as mockData } from './${componentName}.mock';
-import { expect, test } from "vitest";
 
 const TEST_ID = '${componentName}_TEST';
 
 test('${componentName} unit tests', () => {
   render(<${componentName} {...mockData} testId={TEST_ID} />);
-  const element = screen.queryByTestId(TEST_ID);
-  waitFor(() => expect(element).toBeDefined());
+  const element = screen.getByTestId(TEST_ID);
+  expect(element).toBeInTheDocument();
 });
 `;
 }
