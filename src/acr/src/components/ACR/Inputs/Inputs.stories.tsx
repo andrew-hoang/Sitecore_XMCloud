@@ -18,7 +18,7 @@ export const Input = {
     <InputField
       placeholder="Search"
       slot={
-        <button type="button">
+        <button type="button" aria-label="Submit">
           <Icon
             iconName={IconName.RIGHT_ARROW_CIRCLE}
             className="b-t-body group-focus-within:fill-green-100 h-6 w-6 group-focus-within:[&>circle]:stroke-none"

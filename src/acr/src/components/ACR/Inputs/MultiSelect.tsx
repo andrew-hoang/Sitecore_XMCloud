@@ -93,6 +93,10 @@ const MultiSelect = (props: DropdropProps) => {
           onClick={toggleMenu}
           {...getToggleButtonProps(
             getDropdownProps({
+              'aria-label':
+                selectedItems?.length > 0
+                  ? selectedItems?.map((item) => item?.label).join(', ')
+                  : placeholder,
               onKeyDown: (event) => {
                 if (event.key === 'Escape') {
                   closeMenu();

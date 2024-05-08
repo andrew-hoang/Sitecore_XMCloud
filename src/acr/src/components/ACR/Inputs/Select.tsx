@@ -60,7 +60,7 @@ const Dropdown = (props: DropdropProps) => {
           )}
           onClick={toggleMenu}
           {...getToggleButtonProps({
-            'aria-label': selectedItem?.label,
+            'aria-label': selectedItem?.label || placeholder,
             onKeyDown: (event) => {
               if (event.key === 'Escape') {
                 closeMenu();

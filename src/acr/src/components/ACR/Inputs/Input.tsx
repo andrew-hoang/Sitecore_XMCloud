@@ -8,16 +8,31 @@ import cn from 'classnames';
 type InputProps = InputsProps & {
   placeholder?: string;
   slot?: JSX.Element;
+  type?:
+    | 'number'
+    | 'search'
+    | 'time'
+    | 'text'
+    | 'hidden'
+    | 'date'
+    | 'datetime-local'
+    | 'email'
+    | 'month'
+    | 'password'
+    | 'tel'
+    | 'url'
+    | 'week';
 };
 
 const Input = (props: InputProps) => {
-  const { label, placeholder, className, slot, disabled } = props;
+  const { type = 'text', label, placeholder, className, slot, disabled } = props;
 
   return (
     <label className="flex flex-col gap-2 font-medium">
       {label}
       <TextField.Root
         size="3"
+        type={type}
         radius="large"
         placeholder={placeholder}
         disabled={disabled}
