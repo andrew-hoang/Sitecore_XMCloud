@@ -6,10 +6,10 @@ Path: /sitecore/templates/Foundation/ACR/Base Templates/Taxonomy/_Subspecialty B
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
   Hint: Source
-  Value: "StartSearchLocation={37CF3591-15B6-432F-B5DC-2B8D1A8BDDF4}&TemplateFilter={A54D1026-90B9-4295-8D97-A94EDD6AB486}"
+  Value: "query:$site/Data/Taxonomy/Subspecialties"
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: Multilist with Search
+  Value: TreelistEx
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 500
@@ -35,11 +35,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4fbc3099-1155-4d38-a536-f25ddd938c2a"
+      Value: "62a0a71f-abe0-4064-9573-22ee2dd3a69c"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240508T165832Z
+      Value: 20240508T200450Z

@@ -6,10 +6,10 @@ Path: /sitecore/templates/Foundation/ACR/Base Templates/Taxonomy/_Modality Base/
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
   Hint: Source
-  Value: "StartSearchLocation={A9AB4067-506E-4ABE-AB1A-AD44F895CDE1}&TemplateFilter={FB7F677A-AFE4-42D3-8D89-12CDD26632AB}"
+  Value: "query:$site/Data/Taxonomy/Modalities"
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: Multilist with Search
+  Value: TreelistEx
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 400
@@ -35,11 +35,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "0684382d-2855-4901-86bd-53a80fd0f990"
+      Value: "fbe81e80-7300-4fcb-8d79-128ce598585c"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240508T165045Z
+      Value: 20240508T200452Z

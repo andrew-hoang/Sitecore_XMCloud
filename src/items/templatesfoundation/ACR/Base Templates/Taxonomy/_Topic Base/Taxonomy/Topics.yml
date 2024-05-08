@@ -6,10 +6,10 @@ Path: /sitecore/templates/Foundation/ACR/Base Templates/Taxonomy/_Topic Base/Tax
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
   Hint: Source
-  Value: "StartSearchLocation={B086EF99-7A88-4C0E-A2BD-77A63E2F9FD8}&TemplateFilter={48D6923F-2540-4CB4-9A58-A47A13C32771}"
+  Value: "query:$site/Data/Taxonomy/Topics"
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
-  Value: Multilist with Search
+  Value: TreelistEx
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 200
@@ -35,11 +35,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "767380c3-cb88-4cf8-b318-bbf1e3eb884f"
+      Value: "58bbcda3-a596-4214-99c9-6295ebb27f63"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240508T165813Z
+      Value: 20240508T200456Z
