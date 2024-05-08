@@ -1,0 +1,59 @@
+.radix-themes {
+  --c-black: #000000;
+  --c-white: #ffffff;
+
+  --c-green: #00ff00;
+  --c-green-1: #bfffbf;
+  --c-green-2: #80ff81;
+  --c-green-3: #009900;
+
+  --c-indigo: #1b1449;
+  --c-indigo-1: #bfdafd;
+  --c-indigo-2: #80b5fc;
+  --c-indigo-3: #110d2e;
+
+  --c-gray: #b7b7b7;
+  --c-gray-1: #f1f1f1;
+  --c-gray-2: #e0e0e0;
+  --c-gray-3: #707070;
+  --c-gray-4: #565656;
+
+  /* Secondary Colors */
+  --c-purple: #8055f0;
+  --c-purple-1: #ccdaf8;
+  --c-purple-2: #c6b3f8;
+  --c-purple-3: #452f84;
+
+  --c-teal: #70bfb1;
+  --c-teal-1: #d9fdfd;
+  --c-teal-2: #a0f9fb;
+  --c-teal-3: #386059;
+
+  --c-orange: #f7ad05;
+  --c-orange-1: #fcfcce;
+  --c-orange-2: #fade7a;
+  --c-orange-3: #7c5603;
+
+  --c-brown: #b77735;
+  --c-brown-1: #dbbb9a;
+  --c-brown-2: #af8969;
+  --c-brown-3: #5c3c1b;
+
+  --c-red: #e81a1a;
+  --c-red-1: #ff5e5e;
+  --c-red-2: #940808;
+
+  /* System Colors */
+  --c-success-dark: var(--c-green-3);
+  --c-success: var(--c-green-2);
+  --c-success-light: var(--c-green-1);
+
+  --c-danger-dark: var(--c-red-3);
+  --c-danger: var(--c-red);
+  --c-danger-light: var(--c-red-1);
+
+  --c-warning-dark: var(--c-orange-3);
+  --c-warning: var(--c-orange);
+  --c-warning-light: var(--c-orange-2);
+}
+

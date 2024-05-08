@@ -1,0 +1,173 @@
+@import '../mixins/rem.scss';
+
+@layer utilities {
+  .heading-a {
+    @apply font-sans font-regular;
+
+    font-size: clamp(rem(72), 6vw, rem(84));
+    line-height: clamp(rem(80), 6vw, rem(96));
+  }
+
+  .heading-b {
+    @apply font-sans font-regular;
+
+    font-size: clamp(rem(48), 4vw, rem(56));
+    line-height: clamp(rem(56), 4vw, rem(64));
+  }
+
+  .heading-c {
+    @apply font-sans font-regular;
+
+    font-size: clamp(rem(32), 4vw, rem(40));
+    line-height: clamp(rem(40), 4vw, rem(48));
+  }
+
+  .heading-d {
+    @apply font-sans font-regular;
+
+    font-size: clamp(rem(28), 4vw, rem(32));
+    line-height: clamp(rem(32), 4vw, rem(40));
+  }
+
+  .heading-a-serif {
+    @apply font-serif text-t-secondary;
+
+    font-size: rem(90);
+    line-height: rem(88);
+    font-weight: 500;
+  }
+
+  .heading-b-serif {
+    @apply font-serif font-medium text-t-secondary;
+
+    font-size: clamp(rem(48), 4vw, rem(56));
+    line-height: clamp(rem(48), 4vw, rem(64));
+  }
+
+  .heading-c-serif {
+    @apply font-serif font-medium text-t-secondary;
+
+    font-size: clamp(rem(36), 4vw, rem(48));
+    line-height: clamp(rem(44), 4vw, rem(48));
+  }
+
+  .sub-heading-a {
+    @apply font-sans font-medium md:font-regular;
+
+    font-size: rem(22);
+    line-height: rem(32);
+  }
+
+  .sub-heading-b {
+    @apply font-sans font-regular;
+
+    font-size: clamp(rem(18), 4vw, rem(20));
+    line-height: clamp(rem(24), 4vw, rem(32));
+  }
+
+  .sub-heading-c {
+    @apply font-sans font-regular;
+
+    font-size: clamp(rem(24), 4vw, rem(32));
+    line-height: clamp(rem(32), 4vw, rem(40));
+  }
+
+  .callout-a {
+    @apply font-serif font-black md:font-semibold;
+
+    font-size: clamp(1.5rem, 4vw, 2rem);
+    line-height: clamp(rem(32), 4vw, rem(40));
+  }
+
+  .callout-b {
+    @apply font-serif font-black;
+
+    font-size: clamp(rem(64), 6vw, rem(84));
+    line-height: clamp(rem(72), 6vw, rem(96));
+  }
+
+  .callout-c {
+    @apply font-serif font-semibold;
+
+    font-size: clamp(rem(24), 4vw, rem(30));
+    line-height: clamp(rem(32), 4vw, rem(40));
+  }
+
+  .title-a {
+    @apply font-medium md:font-regular;
+
+    font-size: clamp(rem(24), 4vw, rem(32));
+    line-height: clamp(rem(32), 4vw, rem(40));
+  }
+
+  .title-b {
+    @apply font-medium md:font-regular;
+
+    font-size: clamp(rem(22), 4vw, rem(28));
+    line-height: clamp(rem(28), 4vw, rem(32));
+  }
+
+  .title-c {
+    @apply font-regular md:font-medium;
+
+    font-size: clamp(rem(20), 4vw, rem(24));
+    line-height: clamp(rem(24), 4vw, rem(32));
+  }
+
+  .title-d {
+    @apply font-sans font-medium;
+
+    font-size: clamp(rem(18), 4vw, rem(22));
+    line-height: clamp(rem(24), 4vw, rem(32));
+  }
+
+  .body-lg {
+    @apply font-sans font-regular;
+
+    font-size: rem(22);
+    line-height: rem(32);
+  }
+
+  .body-md {
+    @apply font-sans font-regular;
+
+    font-size: rem(20);
+    line-height: rem(32);
+  }
+
+  .body-sm {
+    @apply font-sans font-regular;
+
+    font-size: rem(18);
+    line-height: rem(26);
+  }
+
+  .body-xs {
+    @apply font-sans font-regular;
+
+    font-size: rem(16);
+    line-height: rem(24);
+  }
+
+  .meta-a {
+    @apply font-sans font-medium text-t-secondary;
+
+    font-size: clamp(rem(18), 4vw, rem(22));
+    line-height: clamp(rem(24), 4vw, rem(24));
+  }
+
+  .meta-b {
+    @apply font-sans font-medium text-t-secondary;
+
+    font-size: rem(16);
+    line-height: rem(24);
+  }
+
+  .meta-c {
+    @apply font-medium uppercase tracking-[.04px] text-t-secondary;
+
+    font-size: clamp(rem(16), 4vw, rem(18));
+    line-height: clamp(rem(24), 4vw, rem(24));
+  }
+}
+

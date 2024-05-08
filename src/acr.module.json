@@ -1,0 +1,55 @@
+{
+  "$schema": "../../.sitecore/schemas/ModuleFile.schema.json",
+  "namespace": "ACR",
+  "items": {
+    "includes": [
+      {
+        "name": "templates",
+        "path": "/sitecore/Templates/Project/ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "templatesfoundation",
+        "path": "/sitecore/Templates/Foundation/ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "templatesfeatures",
+        "path": "/sitecore/Templates/Feature/ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "renderings",
+        "path": "/sitecore/layout/Renderings/Project/ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "placeholders",
+        "path": "/sitecore/layout/Placeholder Settings/Project/ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "medialibrary",
+        "path": "/sitecore/media library/Project/ACR",
+        "allowedPushOperations": "CreateOnly",
+        "scope": "ItemAndChildren"
+      },
+      {
+        "name": "medialibraryfeatures",
+        "path": "/sitecore/media library/Feature/ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "featurerenderings",
+        "path": "/sitecore/layout/Renderings/Feature/ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "acrLayouts",
+        "path": "/sitecore/layout/Layouts/Project/ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete",
+        "database": "master"
+      }
+    ]
+  }
+}

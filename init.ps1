@@ -81,8 +81,8 @@ try {
     }
     Write-Host "Generating Traefik TLS certificate..." -ForegroundColor Green
     & $mkcert -install
-    & $mkcert "*.sxastarter.localhost"
-    & $mkcert "xmcloudcm.localhost"
+    & $mkcert "*.acr.localhost"
+    & $mkcert "acr.xmcloudcm.localhost"
 
     # stash CAROOT path for messaging at the end of the script
     $caRoot = "$(& $mkcert -CAROOT)\rootCA.pem"
@@ -101,8 +101,8 @@ finally {
 
 Write-Host "Adding Windows hosts file entries..." -ForegroundColor Green
 
-Add-HostsEntry "xmcloudcm.localhost"
-Add-HostsEntry "www.sxastarter.localhost"
+Add-HostsEntry "acr.xmcloudcm.localhost"
+Add-HostsEntry "www.acr.localhost"
 
 ###############################
 # Generate scjssconfig
@@ -128,17 +128,20 @@ Set-EnvFileVariable "JSS_EDITING_SECRET" -Value $jssEditingSecret
 ###############################
 
 if ($InitEnv) {
-
+	if(-not (Test-Path .env)) {
+		Copy-Item .env.example -Destination .env | Out-Null
+	}
+    
     Write-Host "Populating required .env file values..." -ForegroundColor Green
 
     # HOST_LICENSE_FOLDER
     Set-EnvFileVariable "HOST_LICENSE_FOLDER" -Value $LicenseXmlPath
 
     # CM_HOST
-    Set-EnvFileVariable "CM_HOST" -Value "xmcloudcm.localhost"
+    Set-EnvFileVariable "CM_HOST" -Value "acr.xmcloudcm.localhost"
 
     # RENDERING_HOST
-    Set-EnvFileVariable "RENDERING_HOST" -Value "www.sxastarter.localhost"
+    Set-EnvFileVariable "RENDERING_HOST" -Value "www.acr.localhost"
 
     # REPORTING_API_KEY = random 64-128 chars
     Set-EnvFileVariable "REPORTING_API_KEY" -Value (Get-SitecoreRandomString 128 -DisallowSpecial)
