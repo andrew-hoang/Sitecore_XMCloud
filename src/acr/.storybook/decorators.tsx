@@ -37,9 +37,13 @@ export const withRadixTheme = ({ themes, defaultTheme }) => {
 
     return (
       <Theme {...radixTheme} style={{ minHeight: 0 }}>
-        <div className="bg-t-background p-12 text-t-body">
+        {context?.componentId === 'components-container' ? (
           <Story />
-        </div>
+        ) : (
+          <div className="bg-t-background p-12 text-t-body">
+            <Story />
+          </div>
+        )}
       </Theme>
     );
   };
