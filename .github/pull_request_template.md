@@ -43,7 +43,7 @@
 
 - [ ] Verified accuracy against design in a test page created in XM Cloud.
 - [ ] Review field types for the component between the [Jira Ticket](https://velir.atlassian.net/browse/ACRAR-<###>) and the Code (fields) or XM Cloud.
-- [ ] Just for completeness -> "Review files changed (Start a Review in Github)"
+- [ ] Review files changed (Start a Review in Github).
 - [ ] Test designs at different breakpoints.
 - [ ] Test component in Storybook with different control values.
 
