@@ -1,0 +1,26 @@
+﻿---
+ID: "d24457e9-86aa-4361-82a9-189d67f3ab1d"
+Parent: "7ade71fb-46a7-467f-86a7-17419023aaad"
+Template: "d445ce37-8759-4482-b92c-5bde1921d671"
+Path: /sitecore/content/ACR/ACR/Data/Taxonomy/Content Types/Blog
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240508T150110Z
+    - ID: "3783b6c0-51e9-487f-ad76-f42718cb6cb4"
+      Hint: title
+      Value: Blog
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "530b7e85-86bb-4dce-9509-b932a7dd2b53"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240508T150110Z

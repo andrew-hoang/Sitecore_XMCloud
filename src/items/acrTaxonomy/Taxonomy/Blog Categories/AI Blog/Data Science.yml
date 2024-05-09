@@ -1,0 +1,26 @@
+﻿---
+ID: "e33710a5-e185-41c1-a3cc-bad09c95795d"
+Parent: "2fd142cf-a7bb-4e59-be3a-29701b1b2063"
+Template: "f3ac7974-b86b-4be1-9ad2-0bda1ffe4c6e"
+Path: /sitecore/content/ACR/ACR/Data/Taxonomy/Blog Categories/AI Blog/Data Science
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240508T144211Z
+    - ID: "3783b6c0-51e9-487f-ad76-f42718cb6cb4"
+      Hint: title
+      Value: Data Science
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "54bcdbe7-6db5-4d89-8223-5dc2009f97e9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240508T144211Z

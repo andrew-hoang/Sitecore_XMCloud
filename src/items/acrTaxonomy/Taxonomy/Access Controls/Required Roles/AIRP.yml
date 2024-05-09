@@ -1,0 +1,26 @@
+﻿---
+ID: "2979f287-b7af-458f-be1d-a9b799ae7921"
+Parent: "4710d0f9-6066-4401-8c76-7ba9b2ced48b"
+Template: "e35e7eb2-bbf7-49b1-9253-f514bb466c59"
+Path: /sitecore/content/ACR/ACR/Data/Taxonomy/Access Controls/Required Roles/AIRP
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240508T150550Z
+    - ID: "3783b6c0-51e9-487f-ad76-f42718cb6cb4"
+      Hint: title
+      Value: AIRP
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "1daff8a4-4893-4dad-9ccf-a3330431043e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240508T150550Z

@@ -1,0 +1,26 @@
+﻿---
+ID: "6804f33f-472a-48f1-be4e-8e72436be05a"
+Parent: "7ade71fb-46a7-467f-86a7-17419023aaad"
+Template: "d445ce37-8759-4482-b92c-5bde1921d671"
+Path: /sitecore/content/ACR/ACR/Data/Taxonomy/Content Types/Position Statement
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240508T150031Z
+    - ID: "3783b6c0-51e9-487f-ad76-f42718cb6cb4"
+      Hint: title
+      Value: Position Statement
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "2a9d039d-63b1-4b13-b53b-8bd04ed89aa0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240508T150031Z

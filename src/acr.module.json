@@ -49,6 +49,11 @@
         "path": "/sitecore/layout/Layouts/Project/ACR",
         "allowedPushOperations": "CreateUpdateAndDelete",
         "database": "master"
+      },
+      {
+        "name": "settingsfoundation",
+        "path": "/sitecore/system/Settings/Foundation/ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete"
       }
     ]
   }
