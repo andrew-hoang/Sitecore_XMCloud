@@ -13,6 +13,10 @@ SharedFields:
     {B3549E3C-48D4-444D-8F87-96CD0AFD969D}
     {1FD23E7C-5EDE-4E40-92D1-2CA429AEF3AC}
     {34403B92-37C8-4CB2-9B59-9073517A9206}
+    {371D5FBB-5498-4D94-AB2B-E3B70EEBE78C}
+    {4414A1F9-826A-4647-8DF4-ED6A95E64C43}
+    {6650FB34-7EA1-4245-A919-5CC0F002A6D7}
+    {F39A594A-7BC9-4DB0-BAA1-88543409C1F9}
 Languages:
 - Language: en
   Versions:
@@ -31,11 +35,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a02aa736-3a40-4165-99dd-259443b8728b"
+      Value: "b32d72b2-2854-42b2-9153-b856d33508d6"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\kenneth.robinson@velir.com
+        sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240508T170844Z
+      Value: 20240509T173459Z

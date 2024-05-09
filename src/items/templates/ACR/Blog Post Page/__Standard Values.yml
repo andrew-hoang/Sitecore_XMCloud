@@ -3,6 +3,15 @@ ID: "cf3be238-d853-4cd6-9ee2-8b20550fad08"
 Parent: "96689673-577c-47ad-893f-47a232aab353"
 Template: "96689673-577c-47ad-893f-47a232aab353"
 Path: /sitecore/templates/Project/ACR/Blog Post Page/__Standard Values
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{AD329957-C320-4B50-AA7D-A1C123F0253D}" />
+    </r>
 Languages:
 - Language: en
   Versions:
@@ -21,17 +30,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4baf827f-5f9e-4c73-b8af-c00bd7da5b2f"
+      Value: "8511b5fc-507e-4ca2-a2df-260869322277"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\kenneth.robinson@velir.com
+        sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240508T192400Z
-    - ID: "e5ae4185-5680-40bd-9840-432c84228ffb"
-      Hint: theme
-      Value: "{B8B2EDB8-4F07-498B-BA6C-D079BBCE876B}"
-    - ID: "fe15d9ac-3767-46c9-ad64-621636e0f3db"
-      Hint: contentType
-      Value: "{D24457E9-86AA-4361-82A9-189D67F3AB1D}"
+      Value: 20240509T175651Z
