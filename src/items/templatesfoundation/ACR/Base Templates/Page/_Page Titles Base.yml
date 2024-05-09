@@ -1,0 +1,43 @@
+﻿---
+ID: "0c27f9a8-7876-475f-8368-c6f119238e7b"
+Parent: "6b219932-15d3-46b8-b6b7-94e069134765"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Foundation/ACR/Base Templates/Page/_Page Titles Base
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: |
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {831F0EB6-E19F-4D4B-A5D6-106E0F89C60A}
+    {6C188E06-6E8A-481C-91FB-3D60A3267979}
+    {1532E274-7644-43EF-96D9-0E7DF37A66E1}
+    {81C75B6C-D883-4834-9868-54B4D288EEDF}
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: 
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240506T205833Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "cf097844-90c2-4d0e-8811-9589ea3728dd"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240506T210719Z

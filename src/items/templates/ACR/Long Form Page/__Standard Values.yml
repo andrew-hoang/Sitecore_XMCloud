@@ -1,0 +1,32 @@
+﻿---
+ID: "14ef9f97-6879-46bb-8652-0daa2010189f"
+Parent: "f087f1ad-1d2d-4fdb-b025-1bb3098b7d8b"
+Template: "f087f1ad-1d2d-4fdb-b025-1bb3098b7d8b"
+Path: /sitecore/templates/Project/ACR/Long Form Page/__Standard Values
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{AD329957-C320-4B50-AA7D-A1C123F0253D}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240507T193226Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "dd8bd43c-0297-41fc-9a03-cd13ded27ccb"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240509T175828Z

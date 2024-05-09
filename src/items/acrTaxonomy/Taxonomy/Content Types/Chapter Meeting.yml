@@ -1,0 +1,26 @@
+﻿---
+ID: "220853b7-4474-47ad-95db-21d4a255fb70"
+Parent: "7ade71fb-46a7-467f-86a7-17419023aaad"
+Template: "d445ce37-8759-4482-b92c-5bde1921d671"
+Path: /sitecore/content/ACR/ACR/Data/Taxonomy/Content Types/Chapter Meeting
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240508T150004Z
+    - ID: "3783b6c0-51e9-487f-ad76-f42718cb6cb4"
+      Hint: title
+      Value: Chapter Meeting
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3009cb26-6333-4269-bf68-f187103ebd5a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240508T150004Z

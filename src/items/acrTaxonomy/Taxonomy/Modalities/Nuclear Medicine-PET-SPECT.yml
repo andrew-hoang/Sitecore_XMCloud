@@ -1,0 +1,26 @@
+﻿---
+ID: "04fc9bb5-ea32-406d-853c-acdb1ba7eb4a"
+Parent: "a9ab4067-506e-4abe-ab1a-ad44f895cde1"
+Template: "fb7f677a-afe4-42d3-8d89-12cdd26632ab"
+Path: "/sitecore/content/ACR/ACR/Data/Taxonomy/Modalities/Nuclear Medicine-PET-SPECT"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240508T145339Z
+    - ID: "3783b6c0-51e9-487f-ad76-f42718cb6cb4"
+      Hint: title
+      Value: Nuclear Medicine/PET/SPECT
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "25587aa0-b3d0-4553-bd6d-2bf738c1b031"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240508T145347Z

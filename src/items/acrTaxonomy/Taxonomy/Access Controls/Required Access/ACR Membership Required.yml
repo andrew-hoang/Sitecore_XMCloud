@@ -1,0 +1,26 @@
+﻿---
+ID: "72de7cd4-1468-44c7-a9a1-1924efea4849"
+Parent: "75f35c29-bce0-447a-9b67-0c876009f891"
+Template: "5261d157-f31d-4a78-ad34-7f00a75e8134"
+Path: /sitecore/content/ACR/ACR/Data/Taxonomy/Access Controls/Required Access/ACR Membership Required
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240508T150652Z
+    - ID: "3783b6c0-51e9-487f-ad76-f42718cb6cb4"
+      Hint: title
+      Value: ACR Membership Required
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "905b5d48-944e-455f-84b7-63a4b41710e5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240508T150652Z
