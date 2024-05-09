@@ -17,12 +17,15 @@ const Icon = (props: IconProps): JSX.Element | null => {
 
   if (!iconType) return null;
 
-  const IconType = require(`./svg/${iconType}`).default;
+  try {
+    const IconType = require(`./svg/${iconType}`).default;
 
-  return (
-    <IconType {...rest} className={twMerge('h-4 w-4', className)} isAriaHidden={isAriaHidden} />
-  );
+    return (
+      <IconType {...rest} className={twMerge('h-4 w-4', className)} isAriaHidden={isAriaHidden} />
+    );
+  } catch (err) {
+    return <></>;
+  }
 };
 
 export default Icon;
-
