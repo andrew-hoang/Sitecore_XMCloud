@@ -3,6 +3,10 @@ ID: "728502dc-a574-4312-b26b-7bb93fd9145c"
 Parent: "c65c472f-2b66-41cf-bf44-2b2674624389"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
 Path: /sitecore/templates/Foundation/ACR/Base Templates/_Image Base/Image
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 10
 Languages:
 - Language: en
   Versions:
@@ -21,11 +25,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "39b5f53a-2970-4a4a-8598-b4659e4d951c"
+      Value: "79b923c3-bc2e-4183-b0d9-af8282077916"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240506T210913Z
+      Value: 20240509T205636Z
