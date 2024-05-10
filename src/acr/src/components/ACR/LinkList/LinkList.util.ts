@@ -1,5 +1,9 @@
 import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import { LinkListProps, LinkListBaseProps, LinkListData } from 'components/ACR/LinkList/LinkList.props';
+import {
+  LinkListProps,
+  LinkListBaseProps,
+  LinkListData,
+} from 'components/ACR/LinkList/LinkList.props';
 
 export const getStaticPropsForLinkList = async (
   rendering: ComponentRendering,
@@ -10,7 +14,9 @@ export const getStaticPropsForLinkList = async (
   console.log(layoutData);
 
   const model: LinkListData = {
-    heading: { value: 'Hardcoded for scaffolding' },
+    externalFields: {
+      mock_external_data: { value: 'Hardcoded for scaffolding' },
+    },
   };
 
   return model;

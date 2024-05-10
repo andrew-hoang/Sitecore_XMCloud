@@ -6,7 +6,8 @@ import { StyleProps } from 'src/types/Style.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type PageHeaderWithIconProps = ComponentProps & TestProps &
+export type PageHeaderWithIconProps = ComponentProps &
+  TestProps &
   PageHeaderWithIconParams &
   PageHeaderWithIconFields &
   PageHeaderWithIconData;
@@ -22,7 +23,7 @@ export type PageHeaderWithIconParams = {
 // Non-component data source fields
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type PageHeaderWithIconData = {
-  externalFields: {
+  externalFields?: {
     mock_external_data: Field<string>;
   };
 };
@@ -38,7 +39,8 @@ export type PageHeaderWithIconFields = {
 /**
  * UI is developed against this model
  */
-export type PageHeaderWithIconBaseProps = TestProps & StyleProps & {
+export type PageHeaderWithIconBaseProps = TestProps &
+  StyleProps & {
     fields: {
       // "UI" developer defines everything else here
       heading: Field<string>; // Sitecore editable text field

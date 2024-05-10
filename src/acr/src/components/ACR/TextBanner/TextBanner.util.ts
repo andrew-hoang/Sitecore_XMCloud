@@ -1,5 +1,9 @@
 import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import { TextBannerProps, TextBannerBaseProps, TextBannerData } from 'components/ACR/TextBanner/TextBanner.props';
+import {
+  TextBannerProps,
+  TextBannerBaseProps,
+  TextBannerData,
+} from 'components/ACR/TextBanner/TextBanner.props';
 
 export const getStaticPropsForTextBanner = async (
   rendering: ComponentRendering,
@@ -10,7 +14,9 @@ export const getStaticPropsForTextBanner = async (
   console.log(layoutData);
 
   const model: TextBannerData = {
-    heading: { value: 'Hardcoded for scaffolding' },
+    externalFields: {
+      mock_external_data: { value: 'Hardcoded for scaffolding' },
+    },
   };
 
   return model;

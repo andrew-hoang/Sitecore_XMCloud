@@ -10,7 +10,9 @@ export const getStaticPropsForImage = async (
   console.log(layoutData);
 
   const model: ImageData = {
-    heading: { value: 'Hardcoded for scaffolding' },
+    externalFields: {
+      mock_external_data: { value: 'Hardcoded for scaffolding' },
+    },
   };
 
   return model;
