@@ -1,0 +1,57 @@
+﻿---
+ID: "e0fad6d5-83ca-4eec-a097-e1a798359abf"
+Parent: "7c809408-a061-4ca5-bf16-274a37494c54"
+Template: "f1828a2c-7e5d-4bbd-98ca-320474871548"
+Path: "/sitecore/media library/Feature/ACR/Containers/container-fullwithbleed-thumbnail"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: "-/media/E0FAD6D583CA4EECA097E1A798359ABF.ashx?h=16&thn=1&w=16"
+- ID: "22eac599-f13b-4607-a89d-c091763a467d"
+  Hint: Width
+  Value: 164
+- ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
+  Hint: Blob
+  BlobID: "f20cb4dd-5422-4806-85f3-77c40cbd8aaa"
+  Value: iVBORw0KGgoAAAANSUhEUgAAAKQAAAAyCAIAAABd6OdIAAAACXBIWXMAAAsSAAALEgHS3X78AAAEaklEQVR4nO2c61PaWBiH+f/3w67kJOcSkgjIXatVLqWo3WnHOwUBuYVEEBDFqQoVRXCEHYRWd2YNO91Um815ZpgJyUl+8+YhlwmT1zLU5Pb2tt1uf9WPdrvd6/U0EgeDwVe9ubq60i6z2+3qXma/39dIvL+/1zFunNjpdLTLtGgvprJ/DCp7shfokT2kRzY9jf8X6Gl8Ar1mj6HX7BH0Bm1Ev9/vdDrX+tHpdLRvUweDwbXe3NzcaCQOh8Ner6d7mXd3d79amZaAJj6fz6s3fr9fO1T3RK/XS8sMBAIWMA1Wb14+cWoo++KJrxJq4TUhPwHtxFcJJT+HX61MC6aYBirbRFDZJoLKNhFUtomgsk0ElW0iqGwTQWWbCCrbRBhe9vgZISHkyYwRTyYfwd9GfB/5uJ0njzCfyfnH+UbC8LIBYBiG4Tg4fjaMEQQsACyACEPIAZbjJn85MDNWK0SY8JgBAGGCEAtYluf5h80ghrEyDMOOVmYgxuP5E/ejD2IAwNjYvo0tm+NIMLT654f1xQUXAAwAjE3yhJdDoeWIUyAO13xwaX5hJbyyOP9mMfxpbd3OwxkGR4IRCcNZRyC8tAhmZjBGmNhjsQ+rq+/fLr0Nr0QcNjzDMBChh18JB1kAiT0aDPGQQ9jAGFg2IcjKCMXCydqSj9gcK0vBBX8g9m67kCyWMpUVlzAbCCtKUW18Oa6WsoXDYiK14HG//7jbUKr5eFbOlI8rR7HwMk9YbHtTP6xvbG3Jh4dqVgnOB6Kr6363czEYiYaWHc65zXj2tFgQGCsy8snc6LJt+cJJamvd74vKKWV/O1WKy+mdTDGthr32P1ih2uycVMr1L2dVVU7t5UolObmfKKQUJVE62MsVMvKRUgm7RUACNbW6Go2palPNKGpJPqoqh/V646RSVJXqaXVvL1E5yImAyn5F2UDIHlRCHskKHdmcUlaUzEY6uZXKJYshn/O3362ZcjO1tbabU7OJ3e3NdPLz53QuX0rn4x/jSr6c3NjNxHPvPLMM9lVKlVgkms0dyalCIpGQ5YNPm5uyWtrb2djZ3z/IF8uZtAAYemS/GghhSZq1EQIRFGftbvecKIiiKEmiZOMJQkgQJJvA84IkCrwoSgTjObfHaZdsNpvL7ZJEURJHqyNE7E7X/EJAtPGCIBJM5twegceC5HA57RgTt9djl8RRnpEx8Gl8DEITAwhBCCH6zrelGE0GoYd5EHIPozDk4N9GQshx3OOwh2mMIMfB8VdocNP/B9mUfw+VbSKobBNBZZsIKttEUNkmgso2EVS2iaCyTQSVbSKobBNBZZsI+squmV7ZhdNAevPyiVND0Ysnvkqo5fJ5Wq1Ws9ms1Wp1/ajVamdnZ61W67nQi4uLut4cHx9rl3l6evrCZZ6fn9f1ptFoaJR5eXk5pVtSv98fd2bRi+vr66mdZW70ptvt0jJpa6wJtDXWCNq79MegvUsne4H2Lh3S3qVjaAvqH4P2Lp1Ae5eOob1Lh+a5QfsLPNk5DvHSj3UAAAAASUVORK5CYII=
+- ID: "6954b7c7-2487-423f-8600-436cb3b6dc0e"
+  Hint: Size
+  Value: 1208
+- ID: "6f47a0a5-9c94-4b48-abeb-42d38def6054"
+  Hint: Mime Type
+  Value: image/png
+- ID: "c06867fe-9a43-4c7d-b739-48780492d06f"
+  Hint: Extension
+  Value: png
+- ID: "cb09946f-3218-4823-87d2-d5007c199a96"
+  Hint: Dimensions
+  Value: 164 x 50
+- ID: "de2ca9e4-c117-4c8a-a139-1ff4b199d15a"
+  Hint: Height
+  Value: 50
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240510T142854Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "88e62870-62c9-48be-80fc-2db52a98f00a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240510T142854Z
