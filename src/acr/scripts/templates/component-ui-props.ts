@@ -28,7 +28,7 @@ export type ${componentName}Params = {
 // Non-component data source fields
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type ${componentName}Data = {
-  externalFields: {
+  externalFields?: {
     mock_external_data: Field<string>;
   };
 };

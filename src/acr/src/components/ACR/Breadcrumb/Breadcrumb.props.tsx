@@ -6,7 +6,8 @@ import { StyleProps } from 'src/types/Style.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type BreadcrumbProps = ComponentProps & TestProps &
+export type BreadcrumbProps = ComponentProps &
+  TestProps &
   BreadcrumbParams &
   BreadcrumbFields &
   BreadcrumbData;
@@ -22,7 +23,7 @@ export type BreadcrumbParams = {
 // Non-component data source fields
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type BreadcrumbData = {
-  externalFields: {
+  externalFields?: {
     mock_external_data: Field<string>;
   };
 };
@@ -38,7 +39,8 @@ export type BreadcrumbFields = {
 /**
  * UI is developed against this model
  */
-export type BreadcrumbBaseProps = TestProps & StyleProps & {
+export type BreadcrumbBaseProps = TestProps &
+  StyleProps & {
     fields: {
       // "UI" developer defines everything else here
       heading: Field<string>; // Sitecore editable text field

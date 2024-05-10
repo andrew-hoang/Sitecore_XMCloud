@@ -6,7 +6,8 @@ import { StyleProps } from 'src/types/Style.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type TextBannerProps = ComponentProps & TestProps &
+export type TextBannerProps = ComponentProps &
+  TestProps &
   TextBannerParams &
   TextBannerFields &
   TextBannerData;
@@ -22,7 +23,7 @@ export type TextBannerParams = {
 // Non-component data source fields
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type TextBannerData = {
-  externalFields: {
+  externalFields?: {
     mock_external_data: Field<string>;
   };
 };
@@ -38,7 +39,8 @@ export type TextBannerFields = {
 /**
  * UI is developed against this model
  */
-export type TextBannerBaseProps = TestProps & StyleProps & {
+export type TextBannerBaseProps = TestProps &
+  StyleProps & {
     fields: {
       // "UI" developer defines everything else here
       heading: Field<string>; // Sitecore editable text field

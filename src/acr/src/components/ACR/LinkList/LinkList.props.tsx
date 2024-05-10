@@ -6,7 +6,8 @@ import { StyleProps } from 'src/types/Style.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type LinkListProps = ComponentProps & TestProps &
+export type LinkListProps = ComponentProps &
+  TestProps &
   LinkListParams &
   LinkListFields &
   LinkListData;
@@ -22,7 +23,7 @@ export type LinkListParams = {
 // Non-component data source fields
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type LinkListData = {
-  externalFields: {
+  externalFields?: {
     mock_external_data: Field<string>;
   };
 };
@@ -38,7 +39,8 @@ export type LinkListFields = {
 /**
  * UI is developed against this model
  */
-export type LinkListBaseProps = TestProps & StyleProps & {
+export type LinkListBaseProps = TestProps &
+  StyleProps & {
     fields: {
       // "UI" developer defines everything else here
       heading: Field<string>; // Sitecore editable text field
