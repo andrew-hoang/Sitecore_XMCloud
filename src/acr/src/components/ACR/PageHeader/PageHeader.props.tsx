@@ -6,7 +6,8 @@ import { StyleProps } from 'src/types/Style.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type PageHeaderProps = ComponentProps & TestProps &
+export type PageHeaderProps = ComponentProps &
+  TestProps &
   PageHeaderParams &
   PageHeaderFields &
   PageHeaderData;
@@ -22,7 +23,7 @@ export type PageHeaderParams = {
 // Non-component data source fields
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type PageHeaderData = {
-  externalFields: {
+  externalFields?: {
     mock_external_data: Field<string>;
   };
 };
@@ -38,7 +39,8 @@ export type PageHeaderFields = {
 /**
  * UI is developed against this model
  */
-export type PageHeaderBaseProps = TestProps & StyleProps & {
+export type PageHeaderBaseProps = TestProps &
+  StyleProps & {
     fields: {
       // "UI" developer defines everything else here
       heading: Field<string>; // Sitecore editable text field

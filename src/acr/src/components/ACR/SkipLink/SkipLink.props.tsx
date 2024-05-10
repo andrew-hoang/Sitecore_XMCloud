@@ -6,7 +6,8 @@ import { StyleProps } from 'src/types/Style.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type SkipLinkProps = ComponentProps & TestProps &
+export type SkipLinkProps = ComponentProps &
+  TestProps &
   SkipLinkParams &
   SkipLinkFields &
   SkipLinkData;
@@ -22,7 +23,7 @@ export type SkipLinkParams = {
 // Non-component data source fields
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type SkipLinkData = {
-  externalFields: {
+  externalFields?: {
     mock_external_data: Field<string>;
   };
 };
@@ -38,7 +39,8 @@ export type SkipLinkFields = {
 /**
  * UI is developed against this model
  */
-export type SkipLinkBaseProps = TestProps & StyleProps & {
+export type SkipLinkBaseProps = TestProps &
+  StyleProps & {
     fields: {
       // "UI" developer defines everything else here
       heading: Field<string>; // Sitecore editable text field

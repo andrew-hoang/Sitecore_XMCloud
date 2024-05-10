@@ -16,7 +16,9 @@ export const getStaticPropsFor${componentName} = async (
   console.log(layoutData);
 
   const model: ${componentName}Data = {
-    heading: { value: 'Hardcoded for scaffolding' },
+    externalFields: {
+      mock_external_data: { value: 'Hardcoded for scaffolding' },
+    },
   };
 
   return model;
