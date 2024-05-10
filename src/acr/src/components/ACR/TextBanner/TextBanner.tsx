@@ -42,7 +42,7 @@ const TextBanner = (props: TextBannerProps): JSX.Element => {
       align={{ initial: 'start', md: 'center' }}
       justify="between"
     >
-      <Flex direction="column" gap="4" width="770px">
+      <Flex direction="column" gap="4" width={{ initial: 'auto', md: '770px' }}>
         <Text field={title} tag="h2" className="heading-d" />
         <Text field={description} tag="p" />
       </Flex>
