@@ -19,6 +19,7 @@ export const decorators = [
 
 const preview: Preview = {
   parameters: {
+    layout: "fullscreen", // Remove padding from body
     controls: {
       matchers: {
         color: /(background|color)$/i,
