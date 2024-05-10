@@ -1,12 +1,8 @@
 ﻿---
-ID: "89236d89-7dc4-43eb-a914-af0441ba05fb"
-Parent: "735fa8e1-b242-478a-a652-bc0dad2b8445"
-Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Foundation/ACR/Base Templates/Taxonomy/_Modality Base/Taxonomy
-SharedFields:
-- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
-  Hint: __Sortorder
-  Value: 40
+ID: "6814e826-4057-444d-aa69-494aa1d9350f"
+Parent: "94bd1d1b-f5fc-42aa-9620-78044a7ede1d"
+Template: "f036b5e0-37fb-4537-9d36-ef84e5bd41b7"
+Path: /sitecore/system/Settings/Feature/ACR/Page Components/Page Components Headless Site Collection Setup
 Languages:
 - Language: en
   Versions:
@@ -14,7 +10,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240506T212759Z
+      Value: 20240509T162426Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -25,11 +21,14 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "473d9726-83a9-4778-89a0-979d52a58ff4"
+      Value: "ec2f7e16-092f-4db1-bca4-a9236c339f63"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: Page Components
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240509T205552Z
+      Value: 20240509T162426Z
