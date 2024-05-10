@@ -1,0 +1,26 @@
+﻿---
+ID: "1aae8a23-e6fd-4943-905f-1ab07a02c49c"
+Parent: "37cf3591-15b6-432f-b5dc-2b8d1a8bddf4"
+Template: "a54d1026-90b9-4295-8d97-a94edd6ab486"
+Path: /sitecore/content/ACR/ACR/Data/Taxonomy/Subspecialties/General Radiology
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240508T145128Z
+    - ID: "3783b6c0-51e9-487f-ad76-f42718cb6cb4"
+      Hint: title
+      Value: General Radiology
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "5b645ff5-ba52-454d-a048-d5ce50806a2d"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240508T145128Z

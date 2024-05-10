@@ -5,7 +5,7 @@
  */
 function generateComponentUtils(componentName: string): string {
   return `import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import { ${componentName}Props, ${componentName}BaseProps, ${componentName}Data } from 'components/ACR/${componentName}/${componentName}.props';
+import { ${componentName}Data } from 'components/ACR/${componentName}/${componentName}.props';
 
 export const getStaticPropsFor${componentName} = async (
   rendering: ComponentRendering,
@@ -16,16 +16,8 @@ export const getStaticPropsFor${componentName} = async (
   console.log(layoutData);
 
   const model: ${componentName}Data = {
-    heading: { value: 'Hardcoded for scaffolding' },
-  };
-
-  return model;
-};
-
-export const get${componentName}UiProps = (props: ${componentName}Props): ${componentName}BaseProps => {
-  const model: ${componentName}BaseProps = {
-    fields: {
-      heading: props.fields.heading,
+    externalFields: {
+      mock_external_data: { value: 'Hardcoded for scaffolding' },
     },
   };
 

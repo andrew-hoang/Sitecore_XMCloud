@@ -1,7 +1,7 @@
 ﻿---
 ID: "7b68c3b0-3fbc-4d59-92ea-3e23535e7755"
 Parent: "ad0d9021-44e9-4855-bdda-cd7f5da54b49"
-Template: "c4b69474-b531-4dc0-9384-e659f6626a77"
+Template: "ae8b6eec-82b9-4ea1-a7cf-7a1a01d5c6dc"
 Path: /sitecore/content/ACR/ACR/Home
 BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
 SharedFields:
@@ -33,14 +33,14 @@ Languages:
         sitecore\akhanal@acr.org
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "35c1a1cc-9aa1-4452-b022-1406a4105b93"
-    - ID: "913f1eb7-1b96-4ef6-9c24-1208ca4139b7"
-      Hint: Title
-      Value: Home
+      Value: "445bc21e-5e51-4149-8496-6d6366f906ba"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\kenneth.robinson@velir.com
+        sitecore\minyie.diaz@velir.com
+    - ID: "d7a642a3-f219-44a3-8d44-d2ead324ac6a"
+      Hint: title
+      Value: Home
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240502T151956Z
+      Value: 20240509T173657Z

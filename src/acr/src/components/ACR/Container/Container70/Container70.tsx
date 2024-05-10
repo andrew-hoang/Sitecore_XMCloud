@@ -37,6 +37,7 @@ const Container70 = (props: Container70Props): JSX.Element | null => {
       pb="0"
       pt="0"
       className={twMerge('mt-[72px] first-of-type:mt-0', props.params.styles)}
+      data-ref="container-70"
       data-testid={testId}
     >
       <Container px="6">
