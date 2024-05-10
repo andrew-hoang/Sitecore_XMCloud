@@ -40,7 +40,7 @@ export const withRadixTheme = ({ themes, defaultTheme }) => {
         {context?.componentId === 'components-container' ? (
           <Story />
         ) : (
-          <div className="bg-t-background p-12 text-t-body">
+          <div className="bg-t-background text-t-body">
             <Story />
           </div>
         )}
