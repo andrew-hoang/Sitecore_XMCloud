@@ -5,7 +5,7 @@ import PageHeader from 'components/ACR/PageHeader/PageHeader';
 import { defaultMockData } from './PageHeader.mock';
 
 export default {
-  title: 'Components/PageHeader',
+  title: 'Components/Page Header',
   component: PageHeader,
   tags: ['autodocs'],
 } as Meta<typeof PageHeader>;

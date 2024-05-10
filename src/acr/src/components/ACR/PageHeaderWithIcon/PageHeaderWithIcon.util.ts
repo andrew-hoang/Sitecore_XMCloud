@@ -1,9 +1,5 @@
 import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import {
-  PageHeaderWithIconProps,
-  PageHeaderWithIconBaseProps,
-  PageHeaderWithIconData,
-} from 'components/ACR/PageHeaderWithIcon/PageHeaderWithIcon.props';
+import { PageHeaderWithIconData } from 'components/ACR/PageHeaderWithIcon/PageHeaderWithIcon.props';
 
 export const getStaticPropsForPageHeaderWithIcon = async (
   rendering: ComponentRendering,
@@ -16,18 +12,6 @@ export const getStaticPropsForPageHeaderWithIcon = async (
   const model: PageHeaderWithIconData = {
     externalFields: {
       mock_external_data: { value: 'Hardcoded for scaffolding' },
-    },
-  };
-
-  return model;
-};
-
-export const getPageHeaderWithIconUiProps = (
-  props: PageHeaderWithIconProps
-): PageHeaderWithIconBaseProps => {
-  const model: PageHeaderWithIconBaseProps = {
-    fields: {
-      heading: props.fields.heading,
     },
   };
 

@@ -1,9 +1,5 @@
 import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import {
-  SectionHeaderProps,
-  SectionHeaderBaseProps,
-  SectionHeaderData,
-} from 'components/ACR/SectionHeader/SectionHeader.props';
+import { SectionHeaderData } from 'components/ACR/SectionHeader/SectionHeader.props';
 
 export const getStaticPropsForSectionHeader = async (
   rendering: ComponentRendering,
@@ -16,16 +12,6 @@ export const getStaticPropsForSectionHeader = async (
   const model: SectionHeaderData = {
     externalFields: {
       mock_external_data: { value: 'Hardcoded for scaffolding' },
-    },
-  };
-
-  return model;
-};
-
-export const getSectionHeaderUiProps = (props: SectionHeaderProps): SectionHeaderBaseProps => {
-  const model: SectionHeaderBaseProps = {
-    fields: {
-      heading: props.fields.heading,
     },
   };
 

@@ -41,7 +41,7 @@ All files pertaining to core development will be found under /src
 
 #### Components
 
-Components all live under src/components/ACR, where you will find the main frontend component that's hooked to Sitecore, an reusable "Base" component to be consumed by other components (if needed), stories, mock data, data/ui integrations, and any other component assets.
+Components all live under src/components/ACR, where you will find the UI component, stories, mock data, data/ui integrations, and any other component assets.
 
 ### Scaffolding
 
@@ -57,7 +57,7 @@ and just providing the name is ok.
 
 This script generates the following files
 
-- Generate Base and Feature component
+- Generate component file
 - Generate Storybook file with mockdata
 - Generate mock data file
 - Generate props file

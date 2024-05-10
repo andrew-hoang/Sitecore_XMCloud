@@ -39,7 +39,7 @@
 import fs from 'fs';
 import path from 'path';
 import chalk from 'chalk';
-import generateComponentUiSrc from './templates/component-ui-src';
+
 import generateComponentUiStory from './templates/component-ui-story';
 import generateComponentUiProps from './templates/component-ui-props';
 import generateComponentMockData from './templates/component-ui-mock';
@@ -74,18 +74,10 @@ const componentName = componentNameRaw;
 const filename = `${componentName}.tsx`;
 const componentDestPath = `${componentRootPath}/ACR`;
 
-// Feature Component
 const componentOutputPath = scaffoldFile(
   componentDestPath,
   generateComponentSrc(componentName),
   filename
-);
-
-// Base Component
-const componentUiOutputPath = scaffoldFile(
-  componentDestPath,
-  generateComponentUiSrc(componentName),
-  `${componentName}Base.tsx`
 );
 
 const storyOutputPath = scaffoldFile(
@@ -120,9 +112,6 @@ const utilsOutputPath = scaffoldFile(
 
 if (componentOutputPath) {
   console.log(`* Implement the Data component in ${chalk.green(componentOutputPath)}`);
-}
-if (componentUiOutputPath) {
-  console.log(`* Implement the UI component in ${chalk.green(componentUiOutputPath)}`);
 }
 if (storyOutputPath) {
   console.log(`* Implement your Storybook stories in ${chalk.green(storyOutputPath)}`);

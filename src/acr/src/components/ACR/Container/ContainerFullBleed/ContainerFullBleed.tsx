@@ -24,6 +24,7 @@ const ContainerFullBleed = (props: ContainerFullBleedProps): JSX.Element => {
 
   return (
     <Section
+      data-ref="container-full-bleed"
       data-theme={theme}
       className={twMerge(
         cn('bg-t-background py-[72px] text-t-body', { 'pt-0': excludeTopMargin === '1' }),

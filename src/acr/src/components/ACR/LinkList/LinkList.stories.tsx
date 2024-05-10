@@ -5,7 +5,7 @@ import LinkList from 'components/ACR/LinkList/LinkList';
 import { defaultMockData } from './LinkList.mock';
 
 export default {
-  title: 'Components/LinkList',
+  title: 'Components/Link List',
   component: LinkList,
   tags: ['autodocs'],
 } as Meta<typeof LinkList>;

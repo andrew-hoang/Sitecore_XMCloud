@@ -1,9 +1,5 @@
 import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import {
-  BreadcrumbProps,
-  BreadcrumbBaseProps,
-  BreadcrumbData,
-} from 'components/ACR/Breadcrumb/Breadcrumb.props';
+import { BreadcrumbData } from 'components/ACR/Breadcrumb/Breadcrumb.props';
 
 export const getStaticPropsForBreadcrumb = async (
   rendering: ComponentRendering,
@@ -16,16 +12,6 @@ export const getStaticPropsForBreadcrumb = async (
   const model: BreadcrumbData = {
     externalFields: {
       mock_external_data: { value: 'Hardcoded for scaffolding' },
-    },
-  };
-
-  return model;
-};
-
-export const getBreadcrumbUiProps = (props: BreadcrumbProps): BreadcrumbBaseProps => {
-  const model: BreadcrumbBaseProps = {
-    fields: {
-      heading: props.fields.heading,
     },
   };
 

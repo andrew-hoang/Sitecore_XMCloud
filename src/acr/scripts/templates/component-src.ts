@@ -4,20 +4,30 @@
  * @returns component src boilerplate as a string
  */
 function generateComponentSrc(componentName: string): string {
+  const kebabCase = (componentName: string): string => {
+    if (!componentName) return '';
+
+    return componentName.replace(/([a-z])([A-Z])/g, '$1-$2').toLowerCase();
+  };
+
   return `import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
 
 import { ${componentName}Props } from 'components/ACR/${componentName}/${componentName}.props';
 
-import { get${componentName}UiProps, getStaticPropsFor${componentName} } from 'components/ACR/${componentName}/${componentName}.util';
-
-import ${componentName}Base from 'components/ACR/${componentName}/${componentName}Base';
+import { getStaticPropsFor${componentName} } from 'components/ACR/${componentName}/${componentName}.util';
 
 const ${componentName} = (props: ${componentName}Props): JSX.Element => {
-  const { testId } = props;
+  const { fields, testId } = props;
 
-  const uiProps = get${componentName}UiProps(props);
+  const { heading } = fields ?? {};
 
-  return <${componentName}Base {...uiProps} testId={testId} />;
+  return (
+    <div data-ref="${kebabCase(componentName)}" data-testid={testId}>
+      <Text tag="h2" field={heading} />
+      <p>The ${componentName} Component</p>
+    </div>
+  );
 };
 
 /**

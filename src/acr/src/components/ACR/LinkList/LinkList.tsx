@@ -1,17 +1,21 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
 
 import { LinkListProps } from 'components/ACR/LinkList/LinkList.props';
 
-import { getLinkListUiProps, getStaticPropsForLinkList } from 'components/ACR/LinkList/LinkList.util';
-
-import LinkListBase from 'components/ACR/LinkList/LinkListBase';
+import { getStaticPropsForLinkList } from 'components/ACR/LinkList/LinkList.util';
 
 const LinkList = (props: LinkListProps): JSX.Element => {
-  const { testId } = props;
+  const { fields, testId } = props;
 
-  const uiProps = getLinkListUiProps(props);
+  const { heading } = fields ?? {};
 
-  return <LinkListBase {...uiProps} testId={testId} />;
+  return (
+    <div data-ref="link-list" data-testid={testId}>
+      <Text tag="h2" field={heading} />
+      <p>The LinkList Component</p>
+    </div>
+  );
 };
 
 /**

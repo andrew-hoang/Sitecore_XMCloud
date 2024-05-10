@@ -1,17 +1,21 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
 
 import { PageHeaderWithIconProps } from 'components/ACR/PageHeaderWithIcon/PageHeaderWithIcon.props';
 
-import { getPageHeaderWithIconUiProps, getStaticPropsForPageHeaderWithIcon } from 'components/ACR/PageHeaderWithIcon/PageHeaderWithIcon.util';
-
-import PageHeaderWithIconBase from 'components/ACR/PageHeaderWithIcon/PageHeaderWithIconBase';
+import { getStaticPropsForPageHeaderWithIcon } from 'components/ACR/PageHeaderWithIcon/PageHeaderWithIcon.util';
 
 const PageHeaderWithIcon = (props: PageHeaderWithIconProps): JSX.Element => {
-  const { testId } = props;
+  const { fields, testId } = props;
 
-  const uiProps = getPageHeaderWithIconUiProps(props);
+  const { heading } = fields ?? {};
 
-  return <PageHeaderWithIconBase {...uiProps} testId={testId} />;
+  return (
+    <div data-ref="page-header-with-icon" data-testid={testId}>
+      <Text tag="h2" field={heading} />
+      <p>The PageHeaderWithIcon Component</p>
+    </div>
+  );
 };
 
 /**

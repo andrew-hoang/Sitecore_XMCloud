@@ -1,17 +1,21 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
 
 import { SearchBarProps } from 'components/ACR/SearchBar/SearchBar.props';
 
-import { getSearchBarUiProps, getStaticPropsForSearchBar } from 'components/ACR/SearchBar/SearchBar.util';
-
-import SearchBarBase from 'components/ACR/SearchBar/SearchBarBase';
+import { getStaticPropsForSearchBar } from 'components/ACR/SearchBar/SearchBar.util';
 
 const SearchBar = (props: SearchBarProps): JSX.Element => {
-  const { testId } = props;
+  const { fields, testId } = props;
 
-  const uiProps = getSearchBarUiProps(props);
+  const { heading } = fields ?? {};
 
-  return <SearchBarBase {...uiProps} testId={testId} />;
+  return (
+    <div data-ref="search-bar" data-testid={testId}>
+      <Text tag="h2" field={heading} />
+      <p>The SearchBar Component</p>
+    </div>
+  );
 };
 
 /**
