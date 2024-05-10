@@ -19,6 +19,16 @@
         "allowedPushOperations": "CreateUpdateAndDelete"
       },
       {
+        "name": "branches",
+        "path": "/sitecore/Templates/Branches/Project/ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "branchesfeatures",
+        "path": "/sitecore/Templates/Branches/Feature/ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
         "name": "renderings",
         "path": "/sitecore/layout/Renderings/Project/ACR",
         "allowedPushOperations": "CreateUpdateAndDelete"
@@ -26,6 +36,16 @@
       {
         "name": "placeholders",
         "path": "/sitecore/layout/Placeholder Settings/Project/ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "placeholdersfeatures",
+        "path": "/sitecore/layout/Placeholder Settings/Feature/ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "settingsfeatures",
+        "path": "/sitecore/system/Settings/Feature/ACR",
         "allowedPushOperations": "CreateUpdateAndDelete"
       },
       {

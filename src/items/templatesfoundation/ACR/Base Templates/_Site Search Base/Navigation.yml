@@ -6,7 +6,7 @@ Path: /sitecore/templates/Foundation/ACR/Base Templates/_Site Search Base/Naviga
 SharedFields:
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 800
+  Value: 80
 Languages:
 - Language: en
   Versions:
@@ -25,11 +25,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "15292ac6-5fd8-4ee2-adff-06b80d68d8e3"
+      Value: "8b45f000-e437-4f1a-8abf-7ee38952c7ac"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240507T160343Z
+      Value: 20240509T205426Z
