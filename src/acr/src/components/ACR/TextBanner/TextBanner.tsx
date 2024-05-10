@@ -33,6 +33,7 @@ const TextBanner = (props: TextBannerProps): JSX.Element => {
         'bg-white': bgWhite,
         'bg-indigo-25': bgLightIndigo,
       })}
+      data-ref="text-banner"
       data-testid={testId}
       data-theme={bgLightIndigo ? Theme.LIGHT_INDIGO : Theme.WHITE} // Theme targets component's link style
       py="48px"
