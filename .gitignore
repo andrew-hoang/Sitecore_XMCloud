@@ -80,3 +80,6 @@ packages/
 /src/rendering/src/temp/!GraphQLIntrospectionResult.json
 /.vscode
 /.env
+
+## Lighthouse results
+/src/acr/lighthouse-results.html

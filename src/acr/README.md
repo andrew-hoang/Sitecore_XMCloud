@@ -4,6 +4,8 @@
 
 [Documentation (XM Cloud)](https://doc.sitecore.com/xmc/en/developers/xm-cloud/sitecore-javascript-rendering-sdk--jss--for-next-js.html)
 
+##
+
 ## Frontend Development
 
 ### Tech Stack
@@ -27,9 +29,11 @@ $ npm --version
 10.5.0
 ```
 
-3. Run `npm install`
+3. Install Sitecore JSS CLI package `npm install -g @sitecore-jss/sitecore-jss-cli`
 
-4. Run `npm run storybook` and navigate to http://localhost:6006/
+4. Run `npm install`
+
+5. Run `npm run storybook` and navigate to http://localhost:6006/
 
 #### Build Error
 
