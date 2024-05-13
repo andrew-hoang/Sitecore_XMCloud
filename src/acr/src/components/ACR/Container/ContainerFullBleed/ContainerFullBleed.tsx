@@ -2,7 +2,7 @@ import { Section } from '@radix-ui/themes';
 
 import { ContainerFullBleedProps } from 'components/ACR/Container/ContainerFullBleed/ContainerFullBleed.props';
 import PlaceholderBase, { PlaceholderBaseProps } from 'components/ACR/Placeholder/PlaceholderBase';
-import { ThemeContext } from 'src/context/ThemeContext';
+import { ThemeContext } from 'src/context/Theme.context';
 
 import { twMerge } from 'tailwind-merge';
 import cn from 'classnames';
