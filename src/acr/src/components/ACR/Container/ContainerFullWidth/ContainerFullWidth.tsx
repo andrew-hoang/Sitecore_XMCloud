@@ -38,6 +38,7 @@ const ContainerFullWidth = (props: ContainerFullWidthProps): JSX.Element | null 
       pt="0"
       pb="0"
       className={twMerge('mt-[72px] first-of-type:mt-0', props.params.styles)}
+      data-ref="container-full-width"
       data-testid={testId}
     >
       <Container px="6">

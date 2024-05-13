@@ -1,9 +1,5 @@
 import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import {
-  SearchBarProps,
-  SearchBarBaseProps,
-  SearchBarData,
-} from 'components/ACR/SearchBar/SearchBar.props';
+import { SearchBarData } from 'components/ACR/SearchBar/SearchBar.props';
 
 export const getStaticPropsForSearchBar = async (
   rendering: ComponentRendering,
@@ -16,16 +12,6 @@ export const getStaticPropsForSearchBar = async (
   const model: SearchBarData = {
     externalFields: {
       mock_external_data: { value: 'Hardcoded for scaffolding' },
-    },
-  };
-
-  return model;
-};
-
-export const getSearchBarUiProps = (props: SearchBarProps): SearchBarBaseProps => {
-  const model: SearchBarBaseProps = {
-    fields: {
-      heading: props.fields.heading,
     },
   };
 

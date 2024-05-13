@@ -1,17 +1,21 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
 
 import { SectionHeaderProps } from 'components/ACR/SectionHeader/SectionHeader.props';
 
-import { getSectionHeaderUiProps, getStaticPropsForSectionHeader } from 'components/ACR/SectionHeader/SectionHeader.util';
-
-import SectionHeaderBase from 'components/ACR/SectionHeader/SectionHeaderBase';
+import { getStaticPropsForSectionHeader } from 'components/ACR/SectionHeader/SectionHeader.util';
 
 const SectionHeader = (props: SectionHeaderProps): JSX.Element => {
-  const { testId } = props;
+  const { fields, testId } = props;
 
-  const uiProps = getSectionHeaderUiProps(props);
+  const { heading } = fields ?? {};
 
-  return <SectionHeaderBase {...uiProps} testId={testId} />;
+  return (
+    <div data-ref="section-header" data-testid={testId}>
+      <Text tag="h2" field={heading} />
+      <p>The SectionHeader Component</p>
+    </div>
+  );
 };
 
 /**

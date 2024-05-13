@@ -5,29 +5,18 @@
  */
 function generateComponentUtils(componentName: string): string {
   return `import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import { ${componentName}Props, ${componentName}BaseProps, ${componentName}Data } from 'components/ACR/${componentName}/${componentName}.props';
+import { ${componentName}Data } from 'components/ACR/${componentName}/${componentName}.props';
 
 export const getStaticPropsFor${componentName} = async (
   rendering: ComponentRendering,
   layoutData: LayoutServiceData
 ): Promise<${componentName}Data> => {
-  // "data" developer does this
-  console.log(rendering);
-  console.log(layoutData);
+  // console.log(rendering);
+  // console.log(layoutData);
 
   const model: ${componentName}Data = {
     externalFields: {
       mock_external_data: { value: 'Hardcoded for scaffolding' },
-    },
-  };
-
-  return model;
-};
-
-export const get${componentName}UiProps = (props: ${componentName}Props): ${componentName}BaseProps => {
-  const model: ${componentName}BaseProps = {
-    fields: {
-      heading: props.fields.heading,
     },
   };
 

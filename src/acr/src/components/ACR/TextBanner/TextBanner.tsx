@@ -1,30 +1,55 @@
-import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
-
+import { useContext } from 'react';
+import { Flex } from '@radix-ui/themes';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
 import { TextBannerProps } from 'components/ACR/TextBanner/TextBanner.props';
 
-import { getTextBannerUiProps, getStaticPropsForTextBanner } from 'components/ACR/TextBanner/TextBanner.util';
+import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
+import { Theme } from 'src/enumerations/Theme.enum';
+import { ThemeContext } from 'src/context/ThemeContext';
 
-import TextBannerBase from 'components/ACR/TextBanner/TextBannerBase';
+import LinkBase from 'components/ACR/Link/LinkBase';
 
-const TextBanner = (props: TextBannerProps): JSX.Element => {
-  const { testId } = props;
-
-  const uiProps = getTextBannerUiProps(props);
-
-  return <TextBannerBase {...uiProps} testId={testId} />;
-};
+import cn from 'classnames';
 
 /**
- * "Data" developer method
- * TODO_SCAFFOLD_BE: If "getStaticProps" was deleted remove "useComponentProps". They work together.
- * TODO_SCAFFOLD_BE: Populate if needed, remove if not
- * Will be called during SSG.  Do NOT return null.
- * @param {ComponentRendering} _rendering
- * @param {LayoutServiceData} _layoutData
- * @param {GetStaticPropsContext} _context
+ * ACRAR-134 - Text Banner
+ * @param props
+ * @returns
  */
-export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  return getStaticPropsForTextBanner(_rendering, _layoutData);
+const TextBanner = (props: TextBannerProps): JSX.Element => {
+  const { fields, testId } = props;
+
+  const { title, description, link } = fields ?? {};
+
+  // Theme sourced from ContainerFullBleed
+  const { theme } = useContext(ThemeContext);
+
+  const bgWhite = theme === Theme.LIGHT_INDIGO || theme === Theme.PURPLE;
+  const bgLightIndigo = theme === Theme.WHITE || theme === Theme.INDIGO;
+
+  return (
+    <Flex
+      className={cn('body-sm rounded-4 text-indigo-100', {
+        'bg-white': bgWhite,
+        'bg-indigo-25': bgLightIndigo,
+      })}
+      data-ref="text-banner"
+      data-testid={testId}
+      data-theme={bgLightIndigo ? Theme.LIGHT_INDIGO : Theme.WHITE} // Theme targets component's link style
+      py="48px"
+      px={{ initial: '30px', md: '65px' }}
+      gap={{ initial: '5', md: '9' }}
+      direction={{ initial: 'column', md: 'row' }}
+      align={{ initial: 'start', md: 'center' }}
+      justify="between"
+    >
+      <Flex direction="column" gap="4" width={{ initial: 'auto', md: '770px' }}>
+        <Text field={title} tag="h2" className="heading-d" />
+        <Text field={description} tag="p" />
+      </Flex>
+      {link && <LinkBase link={link} style={ButtonStyle.CTA} styleClasses="shrink-0" />}
+    </Flex>
+  );
 };
 
 export default TextBanner;

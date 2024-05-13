@@ -1,17 +1,21 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
 
 import { SkipLinkProps } from 'components/ACR/SkipLink/SkipLink.props';
 
-import { getSkipLinkUiProps, getStaticPropsForSkipLink } from 'components/ACR/SkipLink/SkipLink.util';
-
-import SkipLinkBase from 'components/ACR/SkipLink/SkipLinkBase';
+import { getStaticPropsForSkipLink } from 'components/ACR/SkipLink/SkipLink.util';
 
 const SkipLink = (props: SkipLinkProps): JSX.Element => {
-  const { testId } = props;
+  const { fields, testId } = props;
 
-  const uiProps = getSkipLinkUiProps(props);
+  const { heading } = fields ?? {};
 
-  return <SkipLinkBase {...uiProps} testId={testId} />;
+  return (
+    <div data-ref="skip-link" data-testid={testId}>
+      <Text tag="h2" field={heading} />
+      <p>The SkipLink Component</p>
+    </div>
+  );
 };
 
 /**

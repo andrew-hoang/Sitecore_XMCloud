@@ -5,7 +5,7 @@ import SectionHeader from 'components/ACR/SectionHeader/SectionHeader';
 import { defaultMockData } from './SectionHeader.mock';
 
 export default {
-  title: 'Components/SectionHeader',
+  title: 'Components/Section Header',
   component: SectionHeader,
   tags: ['autodocs'],
 } as Meta<typeof SectionHeader>;
