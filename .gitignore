@@ -57,7 +57,7 @@ packages/
 /docker/traefik/certs/*.pem
 /src/rendering/node_modules
 /src/rendering/coverage
-/src/rendering/.next*/
+/src/rendering/.next/*
 /src/rendering/out/
 /src/rendering/.generated
 /src/rendering/*.graphql.d.ts
