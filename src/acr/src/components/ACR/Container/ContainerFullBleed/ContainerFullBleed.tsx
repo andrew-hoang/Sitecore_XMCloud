@@ -6,12 +6,11 @@ import { ThemeContext } from 'src/context/Theme.context';
 
 import { twMerge } from 'tailwind-merge';
 import cn from 'classnames';
-import { Theme } from 'src/enumerations/Theme.enum';
 
 const ContainerFullBleed = (props: ContainerFullBleedProps): JSX.Element => {
   const { rendering, params, componentFactory, children, testId } = props;
 
-  const { excludeTopMargin, theme = Theme.WHITE } = params ?? {};
+  const { excludeTopMargin, theme } = params ?? {};
 
   const PLACEHOLDER_NAME = `acr-container-fullbleed-${props.params.DynamicPlaceholderId}`;
 
