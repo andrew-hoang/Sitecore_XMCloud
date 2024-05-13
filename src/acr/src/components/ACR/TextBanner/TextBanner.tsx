@@ -5,7 +5,7 @@ import { TextBannerProps } from 'components/ACR/TextBanner/TextBanner.props';
 
 import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
 import { Theme } from 'src/enumerations/Theme.enum';
-import { ThemeContext } from 'src/context/ThemeContext';
+import { ThemeContext } from 'src/context/Theme.context';
 
 import LinkBase from 'components/ACR/Link/LinkBase';
 
