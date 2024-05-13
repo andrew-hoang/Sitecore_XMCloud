@@ -1,34 +1,21 @@
-import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
 
 import { ImageProps } from 'components/ACR/Image/Image.props';
 
-import { getStaticPropsForImage } from 'components/ACR/Image/Image.util';
+import ImageBase from 'components/ACR/Image/ImageBase';
 
-const Image = (props: ImageProps): JSX.Element => {
+const ImageBlock = (props: ImageProps): JSX.Element => {
   const { fields, testId } = props;
 
-  const { heading } = fields ?? {};
+  const { title, image, caption } = fields ?? {};
 
   return (
     <div data-ref="image" data-testid={testId}>
-      <Text tag="h2" field={heading} />
-      <p>The Image Component</p>
+      <Text tag="p" field={title} className="heading-c mb-4 md:mb-8" />
+      <ImageBase image={image} className="mb-4 aspect-video h-auto w-full object-cover" />
+      <Text tag="p" field={caption} className="body-xs text-t-caption" />
     </div>
   );
 };
 
-/**
- * "Data" developer method
- * TODO_SCAFFOLD_BE: If "getStaticProps" was deleted remove "useComponentProps". They work together.
- * TODO_SCAFFOLD_BE: Populate if needed, remove if not
- * Will be called during SSG.  Do NOT return null.
- * @param {ComponentRendering} _rendering
- * @param {LayoutServiceData} _layoutData
- * @param {GetStaticPropsContext} _context
- */
-export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  return getStaticPropsForImage(_rendering, _layoutData);
-};
-
-export default Image;
+export default ImageBlock;
