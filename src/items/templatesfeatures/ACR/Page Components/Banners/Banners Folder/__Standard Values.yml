@@ -1,0 +1,35 @@
+﻿---
+ID: "e095674e-d125-43e1-92b2-d04dda78f185"
+Parent: "11c7945d-2e33-44d7-ad86-cf1aac0d31ca"
+Template: "11c7945d-2e33-44d7-ad86-cf1aac0d31ca"
+Path: /sitecore/templates/Feature/ACR/Page Components/Banners/Banners Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: "{48E272D6-6F75-4404-BA46-A59F46E5B59F}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240513T182554Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "b576aa8d-ed3f-45bb-be8f-2eac90eb1933"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240513T183037Z
