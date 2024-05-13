@@ -81,5 +81,9 @@ packages/
 /.vscode
 /.env
 
+src/acr/node_modules/
+/src/acr/scripts/temp/config-plugins.ts
+/src/acr/scripts/temp/generate-component-builder-plugins.ts
+
 ## Lighthouse results
 /src/acr/lighthouse-results.html
