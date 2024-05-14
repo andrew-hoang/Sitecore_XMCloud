@@ -35,6 +35,8 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
     }
 
     switch (link?.value?.linktype) {
+      case 'back':
+        return IconName.LEFT_ARROW_CIRCLE;
       case 'external':
         return IconName.EXTERNAL;
       case 'download':
@@ -101,4 +103,3 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
 };
 
 export default LinkBase;
-
