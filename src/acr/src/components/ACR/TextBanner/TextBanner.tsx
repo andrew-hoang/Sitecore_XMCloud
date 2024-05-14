@@ -22,7 +22,7 @@ const TextBanner = (props: TextBannerProps): JSX.Element => {
   const { title, description, link } = fields ?? {};
 
   // Theme sourced from ContainerFullBleed
-  const { theme } = useContext(ThemeContext);
+  const { theme = Theme.WHITE } = useContext(ThemeContext);
 
   const bgWhite = theme === Theme.LIGHT_INDIGO || theme === Theme.PURPLE;
   const bgLightIndigo = theme === Theme.WHITE || theme === Theme.INDIGO;
