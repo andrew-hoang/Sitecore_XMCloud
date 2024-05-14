@@ -1,20 +1,43 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
-import { Text } from '@sitecore-jss/sitecore-jss-react';
 
-import { BreadcrumbProps } from 'components/ACR/Breadcrumb/Breadcrumb.props';
+import { BreadcrumbPage, BreadcrumbProps } from 'components/ACR/Breadcrumb/Breadcrumb.props';
 
-import { getStaticPropsForBreadcrumb } from 'components/ACR/Breadcrumb/Breadcrumb.util';
+import {
+  BreadCrumbRequest,
+  getStaticPropsForBreadcrumb,
+} from 'components/ACR/Breadcrumb/Breadcrumb.util';
 
 const Breadcrumb = (props: BreadcrumbProps): JSX.Element => {
-  const { fields, testId } = props;
+  const { externalFields, testId } = props;
 
-  const { heading } = fields ?? {};
+  const { datasource } = externalFields ?? {};
+
+  const { ancestors, name } = datasource ?? {};
+
+  const truncate = (str: string): string => {
+    return str?.length > 25
+      ? str
+          .replace(/(.{24})..+/, '$1')
+          .trim()
+          .concat('...')
+      : str;
+  };
 
   return (
-    <div data-ref="breadcrumb" data-testid={testId}>
-      <Text tag="h2" field={heading} />
-      <p>The Breadcrumb Component</p>
-    </div>
+    <nav data-testid={testId}>
+      <ul>
+        {ancestors?.map((ancestor: BreadcrumbPage, index) => {
+          const title = ancestor?.shortTitle?.jsonValue?.value || ancestor.title?.jsonValue?.value;
+
+          return (
+            <li key={index}>
+              <a href={ancestor.url?.href}>{truncate(`${title}`)}</a>
+            </li>
+          );
+        })}
+        <li>{truncate(name ?? '')}</li>
+      </ul>
+    </nav>
   );
 };
 
@@ -28,7 +51,12 @@ const Breadcrumb = (props: BreadcrumbProps): JSX.Element => {
  * @param {GetStaticPropsContext} _context
  */
 export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  return getStaticPropsForBreadcrumb(_rendering, _layoutData);
+  const breadcrumbRequest: BreadCrumbRequest = {
+    contextItem: _layoutData?.sitecore?.route?.itemId,
+    isPageEditing: _layoutData?.sitecore?.context?.pageEditing ?? false,
+    language: _layoutData?.sitecore?.context?.language,
+  };
+  return await getStaticPropsForBreadcrumb(breadcrumbRequest);
 };
 
 export default Breadcrumb;
