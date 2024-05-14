@@ -5,7 +5,7 @@ import PageHeaderWithIcon from 'components/ACR/PageHeaderWithIcon/PageHeaderWith
 import { defaultMockData } from './PageHeaderWithIcon.mock';
 
 export default {
-  title: 'Components/PageHeaderWithIcon',
+  title: 'Components/Page Header With Icon',
   component: PageHeaderWithIcon,
   tags: ['autodocs'],
 } as Meta<typeof PageHeaderWithIcon>;

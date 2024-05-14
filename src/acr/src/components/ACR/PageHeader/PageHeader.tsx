@@ -1,17 +1,21 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
 
 import { PageHeaderProps } from 'components/ACR/PageHeader/PageHeader.props';
 
-import { getPageHeaderUiProps, getStaticPropsForPageHeader } from 'components/ACR/PageHeader/PageHeader.util';
-
-import PageHeaderBase from 'components/ACR/PageHeader/PageHeaderBase';
+import { getStaticPropsForPageHeader } from 'components/ACR/PageHeader/PageHeader.util';
 
 const PageHeader = (props: PageHeaderProps): JSX.Element => {
-  const { testId } = props;
+  const { fields, testId } = props;
 
-  const uiProps = getPageHeaderUiProps(props);
+  const { heading } = fields ?? {};
 
-  return <PageHeaderBase {...uiProps} testId={testId} />;
+  return (
+    <div data-ref="page-header" data-testid={testId}>
+      <Text tag="h2" field={heading} />
+      <p>The PageHeader Component</p>
+    </div>
+  );
 };
 
 /**

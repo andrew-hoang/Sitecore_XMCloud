@@ -38,7 +38,7 @@ const Input = (props: InputProps) => {
         disabled={disabled}
         className={twMerge(
           cn(
-            'body-sm shadow-indigo-100 group h-[56px] bg-white shadow-[inset_0_0_0_1px] outline-none [&>input]:px-4',
+            'body-sm group h-[56px] bg-white shadow-[inset_0_0_0_1px] shadow-indigo-100 outline-none [&>input]:px-4',
             className,
             { 'bg-gray-20': disabled }
           )

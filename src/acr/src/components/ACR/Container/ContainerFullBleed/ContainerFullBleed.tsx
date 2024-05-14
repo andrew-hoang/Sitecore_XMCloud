@@ -2,6 +2,7 @@ import { Section } from '@radix-ui/themes';
 
 import { ContainerFullBleedProps } from 'components/ACR/Container/ContainerFullBleed/ContainerFullBleed.props';
 import PlaceholderBase, { PlaceholderBaseProps } from 'components/ACR/Placeholder/PlaceholderBase';
+import { ThemeContext } from 'src/context/Theme.context';
 
 import { twMerge } from 'tailwind-merge';
 import cn from 'classnames';
@@ -24,6 +25,7 @@ const ContainerFullBleed = (props: ContainerFullBleedProps): JSX.Element => {
 
   return (
     <Section
+      data-ref="container-full-bleed"
       data-theme={theme}
       className={twMerge(
         cn('bg-t-background py-[72px] text-t-body', { 'pt-0': excludeTopMargin === '1' }),
@@ -31,7 +33,9 @@ const ContainerFullBleed = (props: ContainerFullBleedProps): JSX.Element => {
       )}
       data-testid={testId}
     >
-      <PlaceholderBase {...placeholderProps} />
+      <ThemeContext.Provider value={{ theme }}>
+        <PlaceholderBase {...placeholderProps} />
+      </ThemeContext.Provider>
     </Section>
   );
 };

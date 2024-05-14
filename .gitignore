@@ -57,7 +57,7 @@ packages/
 /docker/traefik/certs/*.pem
 /src/rendering/node_modules
 /src/rendering/coverage
-/src/rendering/.next*/
+/src/rendering/.next/*
 /src/rendering/out/
 /src/rendering/.generated
 /src/rendering/*.graphql.d.ts
@@ -80,3 +80,10 @@ packages/
 /src/rendering/src/temp/!GraphQLIntrospectionResult.json
 /.vscode
 /.env
+
+src/acr/node_modules/
+/src/acr/scripts/temp/config-plugins.ts
+/src/acr/scripts/temp/generate-component-builder-plugins.ts
+
+## Lighthouse results
+/src/acr/lighthouse-results.html

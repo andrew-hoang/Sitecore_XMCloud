@@ -1,5 +1,5 @@
 import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import { SkipLinkProps, SkipLinkBaseProps, SkipLinkData } from 'components/ACR/SkipLink/SkipLink.props';
+import { SkipLinkData } from 'components/ACR/SkipLink/SkipLink.props';
 
 export const getStaticPropsForSkipLink = async (
   rendering: ComponentRendering,
@@ -10,16 +10,8 @@ export const getStaticPropsForSkipLink = async (
   console.log(layoutData);
 
   const model: SkipLinkData = {
-    heading: { value: 'Hardcoded for scaffolding' },
-  };
-
-  return model;
-};
-
-export const getSkipLinkUiProps = (props: SkipLinkProps): SkipLinkBaseProps => {
-  const model: SkipLinkBaseProps = {
-    fields: {
-      heading: props.fields.heading,
+    externalFields: {
+      mock_external_data: { value: 'Hardcoded for scaffolding' },
     },
   };
 

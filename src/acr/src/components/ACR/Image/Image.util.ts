@@ -1,5 +1,5 @@
 import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import { ImageProps, ImageBaseProps, ImageData } from 'components/ACR/Image/Image.props';
+import { ImageData } from 'components/ACR/Image/Image.props';
 
 export const getStaticPropsForImage = async (
   rendering: ComponentRendering,
@@ -10,16 +10,8 @@ export const getStaticPropsForImage = async (
   console.log(layoutData);
 
   const model: ImageData = {
-    heading: { value: 'Hardcoded for scaffolding' },
-  };
-
-  return model;
-};
-
-export const getImageUiProps = (props: ImageProps): ImageBaseProps => {
-  const model: ImageBaseProps = {
-    fields: {
-      heading: props.fields.heading,
+    externalFields: {
+      mock_external_data: { value: 'Hardcoded for scaffolding' },
     },
   };
 

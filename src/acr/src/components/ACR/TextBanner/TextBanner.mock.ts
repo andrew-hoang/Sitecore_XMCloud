@@ -8,6 +8,11 @@ export const defaultMockData: TextBannerProps = {
     dataSource: '/',
   },
   fields: {
-    heading: { value: 'MOCK_DATA_HEADING' },
+    title: { value: 'Requests to Reproduce Lung-RADS' },
+    description: {
+      value:
+        'Evidence-based guidelines assist imaging professionals and referring providers in making the most appropriate imaging or treatment decision for a specific clinical condition.',
+    },
+    link: { value: { href: '/', text: 'Submit request' } },
   },
 };

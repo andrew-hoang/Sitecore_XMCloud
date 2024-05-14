@@ -5,7 +5,7 @@ import SkipLink from 'components/ACR/SkipLink/SkipLink';
 import { defaultMockData } from './SkipLink.mock';
 
 export default {
-  title: 'Components/SkipLink',
+  title: 'Components/Skip Link',
   component: SkipLink,
   tags: ['autodocs'],
 } as Meta<typeof SkipLink>;

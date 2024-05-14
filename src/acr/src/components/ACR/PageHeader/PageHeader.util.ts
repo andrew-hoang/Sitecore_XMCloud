@@ -1,5 +1,5 @@
 import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import { PageHeaderProps, PageHeaderBaseProps, PageHeaderData } from 'components/ACR/PageHeader/PageHeader.props';
+import { PageHeaderData } from 'components/ACR/PageHeader/PageHeader.props';
 
 export const getStaticPropsForPageHeader = async (
   rendering: ComponentRendering,
@@ -10,16 +10,8 @@ export const getStaticPropsForPageHeader = async (
   console.log(layoutData);
 
   const model: PageHeaderData = {
-    heading: { value: 'Hardcoded for scaffolding' },
-  };
-
-  return model;
-};
-
-export const getPageHeaderUiProps = (props: PageHeaderProps): PageHeaderBaseProps => {
-  const model: PageHeaderBaseProps = {
-    fields: {
-      heading: props.fields.heading,
+    externalFields: {
+      mock_external_data: { value: 'Hardcoded for scaffolding' },
     },
   };
 
