@@ -7,7 +7,19 @@ export const defaultMockData: BreadcrumbProps = {
     componentName: 'Breadcrumb',
     dataSource: '/',
   },
-  fields: {
-    heading: { value: 'MOCK_DATA_HEADING' },
+  fields: {},
+  externalFields: {
+    datasource: {
+      name: 'Detail 1',
+      ancestors: [
+        {
+          title: { jsonValue: { value: 'Home' } },
+          shortTitle: { jsonValue: { value: '' } },
+          name: 'Home',
+          url: { href: '/en' },
+        },
+      ],
+    },
+    isPageEditing: false,
   },
 };
