@@ -74,3 +74,4 @@ To run the project locally against a running Sitecore instance, you can use `npm
 
 Ensure that you have your variables set up in your local environment file, for which values you can get through the XM Cloud Deploy App.
 
+Mod
