@@ -1,42 +1,71 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
-
 import { BreadcrumbPage, BreadcrumbProps } from 'components/ACR/Breadcrumb/Breadcrumb.props';
-
 import {
   BreadCrumbRequest,
   getStaticPropsForBreadcrumb,
 } from 'components/ACR/Breadcrumb/Breadcrumb.util';
+
+import { Flex } from '@radix-ui/themes';
+
+import Icon from 'components/ACR/Icon/Icon';
+import { IconName } from 'src/enumerations/Icon.enum';
 
 const Breadcrumb = (props: BreadcrumbProps): JSX.Element => {
   const { externalFields, testId } = props;
 
   const { datasource } = externalFields ?? {};
 
-  const { ancestors, name } = datasource ?? {};
+  const { ancestors, name } = datasource ?? { ancestors: [], name: '' };
 
-  const truncate = (str: string): string => {
-    return str?.length > 25
-      ? str
-          .replace(/(.{24})..+/, '$1')
-          .trim()
-          .concat('...')
-      : str;
-  };
+  if (ancestors?.length <= 0) {
+    return <></>;
+  }
+
+  const parentPage = ancestors[ancestors.length - 1];
 
   return (
-    <nav data-testid={testId}>
-      <ul>
-        {ancestors?.map((ancestor: BreadcrumbPage, index) => {
-          const title = ancestor?.shortTitle?.jsonValue?.value || ancestor.title?.jsonValue?.value;
+    <nav data-ref="breadcrumb" data-testid={testId} aria-label="breadcrumb">
+      <ul className="body-xs hidden py-5 md:block">
+        <Flex gap="3">
+          {ancestors.map((ancestor: BreadcrumbPage, index) => {
+            const title =
+              ancestor?.shortTitle?.jsonValue?.value || ancestor.title?.jsonValue?.value;
 
-          return (
-            <li key={index}>
-              <a href={ancestor.url?.href}>{truncate(`${title}`)}</a>
-            </li>
-          );
-        })}
-        <li>{truncate(name ?? '')}</li>
+            return (
+              <li key={index}>
+                <Flex gap="3" align="center">
+                  <a
+                    href={ancestor.url?.href}
+                    className="max-w-[45ch] overflow-hidden text-ellipsis"
+                  >
+                    {title}
+                  </a>
+                  <Icon iconName={IconName.CHEVRON_RIGHT} className="h-[18] w-[18]" />
+                </Flex>
+              </li>
+            );
+          })}
+          <li aria-current="page" className="">
+            <Flex gap="3" align="center">
+              <span className="max-w-[45ch] overflow-hidden text-ellipsis">{name}</span>
+              <Icon iconName={IconName.CHEVRON_RIGHT} className="h-[18] w-[18]" />
+            </Flex>
+          </li>
+        </Flex>
       </ul>
+      <div className="py-5 md:hidden">
+        <a
+          href={parentPage?.url?.href}
+          className="body-xs group inline-flex items-center gap-2 !font-medium text-t-body hover:underline focus:rounded-[3px] focus:outline-1 focus:outline-offset-4 focus:outline-t-primary"
+        >
+          <Icon
+            iconName={IconName.LEFT_ARROW_CIRCLE}
+            className="h-[30px] w-[30px] group-hover:fill-t-link-hover group-hover:[&>circle]:stroke-t-link-hover group-hover:[&>path]:fill-t-btn-text"
+          />
+
+          <span>{parentPage?.name}</span>
+        </a>
+      </div>
     </nav>
   );
 };
