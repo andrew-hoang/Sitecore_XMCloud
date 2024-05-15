@@ -12,7 +12,7 @@ const ImageBlock = (props: ImageProps): JSX.Element => {
   return (
     <div data-ref="image" data-testid={testId}>
       <Text tag="p" field={title} className="heading-c mb-4 md:mb-8" />
-      <ImageBase image={image} className="mb-4 aspect-video h-auto w-full object-cover" />
+      <ImageBase image={image} className="mb-4" />
       <Text tag="p" field={caption} className="body-xs text-t-caption" />
     </div>
   );
