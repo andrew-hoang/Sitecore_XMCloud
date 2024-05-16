@@ -37,7 +37,7 @@ export const Default: Story = {
               image={{
                 value: {
                   src: 'https://picsum.photos/500/726',
-                  alt: '',
+                  alt: 'image',
                   height: '726',
                   width: '500',
                 },
@@ -63,7 +63,7 @@ export const Default: Story = {
             image={{
               value: {
                 src: 'https://picsum.photos/500/726',
-                alt: '',
+                alt: 'image',
                 height: '726',
                 width: '500',
               },
