@@ -10,11 +10,11 @@ const ImageBlock = (props: ImageProps): JSX.Element => {
   const { title, image, caption } = fields ?? {};
 
   return (
-    <div data-ref="image" data-testid={testId}>
+    <figure data-ref="image" data-testid={testId}>
       <Text tag="p" field={title} className="heading-c mb-4 md:mb-8" />
-      <ImageBase image={image} className="mb-4" />
-      <Text tag="p" field={caption} className="body-xs text-t-caption" />
-    </div>
+      <ImageBase image={image} className="mb-4" sizes="(min-width: 1230px) 1170px, 100vw" />
+      <Text tag="figcaption" field={caption} className="body-xs text-t-caption" />
+    </figure>
   );
 };
 
