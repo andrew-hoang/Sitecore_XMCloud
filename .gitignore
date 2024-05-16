@@ -87,3 +87,7 @@ src/acr/node_modules/
 
 ## Lighthouse results
 /src/acr/lighthouse-results.html
+/src/acr/src/temp/
+/src/acr/src/temp/componentBuilder.ts
+/src/acr/src/temp/config.js
+/src/acr/src/temp/metadata.json
