@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 
 import Link from 'components/ACR/Link/LinkBase';
 
-import { defaultMockData, linkMockData, withIconMockData } from './Link.mock';
+import { defaultMockData, linkMockData, ctaMockData, withIconMockData } from './Link.mock';
 
 export default {
   title: 'Components/Button',
@@ -20,7 +20,10 @@ export const AsLink: Story = {
   args: linkMockData,
 };
 
+export const AsCTA: Story = {
+  args: ctaMockData,
+};
+
 export const WithIcon: Story = {
   args: withIconMockData,
 };
-

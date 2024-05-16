@@ -78,7 +78,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
         data-testid={testId}
         className={twMerge(
           cn(
-            'body-xs group inline-flex items-center gap-2 !font-medium text-t-body hover:underline focus:rounded-[3px] focus:outline-1 focus:outline-offset-4 focus:outline-t-primary',
+            'body-xs group inline-flex items-center gap-2 !font-medium text-t-body focus:rounded-[3px] focus:outline-1 focus:outline-offset-4 focus:outline-t-primary',
             {
               'rounded-[6px] bg-t-primary px-[15px] py-[12px] text-t-btn-text transition-all hover:rounded-tr-[30px] hover:text-t-contrast':
                 style === ButtonStyle.BUTTON,
@@ -91,7 +91,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
         )}
       >
         {isCTALink && renderIcon()}
-        {linkText}
+        <span className={cn({ 'link-underline': style !== ButtonStyle.BUTTON })}>{linkText}</span>
         {hasIcon && !isCTALink && renderIcon()}
       </Link>
     );
@@ -101,4 +101,3 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
 };
 
 export default LinkBase;
-
