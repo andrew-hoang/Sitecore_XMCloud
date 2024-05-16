@@ -1,13 +1,13 @@
 import React from 'react';
 import { DecoratorHelpers } from '@storybook/addon-themes';
 import colorThemes from './radixThemePresets';
+import { ImageOptimizationProvider } from '../src/context/ImageOptimization.context';
 
 const { initializeThemeState, pluckThemeFromContext, useThemeParameters } = DecoratorHelpers;
 
 import { Theme } from '@radix-ui/themes';
 
 import { playFair } from '../src/fonts';
-
 import localFont from 'next/font/local';
 
 const beausite = localFont({
@@ -53,6 +53,12 @@ export const withFonts = (Story) => (
   <div className={cn(beausite.variable, playFair.variable)}>
     <Story />
   </div>
+);
+
+export const withImageOptimiziation = (Story) => (
+  <ImageOptimizationProvider unoptimized={true}>
+    <Story />
+  </ImageOptimizationProvider>
 );
 
 export const withI18n = (Story) => (

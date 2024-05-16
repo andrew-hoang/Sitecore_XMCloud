@@ -8,6 +8,18 @@ export const defaultMockData: ImageProps = {
     dataSource: '/',
   },
   fields: {
-    heading: { value: 'MOCK_DATA_HEADING' },
+    title: { value: 'Optional Title' },
+    image: {
+      value: {
+        src: 'https://picsum.photos/1290/726',
+        alt: '',
+        width: '1290',
+        height: '726',
+      },
+    },
+    caption: {
+      value:
+        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    },
   },
 };
