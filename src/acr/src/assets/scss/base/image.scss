@@ -1,0 +1,6 @@
+@layer base {
+  a img {
+    @apply overflow-hidden duration-1000 hover:scale-105;
+  }
+}
+
