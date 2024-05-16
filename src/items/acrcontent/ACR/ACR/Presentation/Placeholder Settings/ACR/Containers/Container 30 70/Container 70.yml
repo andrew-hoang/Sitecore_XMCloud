@@ -1,39 +1,35 @@
 ﻿---
-ID: "e20b3c3b-3455-4c8d-9745-ae847efd42cf"
-Parent: "05b37dcf-0cbf-46c4-ad9a-ee4e3a2eb472"
-Template: "d2923fee-da4e-49be-830c-e27764dfa269"
-Path: /sitecore/content/ACR/ACR/Data/Enumerations/Theme/white
+ID: "63845cc6-e21b-48c0-b012-86213d03b239"
+Parent: "70b3aea4-e99d-4db7-8351-9af355a8e3d5"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: /sitecore/content/ACR/ACR/Presentation/Placeholder Settings/ACR/Containers/Container 30 70/Container 70
 SharedFields:
-- ID: "f917c951-1f75-4d62-b14a-bc6888d7eeca"
-  Hint: Value
-  Value: white
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "acr-container-70-right-{*}"
 Languages:
 - Language: en
-  Fields:
-  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
-    Hint: __Display name
-    Value: White
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240508T165557Z
+      Value: 20240510T155104Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
-        sitecore\kenneth.robinson@velir.com
+        sitecore\minyie.diaz@velir.com
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\kenneth.robinson@velir.com
+        sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d89d5650-3f26-4e41-90e4-4f17a1bee370"
+      Value: "735a51bf-fb5b-4077-b761-f6304315a1e3"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240514T163407Z
+      Value: 20240510T155200Z
