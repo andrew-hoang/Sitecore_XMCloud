@@ -25,22 +25,21 @@ const Breadcrumb = (props: BreadcrumbProps): JSX.Element => {
 
   return (
     <nav data-ref="breadcrumb" data-testid={testId} aria-label="breadcrumb">
-      <ul className="body-xs hidden py-5 md:block">
-        <Flex gap="3">
+      <Flex gap="3" asChild>
+        <ul className="body-xs hidden py-5 md:flex">
           {ancestors.map((ancestor: BreadcrumbPage, index) => {
             const title =
               ancestor?.shortTitle?.jsonValue?.value || ancestor.title?.jsonValue?.value;
 
             return (
               <li key={index}>
-                <Flex gap="3" align="center">
-                  <a
-                    href={ancestor.url?.href}
-                    className="max-w-[45ch] overflow-hidden text-ellipsis"
-                  >
-                    {title}
+                <Flex gap="3" align="center" asChild>
+                  <a href={ancestor.url?.href} className="whitespace-nowrap">
+                    <span className="link-underline max-w-[45ch] overflow-hidden text-ellipsis">
+                      {title}
+                    </span>
+                    <Icon iconName={IconName.CHEVRON_RIGHT} className="h-[18] w-[18]" />
                   </a>
-                  <Icon iconName={IconName.CHEVRON_RIGHT} className="h-[18] w-[18]" />
                 </Flex>
               </li>
             );
@@ -51,19 +50,19 @@ const Breadcrumb = (props: BreadcrumbProps): JSX.Element => {
               <Icon iconName={IconName.CHEVRON_RIGHT} className="h-[18] w-[18]" />
             </Flex>
           </li>
-        </Flex>
-      </ul>
+        </ul>
+      </Flex>
       <div className="py-5 md:hidden">
         <a
           href={parentPage?.url?.href}
-          className="body-xs group inline-flex items-center gap-2 !font-medium text-t-body hover:underline focus:rounded-[3px] focus:outline-1 focus:outline-offset-4 focus:outline-t-primary"
+          className="body-xs group inline-flex items-center gap-2 !font-medium text-t-body"
         >
           <Icon
             iconName={IconName.LEFT_ARROW_CIRCLE}
             className="h-[30px] w-[30px] group-hover:fill-t-link-hover group-hover:[&>circle]:stroke-t-link-hover group-hover:[&>path]:fill-t-btn-text"
           />
 
-          <span>{parentPage?.name}</span>
+          <span className="link-underline">{parentPage?.name}</span>
         </a>
       </div>
     </nav>
