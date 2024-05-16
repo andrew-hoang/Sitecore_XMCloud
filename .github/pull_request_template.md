@@ -8,9 +8,11 @@
 
 [Link to test page](https://example.com)
 
-## Lighthouse Scores
+## Lighthouse Performance
 
-<!-- Provide a screenshot of your lighthouse score -->
+- [ ] Lighthouse report generated
+- [ ] Issues resolved or reported in bug tickets.
+
 <!-- How to record your lighthouse score? -->
   <!-- You can use the chrome extension `Lighthouse` under the dev tools tab -->
   <!-- You can use this CLI command. Make sure to replace `<URL>` with the URL to your test page. Additional notes, you can replace the `--preset` value with mobile for mobile test results. `npm run lighthouse <URL> -- --preset=desktop` -->
