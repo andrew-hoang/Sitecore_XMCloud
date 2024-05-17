@@ -35,11 +35,19 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
+<<<<<<<<< Temporary merge branch 1
+      Value: "714a8e92-59e4-4d7c-a793-f06d06407dc2"
+=========
       Value: "59055437-fd2c-432c-8f18-b1dc62de7c4d"
+>>>>>>>>> Temporary merge branch 2
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
+<<<<<<<<< Temporary merge branch 1
+      Value: 20240516T182959Z
+=========
       Value: 20240516T194433Z
+>>>>>>>>> Temporary merge branch 2
