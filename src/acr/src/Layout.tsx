@@ -12,6 +12,10 @@ import { beausite, playFair } from 'src/fonts';
 import cn from 'classnames';
 import { Theme } from '@radix-ui/themes';
 
+import LinkBase from './components/ACR/Link/LinkBase';
+import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
+import { Container } from '@radix-ui/themes';
+
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
 const publicUrl = config.publicUrl;
@@ -32,6 +36,15 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const isPageEditing = layoutData.sitecore.context.pageEditing;
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
 
+  const skipLink = {
+    value: {
+      href: '#main-content',
+      text: 'Skip to Main Content',
+    },
+  };
+
+  const mainContentMsg = 'Main Content';
+
   return (
     <>
       <Scripts />
@@ -46,12 +59,24 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
         {/* root placeholder for the app, which we add components to using route data */}
         <div className={cn(beausite.variable, playFair.variable, mainClassPageEditing)}>
           <header>
+            <Container
+              px="6"
+              data-ref="skip link"
+              className="absolute -top-full w-full opacity-0 transition-all focus-within:top-2 focus-within:opacity-100"
+            >
+              <LinkBase link={skipLink} style={ButtonStyle.BUTTON} />
+            </Container>
             <div id="header">
               {route && <Placeholder name="headless-header" rendering={route} />}
             </div>
           </header>
           <main>
             <div id="content">
+              <Container px="6">
+                <div id="main-content" tabIndex={-1} className="group inline-block">
+                  <span className="hidden p-2 group-focus:block">{mainContentMsg}</span>
+                </div>
+              </Container>
               {route && <Placeholder name="headless-main" rendering={route} />}
             </div>
           </main>
