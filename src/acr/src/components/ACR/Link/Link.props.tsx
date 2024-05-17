@@ -11,5 +11,7 @@ export type LinkBaseProps = TestProps &
     link: LinkField;
     style?: ButtonStyle;
     hasIcon?: boolean;
+    shrinkIcon?: boolean;
+    hasBulletIcon?: boolean;
   };
 
