@@ -1,6 +1,6 @@
 @layer utilities {
   .link-underline {
-    @apply relative no-underline before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-[100%_0] before:scale-0 before:bg-t-link-hover before:transition-transform before:duration-[.5s] before:content-[''] hover:before:origin-[0] hover:before:scale-100;
+    @apply relative no-underline before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-full before:origin-[100%_0] before:scale-x-0 before:bg-t-link-hover before:transition-transform before:duration-[.5s] before:content-[''] hover:before:origin-[0] hover:before:scale-x-100;
   }
 }
 
