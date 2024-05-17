@@ -21,10 +21,10 @@
 
 ### General
 
-- [ ] Wrote, updated, and/or passed Jest Unit tests (ran `npm run check-all` or `npm run test`)
+- [ ] Wrote, updated, and/or passed Jest Unit tests (ran `npm run test`)
 - [ ] Verified related functionality/components did not break
-- [ ] Verified this in Storybook (ran `npm run storybook:prebuild` or equivalent)
-- [ ] Verified this in Next.js (ran `npm run check-all` or `npm run build`)
+- [ ] Verified this in Storybook (ran `npm run storybook`)
+- [ ] Verified this in Next.js (ran `npm run build`)
 - [ ] Related dependencies have been included
 - [ ] Removed unused/redundant code
 
