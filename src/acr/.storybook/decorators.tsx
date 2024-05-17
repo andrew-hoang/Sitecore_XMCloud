@@ -1,6 +1,7 @@
 import React from 'react';
 import { DecoratorHelpers } from '@storybook/addon-themes';
 import colorThemes from './radixThemePresets';
+import { AtomicSearchInterface } from "@coveo/atomic-react";
 import { ImageOptimizationProvider } from '../src/context/ImageOptimization.context';
 
 const { initializeThemeState, pluckThemeFromContext, useThemeParameters } = DecoratorHelpers;
@@ -30,7 +31,9 @@ export const withRadixTheme = ({ themes, defaultTheme }) => {
   initializeThemeState(Object.keys(themes), defaultTheme);
 
   return (Story, context) => {
+    console.log("context: ", context)
     const selectedTheme = pluckThemeFromContext(context);
+    console.log("selectedTheme: ", selectedTheme);
     const { themeOverride } = useThemeParameters();
     const selected = themeOverride || selectedTheme || defaultTheme;
     const radixTheme = colorThemes[selected];
@@ -65,4 +68,10 @@ export const withI18n = (Story) => (
   <I18nProvider locale="en">
     <Story />
   </I18nProvider>
+);
+
+export const withCoveoSearch = (Story) => (
+  <AtomicSearchInterface>
+    <Story />
+  </AtomicSearchInterface>
 );

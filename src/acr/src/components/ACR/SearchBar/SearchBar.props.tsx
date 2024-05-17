@@ -29,7 +29,7 @@ export type SearchBarData = {
 
 export type SearchBarFields = {
   fields: {
-    heading: Field<string>; // Sitecore editable text field
+    label: Field<string>; // Sitecore editable text field
     image?: ImageField; // Sitecore editable image field
     link?: LinkField; // Sitecore editable link field
   };

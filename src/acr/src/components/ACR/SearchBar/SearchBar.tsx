@@ -1,19 +1,23 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
+import { AtomicSearchBox } from "@coveo/atomic-react";
 
 import { SearchBarProps } from 'components/ACR/SearchBar/SearchBar.props';
-
+import styles from "./SearchBar.styles";
 import { getStaticPropsForSearchBar } from 'components/ACR/SearchBar/SearchBar.util';
+
 
 const SearchBar = (props: SearchBarProps): JSX.Element => {
   const { fields, testId } = props;
 
-  const { heading } = fields ?? {};
+  const { label } = fields ?? {};
+
 
   return (
-    <div data-ref="search-bar" data-testid={testId}>
-      <Text tag="h2" field={heading} />
-      <p>The SearchBar Component</p>
+    <div className="px-[65px] py-[41px] rounded-lg" data-ref="searchbox" data-testid={testId}>
+      <style>{styles}</style>
+      <Text className="mb-8" tag="p" field={label} />
+      <AtomicSearchBox />
     </div>
   );
 };

@@ -8,6 +8,6 @@ export const defaultMockData: SearchBarProps = {
     dataSource: '/',
   },
   fields: {
-    heading: { value: 'MOCK_DATA_HEADING' },
+    label: { value: "Still can't find what you're looking for?" },
   },
 };
