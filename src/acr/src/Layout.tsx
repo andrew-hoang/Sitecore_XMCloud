@@ -6,6 +6,7 @@ import Head from 'next/head';
 import { Placeholder, LayoutServiceData, Field, HTMLLink } from '@sitecore-jss/sitecore-jss-nextjs';
 import config from 'temp/config';
 import Scripts from 'src/Scripts';
+import { useRouter } from 'next/router'
 
 import { beausite, playFair } from 'src/fonts';
 
@@ -23,7 +24,8 @@ interface LayoutProps {
 
 interface RouteFields {
   [key: string]: unknown;
-  Title?: Field;
+  title?: Field;
+  summary?: Field;
 }
 
 const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
@@ -31,12 +33,15 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const fields = route?.fields as RouteFields;
   const isPageEditing = layoutData.sitecore.context.pageEditing;
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
+  const router = useRouter();
 
   return (
     <>
       <Scripts />
       <Head>
-        <title>{fields?.Title?.value?.toString() || 'Page'}</title>
+        <title>{fields?.title?.value?.toString() || 'Page'}</title>
+        <meta name="description" content={fields?.summary?.value?.toString() || 'Summary'}/>
+        <link rel="caconical" href={`${publicUrl}${router.asPath}`}/>
         <link rel="icon" href={`${publicUrl}/favicon.ico`} />
         {headLinks.map((headLink) => (
           <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
