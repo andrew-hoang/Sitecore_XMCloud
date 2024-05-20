@@ -2,14 +2,15 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "src/*": ["src/*"],
-      "components/*": ["src/components/*"],
-      "lib/*": ["src/lib/*"],
-      "temp/*": ["src/temp/*"],
-      "assets/*": ["src/assets/*"],
-      "graphql-types": ["node_modules/@types/graphql-let/__generated__/__types__"],
-      "react": ["node_modules/react"],
-      "types/*": ["src/types/*"]
+      "src/*": [ "src/*" ],
+      "components/*": [ "src/components/*" ],
+      "lib/*": [ "src/lib/*" ],
+      "temp/*": [ "src/temp/*" ],
+      "assets/*": [ "src/assets/*" ],
+      "graphql-types": [ "node_modules/@types/graphql-let/__generated__/__types__" ],
+      "react": [ "node_modules/react" ],
+      "types/*": [ "src/types/*" ],
+      "variables/*": [ "src/variables/*" ]
     },
     "target": "es5",
     "lib": ["dom", "dom.iterable", "esnext"],
