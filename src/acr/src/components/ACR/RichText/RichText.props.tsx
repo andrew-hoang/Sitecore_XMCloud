@@ -5,15 +5,14 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type SkipLinkProps = ComponentProps &
-  TestProps &
-  SkipLinkParams &
-  SkipLinkFields &
-  SkipLinkData;
+export type RichTextProps = ComponentProps & TestProps &
+  RichTextParams &
+  RichTextFields &
+  RichTextData;
 
 // Component Rendering Parameter fields
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type SkipLinkParams = {
+export type RichTextParams = {
   params: {
     mock_param?: string;
   };
@@ -21,13 +20,13 @@ export type SkipLinkParams = {
 
 // Non-component data source fields
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type SkipLinkData = {
+export type RichTextData = {
   externalFields?: {
     mock_external_data: Field<string>;
   };
 };
 
-export type SkipLinkFields = {
+export type RichTextFields = {
   fields: {
     heading: Field<string>; // Sitecore editable text field
     image?: ImageField; // Sitecore editable image field

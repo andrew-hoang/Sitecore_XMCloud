@@ -11,7 +11,7 @@ const Container70 = (props: Container70Props): JSX.Element | null => {
 
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
 
-  const PLACEHOLDER_FRAGMENT = 'acr-container-70';
+  const PLACEHOLDER_FRAGMENT = 'acr-container-contentwell';
   const PLACEHOLDER_NAME = `${PLACEHOLDER_FRAGMENT}-${props.params.DynamicPlaceholderId}`;
   const isEmptyPlaceholder =
     !(
@@ -19,7 +19,7 @@ const Container70 = (props: Container70Props): JSX.Element | null => {
       rendering?.placeholders?.[`${PLACEHOLDER_FRAGMENT}-{*}`]
     ) && !children;
 
-  if (isEmptyPlaceholder && !isPageEditing) {
+  if (isEmptyPlaceholder && !isPageEditing && !testId) {
     return null;
   }
 

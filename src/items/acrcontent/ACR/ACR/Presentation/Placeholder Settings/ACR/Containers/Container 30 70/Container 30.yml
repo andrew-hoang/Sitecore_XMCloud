@@ -6,7 +6,10 @@ Path: /sitecore/content/ACR/ACR/Presentation/Placeholder Settings/ACR/Containers
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
-  Value: "acr-container-30-left-{*}"
+  Value: "acr-container-thirty-left-{*}"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: "{E2A6BB73-333A-4665-BF9A-635700942608}"
 Languages:
 - Language: en
   Versions:
@@ -25,11 +28,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d68819ee-3067-4931-8873-dcb5ccf8cc3e"
+      Value: "980c16c8-faa5-49d8-b5e0-50be124c428d"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240510T155144Z
+      Value: 20240516T190831Z

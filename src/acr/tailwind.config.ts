@@ -101,6 +101,7 @@ const config: Config = {
           't-rte-link': '#8055f0',
           't-rte-link-hover': '#452F84',
           't-input': '#8055F0',
+          't-caption': '#707070',
         },
         'light-indigo': {
           't-background': '#bfdafd',
@@ -114,6 +115,7 @@ const config: Config = {
           't-rte-link': '#8055f0',
           't-rte-link-hover': '#452F84',
           't-input': '#1B1449',
+          't-caption': '#000000',
         },
         indigo: {
           't-background': '#1B1449',
@@ -127,6 +129,7 @@ const config: Config = {
           't-rte-link': '#00FF00',
           't-rte-link-hover': '#80FF81',
           't-input': '#00FF00',
+          't-caption': '#FFFFFF',
         },
         purple: {
           't-background': '#8055F0',
@@ -140,6 +143,7 @@ const config: Config = {
           't-rte-link': '#FFFFFF',
           't-rte-link-hover': '#FFFFFF',
           't-input': '#FFFFFF',
+          't-caption': '#FFFFFF',
         },
       },
       { defaultTheme: 'white' }

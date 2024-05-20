@@ -1,15 +1,14 @@
 import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import { SkipLinkData } from 'components/ACR/SkipLink/SkipLink.props';
+import { FacilitySearchData } from 'components/ACR/FacilitySearch/FacilitySearch.props';
 
-export const getStaticPropsForSkipLink = async (
+export const getStaticPropsForFacilitySearch = async (
   rendering: ComponentRendering,
   layoutData: LayoutServiceData
-): Promise<SkipLinkData> => {
-  // "data" developer does this
+): Promise<FacilitySearchData> => {
   console.log(rendering);
   console.log(layoutData);
 
-  const model: SkipLinkData = {
+  const model: FacilitySearchData = {
     externalFields: {
       mock_external_data: { value: 'Hardcoded for scaffolding' },
     },

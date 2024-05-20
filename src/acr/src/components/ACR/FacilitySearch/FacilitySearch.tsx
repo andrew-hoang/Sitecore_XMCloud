@@ -1,19 +1,19 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
 
-import { SkipLinkProps } from 'components/ACR/SkipLink/SkipLink.props';
+import { FacilitySearchProps } from 'components/ACR/FacilitySearch/FacilitySearch.props';
 
-import { getStaticPropsForSkipLink } from 'components/ACR/SkipLink/SkipLink.util';
+import { getStaticPropsForFacilitySearch } from 'components/ACR/FacilitySearch/FacilitySearch.util';
 
-const SkipLink = (props: SkipLinkProps): JSX.Element => {
+const FacilitySearch = (props: FacilitySearchProps): JSX.Element => {
   const { fields, testId } = props;
 
   const { heading } = fields ?? {};
 
   return (
-    <div data-ref="skip-link" data-testid={testId}>
+    <div data-ref="facility-search" data-testid={testId}>
       <Text tag="h2" field={heading} />
-      <p>The SkipLink Component</p>
+      <p>The FacilitySearch Component</p>
     </div>
   );
 };
@@ -28,7 +28,7 @@ const SkipLink = (props: SkipLinkProps): JSX.Element => {
  * @param {GetStaticPropsContext} _context
  */
 export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  return getStaticPropsForSkipLink(_rendering, _layoutData);
+  return getStaticPropsForFacilitySearch(_rendering, _layoutData);
 };
 
-export default SkipLink;
+export default FacilitySearch;
