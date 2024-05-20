@@ -5,8 +5,8 @@ export const getStaticPropsForTextCards = async (
   rendering: ComponentRendering,
   layoutData: LayoutServiceData
 ): Promise<TextCardsData> => {
-  // console.log(rendering);
-  // console.log(layoutData);
+  console.log(rendering);
+  console.log(layoutData);
 
   const model: TextCardsData = {
     externalFields: {
