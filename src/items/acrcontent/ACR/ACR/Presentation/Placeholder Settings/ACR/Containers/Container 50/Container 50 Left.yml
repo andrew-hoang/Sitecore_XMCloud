@@ -9,7 +9,9 @@ SharedFields:
   Value: "acr-container-fifty-left-{*}"
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
-  Value: "{F6D406E5-FD53-410E-9E79-B627B6B4BEDE}"
+  Value: |
+    {F6D406E5-FD53-410E-9E79-B627B6B4BEDE}
+    {EA0CAEDC-A342-41DE-B9D7-0CBB85421606}
 Languages:
 - Language: en
   Versions:
@@ -28,11 +30,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "246a7752-713d-489e-94bf-89c9589d5b13"
+      Value: "7ca9b96b-e94a-4f9e-bb8d-515439ace40b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240516T194758Z
+      Value: 20240520T165022Z
