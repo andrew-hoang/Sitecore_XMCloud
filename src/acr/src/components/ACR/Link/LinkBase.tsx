@@ -80,7 +80,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
         data-testid={testId}
         className={twMerge(
           cn(
-            'body-xs group inline-flex items-center gap-2 !font-medium text-t-body hover:underline',
+            'body-xs group inline-flex items-center gap-2 !font-medium text-t-body',
             {
               'rounded-[6px] bg-t-primary px-[15px] py-[12px] text-t-btn-text transition-all hover:rounded-tr-[30px] hover:text-t-contrast':
                 style === ButtonStyle.BUTTON,
@@ -93,7 +93,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
         )}
       >
         {isCTALink && renderIcon()}
-        {linkText}
+        <span className={cn({ 'link-underline': style !== ButtonStyle.BUTTON })}>{linkText}</span>
         {hasIcon && !isCTALink && renderIcon()}
       </Link>
     );
