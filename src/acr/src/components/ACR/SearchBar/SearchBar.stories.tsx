@@ -8,11 +8,6 @@ export default {
   title: 'Components/Search Bar',
   component: SearchBar,
   tags: ['autodocs'],
-  parameters: {
-    themes: {
-      themeOverride: 'light-indigo', // component level override
-    },
-  },
 } as Meta<typeof SearchBar>;
 
 type Story = StoryObj<typeof SearchBar>;

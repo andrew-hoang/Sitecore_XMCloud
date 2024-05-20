@@ -1,6 +1,7 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
 import { AtomicSearchBox } from "@coveo/atomic-react";
+import { Theme } from '@radix-ui/themes';
 
 import { SearchBarProps } from 'components/ACR/SearchBar/SearchBar.props';
 import styles from "./SearchBar.styles";
@@ -14,11 +15,13 @@ const SearchBar = (props: SearchBarProps): JSX.Element => {
 
 
   return (
-    <div className="px-[65px] py-[41px] rounded-lg" data-ref="searchbox" data-testid={testId}>
-      <style>{styles}</style>
-      <Text className="mb-8" tag="p" field={label} />
-      <AtomicSearchBox />
-    </div>
+    <Theme data-theme="light-indigo" accentColor='gray'>
+      <div className="sm:px-[65px] sm:py-[41px] p-[30px] rounded-lg bg-t-background text-t-body" data-ref="searchbox" data-testid={testId}>
+        <style>{styles}</style>
+        <Text className="sm:mb-8 mb-6 heading-d" tag="p" field={label} />
+        <AtomicSearchBox />
+      </div>
+    </Theme>
   );
 };
 

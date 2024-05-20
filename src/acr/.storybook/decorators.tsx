@@ -31,9 +31,7 @@ export const withRadixTheme = ({ themes, defaultTheme }) => {
   initializeThemeState(Object.keys(themes), defaultTheme);
 
   return (Story, context) => {
-    console.log("context: ", context)
     const selectedTheme = pluckThemeFromContext(context);
-    console.log("selectedTheme: ", selectedTheme);
     const { themeOverride } = useThemeParameters();
     const selected = themeOverride || selectedTheme || defaultTheme;
     const radixTheme = colorThemes[selected];
