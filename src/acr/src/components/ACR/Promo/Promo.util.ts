@@ -5,8 +5,8 @@ export const getStaticPropsForPromo = async (
   rendering: ComponentRendering,
   layoutData: LayoutServiceData
 ): Promise<PromoData> => {
-  // console.log(rendering);
-  // console.log(layoutData);
+  console.log(rendering);
+  console.log(layoutData);
 
   const model: PromoData = {
     externalFields: {

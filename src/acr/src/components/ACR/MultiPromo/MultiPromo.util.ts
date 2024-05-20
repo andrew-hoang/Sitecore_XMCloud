@@ -5,8 +5,8 @@ export const getStaticPropsForMultiPromo = async (
   rendering: ComponentRendering,
   layoutData: LayoutServiceData
 ): Promise<MultiPromoData> => {
-  // console.log(rendering);
-  // console.log(layoutData);
+  console.log(rendering);
+  console.log(layoutData);
 
   const model: MultiPromoData = {
     externalFields: {

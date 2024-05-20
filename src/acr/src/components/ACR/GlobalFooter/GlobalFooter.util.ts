@@ -5,8 +5,8 @@ export const getStaticPropsForGlobalFooter = async (
   rendering: ComponentRendering,
   layoutData: LayoutServiceData
 ): Promise<GlobalFooterData> => {
-  // console.log(rendering);
-  // console.log(layoutData);
+  console.log(rendering);
+  console.log(layoutData);
 
   const model: GlobalFooterData = {
     externalFields: {

@@ -5,8 +5,8 @@ export const getStaticPropsForFacilitySearch = async (
   rendering: ComponentRendering,
   layoutData: LayoutServiceData
 ): Promise<FacilitySearchData> => {
-  // console.log(rendering);
-  // console.log(layoutData);
+  console.log(rendering);
+  console.log(layoutData);
 
   const model: FacilitySearchData = {
     externalFields: {
