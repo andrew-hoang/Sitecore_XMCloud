@@ -1,0 +1,36 @@
+﻿---
+ID: "32c9abfe-203b-4b48-9263-9d0d1b2141c4"
+Parent: "4cbe0c84-b89f-49f6-bd67-78bdcb4cc271"
+Template: "0e0da701-bc94-4855-a0c3-92063e64ba1f"
+Path: /sitecore/system/Settings/Html Editor Profiles/Rich Text ACR/Toolbar 1
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {B9ED3CCB-9EC5-4C8C-825B-3DBC2EB0E676}
+    {D50BCE33-8EDA-48D1-BABD-C0A894A69753}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20060130T125534
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bf6efec9-51ab-432a-a0ed-6ccca78451a9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20060130T125534
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240520T153050Z

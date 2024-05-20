@@ -74,6 +74,12 @@
         "name": "settingsfoundation",
         "path": "/sitecore/system/Settings/Foundation/ACR",
         "allowedPushOperations": "CreateUpdateAndDelete"
+      },
+      {
+        "name": "acrRichTextProfile",
+        "path": "/sitecore/system/Settings/Html Editor Profiles/Rich Text ACR",
+        "allowedPushOperations": "CreateUpdateAndDelete",
+        "database": "core"
       }
     ]
   }
