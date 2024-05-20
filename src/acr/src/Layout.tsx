@@ -10,8 +10,12 @@ import { useRouter } from 'next/router'
 
 import { beausite, playFair } from 'src/fonts';
 
+import { Theme as RadixThemes } from '@radix-ui/themes';
+import { Theme as ThemeProps } from './types/Theme.props';
+import { ThemeContext } from 'src/context/Theme.context';
+import { Theme } from './enumerations/Theme.enum';
+
 import cn from 'classnames';
-import { Theme } from '@radix-ui/themes';
 
 // Prefix public assets with a public URL to enable compatibility with Sitecore Experience Editor.
 // If you're not supporting the Experience Editor, you can remove this.
@@ -31,9 +35,12 @@ interface RouteFields {
 const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
   const { route } = layoutData.sitecore;
   const fields = route?.fields as RouteFields;
+
   const isPageEditing = layoutData.sitecore.context.pageEditing;
   const mainClassPageEditing = isPageEditing ? 'editing-mode' : 'prod-mode';
   const router = useRouter();
+
+  const theme = fields.theme as ThemeProps;
 
   return (
     <>
@@ -47,7 +54,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
           <link rel={headLink.rel} key={headLink.href} href={headLink.href} />
         ))}
       </Head>
-      <Theme>
+      <RadixThemes>
         {/* root placeholder for the app, which we add components to using route data */}
         <div className={cn(beausite.variable, playFair.variable, mainClassPageEditing)}>
           <header>
@@ -56,9 +63,11 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
             </div>
           </header>
           <main>
-            <div id="content">
-              {route && <Placeholder name="headless-main" rendering={route} />}
-            </div>
+            <ThemeContext.Provider value={{ theme: theme?.name as Theme }}>
+              <div id="content" data-theme={theme?.name}>
+                {route && <Placeholder name="headless-main" rendering={route} />}
+              </div>
+            </ThemeContext.Provider>
           </main>
           <footer>
             <div id="footer">
@@ -66,7 +75,7 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
             </div>
           </footer>
         </div>
-      </Theme>
+      </RadixThemes>
     </>
   );
 };
