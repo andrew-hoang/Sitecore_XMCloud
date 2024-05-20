@@ -1,19 +1,30 @@
-import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import { BreadcrumbData } from 'components/ACR/Breadcrumb/Breadcrumb.props';
+import { BreadcrumbData, BreadcrumbsGraphQLData } from 'components/ACR/Breadcrumb/Breadcrumb.props';
+import { BreadcrumbQueryString } from 'components/ACR/Breadcrumb/Breadcrumb.string';
+import { getACRGraphQlClient } from 'src/utils/acrGraphQlClient';
+
+export type BreadCrumbRequest = {
+  language?: string;
+  contextItem?: string;
+  isPageEditing: boolean;
+};
 
 export const getStaticPropsForBreadcrumb = async (
-  rendering: ComponentRendering,
-  layoutData: LayoutServiceData
+  request: BreadCrumbRequest | null
 ): Promise<BreadcrumbData> => {
-  // "data" developer does this
-  console.log(rendering);
-  console.log(layoutData);
-
+  const result = await getACRGraphQlClient().request<BreadcrumbsGraphQLData>(
+    BreadcrumbQueryString,
+    {
+      language: request?.language ?? 'en',
+      contextItem: request?.contextItem,
+    }
+  );
+  result.isPageEditing = request?.isPageEditing ?? false;
+  const byDescending = result.datasource?.ancestors?.slice().reverse();
   const model: BreadcrumbData = {
     externalFields: {
-      mock_external_data: { value: 'Hardcoded for scaffolding' },
+      datasource: { ancestors: byDescending, name: result.datasource.name },
+      isPageEditing: result.isPageEditing,
     },
   };
-
   return model;
 };
