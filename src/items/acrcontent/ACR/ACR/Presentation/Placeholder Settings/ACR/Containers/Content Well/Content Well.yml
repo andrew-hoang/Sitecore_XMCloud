@@ -9,7 +9,7 @@ SharedFields:
   Value: "acr-container-contentwell-{*}"
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
-  Value: 
+  Value: "{F6D406E5-FD53-410E-9E79-B627B6B4BEDE}"
 Languages:
 - Language: en
   Versions:
@@ -28,11 +28,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2c8015dc-de9a-4be9-98ad-8078aa95abc7"
+      Value: "b0425800-942d-426c-82fd-144209df178d"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\minyie.diaz@velir.com
+        sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240516T190555Z
+      Value: 20240516T194816Z
