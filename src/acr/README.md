@@ -72,5 +72,5 @@ This script generates the following files
 
 To run the project locally against a running Sitecore instance, you can use `npm run start:connected`, which allows you to proxy an instance and retrieve live data from Sitecore.
 
-Ensure that you have your variables set up in your local environment file, for which values you can get through the XM Cloud Deploy App.
+Ensure that you have your variables set up in your local environment file, for which values you can get through the XM Cloud Deploy App. See the root [Read Me](/README.md) for instructions.
 

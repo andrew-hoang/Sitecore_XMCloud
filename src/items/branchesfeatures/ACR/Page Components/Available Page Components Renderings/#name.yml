@@ -6,7 +6,9 @@ Path: /sitecore/templates/Branches/Feature/ACR/Page Components/Available Page Co
 SharedFields:
 - ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
   Hint: Renderings
-  Value: "{686BC8A4-77E0-488F-B057-73613D4E4B03}"
+  Value: |
+    {686BC8A4-77E0-488F-B057-73613D4E4B03}
+    {F6D406E5-FD53-410E-9E79-B627B6B4BEDE}
 Languages:
 - Language: en
   Versions:
@@ -21,11 +23,11 @@ Languages:
         sitecore\admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ddafb934-882f-4578-b7ca-266d5db189dc"
+      Value: "735e5724-abe8-432b-b403-fac0d5dca9eb"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240513T200122Z
+      Value: 20240516T194303Z
