@@ -16,7 +16,7 @@ const SearchBar = (props: SearchBarProps): JSX.Element => {
 
   return (
     <Theme data-theme="light-indigo" accentColor='gray'>
-      <div className="sm:px-[65px] sm:py-[41px] p-[30px] rounded-lg bg-t-background text-t-body" data-ref="searchbox" data-testid={testId}>
+      <div className="sm:px-[65px] sm:py-[41px] p-[30px] rounded-lg bg-t-background text-t-body max-w-[1268px] mx-auto" data-ref="searchbox" data-testid={testId}>
         <style>{styles}</style>
         <Text className="sm:mb-8 mb-6 heading-d" tag="p" field={label} />
         <AtomicSearchBox />
