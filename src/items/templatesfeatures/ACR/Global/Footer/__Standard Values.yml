@@ -1,0 +1,31 @@
+﻿---
+ID: "ae1ba227-b9d4-4425-8caf-7ff23ed66e5a"
+Parent: "81e6cb54-c008-4bf0-bdd8-c77aa03f32eb"
+Template: "81e6cb54-c008-4bf0-bdd8-c77aa03f32eb"
+Path: /sitecore/templates/Feature/ACR/Global/Footer/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240520T191323Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "bae95fde-4ff8-447d-ba6a-ea6d35b68edb"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240520T191323Z

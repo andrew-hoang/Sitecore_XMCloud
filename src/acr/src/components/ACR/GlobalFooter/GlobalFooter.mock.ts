@@ -8,6 +8,64 @@ export const defaultMockData: GlobalFooterProps = {
     dataSource: '/',
   },
   fields: {
-    heading: { value: 'MOCK_DATA_HEADING' },
+    locationName: {
+      value: '',
+    },
+    zipcode: {
+      value: '',
+    },
+    phoneNumber: {
+      value: '',
+    },
+    address1: {
+      value: '',
+    },
+    address2: {
+      value: '',
+    },
+    city: {
+      value: '',
+    },
+    state: {
+      value: '',
+    },
+    copyrightStatement: {
+      value: '',
+    },
+    footerLogo: {
+      value: {
+        src: '',
+      },
+    },
+    footerNewsletterText: {
+      value: '',
+    },
+    footerNewsletterLink: {
+      value: {
+        href: '',
+      },
+    },
+    directoryTitle: {
+      value: '',
+    },
+    directoryDescription: {
+      value: '',
+    },
+    directoryLink: {
+      value: {
+        href: '',
+      },
+    },
+    engageLink: {
+      value: {
+        href: '',
+      },
+    },
+    engageTitle: {
+      value: '',
+    },
+    engageDescription: {
+      value: '',
+    },
   },
 };
