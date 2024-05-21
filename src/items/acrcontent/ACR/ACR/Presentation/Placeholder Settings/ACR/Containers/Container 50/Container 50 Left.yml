@@ -9,7 +9,9 @@ SharedFields:
   Value: "acr-container-fifty-left-{*}"
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
-  Value: "{F6D406E5-FD53-410E-9E79-B627B6B4BEDE}"
+  Value: |
+      {F6D406E5-FD53-410E-9E79-B627B6B4BEDE}
+      {E2A6BB73-333A-4665-BF9A-635700942608}
 Languages:
 - Language: en
   Versions:

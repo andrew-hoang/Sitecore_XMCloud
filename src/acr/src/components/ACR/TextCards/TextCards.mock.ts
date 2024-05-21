@@ -1,10 +1,10 @@
-import { SkipLinkProps } from './SkipLink.props';
+import { TextCardsProps } from './TextCards.props';
 
-export const defaultMockData: SkipLinkProps = {
+export const defaultMockData: TextCardsProps = {
   params: {},
   rendering: {
     uid: '{00000000-0000-0000-0000-000000000000}',
-    componentName: 'SkipLink',
+    componentName: 'TextCards',
     dataSource: '/',
   },
   fields: {
