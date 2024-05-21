@@ -1,0 +1,5 @@
+@layer base {
+  *:focus {
+    @apply focus:rounded-[3px] focus:outline-1 focus:outline-offset-4 focus:outline-t-primary;
+  }
+}
