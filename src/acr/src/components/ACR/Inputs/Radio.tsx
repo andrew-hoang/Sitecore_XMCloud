@@ -19,7 +19,7 @@ const Radio = (props: RadioProps) => {
           value={value}
           size="1"
           defaultChecked={defaultChecked}
-          className="before:bg-transparent after:bg-transparent before:checked:border-t-input after:checked:bg-t-input before:border before:border-t-body after:scale-50"
+          className="before:border before:border-t-body before:bg-transparent after:scale-50 after:bg-transparent before:checked:border-t-input after:checked:bg-t-input"
           onChange={onChange}
         />
         {label}
@@ -29,4 +29,3 @@ const Radio = (props: RadioProps) => {
 };
 
 export default Radio;
-

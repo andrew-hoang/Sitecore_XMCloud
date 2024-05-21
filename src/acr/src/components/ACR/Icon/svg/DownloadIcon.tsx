@@ -20,4 +20,3 @@ const DownloadIcon = (props: SvgProps): JSX.Element => {
 };
 
 export default DownloadIcon;
-

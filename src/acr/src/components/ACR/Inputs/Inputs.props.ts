@@ -6,4 +6,3 @@ export type InputsProps = {
   onChange?: React.ChangeEventHandler<HTMLInputElement>;
   disabled?: boolean;
 };
-
