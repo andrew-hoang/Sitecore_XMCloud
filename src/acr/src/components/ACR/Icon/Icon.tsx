@@ -8,7 +8,7 @@ const iconMap: { [key: string]: string } = {
   [IconName.EXTERNAL]: 'ExternalIcon',
   [IconName.RIGHT_ARROW]: 'RightArrowIcon',
   [IconName.RIGHT_ARROW_CIRCLE]: 'RightArrowCircleIcon',
-  [IconName.LINK_ITEM_BULLET]: 'LinkItemBulletIcon'
+  [IconName.BULLET]: 'BulletIcon'
 };
 
 const Icon = (props: IconProps): JSX.Element | null => {

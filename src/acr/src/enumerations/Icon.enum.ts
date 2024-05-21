@@ -4,5 +4,5 @@ export enum IconName {
   EXTERNAL = 'external',
   RIGHT_ARROW = 'right-arrow',
   RIGHT_ARROW_CIRCLE = 'right-arrow-circle',
-  LINK_ITEM_BULLET = 'link-item-bullet'
+  BULLET = 'bullet'
 }
