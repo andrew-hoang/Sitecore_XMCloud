@@ -9,4 +9,3 @@ test('Link unit tests', () => {
   const element = screen.getByTestId(TEST_ID);
   expect(element).toBeInTheDocument();
 });
-

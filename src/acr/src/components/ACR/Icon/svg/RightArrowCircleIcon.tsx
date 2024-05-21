@@ -21,4 +21,3 @@ const RightArrowCircleIcon = (props: SvgProps): JSX.Element => {
 };
 
 export default RightArrowCircleIcon;
-

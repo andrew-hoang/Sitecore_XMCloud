@@ -9,4 +9,3 @@ test('ContainerFullWidth unit tests', async () => {
   const element = screen.getByTestId(TEST_ID);
   expect(element).toBeInTheDocument();
 });
-

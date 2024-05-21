@@ -4,4 +4,3 @@ import { IconProps } from './Icon.props';
 export const defaultMockData: IconProps = {
   iconName: IconName.DOWNLOAD,
 };
-

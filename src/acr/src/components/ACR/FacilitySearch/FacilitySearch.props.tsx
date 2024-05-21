@@ -5,7 +5,8 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type FacilitySearchProps = ComponentProps & TestProps &
+export type FacilitySearchProps = ComponentProps &
+  TestProps &
   FacilitySearchParams &
   FacilitySearchFields &
   FacilitySearchData;
