@@ -1,11 +1,12 @@
 import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
+import { PlaceholderProps } from 'src/types/Placeholder.props';
 import { TestProps } from 'src/types/Test.props';
 
 /**
  * Model used for Sitecore Component integration
  */
-export type GlobalFooterProps = ComponentProps & TestProps & GlobalFooterFields;
+export type GlobalFooterProps = ComponentProps & PlaceholderProps & TestProps & GlobalFooterFields;
 
 export type GlobalFooterFields = {
   fields: {

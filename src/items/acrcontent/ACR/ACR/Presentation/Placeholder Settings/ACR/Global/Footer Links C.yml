@@ -1,12 +1,18 @@
 ﻿---
-ID: "ae1ba227-b9d4-4425-8caf-7ff23ed66e5a"
-Parent: "81e6cb54-c008-4bf0-bdd8-c77aa03f32eb"
-Template: "81e6cb54-c008-4bf0-bdd8-c77aa03f32eb"
-Path: /sitecore/templates/Feature/ACR/Global/Footer/__Standard Values
+ID: "76d6187b-7d5b-4550-9425-285591558d38"
+Parent: "1f77018a-373f-4798-881c-adcf5c34bef8"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: /sitecore/content/ACR/ACR/Presentation/Placeholder Settings/ACR/Global/Footer Links C
 SharedFields:
-- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
-  Hint: __Masters
-  Value: "{AC49B390-F119-49B9-A70E-F08C0F8E3A28}"
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "acr-container-footer-links-c-{*}"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: "{A0AA9B97-198F-41D9-82BA-1869C90276A5}"
 Languages:
 - Language: en
   Versions:
@@ -14,7 +20,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240520T191323Z
+      Value: 20240521T153105Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -25,11 +31,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9fd05b43-13f0-449d-895a-aeba90577980"
+      Value: "bea9a133-d9d5-4563-b350-e3153012a042"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240521T161201Z
+      Value: 20240521T161600Z

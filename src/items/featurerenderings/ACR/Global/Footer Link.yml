@@ -1,35 +1,24 @@
 ﻿---
-ID: "0109edd4-de52-4d91-9500-0cf5010513d2"
+ID: "a0aa9b97-198f-41d9-82ba-1869c90276a5"
 Parent: "a4df6830-888c-4067-80fe-f10263f7f5b5"
 Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
-Path: /sitecore/layout/Renderings/Feature/ACR/Global/Footer
+Path: /sitecore/layout/Renderings/Feature/ACR/Global/Footer Link
 SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
   Hint: componentName
-  Value: GlobalFooter
-- ID: "069a8361-b1cd-437c-8c32-a3be78941446"
-  Hint: Placeholders
-  Value: |
-    {D1B186B6-AE7E-45DA-888A-6AAE8CA30A35}
-    {2D05079F-7771-4F0D-999E-0EB2E47E5C01}
-    {76D6187B-7D5B-4550-9425-285591558D38}
-    {10518AD4-873E-4477-A4E2-DC6434C8D41C}
+  Value: LinkBase
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: /~/icon/wordprocessing/32x32/footer.png
+  Value: /~/icon/office/32x32/link.png
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Feature/ACR/Global/Footer
+  Value: /sitecore/templates/Feature/ACR/Navigation/Basic Link
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "query:$site/*[@@name='Settings']"
+  Value: "query:$site/*[@@name='Settings']/*[@@templatename='Footer']/*[@@templatename='Footer Link Folder']"
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
-  Value: 100
-- ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
-  Hint: __Thumbnail
-  Value: |
-    <image mediaid="{E5A7897C-9567-42EE-8F85-9081D8EA75BC}" />
+  Value: 50
 Languages:
 - Language: en
   Versions:
@@ -37,7 +26,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240520T183417Z
+      Value: 20240521T160720Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -48,11 +37,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b05f0121-ba25-40ed-9364-1ea000827257"
+      Value: "79335346-15aa-4690-8b44-6a2e1f926cbb"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240521T161624Z
+      Value: 20240521T161301Z
