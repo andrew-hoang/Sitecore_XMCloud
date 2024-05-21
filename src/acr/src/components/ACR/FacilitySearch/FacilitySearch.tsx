@@ -62,7 +62,7 @@ export const getStaticProps: GetStaticComponentProps = async (_rendering, _layou
     isPageEditing: _layoutData?.sitecore?.context?.pageEditing ?? false,
     language: _layoutData?.sitecore?.context?.language,
   };
-  return getStaticPropsForFacilitySearch(_rendering, request);
+  return await getStaticPropsForFacilitySearch(_rendering, request);
 };
 
 export default FacilitySearch;
