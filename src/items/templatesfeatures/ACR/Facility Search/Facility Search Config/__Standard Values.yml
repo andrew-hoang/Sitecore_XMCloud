@@ -1,0 +1,102 @@
+﻿---
+ID: "bf500874-2bac-4d77-b1a2-6edc08b7d907"
+Parent: "123999c4-aae5-4cd5-a6a5-3e096edc808a"
+Template: "123999c4-aae5-4cd5-a6a5-3e096edc808a"
+Path: /sitecore/templates/Feature/ACR/Facility Search/Facility Search Config/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "18c9f3f3-5ab7-40f3-a74a-706518018b29"
+      Hint: modalityLabel
+      Value: Modality
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240521T172340Z
+    - ID: "51046071-e505-4e87-b3d2-e24625527492"
+      Hint: noResultsFoundLabel
+      Value: Please try widening your search criteria.
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "5806d930-ebf2-4c0b-adb5-d8e5b7005645"
+      Hint: searchBy
+      Value: Search By
+    - ID: "59a3c379-a79d-4b41-8bc5-022d4be68c98"
+      Hint: withinLabel
+      Value: Within
+    - ID: "5a97d30c-815a-47b0-a1be-177b525061ab"
+      Hint: searchButtonLabel
+      Value: Search
+    - ID: "5c28c7d2-6e44-40cc-b608-0b1d5a409867"
+      Hint: nextLabel
+      Value: Next
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "5fe86410-b3be-4d47-b598-278cdadf3b3c"
+      Hint: milesOptions
+      Value: |
+        {ACF8FBC7-27AF-4F23-9717-03EC7E845460}
+        {643CCC5D-CA46-413D-AC61-2C126226E8B6}
+        {F734F6E0-6D4C-4E0B-A677-2581AB602EA1}
+        {62D51407-4B9F-4684-A588-F87D73DCF337}
+    - ID: "63e42f1d-5ebe-49e6-9263-5f52f3203332"
+      Hint: designationOptions
+      Value: |
+        {9F65E791-9525-4F7F-BE25-42FEFDEFE202}
+        {F012A82E-02B7-4384-A144-8511D4510826}
+        {697CD3C0-A7DF-468B-ADAF-08E09BF95FE1}
+        {DAAA5F07-BB53-4391-8B25-3950296066D4}
+        {1D6B7B94-A1F2-4007-9EF7-070CB0944787}
+    - ID: "666fdd8a-2e61-4c5d-80c5-426ef51d7672"
+      Hint: searchOptions
+      Value: |
+        {EC9B0177-A4DD-4452-A724-D99644552BE5}
+        {0C1F5493-BA73-447A-8DF5-6775E71D4CC1}
+        {3D3416F0-7322-4CF3-AE11-B3921BD14C2F}
+        {29C187BB-E501-41AE-AA65-D3363CB5760A}
+    - ID: "6de02e88-a292-4e54-b720-ae2d56a41a9c"
+      Hint: stateOptions
+      Value: "{9E762CA7-3885-40F8-A1F4-0ACD9F7B4024}"
+    - ID: "6f208eea-864c-4d55-bf85-776de5d03ada"
+      Hint: modalityOptions
+      Value: |
+        {39EDC55A-717B-4387-8C82-ED5D3EF0D407}
+        {85571F6D-436B-4B39-8959-9A323DFC6CE9}
+        {96972D44-95FE-4EF5-A1A3-4294DBCC36D0}
+        {E4A062F9-C901-461C-B19D-CC59B9B9CDB8}
+        {2A6FA8D7-82A2-44C1-B47B-27EF0B0044AC}
+        {07B43F0C-4B90-48AB-A953-A383AA10187E}
+        {C710E7DA-8F7D-4030-BBA3-34B45E77509B}
+        {6923DCC0-96DA-47C1-B465-0F8FBA9305D7}
+        {D9BA9E92-9B0B-4890-97F1-DBEC5EF52834}
+        {CD7EF8D3-7087-4803-A7F6-DA7DB12F323C}
+    - ID: "8b7df787-e478-43a8-8611-c084cc8b7ffe"
+      Hint: resultsFoundLabel
+      Value: results found.
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d45bb077-6856-44c9-88bf-fa32934135ac"
+    - ID: "8ede8c28-43c4-4354-a06e-e1ddf4846fcb"
+      Hint: countryOptions
+      Value: "{44AF3939-5C25-4C9F-9AA8-E3095FF26107}"
+    - ID: "b250e664-7ab1-4ac1-8a29-3b39b96b9a9d"
+      Hint: previousLabel
+      Value: Prev
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "d6f8063c-8750-4e16-9599-d0afa6f3cf98"
+      Hint: zipCityLabel
+      Value: Zip / City
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240521T173129Z
+    - ID: "f1af987d-5ccf-4e4b-b516-f85f80504a53"
+      Hint: designationLabel
+      Value: Designation

@@ -1,19 +1,49 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
 
-import { FacilitySearchProps } from 'components/ACR/FacilitySearch/FacilitySearch.props';
+import {
+  FacilityEnumeration,
+  FacilitySearchProps,
+} from 'components/ACR/FacilitySearch/FacilitySearch.props';
 
-import { getStaticPropsForFacilitySearch } from 'components/ACR/FacilitySearch/FacilitySearch.util';
+import {
+  StateRequest,
+  getStaticPropsForFacilitySearch,
+} from 'components/ACR/FacilitySearch/FacilitySearch.util';
 
 const FacilitySearch = (props: FacilitySearchProps): JSX.Element => {
-  const { fields, testId } = props;
+  const { fields, testId, externalFields } = props;
 
-  const { heading } = fields ?? {};
+  const { searchButtonLabel } = fields ?? {};
 
   return (
     <div data-ref="facility-search" data-testid={testId}>
-      <Text tag="h2" field={heading} />
+      <Text tag="h2" field={searchButtonLabel} />
       <p>The FacilitySearch Component</p>
+      <p>{fields.zipCityLabel.value}</p>
+      <ul>
+        {externalFields?.searchOptions.map((item: FacilityEnumeration) => {
+          return <li>{item.value}</li>;
+        })}
+      </ul>
+      <ul>
+        {externalFields?.countryOptions.map((item: FacilityEnumeration) => {
+          return (
+            <li>
+              {item.name}:{item.value}
+            </li>
+          );
+        })}
+      </ul>
+      <ul>
+        {externalFields?.stateOptions.map((item: FacilityEnumeration) => {
+          return (
+            <li>
+              {item.name}:{item.value}
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 };
@@ -28,7 +58,11 @@ const FacilitySearch = (props: FacilitySearchProps): JSX.Element => {
  * @param {GetStaticPropsContext} _context
  */
 export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  return getStaticPropsForFacilitySearch(_rendering, _layoutData);
+  const request: StateRequest = {
+    isPageEditing: _layoutData?.sitecore?.context?.pageEditing ?? false,
+    language: _layoutData?.sitecore?.context?.language,
+  };
+  return getStaticPropsForFacilitySearch(_rendering, request);
 };
 
 export default FacilitySearch;
