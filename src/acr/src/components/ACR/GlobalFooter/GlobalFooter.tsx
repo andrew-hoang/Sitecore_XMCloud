@@ -1,34 +1,61 @@
-import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
-import { Text } from '@sitecore-jss/sitecore-jss-react';
-
 import { GlobalFooterProps } from 'components/ACR/GlobalFooter/GlobalFooter.props';
-
-import { getStaticPropsForGlobalFooter } from 'components/ACR/GlobalFooter/GlobalFooter.util';
+import { PlaceholderBaseProps } from '../Placeholder/PlaceholderBase';
+import { Placeholder } from '@sitecore-jss/sitecore-jss-nextjs';
 
 const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
-  const { fields, testId } = props;
+  const { testId, rendering, componentFactory } = props;
 
-  const { heading } = fields ?? {};
+  const footerLink1Placeholder: PlaceholderBaseProps = {
+    placeholder: {
+      name: `acr-container-footer-links-a-${props.params.DynamicPlaceholderId}`,
+      rendering,
+      componentFactory,
+    },
+  };
+  const footerLink2Placeholder: PlaceholderBaseProps = {
+    placeholder: {
+      name: `acr-container-footer-links-b-${props.params.DynamicPlaceholderId}`,
+      rendering,
+      componentFactory,
+    },
+  };
+
+  const footerLink3Placeholder: PlaceholderBaseProps = {
+    placeholder: {
+      name: `acr-container-footer-links-c-${props.params.DynamicPlaceholderId}`,
+      rendering,
+      componentFactory,
+    },
+  };
+  const footerLink4Placeholder: PlaceholderBaseProps = {
+    placeholder: {
+      name: `acr-container-footer-links-d-${props.params.DynamicPlaceholderId}`,
+      rendering,
+      componentFactory,
+    },
+  };
 
   return (
-    <div data-ref="global-footer" data-testid={testId}>
-      <Text tag="h2" field={heading} />
+    <div data-ref="globa l-footer" data-testid={testId}>
       <p>The GlobalFooter Component</p>
+      <Placeholder
+        name={footerLink1Placeholder.placeholder.name}
+        rendering={footerLink1Placeholder.placeholder.rendering}
+      />
+      <Placeholder
+        name={footerLink2Placeholder.placeholder.name}
+        rendering={footerLink1Placeholder.placeholder.rendering}
+      />
+      <Placeholder
+        name={footerLink3Placeholder.placeholder.name}
+        rendering={footerLink1Placeholder.placeholder.rendering}
+      />
+      <Placeholder
+        name={footerLink4Placeholder.placeholder.name}
+        rendering={footerLink4Placeholder.placeholder.rendering}
+      />
     </div>
   );
-};
-
-/**
- * "Data" developer method
- * TODO_SCAFFOLD_BE: If "getStaticProps" was deleted remove "useComponentProps". They work together.
- * TODO_SCAFFOLD_BE: Populate if needed, remove if not
- * Will be called during SSG.  Do NOT return null.
- * @param {ComponentRendering} _rendering
- * @param {LayoutServiceData} _layoutData
- * @param {GetStaticPropsContext} _context
- */
-export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  return getStaticPropsForGlobalFooter(_rendering, _layoutData);
 };
 
 export default GlobalFooter;
