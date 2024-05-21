@@ -2,16 +2,15 @@ import { Section } from '@radix-ui/themes';
 
 import { ContainerFullBleedProps } from 'components/ACR/Container/ContainerFullBleed/ContainerFullBleed.props';
 import PlaceholderBase, { PlaceholderBaseProps } from 'components/ACR/Placeholder/PlaceholderBase';
-import { ThemeContext } from 'src/context/ThemeContext';
+import { ThemeContext } from 'src/context/Theme.context';
 
 import { twMerge } from 'tailwind-merge';
 import cn from 'classnames';
-import { Theme } from 'src/enumerations/Theme.enum';
 
 const ContainerFullBleed = (props: ContainerFullBleedProps): JSX.Element => {
   const { rendering, params, componentFactory, children, testId } = props;
 
-  const { excludeTopMargin, theme = Theme.WHITE } = params ?? {};
+  const { excludeTopMargin, theme } = params ?? {};
 
   const PLACEHOLDER_NAME = `acr-container-fullbleed-${props.params.DynamicPlaceholderId}`;
 
@@ -34,9 +33,13 @@ const ContainerFullBleed = (props: ContainerFullBleedProps): JSX.Element => {
       )}
       data-testid={testId}
     >
-      <ThemeContext.Provider value={{ theme }}>
+      {theme ? (
+        <ThemeContext.Provider value={{ theme }}>
+          <PlaceholderBase {...placeholderProps} />
+        </ThemeContext.Provider>
+      ) : (
         <PlaceholderBase {...placeholderProps} />
-      </ThemeContext.Provider>
+      )}
     </Section>
   );
 };

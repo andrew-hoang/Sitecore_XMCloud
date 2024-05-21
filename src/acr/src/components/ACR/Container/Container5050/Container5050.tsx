@@ -16,8 +16,8 @@ const Container5050 = (props: Container5050Props): JSX.Element | null => {
 
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
 
-  const leftPlaceholders = getContainerPlaceholderProps('acr-container-50-left', props.params);
-  const rightPlaceholders = getContainerPlaceholderProps('acr-container-50-right', props.params);
+  const leftPlaceholders = getContainerPlaceholderProps('acr-container-fifty-left', props.params);
+  const rightPlaceholders = getContainerPlaceholderProps('acr-container-fifty-right', props.params);
 
   const isEmptyPlaceholder =
     isContainerPlaceholderEmpty(rendering, leftPlaceholders, left) &&

@@ -22,6 +22,7 @@ export default {
       control: { type: 'select' },
     },
   },
+  args: { theme: Theme.WHITE },
 } as Meta<typeof TextBanner>;
 
 type Story = StoryObj<TextBannerProps & { theme: Theme }>;

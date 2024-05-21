@@ -11,3 +11,11 @@
   @tailwind utilities;
 }
 
+@layer base {
+  body {
+    p {
+      @apply body-sm;
+    }
+  }
+}
+

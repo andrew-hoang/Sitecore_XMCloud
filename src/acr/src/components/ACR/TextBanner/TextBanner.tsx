@@ -5,7 +5,7 @@ import { TextBannerProps } from 'components/ACR/TextBanner/TextBanner.props';
 
 import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
 import { Theme } from 'src/enumerations/Theme.enum';
-import { ThemeContext } from 'src/context/ThemeContext';
+import { ThemeContext } from 'src/context/Theme.context';
 
 import LinkBase from 'components/ACR/Link/LinkBase';
 
@@ -22,7 +22,7 @@ const TextBanner = (props: TextBannerProps): JSX.Element => {
   const { title, description, link } = fields ?? {};
 
   // Theme sourced from ContainerFullBleed
-  const { theme } = useContext(ThemeContext);
+  const { theme = Theme.WHITE } = useContext(ThemeContext);
 
   const bgWhite = theme === Theme.LIGHT_INDIGO || theme === Theme.PURPLE;
   const bgLightIndigo = theme === Theme.WHITE || theme === Theme.INDIGO;
