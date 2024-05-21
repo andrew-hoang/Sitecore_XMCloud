@@ -38,8 +38,9 @@ const ImageBase = (props: ImageBaseProps) => {
     <div
       ref={ref}
       className={cn(
-        'reveal-image relative block max-w-max overflow-hidden',
-        { 'reveal-image--in-view': (isLoaded && inView) || isPageEditing },
+        'block',
+        { 'reveal-image': animate },
+        { 'reveal-image--in-view': (animate && isLoaded && inView) || isPageEditing },
         className
       )}
     >
