@@ -1,0 +1,34 @@
+﻿---
+ID: "80b5f83a-ca7d-4eda-82a9-807b81941402"
+Parent: "87833687-81bb-47e7-ac01-ed41487582d4"
+Template: "f036b5e0-37fb-4537-9d36-ef84e5bd41b7"
+Path: /sitecore/system/Settings/Feature/ACR/Navigation/Navigation Headless Site Collection Setup
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240514T001539Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "62c5b8f6-e1b8-4b84-ad16-a2553465bf02"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
+      Hint: Name
+      Value: Navigation
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240514T001539Z

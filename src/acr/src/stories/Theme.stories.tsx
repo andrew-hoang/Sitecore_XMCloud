@@ -14,7 +14,7 @@ export const Default = {
       <Button className="h-auto cursor-pointer rounded-[6px] bg-t-primary px-[15px] py-[12px] font-medium text-t-btn-text transition-all hover:rounded-tr-[30px] hover:text-t-contrast hover:underline">
         Explore activities
       </Button>
-      <a href="/" className="font-medium text-t-body hover:text-t-link-hover hover:underline">
+      <a href="/" className="link-underline font-medium text-t-body hover:text-t-link-hover">
         Link
       </a>
     </Flex>

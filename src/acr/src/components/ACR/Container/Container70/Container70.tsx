@@ -19,7 +19,7 @@ const Container70 = (props: Container70Props): JSX.Element | null => {
       rendering?.placeholders?.[`${PLACEHOLDER_FRAGMENT}-{*}`]
     ) && !children;
 
-  if (isEmptyPlaceholder && !isPageEditing) {
+  if (isEmptyPlaceholder && !isPageEditing && !testId) {
     return null;
   }
 
