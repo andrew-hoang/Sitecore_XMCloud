@@ -17,10 +17,6 @@ const ImageBase = (props: ImageBaseProps) => {
 
   const src = image?.value?.src;
 
-  if (!src) {
-    return <></>;
-  }
-
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
 
@@ -29,6 +25,10 @@ const ImageBase = (props: ImageBaseProps) => {
   const [isLoaded, setIsLoaded] = useState<boolean>(false);
 
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.6 });
+
+  if (!src) {
+    return <></>;
+  }
 
   // SVGs by default should not be optimized
   // https://nextjs.org/docs/pages/api-reference/components/image#dangerouslyallowsvg

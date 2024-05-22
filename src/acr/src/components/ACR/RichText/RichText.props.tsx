@@ -5,7 +5,8 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type RichTextProps = ComponentProps & TestProps &
+export type RichTextProps = ComponentProps &
+  TestProps &
   RichTextParams &
   RichTextFields &
   RichTextData;
