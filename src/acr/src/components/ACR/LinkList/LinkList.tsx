@@ -6,7 +6,6 @@ import { IconName } from 'src/enumerations/Icon.enum';
 
 import LinkBase from 'components/ACR/Link/LinkBase';
 
-import cn from 'classnames';
 import { LinkField, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 
 /**
@@ -90,8 +89,7 @@ const LinkList = (props: LinkListProps): JSX.Element => {
             link={link}
             hasIcon={hasIcon}
             style={style}
-            styleClasses={
-              `
+            styleClasses={`
             !title-c
             pb-6
             justify-between
