@@ -80,13 +80,12 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
         data-testid={testId}
         className={twMerge(
           cn(
-            'body-xs group inline-flex items-center gap-2 !font-medium text-t-body',
+            'body-xs group inline-flex items-center gap-2 !font-medium',
             {
-              'rounded-[6px] bg-t-primary px-[15px] py-[12px] text-t-btn-text transition-all hover:rounded-tr-[30px] hover:text-t-contrast':
-                style === ButtonStyle.BUTTON,
+              button: style === ButtonStyle.BUTTON,
             },
             {
-              'hover:text-t-link-hover': style !== ButtonStyle.BUTTON,
+              'text-t-body hover:text-t-link-hover': style !== ButtonStyle.BUTTON,
             }
           ),
           styleClasses

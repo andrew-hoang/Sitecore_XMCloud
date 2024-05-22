@@ -20,4 +20,3 @@ const ChevronDownIcon = (props: SvgProps): JSX.Element => {
 };
 
 export default ChevronDownIcon;
-
