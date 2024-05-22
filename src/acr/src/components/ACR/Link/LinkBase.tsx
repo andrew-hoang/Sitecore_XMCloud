@@ -51,7 +51,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
     return (
       <Icon
         iconName={getIcon()}
-        className={cn({
+        className={cn('flex-none', {
           'h-[30px] w-[30px] group-hover:fill-t-link-hover group-hover:[&>circle]:stroke-t-link-hover group-hover:[&>path]:fill-t-btn-text':
             isCTALink,
         })}

@@ -1,36 +1,29 @@
-import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { TestProps } from 'src/types/Test.props';
+import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
 
 /**
  * Model used for Sitecore Component integration
  */
 export type LinkListProps = ComponentProps &
   TestProps &
-  LinkListParams &
-  LinkListFields &
-  LinkListData;
-
-// Component Rendering Parameter fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type LinkListParams = {
-  params: {
-    mock_param?: string;
+  LinkListFields & {
+    hasIcon?: boolean;
+    style?: ButtonStyle;
   };
-};
-
-// Non-component data source fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type LinkListData = {
-  externalFields?: {
-    mock_external_data: Field<string>;
-  };
-};
 
 export type LinkListFields = {
   fields: {
-    heading: Field<string>; // Sitecore editable text field
-    image?: ImageField; // Sitecore editable image field
-    link?: LinkField; // Sitecore editable link field
+    link1: LinkField;
+    link2: LinkField;
+    link3: LinkField;
+    link4: LinkField;
+    link5: LinkField;
+    link6: LinkField;
+    link7: LinkField;
+    link8: LinkField;
+    link9: LinkField;
+    link10: LinkField;
   };
 };
