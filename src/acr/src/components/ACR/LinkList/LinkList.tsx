@@ -17,8 +17,8 @@ import cn from 'classnames';
  * @returns
  */
 const LinkList = (props: LinkListProps): JSX.Element => {
-  const { hasIcon = true, style = ButtonStyle.LINK, fields, testId, } = props;
-  const { links, } = fields ?? {};
+  const { hasIcon = true, style = ButtonStyle.LINK, fields, testId } = props;
+  const { links } = fields ?? {};
 
   // Theme sourced from ContainerFullBleed
   const { theme } = useContext(ThemeContext);
@@ -30,24 +30,24 @@ const LinkList = (props: LinkListProps): JSX.Element => {
     return (
       <Icon
         className={`
-          shrink-0
-          absolute
           invisible
-          top-10
+          absolute
           left-0
-          inline-block 
-          text-t-link-hover
-          ease-in-out
-          duration-300
+          top-10
+          inline-block
+          h-2.5 
           w-4
-          h-2.5
+          shrink-0
+          text-t-link-hover
+          duration-300
+          ease-in-out
 
           peer-hover:visible
           peer-hover:left-2
 
-          lg:w-5
-          lg:top-[2.6rem]
           lg:-left-2
+          lg:top-[2.6rem]
+          lg:w-5
           lg:peer-hover:left-0
         `}
         iconName={IconName.BULLET}
@@ -57,10 +57,15 @@ const LinkList = (props: LinkListProps): JSX.Element => {
   };
 
   return (
-    <ul className='md:block columns-md' data-ref='link-list' data-testid={testId}>
+    <ul className="columns-md md:block" data-ref="link-list" data-testid={testId}>
       {links.map((link, i) => (
-        <li className='px-8 pt-8 mb-4 w-full relative' key={i}>
-          <LinkBase link={link} hasIcon={hasIcon} style={style} shrinkIcon={false} styleClasses={cn(`
+        <li className="relative mb-4 w-full px-8 pt-8" key={i}>
+          <LinkBase
+            link={link}
+            hasIcon={hasIcon}
+            style={style}
+            styleClasses={cn(
+              `
             body-lg
             lg:!title-c
             pb-6
@@ -71,10 +76,13 @@ const LinkList = (props: LinkListProps): JSX.Element => {
             peer
 
             hover:no-underline
-          `, {
-            'hover:border-black': textBlack,
-            'hover:border-white': textWhite
-          })}/>
+          `,
+              {
+                'hover:border-black': textBlack,
+                'hover:border-white': textWhite,
+              }
+            )}
+          />
           {renderBulletIcon()}
         </li>
       ))}
@@ -83,4 +91,3 @@ const LinkList = (props: LinkListProps): JSX.Element => {
 };
 
 export default LinkList;
- 
