@@ -1,19 +1,15 @@
 ﻿---
-ID: "db1ca46d-29a8-4b1c-a9ab-49fe523c0853"
-Parent: "91415524-c0d2-438b-9b87-ee5eb9fc8212"
+ID: "29202afa-e1f9-48c4-bf88-e511bd38c8c3"
+Parent: "59549afd-954e-430c-aa9d-17bce6a815ad"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Foundation/ACR/Rendering Parameters/Base ACR Rendering Parameters
+Path: /sitecore/templates/Feature/ACR/Navigation/Link List
 SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: /~/icon/wordprocessing/32x32/insert_hyperlink.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
-  Value: |
-    {4247AAD4-EBDE-4994-998F-E067A51B1FE4}
-    {5C74E985-E055-43FF-B28C-DB6C6A6450A2}
-    {44A022DB-56D3-419A-B43B-E27E4D8E9C41}
-    {3DB3EB10-F8D0-4CC9-BE26-18CE7B139EC8}
-- ID: "f7d48a55-2158-4f02-9356-756654404f73"
-  Hint: __Standard values
-  Value: "{5F292AF0-5CF6-472F-86ED-F938CB820BFE}"
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
 Languages:
 - Language: en
   Versions:
@@ -21,7 +17,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240522T132908Z
+      Value: 20240522T151337Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -32,11 +28,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "451c3a77-0b38-4932-9bac-d96f81ee119b"
+      Value: "f23c8bf1-d138-405d-8aa8-670a52a10623"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240522T152954Z
+      Value: 20240522T151413Z
