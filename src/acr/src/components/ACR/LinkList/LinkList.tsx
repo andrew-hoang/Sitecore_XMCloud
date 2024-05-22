@@ -1,11 +1,8 @@
-import { useContext } from 'react';
 import { LinkListProps } from 'components/ACR/LinkList/LinkList.props';
 import Icon from '../Icon/Icon';
 
-import { Theme } from 'src/enumerations/Theme.enum';
 import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
 import { IconName } from 'src/enumerations/Icon.enum';
-import { ThemeContext } from 'src/context/Theme.context';
 
 import LinkBase from 'components/ACR/Link/LinkBase';
 
@@ -55,12 +52,6 @@ const LinkList = (props: LinkListProps): JSX.Element => {
     addLinkIfNotEmpty(fields.link10);
   }
 
-  // Theme sourced from ContainerFullBleed
-  const { theme } = useContext(ThemeContext);
-
-  const textWhite = theme === Theme.INDIGO || theme === Theme.PURPLE;
-  const textBlack = theme === Theme.WHITE || theme === Theme.LIGHT_INDIGO;
-
   const renderBulletIcon = (): JSX.Element | null => {
     return (
       <Icon
@@ -68,7 +59,7 @@ const LinkList = (props: LinkListProps): JSX.Element => {
           invisible
           absolute
           left-0
-          top-10
+          top-[2.6rem]
           inline-block
           h-2.5 
           w-4
@@ -80,10 +71,10 @@ const LinkList = (props: LinkListProps): JSX.Element => {
           peer-hover:visible
           peer-hover:left-2
 
-          lg:-left-2
-          lg:top-[2.6rem]
-          lg:w-5
-          lg:peer-hover:left-0
+          md:-left-2
+          md:top-[2.8rem]
+          md:w-5
+          md:peer-hover:left-0
         `}
         iconName={IconName.BULLET}
         isAriaHidden={true}
@@ -99,24 +90,18 @@ const LinkList = (props: LinkListProps): JSX.Element => {
             link={link}
             hasIcon={hasIcon}
             style={style}
-            styleClasses={cn(
+            styleClasses={
               `
-            body-lg
-            lg:!title-c
+            !title-c
             pb-6
             justify-between
             w-full
             border-b-1
-            border-current
+            border-t-body
             peer
 
             hover:no-underline
-          `,
-              {
-                'hover:border-black': textBlack,
-                'hover:border-white': textWhite,
-              }
-            )}
+          `}
           />
           {renderBulletIcon()}
         </li>
