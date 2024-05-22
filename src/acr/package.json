@@ -31,6 +31,8 @@
   },
   "license": "Apache-2.0",
   "dependencies": {
+    "@coveo/atomic-react": "^2.9.3",
+    "@coveo/headless": "^2.63.3",
     "@radix-ui/colors": "^3.0.0",
     "@radix-ui/themes": "^3.0.2",
     "@sitecore-cloudsdk/events": "^0.2.4",
