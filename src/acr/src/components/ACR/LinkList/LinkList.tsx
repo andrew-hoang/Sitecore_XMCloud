@@ -1,34 +1,76 @@
-import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
-import { Text } from '@sitecore-jss/sitecore-jss-react';
-
 import { LinkListProps } from 'components/ACR/LinkList/LinkList.props';
+import Icon from '../Icon/Icon';
 
-import { getStaticPropsForLinkList } from 'components/ACR/LinkList/LinkList.util';
+import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
+import { IconName } from 'src/enumerations/Icon.enum';
 
-const LinkList = (props: LinkListProps): JSX.Element => {
-  const { fields, testId } = props;
-
-  const { heading } = fields ?? {};
-
-  return (
-    <div data-ref="link-list" data-testid={testId}>
-      <Text tag="h2" field={heading} />
-      <p>The LinkList Component</p>
-    </div>
-  );
-};
+import LinkBase from 'components/ACR/Link/LinkBase';
 
 /**
- * "Data" developer method
- * TODO_SCAFFOLD_BE: If "getStaticProps" was deleted remove "useComponentProps". They work together.
- * TODO_SCAFFOLD_BE: Populate if needed, remove if not
- * Will be called during SSG.  Do NOT return null.
- * @param {ComponentRendering} _rendering
- * @param {LayoutServiceData} _layoutData
- * @param {GetStaticPropsContext} _context
+ * ACRAR-271 - Link List
+ * @param props
+ * @returns
  */
-export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  return getStaticPropsForLinkList(_rendering, _layoutData);
+const LinkList = (props: LinkListProps): JSX.Element => {
+  const { hasIcon = true, style = ButtonStyle.LINK, fields, testId } = props;
+  const { links } = fields ?? {};
+
+  const renderBulletIcon = (): JSX.Element | null => {
+    return (
+      <Icon
+        className={`
+          invisible
+          absolute
+          left-0
+          top-[2.6rem]
+          inline-block
+          h-2.5 
+          w-4
+          shrink-0
+          text-t-link-hover
+          duration-300
+          ease-in-out
+
+          peer-hover:visible
+          peer-hover:left-2
+
+          md:-left-2
+          md:top-[2.8rem]
+          md:w-5
+          md:peer-hover:left-0
+        `}
+        iconName={IconName.BULLET}
+        isAriaHidden={true}
+      />
+    );
+  };
+
+  return (
+    <ul className="columns-md md:block" data-ref="link-list" data-testid={testId}>
+      {links.map((link, i) => (
+        <li className="relative mb-4 w-full px-8 pt-8" key={i}>
+          <LinkBase
+            link={link}
+            hasIcon={hasIcon}
+            style={style}
+            styleClasses={
+              `
+            !title-c
+            pb-6
+            justify-between
+            w-full
+            border-b-1
+            border-t-body
+            peer
+
+            hover:no-underline
+          `}
+          />
+          {renderBulletIcon()}
+        </li>
+      ))}
+    </ul>
+  );
 };
 
 export default LinkList;

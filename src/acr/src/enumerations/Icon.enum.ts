@@ -6,4 +6,5 @@ export enum IconName {
   RIGHT_ARROW = 'right-arrow',
   RIGHT_ARROW_CIRCLE = 'right-arrow-circle',
   LEFT_ARROW_CIRCLE = 'left-arrow-circle',
+  BULLET = 'bullet',
 }
