@@ -22,7 +22,7 @@ const LinkList = (props: LinkListProps): JSX.Element => {
           invisible
           absolute
           left-0
-          top-10
+          top-[2.6rem]
           inline-block
           h-2.5 
           w-4
@@ -34,10 +34,10 @@ const LinkList = (props: LinkListProps): JSX.Element => {
           peer-hover:visible
           peer-hover:left-2
 
-          lg:-left-2
-          lg:top-[2.6rem]
-          lg:w-5
-          lg:peer-hover:left-0
+          md:-left-2
+          md:top-[2.8rem]
+          md:w-5
+          md:peer-hover:left-0
         `}
         iconName={IconName.BULLET}
         isAriaHidden={true}
@@ -55,8 +55,7 @@ const LinkList = (props: LinkListProps): JSX.Element => {
             style={style}
             styleClasses={
               `
-            body-lg
-            lg:!title-c
+            !title-c
             pb-6
             justify-between
             w-full
