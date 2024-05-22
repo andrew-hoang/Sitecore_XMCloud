@@ -1,15 +1,10 @@
-import { useContext } from 'react';
 import { LinkListProps } from 'components/ACR/LinkList/LinkList.props';
 import Icon from '../Icon/Icon';
 
-import { Theme } from 'src/enumerations/Theme.enum';
 import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
 import { IconName } from 'src/enumerations/Icon.enum';
-import { ThemeContext } from 'src/context/Theme.context';
 
 import LinkBase from 'components/ACR/Link/LinkBase';
-
-import cn from 'classnames';
 
 /**
  * ACRAR-271 - Link List
@@ -19,12 +14,6 @@ import cn from 'classnames';
 const LinkList = (props: LinkListProps): JSX.Element => {
   const { hasIcon = true, style = ButtonStyle.LINK, fields, testId } = props;
   const { links } = fields ?? {};
-
-  // Theme sourced from ContainerFullBleed
-  const { theme } = useContext(ThemeContext);
-
-  const textWhite = theme === Theme.INDIGO || theme === Theme.PURPLE;
-  const textBlack = theme === Theme.WHITE || theme === Theme.LIGHT_INDIGO;
 
   const renderBulletIcon = (): JSX.Element | null => {
     return (
@@ -64,7 +53,7 @@ const LinkList = (props: LinkListProps): JSX.Element => {
             link={link}
             hasIcon={hasIcon}
             style={style}
-            styleClasses={cn(
+            styleClasses={
               `
             body-lg
             lg:!title-c
@@ -76,12 +65,7 @@ const LinkList = (props: LinkListProps): JSX.Element => {
             peer
 
             hover:no-underline
-          `,
-              {
-                'hover:border-black': textBlack,
-                'hover:border-white': textWhite,
-              }
-            )}
+          `}
           />
           {renderBulletIcon()}
         </li>
