@@ -5,7 +5,8 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type MultiPromoProps = ComponentProps & TestProps &
+export type MultiPromoProps = ComponentProps &
+  TestProps &
   MultiPromoParams &
   MultiPromoFields &
   MultiPromoData;

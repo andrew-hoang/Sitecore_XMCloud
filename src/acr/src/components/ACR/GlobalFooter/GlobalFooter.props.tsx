@@ -5,7 +5,8 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type GlobalFooterProps = ComponentProps & TestProps &
+export type GlobalFooterProps = ComponentProps &
+  TestProps &
   GlobalFooterParams &
   GlobalFooterFields &
   GlobalFooterData;
