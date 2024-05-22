@@ -90,8 +90,7 @@ const LinkList = (props: LinkListProps): JSX.Element => {
             link={link}
             hasIcon={hasIcon}
             style={style}
-            styleClasses={
-              `
+            styleClasses={`
             !title-c
             pb-6
             justify-between
