@@ -46,7 +46,7 @@ const Breadcrumb = (props: BreadcrumbProps): JSX.Element => {
           })}
           <li aria-current="page" className="">
             <Flex gap="3" align="center">
-              <span className="text-t-link-disabled max-w-[45ch] overflow-hidden text-ellipsis">
+              <span className="max-w-[45ch] overflow-hidden text-ellipsis text-t-link-disabled">
                 {name}
               </span>
             </Flex>

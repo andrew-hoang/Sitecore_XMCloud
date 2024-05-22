@@ -40,5 +40,5 @@ export type BreadcrumbData = {
 };
 
 export type BreadcrumbFields = {
-  fields: {};
+  fields: object;
 };

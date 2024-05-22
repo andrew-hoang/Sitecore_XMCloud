@@ -5,7 +5,8 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type TextCardsProps = ComponentProps & TestProps &
+export type TextCardsProps = ComponentProps &
+  TestProps &
   TextCardsParams &
   TextCardsFields &
   TextCardsData;
