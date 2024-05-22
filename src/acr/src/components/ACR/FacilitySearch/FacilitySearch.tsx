@@ -22,23 +22,23 @@ const FacilitySearch = (props: FacilitySearchProps): JSX.Element => {
       <p>The FacilitySearch Component</p>
       <p>{fields.zipCityLabel.value}</p>
       <ul>
-        {externalFields?.searchOptions.map((item: FacilityEnumeration) => {
-          return <li>{item.value}</li>;
+        {externalFields?.searchOptions.map((item: FacilityEnumeration, index) => {
+          return <li key={index}>{item.value}</li>;
         })}
       </ul>
       <ul>
-        {externalFields?.countryOptions.map((item: FacilityEnumeration) => {
+        {externalFields?.countryOptions.map((item: FacilityEnumeration, index) => {
           return (
-            <li>
+            <li key={index}>
               {item.name}:{item.value}
             </li>
           );
         })}
       </ul>
       <ul>
-        {externalFields?.stateOptions.map((item: FacilityEnumeration) => {
+        {externalFields?.stateOptions.map((item: FacilityEnumeration, index) => {
           return (
-            <li>
+            <li key={index}>
               {item.name}:{item.value}
             </li>
           );
