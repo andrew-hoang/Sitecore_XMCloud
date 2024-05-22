@@ -72,7 +72,7 @@ const LinkList = (props: LinkListProps): JSX.Element => {
             justify-between
             w-full
             border-b-1
-            border-current
+            border-t-body
             peer
 
             hover:no-underline
