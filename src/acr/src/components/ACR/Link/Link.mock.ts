@@ -21,4 +21,3 @@ export const withIconMockData: LinkBaseProps = {
   style: ButtonStyle.BUTTON,
   hasIcon: true,
 };
-

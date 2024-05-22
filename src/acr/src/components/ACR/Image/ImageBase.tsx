@@ -17,10 +17,6 @@ const ImageBase = (props: ImageBaseProps) => {
 
   const src = image?.value?.src;
 
-  if (!src) {
-    return <></>;
-  }
-
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
 
@@ -30,6 +26,10 @@ const ImageBase = (props: ImageBaseProps) => {
 
   const { ref, inView } = useInView({ triggerOnce: true, threshold: 0.6 });
 
+  if (!src) {
+    return <></>;
+  }
+
   // SVGs by default should not be optimized
   // https://nextjs.org/docs/pages/api-reference/components/image#dangerouslyallowsvg
   const isSvg = src?.includes('.svg');
@@ -38,8 +38,9 @@ const ImageBase = (props: ImageBaseProps) => {
     <div
       ref={ref}
       className={cn(
-        'reveal-image relative block max-w-max overflow-hidden',
-        { 'reveal-image--in-view': (isLoaded && inView) || isPageEditing },
+        'block',
+        { 'reveal-image': animate },
+        { 'reveal-image--in-view': (animate && isLoaded && inView) || isPageEditing },
         className
       )}
     >

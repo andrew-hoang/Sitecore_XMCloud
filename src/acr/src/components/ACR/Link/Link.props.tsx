@@ -12,4 +12,3 @@ export type LinkBaseProps = TestProps &
     style?: ButtonStyle;
     hasIcon?: boolean;
   };
-

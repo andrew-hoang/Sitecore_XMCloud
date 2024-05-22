@@ -20,7 +20,7 @@ type DropdropProps = Omit<InputsProps, 'onChange'> & {
 };
 
 const MultiSelect = (props: DropdropProps) => {
-  const { label, items, placeholder, className, selectedItems = [], onChange } = props;
+  const { label, items, placeholder, className, selectedItems = [], onChange, disabled } = props;
 
   const { getDropdownProps } = useMultipleSelection({
     selectedItems,
@@ -85,14 +85,16 @@ const MultiSelect = (props: DropdropProps) => {
         <button
           type="button"
           className={cn(
-            'body-sm border-indigo-100 inline-flex h-[56px] w-full items-center justify-between gap-[5px] rounded-[8px] border-[1px] bg-white px-[15px] py-2',
+            'body-sm inline-flex h-[56px] w-full items-center justify-between gap-[5px] rounded-[8px] border-[1px] border-indigo-100 bg-white px-[15px] py-2',
             {
               'rounded-bl-none rounded-br-none': isOpen,
-            }
+            },
+            { 'border-gray-100 bg-gray-20 text-gray-100': disabled }
           )}
           onClick={toggleMenu}
           {...getToggleButtonProps(
             getDropdownProps({
+              disabled,
               'aria-label':
                 selectedItems?.length > 0
                   ? selectedItems?.map((item) => item?.label).join(', ')
@@ -128,7 +130,7 @@ const MultiSelect = (props: DropdropProps) => {
 
         <ul
           className={cn(
-            'rounded-md border-indigo-100 absolute z-10 w-full overflow-hidden rounded-b-[8px] border-[1px] border-t-0 bg-white',
+            'rounded-md absolute z-10 w-full overflow-hidden rounded-b-[8px] border-[1px] border-t-0 border-indigo-100 bg-white',
             { hidden: !(isOpen && items?.length) }
           )}
           {...getMenuProps()}
