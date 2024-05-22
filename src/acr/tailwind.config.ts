@@ -77,6 +77,9 @@ const config: Config = {
       borderRadius: {
         none: '0',
       },
+      borderWidth: {
+        '1': '1px',
+      },
       fontWeight: {
         semibold: '600',
         black: '900',
