@@ -11,8 +11,8 @@ export type LinkListProps = ComponentProps &
   LinkListParams &
   LinkListFields &
   LinkListData & {
-    hasIcon?: boolean
-    style?: ButtonStyle
+    hasIcon?: boolean;
+    style?: ButtonStyle;
   };
 
 // Component Rendering Parameter fields
@@ -33,6 +33,6 @@ export type LinkListData = {
 
 export type LinkListFields = {
   fields: {
-    links: LinkField[], // Array of Sitecore editable link field objects
+    links: LinkField[]; // Array of Sitecore editable link field objects
   };
 };

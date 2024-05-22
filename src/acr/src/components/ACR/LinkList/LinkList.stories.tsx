@@ -47,12 +47,7 @@ export const HalfWidthContainer: Story = {
   render: (args) => {
     return (
       <ContainerFullBleed {...containerFullBleedMockData} params={{ theme: args?.theme }}>
-        <Container5050
-          {...containerHalfWidthMockData}
-          right={
-            <LinkList {...args} />
-          }
-        />
+        <Container5050 {...containerHalfWidthMockData} right={<LinkList {...args} />} />
       </ContainerFullBleed>
     );
   },

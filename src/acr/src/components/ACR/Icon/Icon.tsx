@@ -10,7 +10,7 @@ const iconMap: { [key: string]: string } = {
   [IconName.RIGHT_ARROW]: 'RightArrowIcon',
   [IconName.RIGHT_ARROW_CIRCLE]: 'RightArrowCircleIcon',
   [IconName.LEFT_ARROW_CIRCLE]: 'LeftArrowCircleIcon',
-  [IconName.BULLET]: 'BulletIcon'
+  [IconName.BULLET]: 'BulletIcon',
 };
 
 const Icon = (props: IconProps): JSX.Element | null => {
