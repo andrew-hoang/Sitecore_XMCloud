@@ -16,7 +16,7 @@ import cn from 'classnames';
  * @returns
  */
 const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
-  const { link, testId, styleClasses, style = ButtonStyle.BUTTON, hasIcon } = props;
+  const { link, testId, styleClasses, style = ButtonStyle.BUTTON, hasIcon, shrinkIcon, hasBulletIcon } = props;
 
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
@@ -28,7 +28,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
   };
 
   const isCTALink = style === ButtonStyle.CTA;
-
+  
   const getIcon = () => {
     if (isCTALink) {
       return IconName.RIGHT_ARROW_CIRCLE;
@@ -54,7 +54,38 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
         className={cn({
           'h-[30px] w-[30px] group-hover:fill-t-link-hover group-hover:[&>circle]:stroke-t-link-hover group-hover:[&>path]:fill-t-btn-text':
             isCTALink,
+          'shrink-0': !shrinkIcon
         })}
+      />
+    );
+  };
+
+  const renderBulletIcon = (): JSX.Element | null => {
+    return (
+      <Icon
+        className={`
+          shrink-0
+          invisible
+          absolute
+          top-2
+          fill-current 
+          inline-block 
+          -translate-x-8
+          ease-in-out
+          duration-300
+          w-4
+          h-2.5
+
+          group-hover:visible
+          group-hover:-translate-x-6
+
+          md:w-5
+          md:top-2.5
+          md:-translate-x-10
+          md:group-hover:-translate-x-8
+        `}
+        iconName={IconName.LINK_ITEM_BULLET}
+        isAriaHidden={true}
       />
     );
   };
@@ -92,6 +123,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
           styleClasses
         )}
       >
+        {hasBulletIcon && renderBulletIcon()}
         {isCTALink && renderIcon()}
         <span className={cn({ 'link-underline': style !== ButtonStyle.BUTTON })}>{linkText}</span>
         {hasIcon && !isCTALink && renderIcon()}
