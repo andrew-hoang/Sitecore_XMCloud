@@ -19,7 +19,8 @@ type DropdropProps = InputsProps & {
 };
 
 const Dropdown = (props: DropdropProps) => {
-  const { label, items, value, placeholder, className, defaultSelectedItem, onChange } = props;
+  const { label, items, value, placeholder, className, defaultSelectedItem, onChange, disabled } =
+    props;
 
   const selectState = useSelect({
     items,
@@ -53,13 +54,15 @@ const Dropdown = (props: DropdropProps) => {
         <button
           type="button"
           className={cn(
-            'body-sm border-indigo-100 inline-flex h-[56px] w-full items-center justify-between gap-[5px] rounded-[8px] border-[1px] bg-white px-[15px]',
+            'body-sm inline-flex h-[56px] w-full items-center justify-between gap-[5px] rounded-[8px] border-[1px] border-indigo-100 bg-white px-[15px]',
             {
               'rounded-bl-none rounded-br-none': isOpen,
-            }
+            },
+            { 'border-gray-100 bg-gray-20 text-gray-100': disabled }
           )}
           onClick={toggleMenu}
           {...getToggleButtonProps({
+            disabled,
             'aria-label': selectedItem?.label || placeholder,
             onKeyDown: (event) => {
               if (event.key === 'Escape') {
@@ -77,7 +80,7 @@ const Dropdown = (props: DropdropProps) => {
         </button>
         <ul
           className={cn(
-            'rounded-md border-indigo-100 absolute z-10 w-full overflow-hidden  rounded-b-[8px] border-[1px] border-t-0 bg-white',
+            'rounded-md absolute z-10 w-full overflow-hidden rounded-b-[8px]  border-[1px] border-t-0 border-indigo-100 bg-white',
             { hidden: !(isOpen && items?.length) }
           )}
           {...getMenuProps()}

@@ -1,16 +1,20 @@
-import { buildSearchEngine, getOrganizationEndpoints } from "@coveo/atomic-react";
-import { useMemo } from "react";
+import { buildSearchEngine, getOrganizationEndpoints } from '@coveo/atomic-react';
+import { useMemo } from 'react';
 
 const useCoveoSearchEgine = () => {
-  const engine = useMemo(() => buildSearchEngine({
-    configuration: {
-      accessToken: "xx82e93609-c9d3-4d90-a84f-82000fa75773",
-      organizationId: "americancollegeofradiologysandbox",
-      organizationEndpoints: getOrganizationEndpoints(
-        "americancollegeofradiologysandbox"
-      ),
-    },
-  }), []);
+  const engine = useMemo(
+    () =>
+      buildSearchEngine({
+        configuration: {
+          accessToken: process.env.NEXT_PUBLIC_COVEO_ACCESS_TOKEN as string,
+          organizationId: process.env.NEXT_PUBLIC_COVEO_ORGANIZATION_ID as string,
+          organizationEndpoints: getOrganizationEndpoints(
+            process.env.NEXT_PUBLIC_COVEO_ORGANIZATION_ID as string
+          ),
+        },
+      }),
+    []
+  );
   return engine;
 };
 

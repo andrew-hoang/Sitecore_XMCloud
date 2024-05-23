@@ -33,9 +33,13 @@ const ContainerFullBleed = (props: ContainerFullBleedProps): JSX.Element => {
       )}
       data-testid={testId}
     >
-      <ThemeContext.Provider value={{ theme }}>
+      {theme ? (
+        <ThemeContext.Provider value={{ theme }}>
+          <PlaceholderBase {...placeholderProps} />
+        </ThemeContext.Provider>
+      ) : (
         <PlaceholderBase {...placeholderProps} />
-      </ThemeContext.Provider>
+      )}
     </Section>
   );
 };

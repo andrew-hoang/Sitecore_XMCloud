@@ -8,6 +8,11 @@ export const defaultMockData: LinkBaseProps = {
 
 export const linkMockData: LinkBaseProps = {
   link: { value: { href: '/', text: 'Learn more' } },
+  style: ButtonStyle.LINK,
+};
+
+export const ctaMockData: LinkBaseProps = {
+  link: { value: { href: '/', text: 'Learn more' } },
   style: ButtonStyle.CTA,
 };
 
@@ -16,4 +21,3 @@ export const withIconMockData: LinkBaseProps = {
   style: ButtonStyle.BUTTON,
   hasIcon: true,
 };
-

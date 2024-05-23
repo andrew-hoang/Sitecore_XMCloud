@@ -9,4 +9,3 @@ test('Container70 unit tests', () => {
   const element = screen.getByTestId(TEST_ID);
   expect(element).toBeInTheDocument();
 });
-

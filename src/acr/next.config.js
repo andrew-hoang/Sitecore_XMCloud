@@ -42,10 +42,15 @@ const nextConfig = {
       },
       {
         protocol: 'https',
+        hostname: 'xmc-americancol5d03-acrorge141-devb5f5.sitecorecloud.io',
+        port: '',
+      },
+      {
+        protocol: 'https',
         hostname: 'feaas*.blob.core.windows.net',
         port: '',
       },
-    ]
+    ],
   },
 
   async rewrites() {

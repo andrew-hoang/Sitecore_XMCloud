@@ -35,6 +35,8 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
     }
 
     switch (link?.value?.linktype) {
+      case 'back':
+        return IconName.LEFT_ARROW_CIRCLE;
       case 'external':
         return IconName.EXTERNAL;
       case 'download':
@@ -49,7 +51,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
     return (
       <Icon
         iconName={getIcon()}
-        className={cn({
+        className={cn('flex-none', {
           'h-[30px] w-[30px] group-hover:fill-t-link-hover group-hover:[&>circle]:stroke-t-link-hover group-hover:[&>path]:fill-t-btn-text':
             isCTALink,
         })}
@@ -78,20 +80,19 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
         data-testid={testId}
         className={twMerge(
           cn(
-            'body-xs group inline-flex items-center gap-2 !font-medium text-t-body hover:underline focus:rounded-[3px] focus:outline-1 focus:outline-offset-4 focus:outline-t-primary',
+            'body-xs group inline-flex items-center gap-2 !font-medium',
             {
-              'rounded-[6px] bg-t-primary px-[15px] py-[12px] text-t-btn-text transition-all hover:rounded-tr-[30px] hover:text-t-contrast':
-                style === ButtonStyle.BUTTON,
+              button: style === ButtonStyle.BUTTON,
             },
             {
-              'hover:text-t-link-hover': style !== ButtonStyle.BUTTON,
+              'text-t-body hover:text-t-link-hover': style !== ButtonStyle.BUTTON,
             }
           ),
           styleClasses
         )}
       >
         {isCTALink && renderIcon()}
-        {linkText}
+        <span className={cn({ 'link-underline': style !== ButtonStyle.BUTTON })}>{linkText}</span>
         {hasIcon && !isCTALink && renderIcon()}
       </Link>
     );
@@ -101,4 +102,3 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
 };
 
 export default LinkBase;
-
