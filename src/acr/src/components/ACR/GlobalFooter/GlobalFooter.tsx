@@ -45,13 +45,15 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
   return (
     <Theme data-theme="indigo" accentColor='green'>
       <div data-ref="global-footer bg-t-background text-t-body" data-testid={testId}>
-        <div data-ref="newsletter-sign-up indigo" data-testid={testId}>
-          <Flex justify="between" className='py-8'>
-            <Text tag="h4" className="heading-d green" field={footerNewsletterText} />
-            <LinkBase link={footerNewsletterLink} />
-          </Flex>
-          <Separator my="3" size="4" color='green' />
-        </div>
+        {footerNewsletterLink && footerNewsletterText && (
+          <div data-ref="global-footer__newsletter-sign-up indigo" data-testid={testId}>
+            <Flex justify="between" className='py-8'>
+              <Text tag="h4" className="heading-d green" field={footerNewsletterText} />
+              <LinkBase link={footerNewsletterLink} />
+            </Flex>
+            <Separator my="3" size="4" color='green' />
+          </div>
+        )}
         <Placeholder
           name={footerLink1Placeholder.placeholder.name}
           rendering={footerLink1Placeholder.placeholder.rendering}
