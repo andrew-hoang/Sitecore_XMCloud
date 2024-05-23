@@ -1,5 +1,4 @@
 import { LinkListProps } from './LinkList.props';
-import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
 
 export const defaultMockData: LinkListProps = {
   params: {},
@@ -8,9 +7,6 @@ export const defaultMockData: LinkListProps = {
     componentName: 'LinkList',
     dataSource: '/',
   },
-  hasIcon: true,
-  style: ButtonStyle.LINK,
-  isInHalfWidthContainer: false,
   fields: {
     links: [
       { value: { href: "/", text: "ACR Radiation Safety Resources", linktype: 'media' } },

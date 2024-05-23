@@ -1,6 +1,6 @@
 import { SvgProps, sharedAttributes } from '../Icon.props';
 
-const LinkItemBulletIcon = (props: SvgProps): JSX.Element => {
+const BulletIcon = (props: SvgProps): JSX.Element => {
   const { className } = props;
 
   return (
@@ -17,5 +17,5 @@ const LinkItemBulletIcon = (props: SvgProps): JSX.Element => {
   );
 };
 
-export default LinkItemBulletIcon;
+export default BulletIcon;
 

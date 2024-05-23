@@ -13,7 +13,6 @@ export type LinkListProps = ComponentProps &
   LinkListData & {
     hasIcon?: boolean
     style?: ButtonStyle
-    isInHalfWidthContainer?: boolean
   };
 
 // Component Rendering Parameter fields

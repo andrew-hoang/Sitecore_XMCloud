@@ -50,7 +50,7 @@ export const HalfWidthContainer: Story = {
         <Container5050
           {...containerHalfWidthMockData}
           right={
-            <LinkList {...args} isInHalfWidthContainer />
+            <LinkList {...args} />
           }
         />
       </ContainerFullBleed>
