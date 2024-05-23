@@ -1,4 +1,4 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 
 import { IconName } from 'src/enumerations/Icon.enum';
 
@@ -7,7 +7,7 @@ import InputField from './Input';
 import RadioButton from './Radio';
 import CheckboxItem from './Checkbox';
 import SelectDropdown from './Select';
-// import MultiSelectDropdown, { SelectItem } from './MultiSelect';
+import MultiSelectDropdown, { SelectItem } from './MultiSelect';
 
 export default {
   title: 'Base/Inputs',
@@ -61,23 +61,21 @@ export const Select = {
 };
 
 // TODO need to fix the `useState` linter error
-// export const MultiSelect = {
-//   render: () => {
-//     const items = [
-//       { value: '1', label: 'Option 1' },
-//       { value: '2', label: 'Option 2' },
-//       { value: '3', label: 'Option 3' },
-//     ];
+export const MultiSelect = () => {
+  const items = [
+    { value: '1', label: 'Option 1' },
+    { value: '2', label: 'Option 2' },
+    { value: '3', label: 'Option 3' },
+  ];
 
-//     const [selectedItems, setItems] = useState<{ value: string; label: string }[]>([]);
+  const [selectedItems, setItems] = useState<{ value: string; label: string }[]>([]);
 
-//     return (
-//       <MultiSelectDropdown
-//         placeholder="Select items..."
-//         items={items}
-//         selectedItems={selectedItems}
-//         onChange={(selected: SelectItem[]) => setItems(selected)}
-//       />
-//     );
-//   },
-// };
+  return (
+    <MultiSelectDropdown
+      placeholder="Select items..."
+      items={items}
+      selectedItems={selectedItems}
+      onChange={(selected: SelectItem[]) => setItems(selected)}
+    />
+  );
+};

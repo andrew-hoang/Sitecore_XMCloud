@@ -1,0 +1,42 @@
+﻿---
+ID: "1d3ea9e7-68e9-45f1-9d5d-876fe54e9014"
+Parent: "32c9abfe-203b-4b48-9263-9d0d1b2141c4"
+Template: "3c8bd8a1-280b-4278-bb8b-21fa3b87af0f"
+Path: /sitecore/system/Settings/Html Editor Profiles/Rich Text ACR/Toolbar 1/Insert Sitecore Link
+BranchID: "b9ed3ccb-9ec5-4c8c-825b-3dbc2eb0e676"
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: network/16x16/link.png
+- ID: "7cf6da87-047d-447d-99e9-d1e355330db3"
+  Hint: Click
+  Value: InsertSitecoreLink
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 1400
+Languages:
+- Language: en
+  Fields:
+  - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
+    Hint: __Display name
+    Value: Insert Sitecore Link
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20101116T121000
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "0a37bfa0-cfc6-48b8-9ac8-9e16a57458d9"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240520T161138Z
