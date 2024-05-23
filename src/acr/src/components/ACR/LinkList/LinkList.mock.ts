@@ -9,13 +9,31 @@ export const defaultMockData: LinkListProps = {
   },
   fields: {
     links: [
-      { value: { href: "/", text: "ACR Radiation Safety Resources", linktype: 'media' } },
-      { value: { href: "/", text: "ACR Guidance Document on MR Safe Practices", linktype: 'external' } },
-      { value: { href: "/", text: "ACR Manual on Contrast Media", linktype: 'link' } },
-      { value: { href: "/", text: "Whitepaper on Radiation Dose in Medicine", linktype: 'media' } },
-      { value: { href: "/", text: "Mammography Guidelines", linktype: 'external' } },
-      { value: { href: "/", text: "Whitepaper on Radiation Dose in Medicine: 3 years later", linktype: 'link' } },
-      { value: { href: "/", text: "U.S. Diagnostic Reference Levels and Achievable Doses for 10 Adult CT Examinations", linktype: 'media' } },
-    ]
+      { value: { href: '/', text: 'ACR Radiation Safety Resources', linktype: 'media' } },
+      {
+        value: {
+          href: '/',
+          text: 'ACR Guidance Document on MR Safe Practices',
+          linktype: 'external',
+        },
+      },
+      { value: { href: '/', text: 'ACR Manual on Contrast Media', linktype: 'link' } },
+      { value: { href: '/', text: 'Whitepaper on Radiation Dose in Medicine', linktype: 'media' } },
+      { value: { href: '/', text: 'Mammography Guidelines', linktype: 'external' } },
+      {
+        value: {
+          href: '/',
+          text: 'Whitepaper on Radiation Dose in Medicine: 3 years later',
+          linktype: 'link',
+        },
+      },
+      {
+        value: {
+          href: '/',
+          text: 'U.S. Diagnostic Reference Levels and Achievable Doses for 10 Adult CT Examinations',
+          linktype: 'media',
+        },
+      },
+    ],
   },
 };
