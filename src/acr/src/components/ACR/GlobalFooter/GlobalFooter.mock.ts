@@ -38,11 +38,12 @@ export const defaultMockData: GlobalFooterProps = {
       },
     },
     footerNewsletterText: {
-      value: '',
+      value: 'Get the latest ACR news',
     },
     footerNewsletterLink: {
       value: {
-        href: '',
+        href: '/',
+        text: "Sign up"
       },
     },
     directoryTitle: {
