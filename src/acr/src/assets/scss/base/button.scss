@@ -1,0 +1,6 @@
+@layer base {
+  .button {
+    @apply rounded-[6px] bg-t-primary px-[15px] py-[12px] text-t-btn-text transition-all hover:rounded-tr-[30px] hover:text-t-contrast;
+  }
+}
+
