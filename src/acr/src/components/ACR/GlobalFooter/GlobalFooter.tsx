@@ -1,8 +1,9 @@
 import { GlobalFooterProps } from 'components/ACR/GlobalFooter/GlobalFooter.props';
 import { PlaceholderBaseProps } from '../Placeholder/PlaceholderBase';
-import { Placeholder } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Placeholder, NextImage } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
 import { Theme } from '@radix-ui/themes';
+import { Link } from '@sitecore-jss/sitecore-jss-react';
 
 import { Flex, Separator } from '@radix-ui/themes';
 import LinkBase from '../Link/LinkBase';
@@ -40,7 +41,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
     },
   };
 
-  const { footerNewsletterText, footerNewsletterLink } = fields;
+  const { footerNewsletterText, footerNewsletterLink, footerLogo } = fields;
 
   return (
     <Theme data-theme="indigo" accentColor='green'>
@@ -54,6 +55,11 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
             <Separator my="3" size="4" color='green' />
           </div>
         )}
+        <div>
+          <Link field={{ href: "/" }} aria-label='navigate to root site'>
+            <NextImage field={footerLogo} height="50" width="196" alt="american college of radiology logo" />
+          </Link>
+        </div>
         <Placeholder
           name={footerLink1Placeholder.placeholder.name}
           rendering={footerLink1Placeholder.placeholder.rendering}
