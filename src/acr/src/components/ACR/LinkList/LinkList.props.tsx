@@ -1,4 +1,4 @@
-import { LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { TestProps } from 'src/types/Test.props';
 import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
@@ -8,22 +8,22 @@ import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
  */
 export type LinkListProps = ComponentProps &
   TestProps &
+  LinkListParams &
   LinkListFields & {
     hasIcon?: boolean;
     style?: ButtonStyle;
   };
 
-export type LinkListFields = {
+// Component Rendering Parameter fields
+// TODO_SCAFFOLD_BE: Populate if needed, remove if not
+export type LinkListParams = {
+  params: {
+    mock_param?: string;
+  };
+}
+
+type LinkListFields = {
   fields: {
-    link1: LinkField;
-    link2: LinkField;
-    link3: LinkField;
-    link4: LinkField;
-    link5: LinkField;
-    link6: LinkField;
-    link7: LinkField;
-    link8: LinkField;
-    link9: LinkField;
-    link10: LinkField;
+    links: LinkField[]; // Array of Sitecore editable link field objects
   };
 };
