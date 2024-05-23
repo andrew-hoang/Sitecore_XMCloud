@@ -6,7 +6,7 @@ const styles = `
   
   atomic-search-box::part(input) {
     background-color: var(--c-white);
-    height: 40px;
+    height: 56px;
     border-radius: 8px;
   }
 
@@ -28,6 +28,8 @@ const styles = `
   atomic-search-box::part(suggestions-wrapper) {
     --atomic-font-family: var(--font-sans);
     background-color: white;
+    border-radius: 0 0 8px 8px;
+    top: 92%;
   }
 
   atomic-search-box::part(query-suggestion-text) {

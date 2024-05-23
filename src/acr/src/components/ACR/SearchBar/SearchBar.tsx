@@ -8,6 +8,11 @@ import styles from "./SearchBar.styles";
 import { getStaticPropsForSearchBar } from 'components/ACR/SearchBar/SearchBar.util';
 
 
+/**
+ * ACRAR-283 - Search Bar
+ * @param props
+ * @returns JSX Element Coveo Search Bar
+ */
 const SearchBar = (props: SearchBarProps): JSX.Element => {
   const { fields, testId } = props;
 
