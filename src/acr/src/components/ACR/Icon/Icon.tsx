@@ -22,6 +22,7 @@ const Icon = (props: IconProps): JSX.Element | null => {
   if (!iconType) return null;
 
   try {
+    // eslint-disable-next-line @typescript-eslint/no-var-requires
     const IconType = require(`./svg/${iconType}`).default;
 
     return (

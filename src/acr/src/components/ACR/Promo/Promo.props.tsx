@@ -5,10 +5,7 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type PromoProps = ComponentProps & TestProps &
-  PromoParams &
-  PromoFields &
-  PromoData;
+export type PromoProps = ComponentProps & TestProps & PromoParams & PromoFields & PromoData;
 
 // Component Rendering Parameter fields
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not

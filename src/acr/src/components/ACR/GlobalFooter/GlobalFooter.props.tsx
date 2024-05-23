@@ -6,7 +6,27 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type GlobalFooterProps = ComponentProps & PlaceholderProps & TestProps & GlobalFooterFields;
+export type GlobalFooterProps = ComponentProps &
+  TestProps &
+  GlobalFooterParams &
+  GlobalFooterFields &
+  GlobalFooterData;
+
+// Component Rendering Parameter fields
+// TODO_SCAFFOLD_BE: Populate if needed, remove if not
+export type GlobalFooterParams = {
+  params: {
+    mock_param?: string;
+  };
+};
+
+// Non-component data source fields
+// TODO_SCAFFOLD_BE: Populate if needed, remove if not
+export type GlobalFooterData = {
+  externalFields?: {
+    mock_external_data: Field<string>;
+  };
+};
 
 export type GlobalFooterFields = {
   fields: {

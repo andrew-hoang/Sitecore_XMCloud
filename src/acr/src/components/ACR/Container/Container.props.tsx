@@ -1,6 +1,5 @@
-
 export type ContainerPlaceHolderProps = {
-    dynamicKey: string;
-    genericKey: string;
-    fragment: string;
-  };
+  dynamicKey: string;
+  genericKey: string;
+  fragment: string;
+};
