@@ -7,14 +7,6 @@ export const getBoomiBaseApi = (): string => {
 import { AccountRequest } from 'src/types/boomi/requests/AccountRequest.props';
 import { ACRAccount } from 'src/types/boomi/results/ACRAccount.props';
 
-const account = {
-  Account: {
-    Email_Address: 'akhanal@acr.org',
-    Okta_ID: '',
-    SF_Account_ID: '',
-  },
-};
-
 export const getAccount = async (request: AccountRequest): Promise<ACRAccount> => {
   const oktaAccessKey = process.env.OKTA_ACCESS_TOKEN ?? '';
 
