@@ -1,5 +1,6 @@
-import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { LinkFieldValue } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
+import { GqlFieldString } from 'src/types/GraphQL.props';
 import { TestProps } from 'src/types/Test.props';
 
 /**
@@ -19,18 +20,25 @@ export type BreadcrumbParams = {
   };
 };
 
+export type BreadcrumbsGraphQLData = {
+  datasource: {
+    ancestors: BreadcrumbPage[];
+    name: string;
+  };
+  isPageEditing: boolean;
+};
+export type BreadcrumbPage = {
+  name: string;
+  title: GqlFieldString;
+  shortTitle: GqlFieldString;
+  url?: LinkFieldValue;
+};
 // Non-component data source fields
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type BreadcrumbData = {
-  externalFields?: {
-    mock_external_data: Field<string>;
-  };
+  externalFields?: BreadcrumbsGraphQLData;
 };
 
 export type BreadcrumbFields = {
-  fields: {
-    heading: Field<string>; // Sitecore editable text field
-    image?: ImageField; // Sitecore editable image field
-    link?: LinkField; // Sitecore editable link field
-  };
+  fields: object;
 };

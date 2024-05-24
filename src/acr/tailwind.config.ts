@@ -77,6 +77,9 @@ const config: Config = {
       borderRadius: {
         none: '0',
       },
+      borderWidth: {
+        '1': '1px',
+      },
       fontWeight: {
         semibold: '600',
         black: '900',
@@ -97,6 +100,7 @@ const config: Config = {
           't-body': '#000000',
           't-btn-text': '#FFFFFF',
           't-link-hover': '#8055F0',
+          't-link-disabled': '#707070',
           't-rte-link': '#8055f0',
           't-rte-link-hover': '#452F84',
           't-input': '#8055F0',
@@ -110,6 +114,7 @@ const config: Config = {
           't-body': '#000000',
           't-btn-text': '#FFFFFF',
           't-link-hover': '#1b1449',
+          't-link-disabled': '#565656',
           't-rte-link': '#8055f0',
           't-rte-link-hover': '#452F84',
           't-input': '#1B1449',
@@ -123,6 +128,7 @@ const config: Config = {
           't-body': '#FFFFFF',
           't-btn-text': '#1b1449',
           't-link-hover': '#00FF00',
+          't-link-disabled': '#e0e0e0',
           't-rte-link': '#00FF00',
           't-rte-link-hover': '#80FF81',
           't-input': '#00FF00',
@@ -136,6 +142,7 @@ const config: Config = {
           't-body': '#FFFFFF',
           't-btn-text': '#1b1449',
           't-link-hover': '#FFFFFF',
+          't-link-disabled': '#fbfbfb',
           't-rte-link': '#FFFFFF',
           't-rte-link-hover': '#FFFFFF',
           't-input': '#FFFFFF',

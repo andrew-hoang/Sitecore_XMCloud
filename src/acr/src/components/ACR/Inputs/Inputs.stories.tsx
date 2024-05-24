@@ -21,7 +21,7 @@ export const Input = {
         <button type="button" aria-label="Submit">
           <Icon
             iconName={IconName.RIGHT_ARROW_CIRCLE}
-            className="b-t-body group-focus-within:fill-green-100 h-6 w-6 group-focus-within:[&>circle]:stroke-none"
+            className="b-t-body h-6 w-6 group-focus-within:fill-green-100 group-focus-within:[&>circle]:stroke-none"
           />
         </button>
       }
@@ -60,23 +60,22 @@ export const Select = {
   },
 };
 
-export const MultiSelect = {
-  render: () => {
-    const items = [
-      { value: '1', label: 'Option 1' },
-      { value: '2', label: 'Option 2' },
-      { value: '3', label: 'Option 3' },
-    ];
+// TODO need to fix the `useState` linter error
+export const MultiSelect = () => {
+  const items = [
+    { value: '1', label: 'Option 1' },
+    { value: '2', label: 'Option 2' },
+    { value: '3', label: 'Option 3' },
+  ];
 
-    const [selectedItems, setItems] = useState<{ value: string; label: string }[]>([]);
+  const [selectedItems, setItems] = useState<{ value: string; label: string }[]>([]);
 
-    return (
-      <MultiSelectDropdown
-        placeholder="Select items..."
-        items={items}
-        selectedItems={selectedItems}
-        onChange={(selected: SelectItem[]) => setItems(selected)}
-      />
-    );
-  },
+  return (
+    <MultiSelectDropdown
+      placeholder="Select items..."
+      items={items}
+      selectedItems={selectedItems}
+      onChange={(selected: SelectItem[]) => setItems(selected)}
+    />
+  );
 };

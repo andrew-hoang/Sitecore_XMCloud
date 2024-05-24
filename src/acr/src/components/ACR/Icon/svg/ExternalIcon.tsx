@@ -20,4 +20,3 @@ const ExternalIcon = (props: SvgProps): JSX.Element => {
 };
 
 export default ExternalIcon;
-
