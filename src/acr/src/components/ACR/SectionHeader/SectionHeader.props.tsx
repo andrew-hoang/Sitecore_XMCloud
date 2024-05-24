@@ -22,6 +22,5 @@ export type SectionHeaderFields = {
   fields: {
     title: Field<string>;
     subtitle?: Field<string>;
-    includeBottomMargin?: Field<boolean>;
   };
 };
