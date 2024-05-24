@@ -1,4 +1,4 @@
-import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { TestProps } from 'src/types/Test.props';
 
