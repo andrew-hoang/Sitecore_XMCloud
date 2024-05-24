@@ -115,53 +115,96 @@ export const inContext: StoryObj<typeof ContainerFullBleed> = {
   render: (args) => (
     <ContainerFullBleed {...args}>
       <ContainerFullWidth {...containerFullWidthMockData}>
-        <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
-          Container Full Width
-        </Box>
+        <>
+          <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+            Container Full Width
+          </Box>
+          <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+            Container Full Width
+          </Box>
+        </>
       </ContainerFullWidth>
       <Container3070
         {...args}
         left={
-          <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
-            30 Left
-          </Box>
+          <>
+            <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+              30 Left
+            </Box>
+            <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+              30 Left
+            </Box>
+            <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+              30 Left
+            </Box>
+          </>
         }
         right={
-          <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
-            70 Right
-          </Box>
+          <>
+            <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+              70 Right
+            </Box>
+            <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+              70 Right
+            </Box>
+          </>
         }
       />
       <Container5050
         {...container5050MockData}
         left={
-          <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
-            50 Left
-          </Box>
+          <>
+            <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+              50 Left
+            </Box>
+            <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+              50 Left
+            </Box>
+          </>
         }
         right={
-          <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
-            50 Right
-          </Box>
+          <>
+            <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+              50 Right
+            </Box>
+            <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+              50 Right
+            </Box>
+          </>
         }
       />
       <Container7030
         {...container7030MockData}
         left={
-          <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
-            70 Left
-          </Box>
+          <>
+            <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+              70 Left
+            </Box>
+            <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+              70 Left
+            </Box>
+          </>
         }
         right={
-          <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
-            30 Right
-          </Box>
+          <>
+            <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+              30 Right
+            </Box>
+            <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+              30 Right
+            </Box>
+          </>
         }
       />
       <Container70 {...container70MockData}>
-        <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
-          Container 70
-        </Box>
+        <>
+          <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+            Container 70
+          </Box>
+          <Box height="9" className="flex items-center justify-center bg-gray-100 py-6">
+            Container 70
+          </Box>
+        </>
       </Container70>
     </ContainerFullBleed>
   ),
