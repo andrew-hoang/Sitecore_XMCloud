@@ -1,19 +1,27 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
+import cn from 'classnames';
 
 import { SectionHeaderProps } from 'components/ACR/SectionHeader/SectionHeader.props';
 
 import { getStaticPropsForSectionHeader } from 'components/ACR/SectionHeader/SectionHeader.util';
 
 const SectionHeader = (props: SectionHeaderProps): JSX.Element => {
-  const { fields, testId } = props;
+  const { fields, testId, params } = props;
 
-  const { heading } = fields ?? {};
+  const { title, subtitle } = fields ?? {};
+  const { includeBottomMargin } = params ?? {};
+
+  console.log(params);
 
   return (
-    <div data-ref="section-header" data-testid={testId}>
-      <Text tag="h2" field={heading} />
-      <p>The SectionHeader Component</p>
+    <div
+      data-ref="section-header"
+      data-testid={testId}
+      className={cn('', { '-mb-4': includeBottomMargin === '1' })}
+    >
+      <Text tag="h2" field={title} className="heading-c max-w-[770px]" />
+      <Text tag="p" field={subtitle} className="mt-4 max-w-[770px]" />
     </div>
   );
 };
