@@ -1,4 +1,3 @@
-import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { TestProps } from 'src/types/Test.props';
 
@@ -7,30 +6,12 @@ import { TestProps } from 'src/types/Test.props';
  */
 export type PageHeaderWithIconProps = ComponentProps &
   TestProps &
-  PageHeaderWithIconParams &
-  PageHeaderWithIconFields &
-  PageHeaderWithIconData;
+  PageHeaderWithIconParams   ;
 
-// Component Rendering Parameter fields
+
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type PageHeaderWithIconParams = {
   params: {
-    mock_param?: string;
-  };
-};
-
-// Non-component data source fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type PageHeaderWithIconData = {
-  externalFields?: {
-    mock_external_data: Field<string>;
-  };
-};
-
-export type PageHeaderWithIconFields = {
-  fields: {
-    heading: Field<string>; // Sitecore editable text field
-    image?: ImageField; // Sitecore editable image field
-    link?: LinkField; // Sitecore editable link field
+    DisplayLicenseLink?: string;
   };
 };

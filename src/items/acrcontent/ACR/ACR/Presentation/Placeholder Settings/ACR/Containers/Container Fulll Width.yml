@@ -18,7 +18,13 @@ SharedFields:
     {686BC8A4-77E0-488F-B057-73613D4E4B03}
     {E2A6BB73-333A-4665-BF9A-635700942608}
     {E0353CDB-4649-4821-BC97-B3EB4C0FA194}
+    {F5BB5379-938E-4A6D-AC7E-14EA1DBB7495}
+    {EF0C8AEF-3367-4D74-A0B4-EB316A739D42}
+    {EA0CAEDC-A342-41DE-B9D7-0CBB85421606}
     {C72D5B4A-57C5-4A6A-9E21-6BA751C78CCB}
+    {94390289-1DDE-4AC8-A2EE-5CD4792061EA}
+    {92C544E8-6F01-4A4E-BB0F-24A84214E0D8}
+    {0FA9447F-921A-4B35-A3DE-26604373CCED}
 Languages:
 - Language: en
   Versions:
@@ -37,11 +43,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5605a1bb-53cf-4eae-834c-fa1d60f69ae1"
+      Value: "5f5f6e8d-ce08-4446-866e-f9e059159596"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\minyie.diaz@velir.com
+        sitecore\nbansal@acr.org
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240522T152124Z
+      Value: 20240527T121339Z

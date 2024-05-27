@@ -4,14 +4,14 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type PageHeaderProps = ComponentProps &
+export type PageHeaderWithImageProps = ComponentProps &
   TestProps &
-  PageHeaderParams   ;
+  PageHeaderWithImageParams   ;
 
 // Component Rendering Parameter fields
-export type PageHeaderParams = {
+export type PageHeaderWithImageParams = {
   params: {
-    Alignment?: string;
+    Orientation?: string;
   };
 };
 
