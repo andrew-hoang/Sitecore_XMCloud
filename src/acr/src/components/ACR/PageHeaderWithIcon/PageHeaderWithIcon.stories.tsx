@@ -29,9 +29,7 @@ const renderWithContainers = (args: PageHeaderWithIconProps & { theme: Theme }) 
   return (
     <ContainerFullBleed {...containerFullBleedMockData} params={{ theme: args.theme }}>
       <ContainerFullWidth {...containerFullWidthMockData}>
-      
         <PageHeaderWithIcon {...args} />
-        
       </ContainerFullWidth>
     </ContainerFullBleed>
   );
@@ -40,11 +38,9 @@ const renderWithContainers = (args: PageHeaderWithIconProps & { theme: Theme }) 
 export const DefaultPageHeaderWithIcon: Story = {
   args: PageHeaderWithIconMock.default,
   render: (args) => (
-    
     <MockThemeContextProvider context={{ theme: args?.theme }}>
       {renderWithContainers(args)}
     </MockThemeContextProvider>
-    
   ),
 };
 
@@ -62,9 +58,6 @@ export const HideLink: Story = {
   render: (args) => (
     <MockThemeContextProvider context={{ theme: args?.theme }}>
       {renderWithContainers(args)}
-      </MockThemeContextProvider>
+    </MockThemeContextProvider>
   ),
 };
-
-
-

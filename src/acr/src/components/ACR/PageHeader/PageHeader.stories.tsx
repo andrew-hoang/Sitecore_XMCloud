@@ -29,9 +29,7 @@ const renderWithContainers = (args: PageHeaderProps & { theme: Theme }) => {
   return (
     <ContainerFullBleed {...containerFullBleedMockData} params={{ theme: args.theme }}>
       <ContainerFullWidth {...containerFullWidthMockData}>
-      
         <PageHeader {...args} />
-        
       </ContainerFullWidth>
     </ContainerFullBleed>
   );
@@ -40,11 +38,9 @@ const renderWithContainers = (args: PageHeaderProps & { theme: Theme }) => {
 export const Default: Story = {
   args: mockPageHeaderProps.default,
   render: (args) => (
-    
     <MockThemeContextProvider context={{ theme: args?.theme }}>
       {renderWithContainers(args)}
     </MockThemeContextProvider>
-    
   ),
 };
 
@@ -62,9 +58,6 @@ export const LeftAligned: Story = {
   render: (args) => (
     <MockThemeContextProvider context={{ theme: args?.theme }}>
       {renderWithContainers(args)}
-      </MockThemeContextProvider>
+    </MockThemeContextProvider>
   ),
 };
-
-
-
