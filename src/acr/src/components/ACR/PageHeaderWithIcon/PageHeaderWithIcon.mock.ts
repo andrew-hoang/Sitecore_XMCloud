@@ -1,88 +1,25 @@
 import { PageHeaderWithIconProps } from './PageHeaderWithIcon.props';
 
-const defaultPageHeaderWithIconProps: PageHeaderWithIconProps = {
+export const defaultMockData: PageHeaderWithIconProps = {
   params: {
     displayLicenseLink: '0',
   },
-  testId: 'PageHeaderWithIconDefault',
+  testId: 'PageHeaderWithIcon',
   rendering: {
     uid: '{00000000-0000-0000-0000-000000000000}',
     componentName: 'PageHeaderWithIcon',
     dataSource: '/',
   },
   externalFields: {
-    headerTitle: { value: 'Page Title' },
-    image16x9: {
-      value: {
-        src: '',
-      },
-    },
-    contentType: { name: 'Content Type', id: '1' },
+    headerTitle: { value: 'Lung-RADS®' },
     image1x1: {
       value: {
-        src: '',
+        src: 'https://picsum.photos/1290/1290',
+        alt: '',
+        width: '1290',
+        height: '1290',
       },
     },
-    subtitle: { value: 'subtitle' },
+    subtitle: { value: 'Quality assurance for lung cancer CT screening.' },
   },
-};
-
-const hideLinkProps: PageHeaderWithIconProps = {
-  params: {
-    displayLicenseLink: '0',
-  },
-  testId: 'PageHeaderWithIconHide',
-  rendering: {
-    uid: '{00000000-0000-0000-0000-000000000000}',
-    componentName: 'PageHeaderWithIcon',
-    dataSource: '/',
-  },
-  externalFields: {
-    headerTitle: { value: 'Page Title' },
-    image16x9: {
-      value: {
-        src: '',
-      },
-    },
-    contentType: { name: 'Content Type', id: '1' },
-    image1x1: {
-      value: {
-        src: '',
-      },
-    },
-    subtitle: { value: 'subtitle' },
-  },
-};
-
-const showLinkProps: PageHeaderWithIconProps = {
-  params: {
-    displayLicenseLink: '1',
-  },
-  testId: 'PageHeaderWithIconShow',
-  rendering: {
-    uid: '{00000000-0000-0000-0000-000000000000}',
-    componentName: 'PageHeaderWithIcon',
-    dataSource: '/',
-  },
-  externalFields: {
-    headerTitle: { value: 'Page Title' },
-    image16x9: {
-      value: {
-        src: '',
-      },
-    },
-    contentType: { name: 'Content Type', id: '1' },
-    image1x1: {
-      value: {
-        src: '',
-      },
-    },
-    subtitle: { value: 'subtitle' },
-  },
-};
-
-export const PageHeaderWithIconMock = {
-  default: defaultPageHeaderWithIconProps,
-  hide: hideLinkProps,
-  show: showLinkProps,
 };
