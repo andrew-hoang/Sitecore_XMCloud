@@ -1,7 +1,7 @@
 import { Alignment } from 'src/enumerations/Aligment.enum';
 import { PageHeaderProps } from './PageHeader.props';
 
-const defaultPageHeaderProps: PageHeaderProps = {
+export const defaultMockData: PageHeaderProps = {
   params: {
     alignment: Alignment.Left,
   },
@@ -12,78 +12,24 @@ const defaultPageHeaderProps: PageHeaderProps = {
     dataSource: '/',
   },
   externalFields: {
-    headerTitle: { value: 'Page Title' },
+    headerTitle: {
+      value:
+        'National Medical Groups Express Growing Concern Over HHS Extended Closure of Arbitration',
+    },
     image16x9: {
       value: {
         src: '',
       },
     },
-    contentType: { name: 'Content Type', id: '1' },
+    contentType: { name: 'Tag', id: '1' },
     image1x1: {
       value: {
         src: '',
       },
     },
-    subtitle: { value: 'subtitle' },
-  },
-};
-
-const centerAlignedProps: PageHeaderProps = {
-  params: {
-    alignment: Alignment.Center,
-  },
-  testId: 'PageHeaderCenter',
-  rendering: {
-    uid: '{00000000-0000-0000-0000-000000000000}',
-    componentName: 'PageHeader',
-    dataSource: '/',
-  },
-  externalFields: {
-    headerTitle: { value: 'Page Title' },
-    image16x9: {
-      value: {
-        src: '',
-      },
+    subtitle: {
+      value:
+        'AICentral.org is the premier online resource for information on FDA-cleared imaging AI tools, helping you find the algorithms that best support your patients and workflows',
     },
-    contentType: { name: 'Content Type', id: '1' },
-    image1x1: {
-      value: {
-        src: '',
-      },
-    },
-    subtitle: { value: 'subtitle' },
   },
-};
-
-const leftAlignedProps: PageHeaderProps = {
-  params: {
-    alignment: Alignment.Left,
-  },
-  testId: 'PageHeaderRight',
-  rendering: {
-    uid: '{00000000-0000-0000-0000-000000000000}',
-    componentName: 'PageHeader',
-    dataSource: '/',
-  },
-  externalFields: {
-    headerTitle: { value: 'Page Title' },
-    image16x9: {
-      value: {
-        src: '',
-      },
-    },
-    contentType: { name: 'Content Type', id: '1' },
-    image1x1: {
-      value: {
-        src: '',
-      },
-    },
-    subtitle: { value: 'subtitle' },
-  },
-};
-
-export const mockPageHeaderProps = {
-  default: defaultPageHeaderProps,
-  center: centerAlignedProps,
-  left: leftAlignedProps,
 };
