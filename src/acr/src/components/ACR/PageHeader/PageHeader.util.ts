@@ -2,7 +2,7 @@ import { LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
 import { PageRouteData } from 'src/types/PageType.props';
 import { PageHeaderData } from './PageHeader.props';
 
-export const getStaticPropsForPageBanner = async (
+export const getStaticPropsForPageHeader = async (
   layoutData: LayoutServiceData
 ): Promise<PageHeaderData> => {
   const page = layoutData?.sitecore?.route as PageRouteData;

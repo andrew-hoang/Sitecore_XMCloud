@@ -5,7 +5,7 @@ import { PageHeaderProps } from 'components/ACR/PageHeader/PageHeader.props';
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
 
 import cn from 'classnames';
-import { getStaticPropsForPageBanner } from './PageHeader.util';
+import { getStaticPropsForPageHeader } from './PageHeader.util';
 import { Alignment } from 'src/enumerations/Aligment.enum';
 
 const Default = (props: PageHeaderProps): JSX.Element => {
@@ -22,7 +22,7 @@ const Default = (props: PageHeaderProps): JSX.Element => {
 
   return (
     <section
-      className={cn('rounded-lg shadow-md py-[70px]', {
+      className={cn('py-[70px]', {
         'text-center': alignCenter,
       })}
       data-ref="PageHeader"
@@ -42,6 +42,6 @@ const Default = (props: PageHeaderProps): JSX.Element => {
 };
 
 export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  return getStaticPropsForPageBanner(_layoutData);
+  return getStaticPropsForPageHeader(_layoutData);
 };
 export default Default;
