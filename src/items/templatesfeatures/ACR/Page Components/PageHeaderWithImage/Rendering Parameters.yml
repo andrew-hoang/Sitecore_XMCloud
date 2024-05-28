@@ -1,8 +1,8 @@
 ﻿---
-ID: "7e88238a-7c6c-47a1-bcd9-8626eba7fcf8"
-Parent: "0aafb218-ac6b-420b-870f-bd5b9310f00a"
-Template: "0aafb218-ac6b-420b-870f-bd5b9310f00a"
-Path: /sitecore/templates/Feature/ACR/Page Components/PageHeader/Rendering Parameters/PageHeader Rendering Parameters/__Standard Values
+ID: "cade1c2a-5656-43df-825b-8f98146d33a1"
+Parent: "01f9fb4f-f6d3-4857-9987-94ea720a4fbd"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Feature/ACR/Page Components/PageHeaderWithImage/Rendering Parameters
 Languages:
 - Language: en
   Versions:
@@ -10,7 +10,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240510T185736Z
+      Value: 20240510T185634Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -21,14 +21,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "014578c9-a9ed-4a2c-a1cd-4cbbde04110a"
-    - ID: "b09acf55-21cd-4c5a-bac9-47f0184ca109"
-      Hint: alignment
-      Value: 
+      Value: "29d2d3de-7304-4123-9186-7e09492c28ff"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\nbansal@acr.org
+        sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240528T010712Z
+      Value: 20240510T185634Z

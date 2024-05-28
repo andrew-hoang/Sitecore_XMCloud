@@ -1,85 +1,67 @@
 import { Flex } from '@radix-ui/themes';
-import { Text, TextField, Image } from '@sitecore-jss/sitecore-jss-react';
+import { Text } from '@sitecore-jss/sitecore-jss-react';
 import { PageHeaderWithIconProps } from 'components/ACR/PageHeaderWithIcon/PageHeaderWithIcon.props';
 import { useContext } from 'react';
-import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Theme } from 'src/enumerations/Theme.enum';
 import { ThemeContext } from 'src/context/Theme.context';
-import { PageContext } from 'src/context/Page.context';
 import cn from 'classnames';
-
-
-// import { dictionaryServiceFactory } from 'src/lib/dictionary-service-factory';
-
-// const dictionaryService=dictionaryServiceFactory.create('acr');
-// const language = 'en';
-// dictionaryService.fetchDictionaryData(language).then(data => {
-//     console.log(data);
-// });
-
-
+import ImageBase from '../Image/ImageBase';
+import { getStaticPropsForPageBanner } from '../PageHeader/PageHeader.util';
+import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
+import { dictionaryKeys } from 'variables/dictionary';
+import { useI18n } from 'next-localization';
 
 const PageHeaderWithIcon = (props: PageHeaderWithIconProps): JSX.Element => {
+  const { t } = useI18n();
   const { params, testId } = props;
-  const { DisplayLicenseLink } = params ?? {};
-  const { sitecoreContext = PageContext } = useSitecoreContext();
-  //Later to be taken from Dictionary due to issue in Dictionary context using constants for now
-const linkText='License: CC BY-ND 4.0 DEED';
-const licenseLinkUrl='https://www.acr.org';
-  console.log('Sitecore Context:', sitecoreContext);
+  const { displayLicenseLink } = params ?? {};
 
-  const dataSource = sitecoreContext.route?.fields || {};
-  const headerTitle: TextField | undefined = dataSource.headerTitle as TextField | undefined;
-  const subtitle: TextField | undefined = dataSource.subtitle as TextField | undefined;
-  const headerImage = dataSource?.image1x1?.value ;
-const headerImagecheck=dataSource?.image1x1?.value?.src;
-console.log({headerImagecheck});
+  const linkText = t(dictionaryKeys.PAGE_BANNER_LICENSE_TEXT);
+  const licenseLinkUrl = t(dictionaryKeys.PAGE_BANNER_ANCHOR_LINK);
+
+  const headerTitle = props?.externalFields?.headerTitle;
+  const subtitle = props?.externalFields?.subtitle;
+  const headerImage = props?.externalFields?.image1x1;
+  const headerImagecheck = props?.externalFields?.image1x1?.value?.src;
+
   const { theme = Theme.WHITE } = useContext(ThemeContext);
 
-  const bgWhite = theme === Theme.WHITE ;
-  const bgLightIndigo = theme === Theme.LIGHT_INDIGO ;
-  const bgIndigo= theme === Theme.INDIGO;
-  const bgPurple= theme === Theme.PURPLE;
-  
+  const bgWhite = theme === Theme.WHITE;
+  const bgLightIndigo = theme === Theme.LIGHT_INDIGO;
+  const bgIndigo = theme === Theme.INDIGO;
+  const bgPurple = theme === Theme.PURPLE;
 
   return (
     <Flex
-      className={cn('p-6 rounded-lg shadow-md w-fulll', {
-        'bg-white text-blue-900': bgWhite,
+      className={cn('rounded-lg shadow-md w-fulll p-6', {
+        'text-blue-900 bg-white': bgWhite,
         'bg-blue-100 text-blue-900': bgLightIndigo,
         'bg-indigo-900 text-white': bgIndigo,
         'bg-purple-900 text-white': bgPurple,
-        
-        
       })}
       data-ref="PageHeaderWithIcon"
       data-testid={testId}
       data-theme={theme}
       direction={{ initial: 'column', md: 'row' }}
       align={{ initial: 'start', md: 'center' }}
-      justify={{ initial: 'center', md: 'space-between' }}
-      
+      justify={{ initial: 'center', md: 'center' }}
       gap="4"
     >
       <Flex direction="column" className="flex-1">
-       
-       < Text field={headerTitle} tag="h2" className="text-2xl font-semibold mt-2"/>
-       < Text field={subtitle} tag="p" className="mt-4"/>
+        <Text field={headerTitle} tag="h2" className="text-2xl mt-2 font-semibold" />
+        <Text field={subtitle} tag="p" className="mt-4" />
 
-       {  DisplayLicenseLink==='1'&& (
-           <a href={licenseLinkUrl} className="text-blue-600 underline mt-2">
-           {linkText}
-         </a>
+        {displayLicenseLink === '1' && (
+          <a href={licenseLinkUrl} className="text-blue-600 mt-2 underline">
+            {linkText}
+          </a>
         )}
-       
       </Flex>
-      { headerImagecheck && (
-          
-            <Image field={headerImage} alt="Header Image" className="w-32 h-32 " />
-         
-        )}
-     
-    </Flex>  );
+      {headerImagecheck && <ImageBase image={headerImage} className="h-32 w-32 " />}
+    </Flex>
+  );
 };
-
+export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
+  return getStaticPropsForPageBanner(_layoutData);
+};
 export default PageHeaderWithIcon;

@@ -2,7 +2,7 @@
 ID: "03061771-0cb5-4484-b8c3-d363e56aa80f"
 Parent: "8b572304-2305-468a-9a0a-b2cbea3e312c"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Foundation/ACR/Rendering Parameters/Display License Link Parameter/Display/DisplayLicenseLink
+Path: /sitecore/templates/Foundation/ACR/Rendering Parameters/Display License Link Parameter/Display/displayLicenseLink
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
   Hint: Source
@@ -15,6 +15,10 @@ SharedFields:
   Value: 100
 Languages:
 - Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Display License Link
   Versions:
   - Version: 1
     Fields:
@@ -31,11 +35,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "96f7e4de-6c95-4ef0-aabb-46767fe3a736"
+      Value: "ae7ca27a-b197-43b6-8709-e75e4909cc23"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\nbansal@acr.org
+        sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240527T113655Z
+      Value: 20240528T173732Z

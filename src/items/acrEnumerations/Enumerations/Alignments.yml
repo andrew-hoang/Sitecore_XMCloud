@@ -1,8 +1,8 @@
 ﻿---
-ID: "f5a4887a-09bd-495d-92e3-669723b0cb8f"
-Parent: "12f764d6-1364-47cd-a898-ec4898e47f54"
-Template: "12f764d6-1364-47cd-a898-ec4898e47f54"
-Path: /sitecore/templates/Foundation/ACR/Rendering Parameters/PageHeaderAlignment/__Standard Values
+ID: "c5ca8860-c35e-4ce1-afd0-314eb9aef951"
+Parent: "27c06d6b-13ec-41ad-93d6-5bb6655f6057"
+Template: "0a92feee-0e15-4e81-b044-2ad901b88ddd"
+Path: /sitecore/content/ACR/ACR/Data/Enumerations/Alignments
 Languages:
 - Language: en
   Versions:
@@ -10,22 +10,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240526T064326Z
+      Value: 20240528T173839Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
-        sitecore\nbansal@acr.org
+        sitecore\minyie.diaz@velir.com
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\nbansal@acr.org
+        sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ad2a75d9-feb2-4bab-b940-7ceefea69c64"
+      Value: "8bf6ea71-462c-4c6d-8201-ea912c2481b9"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\nbansal@acr.org
+        sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240526T064803Z
+      Value: 20240528T180445Z

@@ -1,12 +1,12 @@
 ﻿---
-ID: "4a438cf6-68c6-4f81-91ff-a543376de254"
-Parent: "3f57a548-77a0-4f4a-b279-d371d0591c84"
+ID: "7ee87b87-c254-4ada-88ea-ec075f9cb5ff"
+Parent: "9c796d87-7949-447c-b0bf-d345b707594c"
 Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
-Path: /sitecore/content/ACR/ACR/Dictionary/LicenseLink/LicenseText
+Path: /sitecore/content/ACR/ACR/Dictionary/Page Content/Page Banners/License Text
 SharedFields:
 - ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
   Hint: Key
-  Value: ACR_LICENSE_TEXT
+  Value: ACR_PAGE_BANNER_LICENSE_TEXT
 Languages:
 - Language: en
   Fields:
@@ -18,22 +18,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240527T085947Z
+      Value: 20240528T173044Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
-        sitecore\nbansal@acr.org
+        sitecore\minyie.diaz@velir.com
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\nbansal@acr.org
+        sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7d6cf709-8a88-405b-be8c-a561fb78f445"
+      Value: "10d39df2-7ed7-4e79-95d2-23e441176d08"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\nbansal@acr.org
+        sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240527T090132Z
+      Value: 20240528T173212Z

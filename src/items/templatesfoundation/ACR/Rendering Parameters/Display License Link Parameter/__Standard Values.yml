@@ -8,9 +8,6 @@ Languages:
   Versions:
   - Version: 1
     Fields:
-    - ID: "03061771-0cb5-4484-b8c3-d363e56aa80f"
-      Hint: DisplayLicenseLink
-      Value: Left
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
       Value: 20240526T064326Z
