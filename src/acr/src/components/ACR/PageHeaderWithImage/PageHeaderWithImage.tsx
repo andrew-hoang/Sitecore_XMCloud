@@ -6,7 +6,7 @@ import { useContext } from 'react';
 import { Theme } from 'src/enumerations/Theme.enum';
 import { ThemeContext } from 'src/context/Theme.context';
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
-import { getStaticPropsForPageBanner } from '../PageHeader/PageHeader.util';
+import { getStaticPropsForPageHeader } from '../PageHeader/PageHeader.util';
 
 const PageHeaderWithImage = (props: PageHeaderWithImageProps): JSX.Element => {
   const { params, testId } = props;
@@ -61,6 +61,6 @@ const PageHeaderWithImage = (props: PageHeaderWithImageProps): JSX.Element => {
   );
 };
 export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  return getStaticPropsForPageBanner(_layoutData);
+  return getStaticPropsForPageHeader(_layoutData);
 };
 export default PageHeaderWithImage;
