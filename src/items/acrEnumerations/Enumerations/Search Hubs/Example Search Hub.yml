@@ -1,0 +1,29 @@
+﻿---
+ID: "baa5afe1-9197-40de-8c8a-fa6953e16d33"
+Parent: "019b5b12-3b53-4d9f-8e73-9da3391899d2"
+Template: "91e894eb-49b3-4af2-83e9-c1fe1545d7b7"
+Path: /sitecore/content/ACR/ACR/Data/Enumerations/Search Hubs/Example Search Hub
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240528T145341Z
+    - ID: "2dd7959f-63e5-4ebd-a4d9-fd12c9447640"
+      Hint: name
+      Value: Example
+    - ID: "420ec43a-09dd-4ccb-a369-404f641a789e"
+      Hint: value
+      Value: www.example.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "21cac40f-27d3-4d9f-9260-a9e1767b9c49"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240528T145351Z
