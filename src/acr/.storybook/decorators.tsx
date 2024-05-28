@@ -2,6 +2,7 @@ import React from 'react';
 import { DecoratorHelpers } from '@storybook/addon-themes';
 import colorThemes from './radixThemePresets';
 import { ImageOptimizationProvider } from '../src/context/ImageOptimization.context';
+import { dictionaryKeys, mockDictionary } from '../src/variables/dictionary';
 
 const { initializeThemeState, pluckThemeFromContext, useThemeParameters } = DecoratorHelpers;
 
@@ -62,7 +63,7 @@ export const withImageOptimiziation = (Story) => (
 );
 
 export const withI18n = (Story) => (
-  <I18nProvider locale="en">
+  <I18nProvider locale="en" lngDict={mockDictionary(dictionaryKeys)}>
     <Story />
   </I18nProvider>
 );
