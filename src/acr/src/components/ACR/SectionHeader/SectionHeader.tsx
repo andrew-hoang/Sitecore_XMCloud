@@ -12,7 +12,11 @@ const SectionHeader = (props: SectionHeaderProps): JSX.Element => {
   const { title, subtitle } = fields ?? {};
   const { includeBottomMargin } = params ?? {};
 
-  console.log(params);
+  /**
+   * ACRAR-284 - Section Header
+   * @param props
+   * @returns
+   */
 
   return (
     <div

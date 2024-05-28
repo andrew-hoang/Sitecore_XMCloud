@@ -1,5 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 import { Box } from '@radix-ui/themes';
+import { Theme } from 'src/enumerations/Theme.enum';
 
 import SectionHeader from 'components/ACR/SectionHeader/SectionHeader';
 import ContainerFullWidth from '../Container/ContainerFullWidth/ContainerFullWidth';
@@ -13,6 +14,14 @@ export default {
   title: 'Components/Section Header',
   component: SectionHeader,
   tags: ['autodocs'],
+  parameters: { layout: 'fullscreen' },
+  argTypes: {
+    theme: {
+      options: [Theme.WHITE, Theme.LIGHT_INDIGO, Theme.PURPLE, Theme.INDIGO],
+      control: { type: 'select' },
+    },
+  },
+  args: { theme: Theme.WHITE },
 } as Meta<typeof SectionHeader>;
 
 type Story = StoryObj<typeof SectionHeader>;
