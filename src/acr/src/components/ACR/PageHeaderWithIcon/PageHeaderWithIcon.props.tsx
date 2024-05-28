@@ -1,6 +1,6 @@
 import { ComponentProps } from 'lib/component-props';
 import { TestProps } from 'src/types/Test.props';
-import { PageBannerData } from '../PageHeader/PageHeader.props';
+import { PageHeaderData } from '../PageHeader/PageHeader.props';
 
 /**
  * Model used for Sitecore Component integration
@@ -8,7 +8,7 @@ import { PageBannerData } from '../PageHeader/PageHeader.props';
 export type PageHeaderWithIconProps = ComponentProps &
   TestProps &
   PageHeaderWithIconParams &
-  PageBannerData;
+  PageHeaderData;
 
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type PageHeaderWithIconParams = {

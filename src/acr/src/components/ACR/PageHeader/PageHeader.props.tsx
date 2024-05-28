@@ -7,7 +7,7 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type PageHeaderProps = ComponentProps & TestProps & PageHeaderParams & PageBannerData;
+export type PageHeaderProps = ComponentProps & TestProps & PageHeaderParams & PageHeaderData;
 
 // Component Rendering Parameter fields
 export type PageHeaderParams = {
@@ -16,7 +16,7 @@ export type PageHeaderParams = {
   };
 };
 
-export type PageBannerData = {
+export type PageHeaderData = {
   externalFields: {
     headerTitle: Field<string>;
     subtitle?: Field<string>;

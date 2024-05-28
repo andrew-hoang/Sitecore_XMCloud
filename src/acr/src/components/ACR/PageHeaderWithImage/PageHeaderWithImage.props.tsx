@@ -1,6 +1,6 @@
 import { ComponentProps } from 'lib/component-props';
 import { TestProps } from 'src/types/Test.props';
-import { PageBannerData } from '../PageHeader/PageHeader.props';
+import { PageHeaderData } from '../PageHeader/PageHeader.props';
 
 /**
  * Model used for Sitecore Component integration
@@ -8,7 +8,7 @@ import { PageBannerData } from '../PageHeader/PageHeader.props';
 export type PageHeaderWithImageProps = ComponentProps &
   TestProps &
   PageHeaderWithImageParams &
-  PageBannerData;
+  PageHeaderData;
 
 // Component Rendering Parameter fields
 export type PageHeaderWithImageParams = {
