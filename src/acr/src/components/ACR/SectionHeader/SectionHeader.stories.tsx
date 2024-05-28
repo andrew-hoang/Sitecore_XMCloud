@@ -27,10 +27,6 @@ export default {
 type Story = StoryObj<typeof SectionHeader>;
 
 export const Default: Story = {
-  args: defaultMockData,
-};
-
-export const Stacked: Story = {
   args: {
     ...defaultMockData,
     params: {
@@ -41,6 +37,9 @@ export const Stacked: Story = {
     return (
       <ContainerFullBleed {...containerFullBleedMockData} params={{ theme: args?.theme }}>
         <ContainerFullWidth {...containerFullWidthMockData}>
+          <Box height="9" className="flex items-center justify-center bg-gray-20 py-6">
+            Component above
+          </Box>
           <SectionHeader {...args} />
           <Box height="9" className="flex items-center justify-center bg-gray-20 py-6">
             Component below
