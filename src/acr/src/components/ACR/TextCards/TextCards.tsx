@@ -1,34 +1,42 @@
-import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
-import { Text } from '@sitecore-jss/sitecore-jss-react';
+import {
+  Placeholder,
+  Text,
+  useSitecoreContext,
+  withPlaceholder,
+} from '@sitecore-jss/sitecore-jss-nextjs';
 
-import { TextCardsProps } from 'components/ACR/TextCards/TextCards.props';
-
-import { getStaticPropsForTextCards } from 'components/ACR/TextCards/TextCards.util';
+import { TextCardProps, TextCardsProps } from 'components/ACR/TextCards/TextCards.props';
+import TextCard from './TextCard';
+import { Flex } from '@radix-ui/themes';
 
 const TextCards = (props: TextCardsProps): JSX.Element => {
-  const { fields, testId } = props;
+  const { fields, items, testId } = props;
 
-  const { heading } = fields ?? {};
+  const { title, description } = fields ?? {};
+
+  const { sitecoreContext } = useSitecoreContext();
+  const isPageEditing = sitecoreContext?.pageEditing ?? false;
+
+  const phKey = `acr-container-text-cards-${props.params.DynamicPlaceholderId}`;
 
   return (
     <div data-ref="text-cards" data-testid={testId}>
-      <Text tag="h2" field={heading} />
-      <p>The TextCards Component</p>
+      <Flex gap="4" direction="column" className="mb-8 text-center md:mb-12">
+        <Text tag="h2" field={title} className="heading-c" />
+        <Text tag="p" field={description} className="sub-heading-b" />
+      </Flex>
+      <Flex direction="column" gap="4">
+        {!isPageEditing &&
+          items?.map((item: React.Component<TextCardProps>, index) => (
+            <TextCard key={index} {...item?.props} />
+          ))}
+      </Flex>
+      {isPageEditing && <Placeholder name={phKey} rendering={props.rendering} />}
     </div>
   );
 };
 
-/**
- * "Data" developer method
- * TODO_SCAFFOLD_BE: If "getStaticProps" was deleted remove "useComponentProps". They work together.
- * TODO_SCAFFOLD_BE: Populate if needed, remove if not
- * Will be called during SSG.  Do NOT return null.
- * @param {ComponentRendering} _rendering
- * @param {LayoutServiceData} _layoutData
- * @param {GetStaticPropsContext} _context
- */
-export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  return getStaticPropsForTextCards(_rendering, _layoutData);
-};
-
-export default TextCards;
+export default withPlaceholder({
+  placeholder: 'acr-container-text-cards-{*}',
+  prop: 'items',
+})(TextCards);
