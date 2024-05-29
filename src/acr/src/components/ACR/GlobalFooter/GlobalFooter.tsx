@@ -1,4 +1,4 @@
-import { GlobalFooterProps } from 'components/ACR/GlobalFooter/GlobalFooter.props';
+import { GlobalFooterProps, SocialLinks } from 'components/ACR/GlobalFooter/GlobalFooter.props';
 import { PlaceholderBaseProps } from '../Placeholder/PlaceholderBase';
 import { Placeholder, NextImage } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
@@ -7,6 +7,7 @@ import { Link } from '@sitecore-jss/sitecore-jss-react';
 
 import { Flex, Separator } from '@radix-ui/themes';
 import LinkBase from '../Link/LinkBase';
+import FooterSocialIcon from './FooterSocialIcon/FooterSocialIcon';
 
 const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
   const { testId, rendering, componentFactory, fields } = props;
@@ -41,7 +42,9 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
     },
   };
 
-  const { footerNewsletterText, footerNewsletterLink, footerLogo } = fields;
+  const { footerNewsletterText, footerNewsletterLink, footerLogo, socialLinks } = fields;
+
+  console.log("socialLinks: ", socialLinks);
 
   return (
     <Theme data-theme="indigo" accentColor='green'>
@@ -57,9 +60,14 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
         )}
         <Flex>
           <div>
-            <Link field={{ href: "/" }} aria-label='navigate to root site'>
-              <NextImage field={footerLogo} height="50" width="196" alt="american college of radiology logo" />
-            </Link>
+            <div>
+              <Link field={{ href: "/" }} aria-label='navigate to root site'>
+                <NextImage field={footerLogo} height="50" width="196" alt="american college of radiology logo" />
+              </Link>
+            </div>
+            <Flex gap="4" pt="5">
+              {socialLinks.map((socialLink: SocialLinks) => <FooterSocialIcon {...socialLink} iconClassName="h-6 w-6" />)}
+            </Flex>
           </div>
           <Placeholder
             name={footerLink1Placeholder.placeholder.name}

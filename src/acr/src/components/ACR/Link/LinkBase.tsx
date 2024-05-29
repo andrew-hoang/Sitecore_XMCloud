@@ -16,12 +16,12 @@ import cn from 'classnames';
  * @returns
  */
 const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
-  const { link, testId, styleClasses, style = ButtonStyle.BUTTON, hasIcon } = props;
+  const { link, testId, styleClasses, style = ButtonStyle.BUTTON, hasIcon, children } = props;
 
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
 
-  const linkText = link?.value?.text;
+  const linkText = children ? children : link?.value?.text;
 
   const linkIsValid = (link: LinkField) => {
     return !!linkText && (!!link?.value?.href || !!link?.value?.url);

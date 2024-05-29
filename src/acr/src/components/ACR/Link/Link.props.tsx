@@ -11,4 +11,5 @@ export type LinkBaseProps = TestProps &
     link: LinkField;
     style?: ButtonStyle;
     hasIcon?: boolean;
+    children?: JSX.Element | JSX.Element[] | React.ReactNode;
   };

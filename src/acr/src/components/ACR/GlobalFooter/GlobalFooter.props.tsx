@@ -28,6 +28,11 @@ export type GlobalFooterData = {
   };
 };
 
+export type SocialLink = {
+  link?: LinkField;
+  socialIcon?: string;
+};
+
 export type GlobalFooterFields = {
   fields: {
     footerLogo: ImageField; // Sitecore editable text field
@@ -47,5 +52,6 @@ export type GlobalFooterFields = {
     city: Field<string>;
     state: Field<string>;
     zipcode: Field<string>;
+    socialLinks: Array<SocialLink>
   };
 };

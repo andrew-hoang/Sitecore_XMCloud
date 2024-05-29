@@ -68,5 +68,52 @@ export const defaultMockData: GlobalFooterProps = {
     engageDescription: {
       value: '',
     },
+    socialLinks: [
+      {
+        link: {
+          value: {
+            href: '/',
+            title: 'Facebook',
+          },
+        },
+        socialIcon: 'facebook',
+      },
+      {
+        link: {
+          value: {
+            href: '/',
+            title: 'Instagram',
+          },
+        },
+        socialIcon: 'instagram',
+      },
+      {
+        link: {
+          value: {
+            href: '/',
+            title: 'Youtube',
+          },
+        },
+        socialIcon: 'youtube',
+      },
+      {
+        link: {
+          value: {
+            href: '/',
+            title: 'Twitter X',
+          },
+        },
+        socialIcon: 'twitterx',
+      },
+      {
+        link: {
+          value: {
+            href: '/',
+            title: 'Linkedin',
+          },
+        },
+        socialIcon: 'linkedin',
+      },
+    ],
   },
 };
