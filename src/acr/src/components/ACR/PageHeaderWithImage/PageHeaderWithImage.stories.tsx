@@ -2,6 +2,7 @@ import { Meta, StoryObj } from '@storybook/react';
 import PageHeaderWithImage from './PageHeaderWithImage';
 import { PageHeaderWithImageProps } from './PageHeaderWithImage.props';
 import { defaultMockData } from './PageHeaderWithImage.mock';
+import { Orientation } from 'src/enumerations/Orientation.enums';
 
 export default {
   title: 'Components/PageHeaderWithImage',
@@ -21,7 +22,7 @@ export const LeftOriented: Story = {
   args: {
     ...defaultMockData,
     params: {
-      orientation: 'image-left',
+      orientation: Orientation.Left,
     },
   },
   render: (args) => <PageHeaderWithImage {...args} />,
