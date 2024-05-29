@@ -9,6 +9,11 @@ import { TextCardProps, TextCardsProps } from 'components/ACR/TextCards/TextCard
 import TextCard from './TextCard';
 import { Flex } from '@radix-ui/themes';
 
+/**
+ * ACRAR-285 - Text Cards
+ * @param props
+ * @returns
+ */
 const TextCards = (props: TextCardsProps): JSX.Element => {
   const { fields, items, testId } = props;
 
