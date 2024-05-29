@@ -17,7 +17,6 @@ const Default = (props: PageHeaderProps): JSX.Element => {
   const headerTitle = externalFields?.headerTitle || '';
   const subtitle = externalFields?.subtitle;
 
-  console.log(props);
   const alignCenter = alignment === Alignment.Center;
 
   return (
