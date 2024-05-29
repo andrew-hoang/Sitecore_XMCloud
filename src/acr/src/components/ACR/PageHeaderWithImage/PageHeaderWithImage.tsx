@@ -1,10 +1,7 @@
 import { Flex } from '@radix-ui/themes';
 import { Text, Image } from '@sitecore-jss/sitecore-jss-react';
 import { PageHeaderWithImageProps } from 'components/ACR/PageHeaderWithImage/PageHeaderWithImage.props';
-import { useContext } from 'react';
 
-import { Theme } from 'src/enumerations/Theme.enum';
-import { ThemeContext } from 'src/context/Theme.context';
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
 import { getStaticPropsForPageHeader } from '../PageHeader/PageHeader.util';
 
@@ -16,24 +13,15 @@ const PageHeaderWithImage = (props: PageHeaderWithImageProps): JSX.Element => {
   const contentTypeFieldvalue = contentTypeField?.name ?? '';
   const headerTitle = props?.externalFields?.headerTitle;
   const subtitle = props?.externalFields?.subtitle;
-  console.log(props.externalFields);
+
   const headerImage = props?.externalFields?.image1x1;
   const headerImagecheck = props?.externalFields?.image1x1?.value?.src;
-
-  const { theme = Theme.WHITE } = useContext(ThemeContext);
-
-  const bgLightIndigo = theme === Theme.LIGHT_INDIGO;
 
   const imageleft = orientation === 'image-left';
   const imageRight = orientation === 'image-right';
 
   return (
-    <div
-      className={`relative overflow-hidden`}
-      data-ref="PageHeaderWithImage"
-      data-testid={testId}
-      data-theme={bgLightIndigo ? Theme.LIGHT_INDIGO : Theme.WHITE}
-    >
+    <div className=`relative overflow-hidden` data-ref="PageHeaderWithImage" data-testid={testId}>
       {headerImage && (
         <div
           className="absolute inset-0 h-full w-full bg-cover bg-center opacity-20"
