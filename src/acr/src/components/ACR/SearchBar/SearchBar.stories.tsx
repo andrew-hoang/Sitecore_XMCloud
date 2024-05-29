@@ -1,4 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react';
+import { withCoveoSearch } from "storybook/decorators";
 
 import SearchBar from 'components/ACR/SearchBar/SearchBar';
 
@@ -8,6 +9,9 @@ export default {
   title: 'Components/Search Bar',
   component: SearchBar,
   tags: ['autodocs'],
+  decorators: [
+    withCoveoSearch
+  ]
 } as Meta<typeof SearchBar>;
 
 type Story = StoryObj<typeof SearchBar>;
