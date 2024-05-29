@@ -55,19 +55,21 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
             <Separator my="3" size="4" color='green' />
           </div>
         )}
-        <div>
-          <Link field={{ href: "/" }} aria-label='navigate to root site'>
-            <NextImage field={footerLogo} height="50" width="196" alt="american college of radiology logo" />
-          </Link>
-        </div>
-        <Placeholder
-          name={footerLink1Placeholder.placeholder.name}
-          rendering={footerLink1Placeholder.placeholder.rendering}
-        />
-        <Placeholder
-          name={footerLink2Placeholder.placeholder.name}
-          rendering={footerLink1Placeholder.placeholder.rendering}
-        />
+        <Flex>
+          <div>
+            <Link field={{ href: "/" }} aria-label='navigate to root site'>
+              <NextImage field={footerLogo} height="50" width="196" alt="american college of radiology logo" />
+            </Link>
+          </div>
+          <Placeholder
+            name={footerLink1Placeholder.placeholder.name}
+            rendering={footerLink1Placeholder.placeholder.rendering}
+          />
+          <Placeholder
+            name={footerLink2Placeholder.placeholder.name}
+            rendering={footerLink1Placeholder.placeholder.rendering}
+          />
+        </Flex>
         <Placeholder
           name={footerLink3Placeholder.placeholder.name}
           rendering={footerLink1Placeholder.placeholder.rendering}
