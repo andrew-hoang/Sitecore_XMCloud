@@ -1,0 +1,33 @@
+﻿---
+ID: "bd588564-11ac-4545-b752-9e4b815f5d8b"
+Parent: "d2ed9594-10f9-4e74-b565-30e29a0f521e"
+Template: "d2ed9594-10f9-4e74-b565-30e29a0f521e"
+Path: /sitecore/templates/Feature/ACR/Page Components/Multi Promos/Multi Promo Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {46E8F6C0-3835-4517-BD41-B2FA2EB9D79E}
+    {D2ED9594-10F9-4E74-B565-30E29A0F521E}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ea769c10-edc8-400e-84e6-4ec9fa5db360"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240529T145437Z
