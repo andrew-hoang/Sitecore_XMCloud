@@ -38,4 +38,3 @@ const TextCard = (props: TextCardProps): JSX.Element => {
 };
 
 export default TextCard;
-
