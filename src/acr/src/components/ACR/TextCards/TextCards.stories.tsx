@@ -23,6 +23,13 @@ type Story = StoryObj<typeof TextCards>;
 
 export const Default: Story = {
   args: defaultMockData,
+  render: (args) => {
+    return (
+      <ContainerFullWidth {...containerFullWidthMockData}>
+        <TextCards {...args} />
+      </ContainerFullWidth>
+    );
+  },
 };
 
 export const InContext: Story = {
