@@ -2,7 +2,7 @@ import React from 'react';
 import { StoryFn } from '@storybook/react';
 import { StoryContext } from '@storybook/react';
 import { DecoratorHelpers } from '@storybook/addon-themes';
-import colorThemes from './radixThemePresets';
+import colorThemes, { ColorThemesType } from './radixThemePresets';
 import { ImageOptimizationProvider } from '../src/context/ImageOptimization.context';
 
 const { initializeThemeState, pluckThemeFromContext, useThemeParameters } = DecoratorHelpers;
@@ -32,7 +32,7 @@ export const withRadixTheme = ({
   themes,
   defaultTheme,
 }: {
-  themes: { [key: string]: { [key: string]: string } };
+  themes: ColorThemesType;
   defaultTheme: string;
 }) => {
   initializeThemeState(Object.keys(themes), defaultTheme);
