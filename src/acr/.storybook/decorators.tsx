@@ -7,7 +7,9 @@ import { ImageOptimizationProvider } from '../src/context/ImageOptimization.cont
 import { AtomicSearchInterface } from '@coveo/atomic-react';
 const { initializeThemeState, pluckThemeFromContext, useThemeParameters } = DecoratorHelpers;
 
-import { Theme } from '@radix-ui/themes';
+import { Theme as RadixTheme } from '@radix-ui/themes';
+import { ThemeContext } from 'src/context/Theme.context';
+import { Theme } from 'src/enumerations/Theme.enum';
 
 import { playFair } from '../src/fonts';
 import localFont from 'next/font/local';
@@ -44,15 +46,17 @@ export const withRadixTheme = ({
     const radixTheme = colorThemes[selected];
 
     return (
-      <Theme {...radixTheme} style={{ minHeight: 0 }}>
-        {context?.componentId === 'components-container' ? (
-          <Story />
-        ) : (
-          <div className="min-h-screen bg-t-background text-t-body">
+      <RadixTheme {...radixTheme} style={{ minHeight: 0 }}>
+        <ThemeContext.Provider value={{ theme: radixTheme['data-theme'] as Theme }}>
+          {context?.componentId === 'components-container' ? (
             <Story />
-          </div>
-        )}
-      </Theme>
+          ) : (
+            <div className="min-h-screen bg-t-background text-t-body">
+              <Story />
+            </div>
+          )}
+        </ThemeContext.Provider>
+      </RadixTheme>
     );
   };
 };
