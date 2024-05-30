@@ -25,7 +25,7 @@ const Promo = (props: PromoProps): JSX.Element => {
       data-testid={testId}
       data-ref="promo"
       gap="6"
-      className="@5xl/column:grid-cols-2 grid-cols-1"
+      className="grid-cols-1 @5xl/column:grid-cols-2"
     >
       <Flex direction="column" justify="center">
         <Text field={eyebrowText} tag="p" className="body-xs mb-4" />
