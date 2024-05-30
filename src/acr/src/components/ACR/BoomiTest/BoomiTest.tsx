@@ -10,10 +10,16 @@ const BoomiTest = (props: BoomiTestProps): JSX.Element => {
 
   return (
     <div data-ref="boomi-test" data-testid={testId}>
-      <p>The BoomiTest Component</p>
-      <p>{account?.FirstName}</p>
-      <p>{account?.LastName}</p>
-      <p>{account?.Name}</p>
+      <h2>Boomi Get Account</h2>
+      <br/>
+      
+      <p>Account Id: {account?.Account.Id}</p>
+      <p>First Name: {account?.Account.FirstName}</p>
+      <p>Last Name: {account?.Account.LastName}</p>
+      <p>Full Name: {account?.Account.Name}</p>
+<br/>
+Full JSON: 
+{JSON.stringify(account)}
     </div>
   );
 };

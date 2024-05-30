@@ -12,12 +12,15 @@ export const getStaticPropsForBoomiTest = async (): Promise<BoomiTestData> => {
       SF_Account_ID: '',
     },
   };
-  //const accountData = await getAccount(requestParams);
-  const testData: ACRAccount = {
-    FirstName: 'Ashish',
+
+  const accountData = await getAccount(requestParams);
+
+  //Sample ACRAccount Object
+ /* const testData: ACRAccount = {
+    FirstName: 'Test First Name',
     Id: '',
-    Name: 'Hello',
-    LastName: 'Minyie',
+    Name: 'Test Full Name',
+    LastName: 'Test LastName',
     PersonMailingCountry: '',
     PersonMailingAddress: '',
     NU__FullName__c: '',
@@ -30,10 +33,12 @@ export const getStaticPropsForBoomiTest = async (): Promise<BoomiTestData> => {
     Account_Detail__c: '',
     RFS: '',
     YPS: '',
-  };
+  };*/
+  
   const model: BoomiTestData = {
     externalFields: {
-      account: testData,
+      //account: testData,
+      account:accountData,
     },
   };
 
