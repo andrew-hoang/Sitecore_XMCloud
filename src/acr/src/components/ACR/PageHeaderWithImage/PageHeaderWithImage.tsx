@@ -5,6 +5,8 @@ import { PageHeaderWithImageProps } from 'components/ACR/PageHeaderWithImage/Pag
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
 import { getStaticPropsForPageHeader } from '../PageHeader/PageHeader.util';
 
+import { Orientation } from 'src/enumerations/Orientation.enum';
+
 const PageHeaderWithImage = (props: PageHeaderWithImageProps): JSX.Element => {
   const { params, testId } = props;
   const { orientation } = params ?? {};
@@ -17,11 +19,11 @@ const PageHeaderWithImage = (props: PageHeaderWithImageProps): JSX.Element => {
   const headerImage = props?.externalFields?.image1x1;
   const headerImagecheck = props?.externalFields?.image1x1?.value?.src;
 
-  const imageleft = orientation === 'image-left';
-  const imageRight = orientation === 'image-right';
+  const imageleft = orientation === Orientation.IMAGE_LEFT;
+  const imageRight = orientation === Orientation.IMAGE_RIGHT;
 
   return (
-    <div className=`relative overflow-hidden` data-ref="PageHeaderWithImage" data-testid={testId}>
+    <div className="relative overflow-hidden" data-ref="PageHeaderWithImage" data-testid={testId}>
       {headerImage && (
         <div
           className="absolute inset-0 h-full w-full bg-cover bg-center opacity-20"
