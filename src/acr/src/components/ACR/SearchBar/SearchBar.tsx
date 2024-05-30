@@ -16,11 +16,7 @@ const SearchBar = (props: SearchBarProps): JSX.Element => {
   console.log(searchHub);
 
   return (
-    <div
-      className="mx-auto max-w-[1268px] rounded-lg p-[30px] sm:px-[65px] sm:py-[41px]"
-      data-ref="searchbox"
-      data-testid={testId}
-    >
+    <div className="sm:px-[65px] sm:py-[41px] p-[30px] rounded-lg w-full max-w-[1268px] mx-auto" data-ref="searchbox" data-testid={testId}>
       <style>{styles}</style>
       <Text className="heading-d mb-6 sm:mb-8" tag="p" field={title} />
       <AtomicSearchBox />
