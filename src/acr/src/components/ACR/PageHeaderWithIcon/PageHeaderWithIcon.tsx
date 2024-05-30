@@ -9,12 +9,12 @@ import { dictionaryKeys } from 'variables/dictionary';
 import { useI18n } from 'next-localization';
 
 const PageHeaderWithIcon = (props: PageHeaderWithIconProps): JSX.Element => {
-  const { t } = useI18n();
+  const i18n = useI18n();
   const { params, testId, externalFields } = props;
   const { displayLicenseLink } = params ?? {};
 
-  const linkText = t(dictionaryKeys.PAGE_HEADER_LICENSE_TEXT);
-  const licenseLinkUrl = t(dictionaryKeys.PAGE_HEADER_ANCHOR_LINK);
+  const linkText = i18n?.t(dictionaryKeys.PAGE_HEADER_LICENSE_TEXT);
+  const licenseLinkUrl = i18n?.t(dictionaryKeys.PAGE_HEADER_ANCHOR_LINK);
 
   const headerTitle = externalFields?.headerTitle;
   const subtitle = externalFields?.subtitle;
