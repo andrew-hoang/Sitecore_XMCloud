@@ -1,4 +1,4 @@
 export enum Orientation {
-  IMAGE_LEFT = 'imageLeft',
-  IMAGE_RIGHT = 'imageRight',
+  IMAGE_LEFT = 'image-left',
+  IMAGE_RIGHT = 'image-right',
 }
