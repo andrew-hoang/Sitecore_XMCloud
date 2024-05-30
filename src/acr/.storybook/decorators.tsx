@@ -2,9 +2,9 @@ import React from 'react';
 import { StoryFn } from '@storybook/react';
 import { StoryContext } from '@storybook/react';
 import { DecoratorHelpers } from '@storybook/addon-themes';
-import colorThemes from './radixThemePresets';
+import colorThemes, { ColorThemesType } from './radixThemePresets';
 import { ImageOptimizationProvider } from '../src/context/ImageOptimization.context';
-
+import { AtomicSearchInterface } from '@coveo/atomic-react';
 const { initializeThemeState, pluckThemeFromContext, useThemeParameters } = DecoratorHelpers;
 
 import { Theme } from '@radix-ui/themes';
@@ -32,7 +32,7 @@ export const withRadixTheme = ({
   themes,
   defaultTheme,
 }: {
-  themes: { [key: string]: { [key: string]: string } };
+  themes: ColorThemesType;
   defaultTheme: string;
 }) => {
   initializeThemeState(Object.keys(themes), defaultTheme);
@@ -73,4 +73,10 @@ export const withI18n = (Story: StoryFn) => (
   <I18nProvider locale="en">
     <Story />
   </I18nProvider>
+);
+
+export const withCoveoSearch = (Story: StoryFn) => (
+  <AtomicSearchInterface>
+    <Story />
+  </AtomicSearchInterface>
 );
