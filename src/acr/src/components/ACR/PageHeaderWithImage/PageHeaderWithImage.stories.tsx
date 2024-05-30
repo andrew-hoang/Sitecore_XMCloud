@@ -22,7 +22,7 @@ export const LeftOriented: Story = {
   args: {
     ...defaultMockData,
     params: {
-      orientation: Orientation.Left,
+      orientation: Orientation.IMAGE_LEFT,
     },
   },
   render: (args) => <PageHeaderWithImage {...args} />,

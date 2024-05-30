@@ -6,6 +6,7 @@ import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
 import { getStaticPropsForPageHeader } from '../PageHeader/PageHeader.util';
 
 import { Orientation } from 'src/enumerations/Orientation.enum';
+import cn from 'classnames';
 
 const PageHeaderWithImage = (props: PageHeaderWithImageProps): JSX.Element => {
   const { params, testId } = props;
@@ -20,34 +21,44 @@ const PageHeaderWithImage = (props: PageHeaderWithImageProps): JSX.Element => {
   const headerImagecheck = props?.externalFields?.image1x1?.value?.src;
 
   const imageleft = orientation === Orientation.IMAGE_LEFT;
-  const imageRight = orientation === Orientation.IMAGE_RIGHT;
 
+  // TODO - adjust top padding / transition to match Global Header height.
   return (
-    <div className="relative overflow-hidden" data-ref="PageHeaderWithImage" data-testid={testId}>
+    <section
+      className="relative -translate-y-[176px] overflow-hidden px-[30px] pt-[176px] md:px-0"
+      data-ref="PageHeaderWithImage"
+      data-testid={testId}
+    >
       {headerImage && (
-        <div
-          className="absolute inset-0 h-full w-full bg-cover bg-center opacity-20"
-          style={{ backgroundImage: `url(${headerImage})` }}
-        />
+        <div className="absolute inset-0 z-auto opacity-20">
+          <Image field={headerImage} alt="" className="h-full w-full object-cover" />
+        </div>
       )}
-      <Flex className="relative flex-col items-start justify-between gap-5 px-8 py-12 md:flex-row md:items-center md:gap-9 md:px-16">
+      <div className="relative z-10 items-center gap-[30px] md:grid md:grid-cols-[1fr_repeat(12,minmax(auto,_70px))_1fr]">
         {imageleft && headerImagecheck && (
-          <div className="h-32 w-32 flex-shrink-0 md:h-48 md:w-48">
+          <div className="col-span-6 col-start-1">
             <Image field={headerImage} alt="Header Image" className="h-full w-full object-cover" />
           </div>
         )}
-        <Flex direction="column" gap="4" width={{ initial: 'auto', md: '770px' }}>
-          <h3 className="body-xs">{contentTypeFieldvalue}</h3>
-          <Text field={headerTitle} tag="h2" className="heading-d" />
+        <Flex
+          direction="column"
+          gap="4"
+          className={cn('col-span-7 py-14 md:py-[70px]', {
+            'col-start-2': !imageleft,
+            'col-start-7': imageleft,
+          })}
+        >
+          {contentTypeFieldvalue && <p className="meta-c">{contentTypeFieldvalue}</p>}
+          <Text field={headerTitle} tag="h1" className="heading-c text-t-primary" />
           <Text field={subtitle} tag="p" />
         </Flex>
-        {imageRight && headerImagecheck && (
-          <div className="h-32 w-32 flex-shrink-0 md:h-48 md:w-48">
-            <Image field={headerImage} alt="Header Image" className="h-full w-full object-cover" />
+        {!imageleft && headerImagecheck && (
+          <div className="col-span-6 col-start-9 self-end">
+            <Image field={headerImage} className="h-full w-full object-cover" />
           </div>
         )}
-      </Flex>
-    </div>
+      </div>
+    </section>
   );
 };
 export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
