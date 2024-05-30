@@ -13,8 +13,7 @@ const SearchBar = (props: SearchBarProps): JSX.Element => {
   const { fields, testId } = props;
 
   const { title, searchHub } = fields ?? {};
-  //Needs logic to build final url
-  console.log('Search Page Url', searchHub?.fields?.searchPage?.value?.href);
+  const url = searchHub?.fields?.searchPage?.value?.href;
 
   return (
     <div
@@ -24,7 +23,7 @@ const SearchBar = (props: SearchBarProps): JSX.Element => {
     >
       <style>{styles}</style>
       <Text className="heading-d mb-6 sm:mb-8" tag="p" field={title} />
-      <AtomicSearchBox />
+      <AtomicSearchBox redirectionUrl={url} />
     </div>
   );
 };
