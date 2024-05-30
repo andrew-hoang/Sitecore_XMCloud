@@ -1,36 +1,36 @@
-import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
+import { PlaceholderProps } from '@sitecore-jss/sitecore-jss-react/types/components/PlaceholderCommon';
 import { TestProps } from 'src/types/Test.props';
+import { Component } from 'react';
 
 /**
  * Model used for Sitecore Component integration
  */
 export type TextCardsProps = ComponentProps &
   TestProps &
-  TextCardsParams &
-  TextCardsFields &
-  TextCardsData;
+  PlaceholderProps &
+  TextCardsFields & { items: Component[] };
 
 // Component Rendering Parameter fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type TextCardsParams = {
+export type TextCardParams = {
   params: {
-    mock_param?: string;
-  };
-};
-
-// Non-component data source fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type TextCardsData = {
-  externalFields?: {
-    mock_external_data: Field<string>;
+    orientation?: string;
   };
 };
 
 export type TextCardsFields = {
   fields: {
-    heading: Field<string>; // Sitecore editable text field
-    image?: ImageField; // Sitecore editable image field
-    link?: LinkField; // Sitecore editable link field
+    title?: Field<string>;
+    description?: Field<string>;
   };
 };
+
+export type TextCardProps = ComponentProps &
+  TextCardParams & {
+    fields: {
+      image?: ImageField;
+      description: Field<string>;
+      anchorId?: Field<string>;
+    };
+  };
