@@ -17,7 +17,7 @@ const SearchBar = (props: SearchBarProps): JSX.Element => {
 
   return (
     <div
-      className="mx-auto w-full max-w-[1268px] rounded-lg p-[30px] sm:px-[65px] sm:py-[41px]"
+      className="mx-auto w-full max-w-[1268px] rounded-lg p-[30px] sm:px-[65px] sm:py-[41px] bg-t-background text-t-body"
       data-ref="searchbox"
       data-testid={testId}
     >
