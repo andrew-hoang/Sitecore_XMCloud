@@ -1,4 +1,6 @@
 import React from 'react';
+import { StoryFn } from '@storybook/react';
+import { StoryContext } from '@storybook/react';
 import { DecoratorHelpers } from '@storybook/addon-themes';
 import colorThemes from './radixThemePresets';
 import { ImageOptimizationProvider } from '../src/context/ImageOptimization.context';
@@ -26,10 +28,16 @@ import { I18nProvider } from 'next-localization';
 
 import cn from 'classnames';
 
-export const withRadixTheme = ({ themes, defaultTheme }) => {
+export const withRadixTheme = ({
+  themes,
+  defaultTheme,
+}: {
+  themes: { [key: string]: { [key: string]: string } };
+  defaultTheme: string;
+}) => {
   initializeThemeState(Object.keys(themes), defaultTheme);
 
-  return (Story, context) => {
+  return (Story: StoryFn, context: StoryContext) => {
     const selectedTheme = pluckThemeFromContext(context);
     const { themeOverride } = useThemeParameters();
     const selected = themeOverride || selectedTheme || defaultTheme;
@@ -49,19 +57,19 @@ export const withRadixTheme = ({ themes, defaultTheme }) => {
   };
 };
 
-export const withFonts = (Story) => (
+export const withFonts = (Story: StoryFn) => (
   <div className={cn(beausite.variable, playFair.variable)}>
     <Story />
   </div>
 );
 
-export const withImageOptimiziation = (Story) => (
+export const withImageOptimiziation = (Story: StoryFn) => (
   <ImageOptimizationProvider unoptimized={true}>
     <Story />
   </ImageOptimizationProvider>
 );
 
-export const withI18n = (Story) => (
+export const withI18n = (Story: StoryFn) => (
   <I18nProvider locale="en">
     <Story />
   </I18nProvider>

@@ -34,8 +34,8 @@ export const ContainerFullWidthImageRight: Story = {
   args: {
     ...defaultMockData,
     params: {
-      orientation: Orientation.IMAGE_RIGHT
-    }
+      orientation: Orientation.IMAGE_RIGHT,
+    },
   },
   render: (args) => {
     return (
@@ -52,8 +52,8 @@ export const ContainerFullWidthImageLeft: Story = {
   args: {
     ...defaultMockData,
     params: {
-      orientation: Orientation.IMAGE_LEFT
-    }
+      orientation: Orientation.IMAGE_LEFT,
+    },
   },
   render: (args) => {
     return (
@@ -70,19 +70,16 @@ export const Container50_50: Story = {
   args: {
     ...defaultMockData,
     params: {
-      orientation: Orientation.IMAGE_LEFT
-    }
+      orientation: Orientation.IMAGE_LEFT,
+    },
   },
   render: (args) => {
     return (
       <ContainerFullBleed {...containerFullBleedMockData} params={{ theme: args?.theme }}>
-        <Container5050 {...containerFullWidthMockData}
-          left={
-            <Promo {...args} />
-          }
-          right={
-            <Promo {...args} />
-          }
+        <Container5050
+          {...containerFullWidthMockData}
+          left={<Promo {...args} />}
+          right={<Promo {...args} />}
         />
       </ContainerFullBleed>
     );
@@ -93,19 +90,16 @@ export const Container70_30: Story = {
   args: {
     ...defaultMockData,
     params: {
-      orientation: Orientation.IMAGE_LEFT
-    }
+      orientation: Orientation.IMAGE_LEFT,
+    },
   },
   render: (args) => {
     return (
       <ContainerFullBleed {...containerFullBleedMockData} params={{ theme: args?.theme }}>
-        <Container7030 {...containerFullWidthMockData}
-          left={
-            <Promo {...args} />
-          }
-          right={
-            <Promo {...args} />
-          }
+        <Container7030
+          {...containerFullWidthMockData}
+          left={<Promo {...args} />}
+          right={<Promo {...args} />}
         />
       </ContainerFullBleed>
     );
