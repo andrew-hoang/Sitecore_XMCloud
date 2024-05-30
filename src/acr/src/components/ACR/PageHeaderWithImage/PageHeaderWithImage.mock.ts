@@ -1,8 +1,9 @@
 import { PageHeaderWithImageProps } from './PageHeaderWithImage.props';
+import { Orientation } from 'src/enumerations/Orientation.enum';
 
 export const defaultMockData: PageHeaderWithImageProps = {
   params: {
-    orientation: '',
+    orientation: Orientation.IMAGE_LEFT,
   },
   testId: 'PageHeaderWithImageDefault',
   rendering: {
