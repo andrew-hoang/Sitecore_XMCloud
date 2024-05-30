@@ -2,20 +2,20 @@
 ID: "40e76a42-be5b-4e0d-ba79-c4b1a4e3097e"
 Parent: "0d98c8ef-eafa-453d-8ae7-01cc1598e3ba"
 Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
-Path: /sitecore/layout/Renderings/Feature/ACR/Page Components/Text Card Item
+Path: /sitecore/layout/Renderings/Feature/ACR/Page Components/Text Card
 SharedFields:
 - ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
   Hint: componentName
-  Value: TextCardItem
+  Value: TextCard
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
-  Value: /sitecore/templates/Feature/ACR/Page Components/Text Cards/Text Card Item
+  Value: /sitecore/templates/Feature/ACR/Page Components/Text Cards/Text Card
 - ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
   Hint: Parameters Template
   Value: "{F920C2A1-8C66-4337-BB14-AC0CCF1FB030}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "query:$site/*[@@name='Data']/*[@@templatename='Text Cards Folder']|query:$site/*[@@name='Data']/*[@@templatename='Text Cards Folder']/*[@@templatename='Text Cards']|query:$site/*[@@name='Data']/*[@@templatename='Text Card Item Folder']"
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Text Cards Folder']|query:$site/*[@@name='Data']/*[@@templatename='Text Cards Folder']/*[@@templatename='Text Cards']"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
@@ -38,11 +38,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "44db677d-4be3-4d1d-bb60-3afee55a70ff"
+      Value: "779c8ece-53f1-4e38-9bae-bb72ac420edd"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240522T140507Z
+      Value: 20240530T165304Z

@@ -2,7 +2,7 @@
 ID: "8bd645b5-d3ab-4f3a-bda7-c5de368f3298"
 Parent: "8aa84ee7-9e28-4a93-bc1e-8ae21e34c051"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Feature/ACR/Page Components/Text Cards/Text Card Item/Text Card Item/image
+Path: /sitecore/templates/Feature/ACR/Page Components/Text Cards/Text Card/Text Card Item/image
 SharedFields:
 - ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
   Hint: Type
