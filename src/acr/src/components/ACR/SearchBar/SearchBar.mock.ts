@@ -15,7 +15,7 @@ export const defaultMockData: SearchBarProps = {
       name: 'Search Hub',
       fields: {
         name: { value: 'Search Hub Name' },
-        value: { value: 'www.example.com' },
+        searchPage: { value: { href: '/new-search-page' } },
       },
     },
   },
