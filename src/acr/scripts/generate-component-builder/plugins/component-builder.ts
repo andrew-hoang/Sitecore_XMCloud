@@ -12,7 +12,17 @@ class ComponentBuilderPlugin implements ComponentBuilderPluginType {
   order = 9999;
 
   exec(config: ComponentBuilderPluginConfig) {
-    const filesToExclude = ['.stories', '.props', '.mock', '.test', '.query', '.context', '.util'];
+    const filesToExclude = [
+      '.stories',
+      '.props',
+      '.mock',
+      '.test',
+      '.query',
+      '.context',
+      '.util',
+      '.string',
+      '.dictionary',
+    ];
 
     config.components = getComponentList('src/components').filter((c) => {
       return !filesToExclude.some((v) => c.componentName?.includes(v));

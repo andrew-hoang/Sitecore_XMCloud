@@ -1,4 +1,4 @@
-import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { TestProps } from 'src/types/Test.props';
 
@@ -8,29 +8,19 @@ import { TestProps } from 'src/types/Test.props';
 export type SectionHeaderProps = ComponentProps &
   TestProps &
   SectionHeaderParams &
-  SectionHeaderFields &
-  SectionHeaderData;
+  SectionHeaderFields;
 
 // Component Rendering Parameter fields
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type SectionHeaderParams = {
   params: {
-    mock_param?: string;
-  };
-};
-
-// Non-component data source fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type SectionHeaderData = {
-  externalFields?: {
-    mock_external_data: Field<string>;
+    includeMarginBottom?: string;
   };
 };
 
 export type SectionHeaderFields = {
   fields: {
-    heading: Field<string>; // Sitecore editable text field
-    image?: ImageField; // Sitecore editable image field
-    link?: LinkField; // Sitecore editable link field
+    title: Field<string>;
+    subtitle?: Field<string>;
   };
 };

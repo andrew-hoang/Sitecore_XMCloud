@@ -1,3 +1,5 @@
+'use client';
+
 import { useContext, useState } from 'react';
 import { NextImage, ImageField, useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ImageProps } from 'next/image';

@@ -2,7 +2,7 @@
 ID: "3e14a076-3f17-4e26-a0c5-9b97a1d9687e"
 Parent: "6e2d0c5b-861b-4ff3-905e-15faa1220a0e"
 Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
-Path: /sitecore/templates/Foundation/ACR/Rendering Parameters/Orientation Rendering Parameter/Display/Orientation
+Path: /sitecore/templates/Foundation/ACR/Rendering Parameters/Orientation Rendering Parameter/Display/orientation
 SharedFields:
 - ID: "1eb8ae32-e190-44a6-968d-ed904c794ebf"
   Hint: Source
@@ -15,6 +15,10 @@ SharedFields:
   Value: 100
 Languages:
 - Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Orientation
   Versions:
   - Version: 1
     Fields:
@@ -31,11 +35,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "97fab854-bd1f-4c29-8b29-26aeb0dd1498"
+      Value: "1ef2b1ce-f81b-41fa-8918-fd0b609f0460"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\kenneth.robinson@velir.com
+        sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240520T180008Z
+      Value: 20240524T153954Z
