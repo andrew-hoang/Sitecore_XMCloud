@@ -30,7 +30,7 @@ const PageHeaderWithImage = (props: PageHeaderWithImageProps): JSX.Element => {
       data-testid={testId}
     >
       {headerImage && (
-        <div className="absolute inset-0 z-auto opacity-20">
+        <div className="absolute inset-0 z-auto opacity-15">
           <Image field={headerImage} alt="" className="h-full w-full object-cover" />
         </div>
       )}
