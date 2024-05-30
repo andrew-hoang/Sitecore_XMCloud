@@ -24,7 +24,7 @@ const TextBanner = (props: TextBannerProps): JSX.Element => {
 
   return (
     <Flex
-      className={cn('body-sm rounded-4 text-indigo-100 bg-t-background text-t-body')}
+      className={cn('body-sm rounded-4 bg-t-background text-indigo-100 text-t-body')}
       data-ref="text-banner"
       data-testid={testId}
       data-theme={setAltTheme()} // Theme targets component's link style
