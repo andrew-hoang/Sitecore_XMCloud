@@ -8,7 +8,29 @@ SharedFields:
 - ID: "7dff83d2-e609-4c5f-99a9-13ec8536d65b"
   Hint: Value
   Value: |
-    predefined block of HTML goes here for "Insert a button" snippet
+    <div
+      data-is-root-theme="true"
+      data-accent-color="gray"
+      data-gray-color="gray"
+      data-has-background="true"
+      data-panel-background="translucent"
+      data-radius="medium"
+      data-scaling="100%"
+      data-theme="white"
+      class="radix-themes"
+      style="min-height: 0px;"
+    >
+      <div class="bg-t-background text-t-body">
+        <div class="__variable_font-843ff3 __variable_playfair-display-normal">
+          <a
+            href="/"
+            class="body-xs group inline-flex items-center gap-2 !font-medium hover:underline focus:rounded-[3px] focus:outline-1 focus:outline-offset-4 focus:outline-t-primary rounded-[6px] bg-t-primary px-[15px] py-[12px] text-t-btn-text transition-all hover:rounded-tr-[30px] hover:text-t-contrast"
+          >
+            Explore activities
+          </a>
+        </div>
+      </div>
+    </div>
 - ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
   Hint: __Sortorder
   Value: 100
@@ -26,7 +48,7 @@ Languages:
         sitecore\admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5291f1d1-ff7f-4a9a-9fd2-cab832d9d82b"
+      Value: "30614b17-4c9a-490c-be5a-2d7ffacfd4f4"
     - ID: "8e5179b0-2a09-4624-885d-619c0e3d0390"
       Hint: Header
       Value: Insert a button
@@ -39,4 +61,4 @@ Languages:
       Value: 20060131T193707Z
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240520T154636Z
+      Value: 20240530T171255Z

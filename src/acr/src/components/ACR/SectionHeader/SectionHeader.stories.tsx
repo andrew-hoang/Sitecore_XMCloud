@@ -9,6 +9,7 @@ import { defaultMockData as containerFullBleedMockData } from 'components/ACR/Co
 import { defaultMockData as containerFullWidthMockData } from 'components/ACR/Container/ContainerFullWidth/ContainerFullWidth.mock';
 
 import { defaultMockData } from './SectionHeader.mock';
+import { SectionHeaderProps } from './SectionHeader.props';
 
 export default {
   title: 'Components/Section Header',
@@ -24,7 +25,7 @@ export default {
   args: { theme: Theme.WHITE },
 } as Meta<typeof SectionHeader>;
 
-type Story = StoryObj<typeof SectionHeader>;
+type Story = StoryObj<SectionHeaderProps & { theme: Theme }>;
 
 export const Default: Story = {
   args: {
