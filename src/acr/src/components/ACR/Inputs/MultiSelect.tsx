@@ -130,7 +130,7 @@ const MultiSelect = (props: DropdropProps) => {
 
         <ul
           className={cn(
-            'rounded-md absolute z-10 w-full overflow-hidden rounded-b-[8px] border-[1px] border-t-0 border-indigo-100 bg-white',
+            'absolute z-10 w-full overflow-hidden rounded-md rounded-b-[8px] border-[1px] border-t-0 border-indigo-100 bg-white',
             { hidden: !(isOpen && items?.length) }
           )}
           {...getMenuProps()}
