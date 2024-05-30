@@ -59,14 +59,15 @@ export const defaultMockData: GlobalFooterProps = {
     },
     engageLink: {
       value: {
-        href: '',
+        href: '/',
+        text: 'Learn More'
       },
     },
     engageTitle: {
-      value: '',
+      value: 'Engage Forum',
     },
     engageDescription: {
-      value: '',
+      value: 'A discussion forum for ACR members.',
     },
     socialLinks: [
       {

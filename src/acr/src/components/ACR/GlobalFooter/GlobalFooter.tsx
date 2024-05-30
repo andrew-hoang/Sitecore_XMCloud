@@ -7,6 +7,7 @@ import { Link } from '@sitecore-jss/sitecore-jss-react';
 import { Flex, Separator } from '@radix-ui/themes';
 import LinkBase from '../Link/LinkBase';
 import FooterSocialIcon from './FooterSocialIcon/FooterSocialIcon';
+import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
 
 const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
   const { testId, rendering, componentFactory, fields } = props;
@@ -41,7 +42,9 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
     },
   };
 
-  const { footerNewsletterText, footerNewsletterLink, footerLogo, socialLinks } = fields;
+  const { footerNewsletterText, footerNewsletterLink, footerLogo, socialLinks, engageTitle, engageDescription, engageLink } = fields;
+
+  const renderFooterEngageForum = !!engageTitle?.value && !!engageLink?.value && !!engageDescription?.value;
 
   return (
     <div data-ref="global-footer" data-testid={testId}>
@@ -73,11 +76,16 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
           name={footerLink2Placeholder.placeholder.name}
           rendering={footerLink1Placeholder.placeholder.rendering}
         />
+        <Placeholder
+          name={footerLink3Placeholder.placeholder.name}
+          rendering={footerLink1Placeholder.placeholder.rendering}
+        />
+        {renderFooterEngageForum && <div>
+          <Text tag="p" className="font-bold mb-2" field={engageTitle} />
+          <Text tag="p" className="body-xs !font-medium mb-2" field={engageDescription} />
+          <LinkBase link={engageLink} style={ButtonStyle.CTA} />
+        </div>}
       </Flex>
-      <Placeholder
-        name={footerLink3Placeholder.placeholder.name}
-        rendering={footerLink1Placeholder.placeholder.rendering}
-      />
       <Placeholder
         name={footerLink4Placeholder.placeholder.name}
         rendering={footerLink4Placeholder.placeholder.rendering}
