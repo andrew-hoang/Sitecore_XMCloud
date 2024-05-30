@@ -29,17 +29,12 @@ const PageHeaderWithImage = (props: PageHeaderWithImageProps): JSX.Element => {
       data-ref="PageHeaderWithImage"
       data-testid={testId}
     >
-      {headerImage && (
+      {headerImagecheck && (
         <div className="absolute inset-0 z-auto opacity-15">
           <Image field={headerImage} alt="" className="h-full w-full object-cover" />
         </div>
       )}
       <div className="relative z-10 items-center gap-[30px] md:grid md:grid-cols-[1fr_repeat(12,minmax(auto,_70px))_1fr]">
-        {imageleft && headerImagecheck && (
-          <div className="col-span-6 col-start-1">
-            <Image field={headerImage} alt="Header Image" className="h-full w-full object-cover" />
-          </div>
-        )}
         <Flex
           direction="column"
           gap="4"
@@ -52,8 +47,13 @@ const PageHeaderWithImage = (props: PageHeaderWithImageProps): JSX.Element => {
           <Text field={headerTitle} tag="h1" className="heading-c text-t-primary" />
           <Text field={subtitle} tag="p" />
         </Flex>
-        {!imageleft && headerImagecheck && (
-          <div className="col-span-6 col-start-9 self-end">
+        {headerImagecheck && (
+          <div
+            className={cn('col-span-6 self-end', {
+              'col-start-9': !imageleft,
+              'col-start-1 row-start-1': imageleft,
+            })}
+          >
             <Image field={headerImage} className="h-full w-full object-cover" />
           </div>
         )}
