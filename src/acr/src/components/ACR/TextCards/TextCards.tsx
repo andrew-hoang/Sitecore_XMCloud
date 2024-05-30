@@ -5,7 +5,8 @@ import {
   withPlaceholder,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
-import { TextCardProps, TextCardsProps } from 'components/ACR/TextCards/TextCards.props';
+import { TextCardsProps, TextCardProps } from 'components/ACR/TextCards/TextCards.props';
+
 import TextCard from './TextCard';
 import { Flex } from '@radix-ui/themes';
 
