@@ -8,6 +8,6 @@ export const defaultMockData: RichTextProps = {
     dataSource: '/',
   },
   fields: {
-    heading: { value: 'MOCK_DATA_HEADING' },
+    text: { value: 'MOCK_DATA_HEADING' },
   },
 };

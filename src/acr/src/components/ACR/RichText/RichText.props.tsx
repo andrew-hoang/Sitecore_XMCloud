@@ -1,4 +1,4 @@
-import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { TestProps } from 'src/types/Test.props';
 
@@ -29,8 +29,6 @@ export type RichTextData = {
 
 export type RichTextFields = {
   fields: {
-    heading: Field<string>; // Sitecore editable text field
-    image?: ImageField; // Sitecore editable image field
-    link?: LinkField; // Sitecore editable link field
+    text: Field<string>; // Sitecore editable text field
   };
 };
