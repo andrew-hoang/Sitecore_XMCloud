@@ -1,9 +1,7 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import React from 'react';
-import { StoryFn } from '@storybook/react';
-import { StoryContext } from '@storybook/react';
 import { DecoratorHelpers } from '@storybook/addon-themes';
 import colorThemes from './radixThemePresets';
-import { AtomicSearchInterface } from "@coveo/atomic-react";
 import { ImageOptimizationProvider } from '../src/context/ImageOptimization.context';
 
 const { initializeThemeState, pluckThemeFromContext, useThemeParameters } = DecoratorHelpers;
@@ -29,16 +27,10 @@ import { I18nProvider } from 'next-localization';
 
 import cn from 'classnames';
 
-export const withRadixTheme = ({
-  themes,
-  defaultTheme,
-}: {
-  themes: { [key: string]: { [key: string]: string } };
-  defaultTheme: string;
-}) => {
+export const withRadixTheme = ({ themes, defaultTheme }) => {
   initializeThemeState(Object.keys(themes), defaultTheme);
 
-  return (Story: StoryFn, context: StoryContext) => {
+  return (Story, context) => {
     const selectedTheme = pluckThemeFromContext(context);
     const { themeOverride } = useThemeParameters();
     const selected = themeOverride || selectedTheme || defaultTheme;
@@ -58,26 +50,20 @@ export const withRadixTheme = ({
   };
 };
 
-export const withFonts = (Story: StoryFn) => (
+export const withFonts = (Story) => (
   <div className={cn(beausite.variable, playFair.variable)}>
     <Story />
   </div>
 );
 
-export const withImageOptimiziation = (Story: StoryFn) => (
+export const withImageOptimiziation = (Story) => (
   <ImageOptimizationProvider unoptimized={true}>
     <Story />
   </ImageOptimizationProvider>
 );
 
-export const withI18n = (Story: StoryFn) => (
+export const withI18n = (Story) => (
   <I18nProvider locale="en">
     <Story />
   </I18nProvider>
-);
-
-export const withCoveoSearch = (Story) => (
-  <AtomicSearchInterface>
-    <Story />
-  </AtomicSearchInterface>
 );
