@@ -8,6 +8,8 @@ import { PromoProps } from 'components/ACR/Promo/Promo.props';
 import LinkBase from '../Link/LinkBase';
 import ImageBase from '../Image/ImageBase';
 
+import { Orientation } from 'src/enumerations/Orientation.enum';
+
 import cn from 'classnames';
 
 const Promo = (props: PromoProps): JSX.Element => {
@@ -19,7 +21,12 @@ const Promo = (props: PromoProps): JSX.Element => {
   const { orientation } = params ?? {};
 
   return (
-    <Grid data-testid={testId} data-ref="promo" gap="6" className="grid-cols-1 @5xl/column:grid-cols-2">
+    <Grid
+      data-testid={testId}
+      data-ref="promo"
+      gap="6"
+      className="@5xl/column:grid-cols-2 grid-cols-1"
+    >
       <Flex direction="column" justify="center">
         <Text field={eyebrowText} tag="p" className="body-xs mb-4" />
         <Text field={title} tag="h2" className="heading-c" />
@@ -38,7 +45,10 @@ const Promo = (props: PromoProps): JSX.Element => {
         </Flex>
       </Flex>
 
-      <ImageBase image={image} className={cn({"@5xl/column:order-first": orientation === "imageLeft"})} />
+      <ImageBase
+        image={image}
+        className={cn({ '@5xl/column:order-first': orientation === Orientation.IMAGE_LEFT })}
+      />
     </Grid>
   );
 };
