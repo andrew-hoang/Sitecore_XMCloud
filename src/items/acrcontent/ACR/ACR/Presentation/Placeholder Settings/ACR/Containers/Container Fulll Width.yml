@@ -26,6 +26,7 @@ SharedFields:
     {94390289-1DDE-4AC8-A2EE-5CD4792061EA}
     {92C544E8-6F01-4A4E-BB0F-24A84214E0D8}
     {29E82F5B-5895-477E-A048-43B4D687FE47}
+    {F4F9299C-7543-42C0-B07E-6AE2EB072D31}
 Languages:
 - Language: en
   Versions:
@@ -48,7 +49,7 @@ Languages:
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\minyie.diaz@velir.com
+        sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
       Value: 20240603T143517Z

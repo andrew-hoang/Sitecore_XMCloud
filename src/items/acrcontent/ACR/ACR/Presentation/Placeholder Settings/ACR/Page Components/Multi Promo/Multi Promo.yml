@@ -1,20 +1,15 @@
 ﻿---
-ID: "6adbe448-0322-4362-a549-0fdb4e87ac8b"
-Parent: "c0ffbaed-60b1-4495-9de5-b9181a4da991"
+ID: "90310834-fdcd-46f4-81f4-020eb603b036"
+Parent: "afa2a8b9-caa4-4ebd-9cd8-e10ac2c47ed8"
 Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
-Path: /sitecore/content/ACR/ACR/Presentation/Placeholder Settings/ACR/Containers/Container 50/Container 50 Left
+Path: /sitecore/content/ACR/ACR/Presentation/Placeholder Settings/ACR/Page Components/Multi Promo/Multi Promo
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key
-  Value: "acr-container-fifty-left-{*}"
+  Value: "acr-multi-promo-{*}"
 - ID: "e391b526-d0c5-439d-803e-17512eae6222"
   Hint: Allowed Controls
-  Value: |
-    {F6D406E5-FD53-410E-9E79-B627B6B4BEDE}
-    {E2A6BB73-333A-4665-BF9A-635700942608}
-    {C72D5B4A-57C5-4A6A-9E21-6BA751C78CCB}
-    {EA0CAEDC-A342-41DE-B9D7-0CBB85421606}
-    {F4F9299C-7543-42C0-B07E-6AE2EB072D31}
+  Value: "{C7DDBEEC-86F6-466E-8434-AF904B0A65F6}"
 Languages:
 - Language: en
   Versions:
@@ -22,22 +17,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240510T152857Z
+      Value: 20240529T173423Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
-        sitecore\minyie.diaz@velir.com
+        sitecore\kenneth.robinson@velir.com
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\minyie.diaz@velir.com
+        sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "2d515893-6ab4-410b-b478-2d756cbaf648"
+      Value: "e789cbe0-42fb-4d19-bb08-494c3839e254"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240530T135254Z
+      Value: 20240529T192632Z
