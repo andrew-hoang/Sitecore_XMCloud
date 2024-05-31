@@ -28,8 +28,8 @@ const Promo = (props: PromoProps): JSX.Element => {
       className="grid-cols-1 @5xl/column:grid-cols-2"
     >
       <Flex direction="column" justify="center">
-        <Text field={eyebrowText} tag="p" className="body-xs mb-4" />
-        <Text field={title} tag="h2" className="heading-c" />
+        <Text field={eyebrowText} tag="p" className="body-xs mb-4 text-t-primary" />
+        <Text field={title} tag="h2" className="heading-c text-t-primary" />
         <Text field={titleHighlight} tag="h2" className="heading-c-serif" />
         <Text field={description} tag="p" className="mb-8 mt-6" />
 
