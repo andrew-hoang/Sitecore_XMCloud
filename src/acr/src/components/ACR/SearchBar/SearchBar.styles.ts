@@ -20,6 +20,10 @@ const styles = `
     margin-inline-end: 15px;
   }
 
+  atomic-search-box::part(submit-button):hover {
+    color: var(--c-green);
+  }
+
   atomic-search-box::part(submit-icon) {
     width: 13px;
     height: 13px;
