@@ -2,7 +2,6 @@ import { BoomiTestData } from 'components/ACR/BoomiTest/BoomiTest.props';
 import { getAccount } from 'src/utils/acrBoomiClient';
 
 export const getStaticPropsForBoomiTest = async (): Promise<BoomiTestData> => {
-  
   const requestParams = {
     Account: {
       Email_Address: 'akhanal@acr.org',
@@ -11,10 +10,10 @@ export const getStaticPropsForBoomiTest = async (): Promise<BoomiTestData> => {
     },
   };
   const accountData = await getAccount(requestParams);
-  
+
   const model: BoomiTestData = {
     externalFields: {
-      account:accountData,
+      account: accountData,
     },
   };
 

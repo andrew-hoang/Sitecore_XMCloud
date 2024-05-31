@@ -1,8 +1,8 @@
 ﻿---
-ID: "8aa84ee7-9e28-4a93-bc1e-8ae21e34c051"
-Parent: "cbc26573-0e5a-4f04-b669-5f13eafbc483"
-Template: "e269fbb5-3750-427a-9149-7aa950b49301"
-Path: /sitecore/templates/Feature/ACR/Page Components/Text Cards/Text Card Item/Text Card Item
+ID: "875c2b23-f641-43b9-a553-f0af0bc79970"
+Parent: "5d4446ed-3ea9-45cd-9b64-d44b3f1ef425"
+Template: "267d9ac7-5d85-4e9d-af89-99ab296cc218"
+Path: /sitecore/content/ACR/ACR/Dictionary/Page Content
 Languages:
 - Language: en
   Versions:
@@ -10,22 +10,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240520T174122Z
+      Value: 20240528T172827Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
-        sitecore\kenneth.robinson@velir.com
+        sitecore\minyie.diaz@velir.com
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\kenneth.robinson@velir.com
+        sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5621e08a-a3b4-494c-8e6d-420e3df50b31"
+      Value: "e0eea87f-b617-4418-a9e7-072e9d6f5dc7"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\kenneth.robinson@velir.com
+        sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240520T174122Z
+      Value: 20240528T172827Z

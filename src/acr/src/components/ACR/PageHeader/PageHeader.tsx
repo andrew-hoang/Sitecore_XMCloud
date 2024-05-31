@@ -1,34 +1,46 @@
-import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Container } from '@radix-ui/themes';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
-
 import { PageHeaderProps } from 'components/ACR/PageHeader/PageHeader.props';
 
-import { getStaticPropsForPageHeader } from 'components/ACR/PageHeader/PageHeader.util';
+import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
 
-const PageHeader = (props: PageHeaderProps): JSX.Element => {
-  const { fields, testId } = props;
+import cn from 'classnames';
+import { getStaticPropsForPageHeader } from './PageHeader.util';
+import { Alignment } from 'src/enumerations/Aligment.enum';
 
-  const { heading } = fields ?? {};
+const Default = (props: PageHeaderProps): JSX.Element => {
+  const { params, testId, externalFields } = props;
+
+  const { alignment } = params ?? {};
+
+  const contentTypeFieldvalue = externalFields?.contentType?.name ?? '';
+  const headerTitle = externalFields?.headerTitle || '';
+  const subtitle = externalFields?.subtitle;
+
+  const alignCenter = alignment === Alignment.Center;
 
   return (
-    <div data-ref="page-header" data-testid={testId}>
-      <Text tag="h2" field={heading} />
-      <p>The PageHeader Component</p>
-    </div>
+    <section
+      className={cn('py-[70px]', {
+        'text-center': alignCenter,
+      })}
+      data-ref="PageHeader"
+      data-testid={testId}
+    >
+      <Container px="6">
+        <div className="inline-block max-w-[970px]">
+          {contentTypeFieldvalue && (
+            <span className="meta-c mb-4 block">{contentTypeFieldvalue}</span>
+          )}
+          <Text field={headerTitle} tag="h1" className="heading-c text-t-primary" />
+          <Text field={subtitle} tag="p" className="sub-heading-b mt-4" />
+        </div>
+      </Container>
+    </section>
   );
 };
 
-/**
- * "Data" developer method
- * TODO_SCAFFOLD_BE: If "getStaticProps" was deleted remove "useComponentProps". They work together.
- * TODO_SCAFFOLD_BE: Populate if needed, remove if not
- * Will be called during SSG.  Do NOT return null.
- * @param {ComponentRendering} _rendering
- * @param {LayoutServiceData} _layoutData
- * @param {GetStaticPropsContext} _context
- */
 export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  return getStaticPropsForPageHeader(_rendering, _layoutData);
+  return getStaticPropsForPageHeader(_layoutData);
 };
-
-export default PageHeader;
+export default Default;

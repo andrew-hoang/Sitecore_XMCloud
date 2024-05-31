@@ -1,17 +1,18 @@
-import { ComponentRendering, LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
-import { PageHeaderData } from 'components/ACR/PageHeader/PageHeader.props';
+import { LayoutServiceData } from '@sitecore-jss/sitecore-jss-react';
+import { PageRouteData } from 'src/types/PageType.props';
+import { PageHeaderData } from './PageHeader.props';
 
 export const getStaticPropsForPageHeader = async (
-  rendering: ComponentRendering,
   layoutData: LayoutServiceData
 ): Promise<PageHeaderData> => {
-  // "data" developer does this
-  console.log(rendering);
-  console.log(layoutData);
-
+  const page = layoutData?.sitecore?.route as PageRouteData;
   const model: PageHeaderData = {
     externalFields: {
-      mock_external_data: { value: 'Hardcoded for scaffolding' },
+      headerTitle: page?.fields?.headerTitle ?? { value: '' },
+      subtitle: page?.fields?.subtitle ?? { value: '' },
+      contentType: page?.fields?.contentType,
+      image1x1: page?.fields?.image1x1,
+      image16x9: page?.fields?.image16x9,
     },
   };
 

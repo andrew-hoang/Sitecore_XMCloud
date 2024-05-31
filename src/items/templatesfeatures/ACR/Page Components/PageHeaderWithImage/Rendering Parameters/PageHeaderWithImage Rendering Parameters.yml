@@ -1,18 +1,18 @@
 ﻿---
-ID: "cbc26573-0e5a-4f04-b669-5f13eafbc483"
-Parent: "053fdec8-6be2-47da-b37e-0f147b7dbde0"
+ID: "9c4601a5-8357-45ec-9f3d-2140cf747d64"
+Parent: "cade1c2a-5656-43df-825b-8f98146d33a1"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Feature/ACR/Page Components/Text Cards/Text Card Item
+Path: /sitecore/templates/Feature/ACR/Page Components/PageHeaderWithImage/Rendering Parameters/PageHeaderWithImage Rendering Parameters
 SharedFields:
-- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
-  Hint: __Icon
-  Value: Office/32x32/id_card.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
-  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+  Value: |
+    {4247AAD4-EBDE-4994-998F-E067A51B1FE4}
+    {1930BBEB-7805-471A-A3BE-4858AC7CF696}
+    {4888CCEB-7ADE-4852-B4E2-889F59E9C089}
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{A77EC813-010E-452A-92F1-174F861AD8BC}"
+  Value: "{E7C1EA08-68B6-48EC-8582-F681CC6D1D88}"
 Languages:
 - Language: en
   Versions:
@@ -20,7 +20,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240520T173017Z
+      Value: 20240510T185654Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -31,11 +31,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "e5ad3df8-1653-423b-a25a-8ff41e21aab7"
+      Value: "7547f68b-745e-43a5-a889-5f56fb24b928"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\kenneth.robinson@velir.com
+        sitecore\nbansal@acr.org
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240522T140624Z
+      Value: 20240527T005546Z

@@ -7,7 +7,4 @@ export const defaultMockData: BoomiTestProps = {
     componentName: 'BoomiTest',
     dataSource: '/',
   },
-  fields: {
-    heading: { value: 'MOCK_DATA_HEADING' },
-  },
 };

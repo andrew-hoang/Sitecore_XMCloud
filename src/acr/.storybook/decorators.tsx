@@ -4,6 +4,8 @@ import { StoryContext } from '@storybook/react';
 import { DecoratorHelpers } from '@storybook/addon-themes';
 import colorThemes, { ColorThemesType } from './radixThemePresets';
 import { ImageOptimizationProvider } from '../src/context/ImageOptimization.context';
+import { dictionaryKeys, mockDictionary } from '../src/variables/dictionary';
+
 import { AtomicSearchInterface } from '@coveo/atomic-react';
 const { initializeThemeState, pluckThemeFromContext, useThemeParameters } = DecoratorHelpers;
 
@@ -74,7 +76,7 @@ export const withImageOptimiziation = (Story: StoryFn) => (
 );
 
 export const withI18n = (Story: StoryFn) => (
-  <I18nProvider locale="en">
+  <I18nProvider locale="en" lngDict={mockDictionary(dictionaryKeys)}>
     <Story />
   </I18nProvider>
 );
