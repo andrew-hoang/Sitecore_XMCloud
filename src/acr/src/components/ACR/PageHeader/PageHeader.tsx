@@ -29,7 +29,9 @@ const Default = (props: PageHeaderProps): JSX.Element => {
     >
       <Container px="6">
         <div className="inline-block max-w-[970px]">
-          {contentTypeFieldvalue && <span className="meta-c mb-4">{contentTypeFieldvalue}</span>}
+          {contentTypeFieldvalue && (
+            <span className="meta-c mb-4 block">{contentTypeFieldvalue}</span>
+          )}
           <Text field={headerTitle} tag="h1" className="heading-c text-t-primary" />
           <Text field={subtitle} tag="p" className="sub-heading-b mt-4" />
         </div>
