@@ -11,5 +11,5 @@ export const formatAddress = (address1: string, address2: string, city: string, 
   if (isLink) {
     return `https://maps.google.com/maps?q=${encodeURIComponent(`${address1} ${address2} ${city}, ${state} ${zipcode}`)}`
   }
-  return `${address1} ${address2} ${city}, ${state} ${zipcode}`
+  return `${address1} ${address2 ? '\n' : ''} ${address2} \n ${city}, ${state} ${zipcode}`
 };

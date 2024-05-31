@@ -30,7 +30,7 @@ export const defaultMockData: GlobalFooterProps = {
       value: 'VA',
     },
     copyrightStatement: {
-      value: '',
+      value: 'Copyright © American College of Radiology',
     },
     footerLogo: {
       value: {
