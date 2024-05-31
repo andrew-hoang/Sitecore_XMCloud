@@ -1,10 +1,7 @@
-import { LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { PlaceholderProps } from 'src/types/Placeholder.props';
 import { ComponentProps } from 'lib/component-props';
 
-export type FooterLinkItemProps = {
-  link: LinkField;
-};
+import { FooterLinkItemProps } from '../GlobalFooter.props';
 
 export type FooterLinkColumnProps = FooterLinkItemProps[] | undefined;
 
