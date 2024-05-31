@@ -7,9 +7,11 @@
  */
 
 import { SkipLinkDictionaryKeys } from 'components/ACR/SkipLink/SkipLink.dictionary';
+import { PageHeaderDictionaryKeys } from 'src/components/ACR/PageHeaderWithIcon/PageHeaderWithIcon.dictionary';
 
 export const dictionaryKeys = {
   ...SkipLinkDictionaryKeys,
+  ...PageHeaderDictionaryKeys,
 };
 
 export const mockDictionary = (dictionary: Record<string, string>): Record<string, string> => {
