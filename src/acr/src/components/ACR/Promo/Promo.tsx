@@ -21,35 +21,37 @@ const Promo = (props: PromoProps): JSX.Element => {
   const { orientation } = params ?? {};
 
   return (
-    <Grid
-      data-testid={testId}
-      data-ref="promo"
-      gap="6"
-      className="grid-cols-1 @5xl/column:grid-cols-2"
-    >
-      <Flex direction="column" justify="center">
-        <Text field={eyebrowText} tag="p" className="body-xs mb-4 text-t-primary" />
-        <Text field={title} tag="h2" className="heading-c text-t-primary" />
-        <Text field={titleHighlight} tag="h2" className="heading-c-serif" />
-        <Text field={description} tag="p" className="mb-8 mt-6" />
+    <div className="@container/column">
+      <Grid
+        data-testid={testId}
+        data-ref="promo"
+        gap="6"
+        className="grid-cols-1 @5xl/column:grid-cols-2"
+      >
+        <Flex direction="column" justify="center">
+          <Text field={eyebrowText} tag="p" className="body-xs mb-4 text-t-primary" />
+          <Text field={title} tag="h2" className="heading-c text-t-primary" />
+          <Text field={titleHighlight} tag="h2" className="heading-c-serif" />
+          <Text field={description} tag="p" className="mb-8 mt-6" />
 
-        <Flex
-          direction={{ initial: 'column', md: 'row' }}
-          align={{ initial: 'start', md: 'center' }}
-          gap="4"
-        >
-          {primaryLink && (
-            <LinkBase link={primaryLink} style={ButtonStyle.BUTTON} hasIcon={!secondaryLink} />
-          )}
-          {secondaryLink && <LinkBase link={secondaryLink} style={ButtonStyle.CTA} />}
+          <Flex
+            direction={{ initial: 'column', md: 'row' }}
+            align={{ initial: 'start', md: 'center' }}
+            gap="4"
+          >
+            {primaryLink && (
+              <LinkBase link={primaryLink} style={ButtonStyle.BUTTON} hasIcon={!secondaryLink} />
+            )}
+            {secondaryLink && <LinkBase link={secondaryLink} style={ButtonStyle.CTA} />}
+          </Flex>
         </Flex>
-      </Flex>
 
-      <ImageBase
-        image={image}
-        className={cn({ '@5xl/column:order-first': orientation === Orientation.IMAGE_LEFT })}
-      />
-    </Grid>
+        <ImageBase
+          image={image}
+          className={cn({ '@5xl/column:order-first': orientation === Orientation.IMAGE_LEFT })}
+        />
+      </Grid>
+    </div>
   );
 };
 
