@@ -110,15 +110,15 @@ const MultiSelect = (props: DropdropProps) => {
           <Flex gap="2" className="overflow-hidden">
             {selectedItems?.length > 0
               ? selectedItems.map((selectedItem, index) => {
-                  return (
-                    <span
-                      className="shrink-0 rounded-[8px] bg-gray-50 px-2 py-1"
-                      key={`selected-item-${index}`}
-                    >
-                      {selectedItem.label}
-                    </span>
-                  );
-                })
+                return (
+                  <span
+                    className="shrink-0 rounded-[8px] bg-gray-50 px-2 py-1"
+                    key={`selected-item-${index}`}
+                  >
+                    {selectedItem.label}
+                  </span>
+                );
+              })
               : placeholder}
           </Flex>
           <Icon
@@ -130,7 +130,7 @@ const MultiSelect = (props: DropdropProps) => {
 
         <ul
           className={cn(
-            'rounded-md absolute z-10 w-full overflow-hidden rounded-b-[8px] border-[1px] border-t-0 border-indigo-100 bg-white',
+            'absolute z-10 w-full overflow-hidden rounded-md rounded-b-[8px] border-[1px] border-t-0 border-indigo-100 bg-white',
             { hidden: !(isOpen && items?.length) }
           )}
           {...getMenuProps()}

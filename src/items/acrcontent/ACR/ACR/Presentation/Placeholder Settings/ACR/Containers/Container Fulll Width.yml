@@ -19,6 +19,10 @@ SharedFields:
     {E2A6BB73-333A-4665-BF9A-635700942608}
     {E0353CDB-4649-4821-BC97-B3EB4C0FA194}
     {C72D5B4A-57C5-4A6A-9E21-6BA751C78CCB}
+    {EA0CAEDC-A342-41DE-B9D7-0CBB85421606}
+    {EF0C8AEF-3367-4D74-A0B4-EB316A739D42}
+    {3951FFAF-807B-404C-BD78-D1CE09FFD207}
+    {7B719321-5D9F-470D-AB7C-E39DB2589030}
 Languages:
 - Language: en
   Versions:
@@ -37,11 +41,19 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
+<<<<<<< HEAD
       Value: "5605a1bb-53cf-4eae-834c-fa1d60f69ae1"
+=======
+      Value: "dfc1e943-4d7d-4500-82f2-829d81d34cd0"
+>>>>>>> release1.0
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
+<<<<<<< HEAD
       Value: 20240522T152124Z
+=======
+      Value: 20240530T215302Z
+>>>>>>> release1.0

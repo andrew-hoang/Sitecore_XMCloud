@@ -58,10 +58,10 @@ const Container3070 = (props: Container3070Props): JSX.Element | null => {
     >
       <Container px="6">
         <Grid className="md:grid-cols-12" gap="6">
-          <Container className="md:col-start-1 md:col-end-5">
+          <Container className="@container/column *:flex *:flex-col *:gap-12 md:col-start-1 md:col-end-5">
             <PlaceholderBase {...placeholderLeftProps} />
           </Container>
-          <Container className="md:col-start-5 md:col-end-13">
+          <Container className="@container/column *:flex *:flex-col *:gap-12 md:col-start-5 md:col-end-13">
             <PlaceholderBase {...placeholderRightProps} />
           </Container>
         </Grid>

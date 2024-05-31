@@ -8,6 +8,15 @@ export const defaultMockData: SearchBarProps = {
     dataSource: '/',
   },
   fields: {
-    heading: { value: 'MOCK_DATA_HEADING' },
+    title: { value: "Still can't find what you're looking for?" },
+    inputPlaceholderText: { value: 'Search' },
+    searchHub: {
+      id: '1',
+      name: 'Search Hub',
+      fields: {
+        name: { value: 'Search Hub Name' },
+        searchPage: { value: { href: '/new-search-page' } },
+      },
+    },
   },
 };

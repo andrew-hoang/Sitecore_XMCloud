@@ -1,34 +1,34 @@
-import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
+import { AtomicSearchBox } from '@coveo/atomic-react';
+import { useTheme } from 'src/context/Theme.context';
 
 import { SearchBarProps } from 'components/ACR/SearchBar/SearchBar.props';
-
-import { getStaticPropsForSearchBar } from 'components/ACR/SearchBar/SearchBar.util';
-
-const SearchBar = (props: SearchBarProps): JSX.Element => {
-  const { fields, testId } = props;
-
-  const { heading } = fields ?? {};
-
-  return (
-    <div data-ref="search-bar" data-testid={testId}>
-      <Text tag="h2" field={heading} />
-      <p>The SearchBar Component</p>
-    </div>
-  );
-};
+import styles from './SearchBar.styles';
 
 /**
- * "Data" developer method
- * TODO_SCAFFOLD_BE: If "getStaticProps" was deleted remove "useComponentProps". They work together.
- * TODO_SCAFFOLD_BE: Populate if needed, remove if not
- * Will be called during SSG.  Do NOT return null.
- * @param {ComponentRendering} _rendering
- * @param {LayoutServiceData} _layoutData
- * @param {GetStaticPropsContext} _context
+ * ACRAR-283 - Search Bar
+ * @param props
+ * @returns JSX Element Coveo Search Bar
  */
-export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  return getStaticPropsForSearchBar(_rendering, _layoutData);
+const SearchBar = (props: SearchBarProps): JSX.Element => {
+  const { fields, testId } = props;
+  const { setAltTheme } = useTheme();
+
+  const { title, searchHub } = fields ?? {};
+  const url = searchHub?.fields?.searchPage?.value?.href;
+
+  return (
+    <div
+      className="mx-auto w-full max-w-[1268px] rounded-lg bg-t-background p-[30px] text-t-body sm:px-[65px] sm:py-[41px]"
+      data-ref="searchbox"
+      data-testid={testId}
+      data-theme={setAltTheme()}
+    >
+      <style>{styles}</style>
+      <Text className="heading-d mb-6 sm:mb-8" tag="p" field={title} />
+      <AtomicSearchBox redirectionUrl={url} />
+    </div>
+  );
 };
 
 export default SearchBar;

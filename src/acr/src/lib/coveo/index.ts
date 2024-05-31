@@ -1,3 +1,5 @@
+'use client';
+
 import { buildSearchEngine, getOrganizationEndpoints } from '@coveo/atomic-react';
 import { useMemo } from 'react';
 
