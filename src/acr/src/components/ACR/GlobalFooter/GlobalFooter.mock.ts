@@ -118,4 +118,42 @@ export const defaultMockData: GlobalFooterProps = {
       },
     ],
   },
+  externalFields: {
+    footerColumn1: [
+      {
+        link: { value: { href: '/', text: 'Membership' } },
+      },
+      {
+        link: { value: { href: '/', text: 'Clinical Resources' } },
+      },
+      {
+        link: { value: { href: '/', text: 'Accrediation' } },
+      },
+      {
+        link: { value: { href: '/', text: 'Media Center' } },
+      },
+    ],
+    footerColumn2: [
+      {
+        link: { value: { href: '/', text: 'For Patients' } },
+      },
+      {
+        link: { value: { href: '/', text: 'Jobs at ACR' } },
+      },
+      {
+        link: { value: { href: '/', text: 'ACR Foundation' } },
+      },
+      {
+        link: { value: { href: '/', text: 'Contact' } },
+      },
+    ],
+    footerColumn4: [
+      {
+        link: { value: { href: '/', text: 'Legal' } },
+      },
+      {
+        link: { value: { href: '/', text: 'Data and Privacy Policy Center' } },
+      },
+    ],
+  }
 };

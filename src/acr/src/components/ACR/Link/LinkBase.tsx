@@ -88,7 +88,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
               'text-t-body hover:text-t-link-hover': style !== ButtonStyle.BUTTON && style !== ButtonStyle.STATIC_LINK,
             },
             {
-              'text-t-body underline': style === ButtonStyle.STATIC_LINK
+              'text-t-body underline underline-offset-4': style === ButtonStyle.STATIC_LINK
             }
           ),
           styleClasses
