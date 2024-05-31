@@ -8,6 +8,7 @@ import { Flex, Separator } from '@radix-ui/themes';
 import LinkBase from '../Link/LinkBase';
 import FooterSocialIcon from './FooterSocialIcon/FooterSocialIcon';
 import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
+import { formatAddress, formatPhoneNumber } from "./helper";
 
 const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
   const { testId, rendering, componentFactory, fields } = props;
@@ -42,7 +43,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
     },
   };
 
-  const { footerNewsletterText, footerNewsletterLink, footerLogo, socialLinks, engageTitle, engageDescription, engageLink } = fields;
+  const { footerNewsletterText, footerNewsletterLink, footerLogo, socialLinks, engageTitle, engageDescription, engageLink, locationName, phoneNumber, address1, address2, city, state, zipcode } = fields;
 
   const renderFooterEngageForum = !!engageTitle?.value && !!engageLink?.value && !!engageDescription?.value;
 
@@ -57,7 +58,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
           <Separator my="3" size="4" className='bg-green-100' />
         </div>
       )}
-      <Flex>
+      <Flex className='mb-12'>
         <div>
           <div>
             <Link field={{ href: "/" }} aria-label='navigate to root site'>
@@ -86,10 +87,38 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
           <LinkBase link={engageLink} style={ButtonStyle.CTA} />
         </div>}
       </Flex>
-      <Placeholder
-        name={footerLink4Placeholder.placeholder.name}
-        rendering={footerLink4Placeholder.placeholder.rendering}
-      />
+      <Separator size="4" className='bg-white mb-12' />
+      <Flex>
+        <Flex direction="column">
+          <Text tag="p" className="font-bold mb-2" field={locationName} />
+          <LinkBase link={{
+            value: {
+              text: formatAddress(
+                address1?.value,
+                address2?.value,
+                city.value,
+                state.value,
+                zipcode.value
+              ),
+              href: formatAddress(
+                address1?.value,
+                address2?.value,
+                city.value,
+                state.value,
+                zipcode.value,
+                true
+              ),
+            }
+          }}
+            style={ButtonStyle.STATIC_LINK}
+          />
+          <LinkBase link={{ value: { text: formatPhoneNumber(phoneNumber.value), href: `tel:${phoneNumber.value}` } }} style={ButtonStyle.STATIC_LINK} />
+        </Flex>
+        <Placeholder
+          name={footerLink4Placeholder.placeholder.name}
+          rendering={footerLink4Placeholder.placeholder.rendering}
+        />
+      </Flex>
     </div>
   );
 };

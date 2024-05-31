@@ -9,25 +9,25 @@ export const defaultMockData: GlobalFooterProps = {
   },
   fields: {
     locationName: {
-      value: '',
+      value: 'Headquarters Office',
     },
     zipcode: {
-      value: '',
+      value: '20191',
     },
     phoneNumber: {
-      value: '',
+      value: '7036488900',
     },
     address1: {
-      value: '',
+      value: '1892 Preston White Dr.',
     },
     address2: {
       value: '',
     },
     city: {
-      value: '',
+      value: 'Reston',
     },
     state: {
-      value: '',
+      value: 'VA',
     },
     copyrightStatement: {
       value: '',
