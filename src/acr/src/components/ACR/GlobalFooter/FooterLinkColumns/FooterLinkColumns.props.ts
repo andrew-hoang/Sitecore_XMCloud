@@ -6,9 +6,9 @@ export type FooterLinkItemProps = {
   link: LinkField;
 };
 
-export type FooterLinkColumnProps = FooterLinkItemProps[];
+export type FooterLinkColumnProps = FooterLinkItemProps[] | undefined;
 
 export type FooterLinkColumnsProps = PlaceholderProps & ComponentProps & {
-  columns?: FooterLinkColumnProps[] | undefined;
+  columns?: FooterLinkColumnProps[];
   rowId: '1' | '2';
 };
