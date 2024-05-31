@@ -43,7 +43,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
     },
   };
 
-  const { footerNewsletterText, footerNewsletterLink, footerLogo, socialLinks, engageTitle, engageDescription, engageLink, locationName, phoneNumber, address1, address2, city, state, zipcode } = fields;
+  const { footerNewsletterText, footerNewsletterLink, footerLogo, socialLinks, engageTitle, engageDescription, engageLink, locationName, phoneNumber, address1, address2, city, state, zipcode, directoryTitle, directoryDescription, directoryLink } = fields;
 
   const renderFooterEngageForum = !!engageTitle?.value && !!engageLink?.value && !!engageDescription?.value;
 
@@ -114,6 +114,11 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
           />
           <LinkBase link={{ value: { text: formatPhoneNumber(phoneNumber.value), href: `tel:${phoneNumber.value}` } }} style={ButtonStyle.STATIC_LINK} />
         </Flex>
+        <div>
+          <Text tag="p" className="font-bold mb-2" field={directoryTitle} />
+          <Text tag="p" className="body-xs !font-medium mb-2" field={directoryDescription} />
+          <LinkBase link={directoryLink} style={ButtonStyle.CTA} />
+        </div>
         <Placeholder
           name={footerLink4Placeholder.placeholder.name}
           rendering={footerLink4Placeholder.placeholder.rendering}

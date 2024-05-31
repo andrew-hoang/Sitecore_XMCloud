@@ -47,14 +47,15 @@ export const defaultMockData: GlobalFooterProps = {
       },
     },
     directoryTitle: {
-      value: '',
+      value: 'Company Directory',
     },
     directoryDescription: {
-      value: '',
+      value: 'Looking for a specific department?',
     },
     directoryLink: {
       value: {
-        href: '',
+        href: '/',
+        text: 'See all'
       },
     },
     engageLink: {
