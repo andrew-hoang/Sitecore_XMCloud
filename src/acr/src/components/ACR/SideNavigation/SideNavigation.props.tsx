@@ -5,7 +5,8 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type SideNavigationProps = ComponentProps & TestProps &
+export type SideNavigationProps = ComponentProps &
+  TestProps &
   SideNavigationParams &
   SideNavigationFields &
   SideNavigationData;

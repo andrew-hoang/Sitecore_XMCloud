@@ -5,8 +5,8 @@ export const getStaticPropsForSideNavigation = async (
   rendering: ComponentRendering,
   layoutData: LayoutServiceData
 ): Promise<SideNavigationData> => {
-  // console.log(rendering);
-  // console.log(layoutData);
+  console.log(rendering);
+  console.log(layoutData);
 
   const model: SideNavigationData = {
     externalFields: {
