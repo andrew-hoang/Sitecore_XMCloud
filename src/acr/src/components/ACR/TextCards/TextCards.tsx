@@ -5,7 +5,8 @@ import {
   withPlaceholder,
 } from '@sitecore-jss/sitecore-jss-nextjs';
 
-import { TextCardProps, TextCardsProps } from 'components/ACR/TextCards/TextCards.props';
+import { TextCardsProps, TextCardProps } from 'components/ACR/TextCards/TextCards.props';
+
 import TextCard from './TextCard';
 import { Flex } from '@radix-ui/themes';
 
@@ -27,7 +28,7 @@ const TextCards = (props: TextCardsProps): JSX.Element => {
   return (
     <div data-ref="text-cards" data-testid={testId}>
       <Flex gap="4" direction="column" className="mb-8 text-center md:mb-12">
-        <Text tag="h2" field={title} className="heading-c" />
+        <Text tag="h2" field={title} className="heading-c text-t-primary" />
         <Text tag="p" field={description} className="sub-heading-b" />
       </Flex>
       <Flex direction="column" gap="4">

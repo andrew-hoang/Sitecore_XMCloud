@@ -10,7 +10,6 @@ export type PageHeaderWithIconProps = ComponentProps &
   PageHeaderWithIconParams &
   PageHeaderData;
 
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type PageHeaderWithIconParams = {
   params: {
     displayLicenseLink?: string;

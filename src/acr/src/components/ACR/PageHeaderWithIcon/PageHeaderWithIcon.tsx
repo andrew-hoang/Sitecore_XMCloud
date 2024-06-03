@@ -34,7 +34,7 @@ const PageHeaderWithIcon = (props: PageHeaderWithIconProps): JSX.Element => {
             <Text field={headerTitle} tag="h1" className="heading-b text-t-primary" />
             <Text field={subtitle} tag="p" className="sub-heading-a mt-4 text-t-body" />
             {displayLicenseLink === '1' && (
-              <div className="mt-8">
+              <div className="mt-6 md:mt-8">
                 <a
                   href={licenseLinkUrl}
                   className="body-xs !font-medium text-t-body hover:text-t-link-hover"
