@@ -1,8 +1,15 @@
 ﻿---
-ID: "b46349d6-4453-40be-ac40-6f0d04b3634a"
-Parent: "bf0c71e9-1054-4657-af1d-e56e2caec3b9"
-Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
-Path: /sitecore/layout/Placeholder Settings/Feature/ACR/Page Components
+ID: "2a005cd6-cf5b-4a4d-9f96-248f935fded5"
+Parent: "d92adcda-8ee0-490f-a092-23016cafa7a5"
+Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
+Path: /sitecore/content/ACR/ACR/Presentation/Placeholder Settings/ACR/Page Components/Accordian/Accordian
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "acr-accordion-{*}"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: "{5AE8BA95-A1D5-4707-9A9F-9C46AEA3F5F0}"
 Languages:
 - Language: en
   Versions:
@@ -10,7 +17,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240509T162426Z
+      Value: 20240520T180217Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -21,11 +28,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "6e06bd7c-55c8-4461-8704-6fc6fa3f7570"
+      Value: "57a4c225-673b-4e80-818c-b4b885f6c5d5"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\kenneth.robinson@velir.com
+        sitecore\akhanal@acr.org
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240509T162426Z
+      Value: 20240601T073700Z

@@ -1,26 +1,27 @@
 ﻿---
-ID: "04e558a7-5dc4-4c12-9118-53e5b4f449b8"
-Parent: "7c71ed65-c36f-4272-9aba-2bf3d83f981c"
-Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
-Path: /sitecore/content/ACR/ACR/Presentation/Available Renderings/Page Components
-BranchID: "8c27fdce-b8d4-4e6c-be43-410bb625dbb6"
+ID: "2e345998-130e-44b6-974f-bd7c030efb65"
+Parent: "078af709-2bea-4eec-a764-aa10611bfdf2"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/ACR/Page Components/Accordion/Accordion/Accordion Item/title
 SharedFields:
-- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
-  Hint: Renderings
-  Value: |
-    {F6D406E5-FD53-410E-9E79-B627B6B4BEDE}
-    {D5C1D2E4-1CE8-467E-ADAE-008020B50771}
-- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
-  Hint: __Originator
-  Value: "{51C601B4-D1E3-4479-B95F-140FDF61F481}"
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
 Languages:
 - Language: en
+  Fields:
+  - ID: "19a69332-a23e-4e70-8d16-b2640cb24cc8"
+    Hint: Title
+    Value: Title
   Versions:
   - Version: 1
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240513T140615Z
+      Value: 20240520T174122Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -31,11 +32,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3ed586e0-6e86-4fa3-8bc5-6912ac3d3b74"
+      Value: "c3c8e2a9-d4f9-4005-b2ac-c40b98053916"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\akhanal@acr.org
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240601T080601Z
+      Value: 20240601T050045Z

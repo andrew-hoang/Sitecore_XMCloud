@@ -1,18 +1,18 @@
 ﻿---
-ID: "04e558a7-5dc4-4c12-9118-53e5b4f449b8"
-Parent: "7c71ed65-c36f-4272-9aba-2bf3d83f981c"
-Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
-Path: /sitecore/content/ACR/ACR/Presentation/Available Renderings/Page Components
-BranchID: "8c27fdce-b8d4-4e6c-be43-410bb625dbb6"
+ID: "111b720c-0fad-45c6-81bd-7f1809e5683d"
+Parent: "dbe92e59-fefd-4a90-87e1-ac94886f5e14"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Feature/ACR/Page Components/Accordion/Accordion Folder
 SharedFields:
-- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
-  Hint: Renderings
-  Value: |
-    {F6D406E5-FD53-410E-9E79-B627B6B4BEDE}
-    {D5C1D2E4-1CE8-467E-ADAE-008020B50771}
-- ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
-  Hint: __Originator
-  Value: "{51C601B4-D1E3-4479-B95F-140FDF61F481}"
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: office/32x32/folder_window.png
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
+- ID: "f7d48a55-2158-4f02-9356-756654404f73"
+  Hint: __Standard values
+  Value: "{86FFEE10-2CF4-4616-985A-8B818FB6129A}"
 Languages:
 - Language: en
   Versions:
@@ -20,7 +20,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240513T140615Z
+      Value: 20240520T173026Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -31,11 +31,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "3ed586e0-6e86-4fa3-8bc5-6912ac3d3b74"
+      Value: "d068152d-1449-4446-9225-aeed4440a7f1"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\akhanal@acr.org
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240601T080601Z
+      Value: 20240601T072831Z

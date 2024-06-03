@@ -1,8 +1,8 @@
 ﻿---
-ID: "bf0c71e9-1054-4657-af1d-e56e2caec3b9"
-Parent: "1b59149d-7ed3-4d58-86a9-32eded8c0368"
-Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
-Path: /sitecore/layout/Placeholder Settings/Feature/ACR
+ID: "078af709-2bea-4eec-a764-aa10611bfdf2"
+Parent: "285e580c-f976-4e4d-91c6-9fd08a264878"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Feature/ACR/Page Components/Accordion/Accordion/Accordion Item
 Languages:
 - Language: en
   Versions:
@@ -10,22 +10,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240508T172137Z
+      Value: 20240520T174122Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
-        sitecore\andrew.hoang@velir.com
+        sitecore\kenneth.robinson@velir.com
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\andrew.hoang@velir.com
+        sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "4c053f6a-46f4-4a20-9bfd-8f2aed5bdf58"
+      Value: "b227a054-34e7-446b-9c8d-bdc1cb760506"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\andrew.hoang@velir.com
+        sitecore\akhanal@acr.org
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240508T172137Z
+      Value: 20240601T035738Z
