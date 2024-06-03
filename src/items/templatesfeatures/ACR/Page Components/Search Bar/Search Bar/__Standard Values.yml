@@ -1,0 +1,34 @@
+﻿---
+ID: "86cd492d-f204-46c8-8606-6bfcc0a66a3c"
+Parent: "7faf718d-0b9b-4b68-bf7b-f05ac648a6f1"
+Template: "7faf718d-0b9b-4b68-bf7b-f05ac648a6f1"
+Path: /sitecore/templates/Feature/ACR/Page Components/Search Bar/Search Bar/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240523T140908Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "c9a0b9bb-3557-4c60-b18e-af4bbaf47f42"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240528T144442Z
+    - ID: "df6b66ba-8f97-4ea8-9326-4ff876d67834"
+      Hint: title
+      Value: $name

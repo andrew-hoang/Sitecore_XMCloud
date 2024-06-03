@@ -1,6 +1,6 @@
 @layer base {
   .reveal-image {
-    @apply relative block max-w-max overflow-hidden before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:block before:origin-[50%_0] before:bg-green-100 before:transition-transform before:duration-1000;
+    @apply relative block max-w-max overflow-hidden before:absolute before:bottom-0 before:left-0 before:right-0 before:top-0 before:block before:origin-[50%_0] before:bg-green-100 before:transition-transform before:duration-1000 before:motion-reduce:hidden;
   }
 
   .reveal-image--in-view {

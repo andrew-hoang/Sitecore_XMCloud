@@ -2,12 +2,16 @@ import React from 'react';
 import { StoryFn } from '@storybook/react';
 import { StoryContext } from '@storybook/react';
 import { DecoratorHelpers } from '@storybook/addon-themes';
-import colorThemes from './radixThemePresets';
+import colorThemes, { ColorThemesType } from './radixThemePresets';
 import { ImageOptimizationProvider } from '../src/context/ImageOptimization.context';
+import { dictionaryKeys, mockDictionary } from '../src/variables/dictionary';
 
+import { AtomicSearchInterface } from '@coveo/atomic-react';
 const { initializeThemeState, pluckThemeFromContext, useThemeParameters } = DecoratorHelpers;
 
-import { Theme } from '@radix-ui/themes';
+import { Theme as RadixTheme } from '@radix-ui/themes';
+import { ThemeContext } from 'src/context/Theme.context';
+import { Theme } from 'src/enumerations/Theme.enum';
 
 import { playFair } from '../src/fonts';
 import localFont from 'next/font/local';
@@ -32,7 +36,7 @@ export const withRadixTheme = ({
   themes,
   defaultTheme,
 }: {
-  themes: { [key: string]: { [key: string]: string } };
+  themes: ColorThemesType;
   defaultTheme: string;
 }) => {
   initializeThemeState(Object.keys(themes), defaultTheme);
@@ -44,15 +48,17 @@ export const withRadixTheme = ({
     const radixTheme = colorThemes[selected];
 
     return (
-      <Theme {...radixTheme} style={{ minHeight: 0 }}>
-        {context?.componentId === 'components-container' ? (
-          <Story />
-        ) : (
-          <div className="min-h-screen bg-t-background text-t-body">
+      <RadixTheme {...radixTheme} style={{ minHeight: 0 }}>
+        <ThemeContext.Provider value={{ theme: radixTheme['data-theme'] as Theme }}>
+          {context?.componentId === 'components-container' ? (
             <Story />
-          </div>
-        )}
-      </Theme>
+          ) : (
+            <div className="min-h-screen bg-t-background text-t-body">
+              <Story />
+            </div>
+          )}
+        </ThemeContext.Provider>
+      </RadixTheme>
     );
   };
 };
@@ -70,7 +76,13 @@ export const withImageOptimiziation = (Story: StoryFn) => (
 );
 
 export const withI18n = (Story: StoryFn) => (
-  <I18nProvider locale="en">
+  <I18nProvider locale="en" lngDict={mockDictionary(dictionaryKeys)}>
     <Story />
   </I18nProvider>
+);
+
+export const withCoveoSearch = (Story: StoryFn) => (
+  <AtomicSearchInterface>
+    <Story />
+  </AtomicSearchInterface>
 );
