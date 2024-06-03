@@ -14,7 +14,7 @@ export type SectionHeaderProps = ComponentProps &
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type SectionHeaderParams = {
   params: {
-    includeMarginBottom?: string;
+    includeBottomMargin?: string;
   };
 };
 
