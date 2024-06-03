@@ -28,7 +28,7 @@ const TextBanner = (props: TextBannerProps): JSX.Element => {
       data-ref="text-banner"
       data-testid={testId}
       data-theme={setAltTheme()} // Theme targets component's link style
-      py="42px"
+      py="48px"
       px={{ initial: '30px', md: '65px' }}
       gap={{ initial: '5', md: '9' }}
       direction={{ initial: 'column', md: 'row' }}
