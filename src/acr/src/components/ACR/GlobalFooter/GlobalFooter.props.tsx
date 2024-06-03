@@ -9,8 +9,14 @@ import { TestProps } from 'src/types/Test.props';
 export type GlobalFooterProps = ComponentProps & PlaceholderProps &
   TestProps &
   GlobalFooterParams &
-  GlobalFooterFields &
-  GlobalFooterData;
+  GlobalFooterFields & {
+    placeholder: {
+      footerColumn1?: FooterLinkItemProps[];
+      footerColumn2?: FooterLinkItemProps[];
+      footerColumn3?: FooterLinkItemProps[];
+      footerColumn4?: FooterLinkItemProps[];
+    }
+  };
 
 // Component Rendering Parameter fields
 // TODO_SCAFFOLD_BE: Populate if needed, remove if not
@@ -18,19 +24,6 @@ export type GlobalFooterParams = {
   params: {
     mock_param?: string;
   };
-};
-
-// Non-component data source fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type GlobalFooterData = {
-  externalFields?: GlobalFooterExternalFields;
-};
-
-export type GlobalFooterExternalFields = {
-  footerColumn1?: FooterLinkItemProps[];
-  footerColumn2?: FooterLinkItemProps[];
-  footerColumn3?: FooterLinkItemProps[];
-  footerColumn4?: FooterLinkItemProps[];
 };
 
 export type FooterLinkItemProps = {

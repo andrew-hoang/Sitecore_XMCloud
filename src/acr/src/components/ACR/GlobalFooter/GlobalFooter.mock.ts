@@ -118,7 +118,7 @@ export const defaultMockData: GlobalFooterProps = {
       },
     ],
   },
-  externalFields: {
+  placeholder: {
     footerColumn1: [
       {
         link: { value: { href: '/', text: 'Membership' } },

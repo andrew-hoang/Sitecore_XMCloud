@@ -2,13 +2,35 @@ import { Flex } from "@radix-ui/themes";
 import cn from 'classnames';
 
 import { ButtonStyle } from "src/enumerations/ButtonStyle.enum";
-import { FooterLinkItemProps, FooterLinkColumnProps, FooterLinkColumnsProps } from "./FooterLinkColumns.props";
+import { FooterLinkColumnProps, FooterLinkColumnsProps } from "./FooterLinkColumns.props";
+import { FooterLinkItemProps } from "../GlobalFooter.props";
 import LinkBase from "components/ACR/Link/LinkBase";
 import PlaceholderBase, { PlaceholderBaseProps } from 'components/ACR/Placeholder/PlaceholderBase';
 
 
 const FooterLinkColumns = (props: FooterLinkColumnsProps) => {
-  const { columns, rendering, componentFactory, rowId } = props;
+  const { column1, column2, column3, column4, rendering, componentFactory, rowId } = props;
+
+  let columns = [] as FooterLinkColumnProps[];
+
+  if (rowId === '1') {
+    columns = [column1, column2, column3];
+  } else {
+    columns = [column4]
+  }
+
+  const setCorrectPlaceholderName = (index: number) => {
+    if (rowId === '2') return 'd';
+
+    switch (index) {
+      case 0:
+        return 'a';
+      case 1:
+        return 'b';
+      case 2:
+        return 'c';
+    }
+  }
 
   return (
     <Flex gap="6" direction={{ initial: 'column', sm: 'row' }} className={cn("grow", {
@@ -16,7 +38,7 @@ const FooterLinkColumns = (props: FooterLinkColumnsProps) => {
       'min-w-[200px]': rowId === '2'
     })}>
       {columns?.map((column: FooterLinkColumnProps, index: number) => {
-        const PLACEHOLDER_NAME = `acr-container-footer-links-${index + 1}-${props.params.DynamicPlaceholderId}`;
+        const PLACEHOLDER_NAME = `acr-container-footer-links-${setCorrectPlaceholderName(index)}-${props.params.DynamicPlaceholderId}`;
 
         const placeholderProps: PlaceholderBaseProps = {
           placeholder: {

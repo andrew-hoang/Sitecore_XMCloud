@@ -12,9 +12,11 @@ import { formatAddress, formatPhoneNumber } from "./helper";
 import FooterLinkColumns from './FooterLinkColumns/FooterLinkColumns';
 
 const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
-  const { testId, fields, externalFields } = props;
+  const { testId, fields, placeholder } = props;
 
   const { footerNewsletterText, footerNewsletterLink, footerLogo, socialLinks, engageTitle, engageDescription, engageLink, locationName, phoneNumber, address1, address2, city, state, zipcode, directoryTitle, directoryDescription, directoryLink, copyrightStatement } = fields;
+
+  const { footerColumn1, footerColumn2, footerColumn3, footerColumn4 } = placeholder;
 
   const renderFooterEngageForum = !!engageTitle?.value && !!engageLink?.value && !!engageDescription?.value;
 
@@ -40,7 +42,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
             {socialLinks.map((socialLink: SocialLink) => <FooterSocialIcon {...socialLink} iconClassName="h-6 w-6" />)}
           </Flex>
         </div>
-        <FooterLinkColumns columns={[externalFields?.footerColumn1, externalFields?.footerColumn2, externalFields?.footerColumn3].filter((column) => !!column)} {...props} rowId='1' />
+        <FooterLinkColumns column1={footerColumn1} column2={footerColumn2} column3={footerColumn3} {...props} rowId='1' />
         {renderFooterEngageForum && <div>
           <Text tag="p" className="font-bold mb-2" field={engageTitle} />
           <Text tag="p" className="body-xs !font-medium mb-2" field={engageDescription} />
@@ -80,7 +82,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
           <LinkBase link={directoryLink} style={ButtonStyle.CTA} />
         </div>
         <div>
-          <FooterLinkColumns columns={[externalFields?.footerColumn4].filter((column) => !!column)} {...props} rowId='2' />
+          <FooterLinkColumns column4={footerColumn4} {...props} rowId='2' />
           {copyrightStatement && <Text tag='p' className="body-xs" field={copyrightStatement} />}
         </div>
       </Flex>

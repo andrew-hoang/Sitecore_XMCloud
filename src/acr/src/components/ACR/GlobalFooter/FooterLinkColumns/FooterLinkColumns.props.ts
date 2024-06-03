@@ -6,6 +6,9 @@ import { FooterLinkItemProps } from '../GlobalFooter.props';
 export type FooterLinkColumnProps = FooterLinkItemProps[] | undefined;
 
 export type FooterLinkColumnsProps = PlaceholderProps & ComponentProps & {
-  columns?: FooterLinkColumnProps[];
+  column1?: FooterLinkColumnProps;
+  column2?: FooterLinkColumnProps;
+  column3?: FooterLinkColumnProps;
+  column4?: FooterLinkColumnProps;
   rowId: '1' | '2';
 };
