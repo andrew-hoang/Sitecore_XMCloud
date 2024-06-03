@@ -71,8 +71,8 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
             </Link>
           </div>
           <Flex gap="4" pt="5">
-            {socialLinks?.map((socialLink: SocialLink) => (
-              <FooterSocialIcon {...socialLink} iconClassName="h-6 w-6" />
+            {socialLinks?.map((socialLink: SocialLink, index) => (
+              <FooterSocialIcon key={index} {...socialLink} iconClassName="h-6 w-6" />
             ))}
           </Flex>
         </div>
