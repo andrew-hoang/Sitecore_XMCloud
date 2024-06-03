@@ -1,5 +1,4 @@
 import { Flex } from '@radix-ui/themes';
-import cn from 'classnames';
 
 import { FooterLinkColumnProps } from './FooterLinkColumns.props';
 
@@ -12,9 +11,7 @@ const FooterLinkColumnC = (props: FooterLinkColumnProps): JSX.Element => {
     <Flex
       gap="3"
       direction="column"
-      className={cn('w-full max-w-[270px]', {
-        'mb-4': false,
-      })}
+      className='w-full max-w-[270px]'
     >
       <Placeholder
         name={`acr-container-footer-links-c-${props.params.DynamicPlaceholderId}`}

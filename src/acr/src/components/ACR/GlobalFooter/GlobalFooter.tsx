@@ -11,6 +11,7 @@ import { formatAddress, formatPhoneNumber } from './helper';
 
 import FooterLinkColumns from './FooterLinkColumns/FooterLinkColumns';
 import { SocialLink } from './FooterSocialIcon/FooterSocialIcon.props';
+import { Theme } from 'src/enumerations/Theme.enum';
 
 const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
   const { testId, fields } = props;
@@ -41,9 +42,10 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
 
   return (
     <div
-      className="mx-auto w-full max-w-[1440px] px-[35px] py-12 lg:px-[135px]"
+      className="mx-auto w-full max-w-[1440px] px-[35px] py-12 lg:px-[135px] bg-t-background text-t-body"
       data-ref="global-footer"
       data-testid={testId}
+      data-theme={Theme.INDIGO}
     >
       {footerNewsletterLink && footerNewsletterText && (
         <div className="mb-12">
