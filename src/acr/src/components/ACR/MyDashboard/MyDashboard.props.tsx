@@ -5,7 +5,8 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type MyDashboardProps = ComponentProps & TestProps &
+export type MyDashboardProps = ComponentProps &
+  TestProps &
   MyDashboardParams &
   MyDashboardFields &
   MyDashboardData;

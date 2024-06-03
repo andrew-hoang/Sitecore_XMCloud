@@ -5,7 +5,8 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type AudioEmbedProps = ComponentProps & TestProps &
+export type AudioEmbedProps = ComponentProps &
+  TestProps &
   AudioEmbedParams &
   AudioEmbedFields &
   AudioEmbedData;
