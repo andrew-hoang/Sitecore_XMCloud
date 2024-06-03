@@ -119,49 +119,54 @@ export const defaultMockData: GlobalFooterProps = {
     },
     socialLinks: [
       {
-        link: {
-          value: {
-            href: '/',
-            title: 'Facebook',
+        id: '8adefb36-dba9-4c77-81bc-1c4532976112',
+        url: '/Settings/Footer/Social-Links/Facebook?sc_site=ACR',
+        name: 'Facebook',
+        displayName: 'Facebook',
+        fields: {
+          link: {
+            value: {
+              href: 'http://www.facebook.com',
+              text: 'Facebook',
+              linktype: 'external',
+              url: 'http://www.facebook.com',
+              anchor: '',
+              target: '',
+            },
+          },
+          socialIcon: {
+            id: '2af2d54d-2264-4641-8f2b-8986dd405a6f',
+            url: '/Data/Enumerations/Social-Icons/Facebook?sc_site=ACR',
+            name: 'Facebook',
+            displayName: 'Facebook',
+            fields: { Value: { value: 'facebook' } },
           },
         },
-        socialIcon: 'facebook',
       },
       {
-        link: {
-          value: {
-            href: '/',
-            title: 'Instagram',
+        id: '8adefb36-dba9-4c77-81bc-1c4532976112',
+        url: '/Settings/Footer/Social-Links/Instagram?sc_site=ACR',
+        name: 'Instagram',
+        displayName: 'Facebook',
+        fields: {
+          link: {
+            value: {
+              href: 'http://www.instagram.com',
+              text: 'Instagram',
+              linktype: 'external',
+              url: 'http://www.instagram.com',
+              anchor: '',
+              target: '',
+            },
+          },
+          socialIcon: {
+            id: '2af2d54d-2264-4641-8f2b-8986dd405a6f',
+            url: '/Data/Enumerations/Social-Icons/Instagram?sc_site=ACR',
+            name: 'Instagram',
+            displayName: 'Instagram',
+            fields: { Value: { value: 'instagram' } },
           },
         },
-        socialIcon: 'instagram',
-      },
-      {
-        link: {
-          value: {
-            href: '/',
-            title: 'Youtube',
-          },
-        },
-        socialIcon: 'youtube',
-      },
-      {
-        link: {
-          value: {
-            href: '/',
-            title: 'Twitter X',
-          },
-        },
-        socialIcon: 'twitterx',
-      },
-      {
-        link: {
-          value: {
-            href: '/',
-            title: 'Linkedin',
-          },
-        },
-        socialIcon: 'linkedin',
       },
     ],
   },
