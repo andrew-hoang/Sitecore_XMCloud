@@ -1,36 +1,33 @@
 import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
+import { PlaceholderProps } from '@sitecore-jss/sitecore-jss-react/types/components/PlaceholderCommon';
 import { TestProps } from 'src/types/Test.props';
+import { StyleProps } from 'src/types/Style.props';
+import { Component } from 'react';
 
 /**
  * Model used for Sitecore Component integration
  */
 export type MultiPromoProps = ComponentProps &
   TestProps &
-  MultiPromoParams &
+  PlaceholderProps &
   MultiPromoFields &
-  MultiPromoData;
-
-// Component Rendering Parameter fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type MultiPromoParams = {
-  params: {
-    mock_param?: string;
-  };
-};
-
-// Non-component data source fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type MultiPromoData = {
-  externalFields?: {
-    mock_external_data: Field<string>;
-  };
-};
+  { promos: Component[] };
 
 export type MultiPromoFields = {
   fields: {
-    heading: Field<string>; // Sitecore editable text field
-    image?: ImageField; // Sitecore editable image field
-    link?: LinkField; // Sitecore editable link field
+    heading?: Field<string>; 
+    description?: Field<string>; 
+    link?: LinkField;
+  };
+};
+
+export type SimplePromoProps = ComponentProps & StyleProps & {
+  fields: {
+    eyebrowText?: Field<string>;
+    title: Field<string>;
+    description?: Field<string>;
+    link?: LinkField;
+    image?: ImageField;
   };
 };
