@@ -40,6 +40,9 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
   const renderFooterEngageForum =
     !!engageTitle?.value && !!engageLink?.value && !!engageDescription?.value;
 
+  const src = footerLogo?.value?.src;
+  const isSvg = src?.includes('.svg');
+
   return (
     <div
       className="mx-auto w-full max-w-[1440px] px-[35px] py-12 lg:px-[135px] bg-t-background text-t-body"
@@ -66,6 +69,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
             <Link field={{ href: '/' }} aria-label="navigate to root site">
               <NextImage
                 field={footerLogo}
+                unoptimized={isSvg}
                 height="50"
                 width="196"
                 alt="american college of radiology logo"

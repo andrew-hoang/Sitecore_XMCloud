@@ -15,6 +15,7 @@ export const formatAddress = (
   zipcode: string,
   isLink?: boolean
 ) => {
+  if (!address1 && !city && !state && !zipcode) return '';
   if (isLink) {
     return `https://maps.google.com/maps?q=${encodeURIComponent(`${address1} ${address2} ${city}, ${state} ${zipcode}`)}`;
   }
