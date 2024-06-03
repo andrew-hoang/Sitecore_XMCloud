@@ -11,8 +11,8 @@ export const getStaticPropsFor${componentName} = async (
   rendering: ComponentRendering,
   layoutData: LayoutServiceData
 ): Promise<${componentName}Data> => {
-  // console.log(rendering);
-  // console.log(layoutData);
+  console.log(rendering);
+  console.log(layoutData);
 
   const model: ${componentName}Data = {
     externalFields: {

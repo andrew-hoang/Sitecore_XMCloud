@@ -86,6 +86,9 @@ const config: Config = {
       borderWidth: {
         '1': '1px',
       },
+      borderWidth: {
+        '1': '1px',
+      },
       fontWeight: {
         semibold: '600',
         black: '900',

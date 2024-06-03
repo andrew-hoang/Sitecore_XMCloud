@@ -5,8 +5,8 @@ export const getStaticPropsForVideo = async (
   rendering: ComponentRendering,
   layoutData: LayoutServiceData
 ): Promise<VideoData> => {
-  // console.log(rendering);
-  // console.log(layoutData);
+  console.log(rendering);
+  console.log(layoutData);
 
   const model: VideoData = {
     externalFields: {

@@ -6,7 +6,9 @@ Path: /sitecore/templates/Feature/ACR/Global/Footer/__Standard Values
 SharedFields:
 - ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
   Hint: __Masters
-  Value: "{AC49B390-F119-49B9-A70E-F08C0F8E3A28}"
+  Value: |
+    {AC49B390-F119-49B9-A70E-F08C0F8E3A28}
+    {7E7F3B44-D5A9-48EC-9A98-5CC034872A49}
 Languages:
 - Language: en
   Versions:
@@ -25,11 +27,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9fd05b43-13f0-449d-895a-aeba90577980"
+      Value: "8f942e7f-e970-4b81-a91c-3c2b746d8811"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240521T161201Z
+      Value: 20240603T201505Z

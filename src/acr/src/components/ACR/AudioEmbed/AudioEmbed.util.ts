@@ -5,8 +5,8 @@ export const getStaticPropsForAudioEmbed = async (
   rendering: ComponentRendering,
   layoutData: LayoutServiceData
 ): Promise<AudioEmbedData> => {
-  // console.log(rendering);
-  // console.log(layoutData);
+  console.log(rendering);
+  console.log(layoutData);
 
   const model: AudioEmbedData = {
     externalFields: {
