@@ -16,7 +16,6 @@ const iconMap: { [key: string]: string } = {
   [IconName.INSTAGRAM]: 'Instagram',
   [IconName.LINKEDIN]: 'LinkedIn',
   [IconName.FACEBOOK]: 'Facebook',
-
 };
 
 const Icon = (props: IconProps): JSX.Element | null => {

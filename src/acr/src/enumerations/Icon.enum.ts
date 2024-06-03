@@ -11,5 +11,5 @@ export enum IconName {
   YOUTUBE = 'youtube',
   INSTAGRAM = 'instagram',
   FACEBOOK = 'facebook',
-  LINKEDIN = 'linkedin'
+  LINKEDIN = 'linkedin',
 }

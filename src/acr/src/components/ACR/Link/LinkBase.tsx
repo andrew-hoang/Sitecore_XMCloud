@@ -85,17 +85,24 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
               button: style === ButtonStyle.BUTTON,
             },
             {
-              'text-t-body hover:text-t-link-hover': style !== ButtonStyle.BUTTON && style !== ButtonStyle.STATIC_LINK,
+              'text-t-body hover:text-t-link-hover':
+                style !== ButtonStyle.BUTTON && style !== ButtonStyle.STATIC_LINK,
             },
             {
-              'text-t-body underline underline-offset-4': style === ButtonStyle.STATIC_LINK
+              'text-t-body underline underline-offset-4': style === ButtonStyle.STATIC_LINK,
             }
           ),
           styleClasses
         )}
       >
         {isCTALink && renderIcon()}
-        <span className={cn({ 'link-underline': style !== ButtonStyle.BUTTON && style !== ButtonStyle.STATIC_LINK })}>{linkText}</span>
+        <span
+          className={cn({
+            'link-underline': style !== ButtonStyle.BUTTON && style !== ButtonStyle.STATIC_LINK,
+          })}
+        >
+          {linkText}
+        </span>
         {hasIcon && !isCTALink && renderIcon()}
       </Link>
     );
