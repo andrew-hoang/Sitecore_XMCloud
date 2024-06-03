@@ -1,7 +1,9 @@
 import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { PlaceholderProps } from 'src/types/Placeholder.props';
+import { ReferenceField } from 'src/types/ReferenceField.props';
 import { TestProps } from 'src/types/Test.props';
+import { SocialLink } from './FooterSocialIcon/FooterSocialIcon.props';
 
 /**
  * Model used for Sitecore Component integration
@@ -12,11 +14,6 @@ export type FooterLinkItemProps = {
   fields: {
     link: LinkField;
   };
-};
-
-export type SocialLink = {
-  link?: LinkField;
-  socialIcon?: string;
 };
 
 export type GlobalFooterFields = {
@@ -38,6 +35,6 @@ export type GlobalFooterFields = {
     city: Field<string>;
     state: Field<string>;
     zipcode: Field<string>;
-    socialLinks: Array<SocialLink>;
+    socialLinks: SocialLink[];
   };
 };

@@ -1,4 +1,4 @@
-import { GlobalFooterProps, SocialLink } from 'components/ACR/GlobalFooter/GlobalFooter.props';
+import { GlobalFooterProps } from 'components/ACR/GlobalFooter/GlobalFooter.props';
 import { NextImage } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
 import { Link } from '@sitecore-jss/sitecore-jss-react';
@@ -10,6 +10,7 @@ import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
 import { formatAddress, formatPhoneNumber } from './helper';
 
 import FooterLinkColumns from './FooterLinkColumns/FooterLinkColumns';
+import { SocialLink } from './FooterSocialIcon/FooterSocialIcon.props';
 
 const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
   const { testId, fields } = props;

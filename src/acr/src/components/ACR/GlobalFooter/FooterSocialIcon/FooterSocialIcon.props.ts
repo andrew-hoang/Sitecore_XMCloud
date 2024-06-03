@@ -1,7 +1,14 @@
-import { LinkField } from "@sitecore-jss/sitecore-jss-nextjs";
+import { LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { ReferenceField } from 'src/types/ReferenceField.props';
 
-export type SocialLink = {
-  link?: LinkField;
-  socialIcon?: string;
+export type SocialLink = ReferenceField & {
+  fields: {
+    link?: LinkField;
+    socialIcon?: ReferenceField & {
+      fields: {
+        Value: { value: string };
+      };
+    };
+  };
   iconClassName?: string;
 };
