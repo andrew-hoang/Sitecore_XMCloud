@@ -25,9 +25,17 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
 
   const router = useRouter();
 
-  const handleClick = (e) => {
+  const handleClick = (e: any) => {
     e.preventDefault();
     router.push(link?.value.href);
+  };
+
+  const handleKeyDown = (e: any) => {
+    e.preventDefault();
+
+    if (e.key === "Enter") {
+      router.push(link?.value.href);
+    }
   };
 
   return (
@@ -36,13 +44,15 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
       py="32px"
       px="30px"
       justify="between"
-      className={twMerge(cn(`group h-fit flex-col gap-6 border-1 duration-300 ease-in-out hover:cursor-pointer hover:bg-t-secondary ${styleClasses}`, {
+      className={twMerge(cn(`group focus:ring h-fit flex-col gap-6 border-1 duration-300 ease-in-out hover:cursor-pointer hover:bg-t-secondary ${styleClasses}`, {
         'bg-indigo-100 text-white ': theme === Theme.WHITE,
         'border-white hover:border-t-secondary hover:text-t-btn-text': theme === Theme.PURPLE || theme === Theme.INDIGO,
         'border-black hover:border-t-secondary hover:text-white': theme === Theme.LIGHT_INDIGO,
       }))}
       onClick={handleClick}
+      onKeyDown={handleKeyDown}
       role="link"
+      tabIndex={0}
     >
       <Flex direction="column" className="lg:flex-1">
         <Text field={eyebrowText} tag="p" className="body-xs mb-4" />
