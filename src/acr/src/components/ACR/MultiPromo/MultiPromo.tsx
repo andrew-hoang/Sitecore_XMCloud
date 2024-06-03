@@ -24,7 +24,7 @@ const MultiPromo = (props: MultiPromoProps): JSX.Element => {
 
   const phKey = `acr-multi-promo-${props.params.DynamicPlaceholderId}`;
 
-  const renderSimplePromo = (promo, index: number) => {
+  const renderSimplePromo = (promo: any, index: number) => {
     switch (promos.length) {
       case 2:
         return (
