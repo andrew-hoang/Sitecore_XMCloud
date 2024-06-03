@@ -49,6 +49,8 @@ export const defaultMockData: AccordionProps = {
       value: {
         src: 'https://hatrabbits.com/wp-content/uploads/2017/01/random.jpg',
         alt: 'Mock Image',
+        width: '100',
+        height: '100'
       },
     } ,
   },
