@@ -5,7 +5,7 @@ import cn from 'classnames';
 
 const FooterLink = (props: FooterLinkItemProps) => {
   const { fields, rowId } = props ?? {};
-  console.log('props: ', props);
+
   return (
     <LinkBase
       styleClasses={cn({ 'body-xs': rowId === '2' })}

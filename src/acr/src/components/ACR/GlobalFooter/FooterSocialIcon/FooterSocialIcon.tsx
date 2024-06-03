@@ -13,7 +13,7 @@ const FooterSocialIcon = (props: SocialLink) => {
   }
 
   return (
-    <LinkBase link={link} style={ButtonStyle.LINK}>
+    <LinkBase link={link} style={ButtonStyle.LINK} spanStyleClasses='link-no-underline'>
       <Icon iconName={socialIcon?.fields?.Value?.value} className={cn(iconClassName)} />
     </LinkBase>
   );
