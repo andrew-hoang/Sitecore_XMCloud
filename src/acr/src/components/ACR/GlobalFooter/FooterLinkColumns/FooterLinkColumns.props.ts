@@ -1,14 +1,13 @@
-import { PlaceholderProps } from 'src/types/Placeholder.props';
+import { PlaceholderProps } from '@sitecore-jss/sitecore-jss-react/types/components/PlaceholderCommon';
+
 import { ComponentProps } from 'lib/component-props';
 
-import { FooterLinkItemProps } from '../GlobalFooter.props';
+import { Component } from 'react';
+export type FooterLinkColumnProps = ComponentProps &
+  PlaceholderProps & {
+    links: Component[];
+  };
 
-export type FooterLinkColumnProps = FooterLinkItemProps[] | undefined;
-
-export type FooterLinkColumnsProps = PlaceholderProps & ComponentProps & {
-  column1?: FooterLinkColumnProps;
-  column2?: FooterLinkColumnProps;
-  column3?: FooterLinkColumnProps;
-  column4?: FooterLinkColumnProps;
+export type FooterLinkColumnsProps = ComponentProps & {
   rowId: '1' | '2';
 };

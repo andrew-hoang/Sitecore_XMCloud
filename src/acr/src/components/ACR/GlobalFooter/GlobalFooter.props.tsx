@@ -6,28 +6,12 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type GlobalFooterProps = ComponentProps & PlaceholderProps &
-  TestProps &
-  GlobalFooterParams &
-  GlobalFooterFields & {
-    placeholder: {
-      footerColumn1?: FooterLinkItemProps[];
-      footerColumn2?: FooterLinkItemProps[];
-      footerColumn3?: FooterLinkItemProps[];
-      footerColumn4?: FooterLinkItemProps[];
-    }
-  };
-
-// Component Rendering Parameter fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type GlobalFooterParams = {
-  params: {
-    mock_param?: string;
-  };
-};
+export type GlobalFooterProps = ComponentProps & PlaceholderProps & TestProps & GlobalFooterFields;
 
 export type FooterLinkItemProps = {
-  link: LinkField;
+  fields: {
+    link: LinkField;
+  };
 };
 
 export type SocialLink = {
@@ -54,6 +38,6 @@ export type GlobalFooterFields = {
     city: Field<string>;
     state: Field<string>;
     zipcode: Field<string>;
-    socialLinks: Array<SocialLink>
+    socialLinks: Array<SocialLink>;
   };
 };

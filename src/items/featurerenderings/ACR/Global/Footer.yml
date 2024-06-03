@@ -20,6 +20,9 @@ SharedFields:
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
   Value: /sitecore/templates/Feature/ACR/Global/Footer
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{B5C84AA4-EA73-4DB3-91E8-7A7BADED37BD}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
   Value: "query:$site/*[@@name='Settings']"
@@ -30,6 +33,9 @@ SharedFields:
   Hint: __Thumbnail
   Value: |
     <image mediaid="{E5A7897C-9567-42EE-8F85-9081D8EA75BC}" />
+- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
+  Hint: OtherProperties
+  Value: IsRenderingsWithDynamicPlaceholders=true&UsePlaceholderDatasourceContext=true
 Languages:
 - Language: en
   Versions:
@@ -48,11 +54,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "b05f0121-ba25-40ed-9364-1ea000827257"
+      Value: "d3431aef-5a80-4f33-838a-3be884d5ad3f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240521T161624Z
+      Value: 20240603T165741Z
