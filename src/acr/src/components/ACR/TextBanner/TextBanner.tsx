@@ -28,7 +28,7 @@ const TextBanner = (props: TextBannerProps): JSX.Element => {
       data-ref="text-banner"
       data-testid={testId}
       data-theme={setAltTheme()} // Theme targets component's link style
-      py="48px"
+      py="42px"
       px={{ initial: '30px', md: '65px' }}
       gap={{ initial: '5', md: '9' }}
       direction={{ initial: 'column', md: 'row' }}
@@ -36,7 +36,7 @@ const TextBanner = (props: TextBannerProps): JSX.Element => {
       justify="between"
     >
       <Flex direction="column" gap="4" width={{ initial: 'auto', md: '770px' }}>
-        <Text field={title} tag="h2" className="heading-d" />
+        <Text field={title} tag="h2" className="heading-d text-t-primary" />
         <Text field={description} tag="p" />
       </Flex>
       {link && <LinkBase link={link} style={ButtonStyle.CTA} styleClasses="shrink-0" />}

@@ -16,7 +16,7 @@ import cn from 'classnames';
  * @returns
  */
 const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
-  const { link, testId, styleClasses, style = ButtonStyle.BUTTON, hasIcon } = props;
+  const { link, testId, styleClasses, style = ButtonStyle.BUTTON, hasIcon = true } = props;
 
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
@@ -27,7 +27,9 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
     return !!linkText && (!!link?.value?.href || !!link?.value?.url);
   };
 
-  const isCTALink = style === ButtonStyle.CTA;
+  const isInternal =
+    link?.value?.linktype === 'internal' || link?.value?.linktype === '' || !link?.value?.linktype;
+  const isCTALink = style === ButtonStyle.CTA && isInternal;
 
   const getIcon = () => {
     if (isCTALink) {
@@ -48,6 +50,8 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
   };
 
   const renderIcon = (): JSX.Element | null => {
+    if (!hasIcon) return null;
+
     return (
       <Icon
         iconName={getIcon()}
