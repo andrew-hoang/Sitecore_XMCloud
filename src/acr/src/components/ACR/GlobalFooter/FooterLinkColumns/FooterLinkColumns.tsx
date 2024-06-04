@@ -20,39 +20,6 @@ const FooterLinkColumns = (props: FooterLinkColumnsProps) => {
         'min-w-[200px]': rowId === '2',
       })}
     >
-      {/* {columns?.map((column: FooterLinkColumnProps, index: number) => {
-        const PLACEHOLDER_NAME = `acr-container-footer-links-${setCorrectPlaceholderName(index)}-${props.params.DynamicPlaceholderId}`;
-
-        const placeholderProps: PlaceholderBaseProps = {
-          placeholder: {
-            name: PLACEHOLDER_NAME,
-            rendering,
-            componentFactory,
-          },
-        };
-        return (
-          <PlaceholderBase {...placeholderProps} key={`${JSON.stringify(column)}=${index}`}>
-            <Flex
-              gap="3"
-              direction="column"
-              className={cn('w-full max-w-[270px]', {
-                'mb-4': rowId === '2',
-              })}
-            >
-              {column?.map((item: FooterLinkItemProps, index: number) => {
-                return (
-                  <LinkBase
-                    key={`${JSON.stringify(item)}-${index}`}
-                    styleClasses={cn({ 'body-xs': rowId === '2' })}
-                    link={item?.link}
-                    style={rowId === '1' ? ButtonStyle.LINK : ButtonStyle.STATIC_LINK}
-                  />
-                );
-              })}
-            </Flex>
-          </PlaceholderBase>
-        );
-      })} */}
       {rowId === '1' && (
         <>
           <FooterLinkColumnA name="columna" {...props}></FooterLinkColumnA>

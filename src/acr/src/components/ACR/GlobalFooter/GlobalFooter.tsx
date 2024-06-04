@@ -11,6 +11,7 @@ import { formatAddress, formatPhoneNumber } from './helper';
 
 import FooterLinkColumns from './FooterLinkColumns/FooterLinkColumns';
 import { SocialLink } from './FooterSocialIcon/FooterSocialIcon.props';
+import { Theme } from 'src/enumerations/Theme.enum';
 
 const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
   const { testId, fields } = props;
@@ -39,11 +40,15 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
   const renderFooterEngageForum =
     !!engageTitle?.value && !!engageLink?.value && !!engageDescription?.value;
 
+  const src = footerLogo?.value?.src;
+  const isSvg = src?.includes('.svg');
+
   return (
     <div
-      className="mx-auto w-full max-w-[1440px] px-[35px] py-12 lg:px-[135px]"
+      className="mx-auto w-full max-w-[1440px] bg-t-background px-[35px] py-12 text-t-body lg:px-[135px]"
       data-ref="global-footer"
       data-testid={testId}
+      data-theme={Theme.INDIGO}
     >
       {footerNewsletterLink && footerNewsletterText && (
         <div className="mb-12">
@@ -64,6 +69,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
             <Link field={{ href: '/' }} aria-label="navigate to root site">
               <NextImage
                 field={footerLogo}
+                unoptimized={isSvg}
                 height="50"
                 width="196"
                 alt="american college of radiology logo"

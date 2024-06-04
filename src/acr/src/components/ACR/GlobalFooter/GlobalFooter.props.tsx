@@ -13,6 +13,7 @@ export type FooterLinkItemProps = {
   fields: {
     link: LinkField;
   };
+  rowId: '1' | '2';
 };
 
 export type GlobalFooterFields = {
