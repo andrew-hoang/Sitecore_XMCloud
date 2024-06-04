@@ -45,104 +45,106 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
 
   return (
     <div
-      className="mx-auto w-full max-w-[1440px] bg-t-background px-[35px] py-12 text-t-body lg:px-[135px]"
+      className="w-full bg-t-background px-[35px] py-12 text-t-body lg:px-[135px]"
       data-ref="global-footer"
       data-testid={testId}
       data-theme={Theme.INDIGO}
     >
-      {footerNewsletterLink && footerNewsletterText && (
-        <div className="mb-12">
-          <Flex justify="between" className="py-8">
-            <Text tag="h4" className="heading-d text-green-100" field={footerNewsletterText} />
-            <LinkBase link={footerNewsletterLink} styleClasses="bg-green-100 text-black" />
-          </Flex>
-          <Separator my="3" size="4" className="bg-green-100" />
-        </div>
-      )}
-      <Flex
-        gap={{ initial: '8', sm: '6' }}
-        direction={{ initial: 'column', sm: 'row' }}
-        className="mb-12"
-      >
-        <div className="w-full max-w-[200px] min-[1000px]:max-w-[270px]">
-          <div>
-            <Link field={{ href: '/' }} aria-label="navigate to root site">
-              <NextImage
-                field={footerLogo}
-                unoptimized={isSvg}
-                height="50"
-                width="196"
-                alt="american college of radiology logo"
-              />
-            </Link>
-          </div>
-          <Flex gap="4" pt="5">
-            {socialLinks?.map((socialLink: SocialLink, index) => (
-              <FooterSocialIcon key={index} {...socialLink} iconClassName="h-6 w-6" />
-            ))}
-          </Flex>
-        </div>
-        <FooterLinkColumns {...props} rowId="1" />
-        {renderFooterEngageForum && (
-          <div>
-            <Text tag="p" className="mb-2 font-bold" field={engageTitle} />
-            <Text tag="p" className="body-xs mb-2 !font-medium" field={engageDescription} />
-            <LinkBase link={engageLink} style={ButtonStyle.CTA} />
+      <div className="mx-auto max-w-[1440px]">
+        {footerNewsletterLink && footerNewsletterText && (
+          <div className="mb-12">
+            <Flex justify="between" className="py-8">
+              <Text tag="h4" className="heading-d text-green-100" field={footerNewsletterText} />
+              <LinkBase link={footerNewsletterLink} styleClasses="bg-green-100 text-black" />
+            </Flex>
+            <Separator my="3" size="4" className="bg-green-100" />
           </div>
         )}
-      </Flex>
-      <Separator size="4" className="mb-12 bg-white" />
-      <Flex
-        gap={{ initial: '8', sm: '6' }}
-        direction={{ initial: 'column', sm: 'row' }}
-        className="shrink"
-      >
-        <Flex direction="column" className="w-full max-w-[200px] grow min-[1000px]:max-w-[270px]">
-          <Text tag="p" className="mb-2 font-bold" field={locationName} />
-          <LinkBase
-            styleClasses="whitespace-pre-line mb-4 body-sm"
-            link={{
-              value: {
-                text: formatAddress(
-                  address1?.value,
-                  address2?.value,
-                  city.value,
-                  state.value,
-                  zipcode.value
-                ),
-                href: formatAddress(
-                  address1?.value,
-                  address2?.value,
-                  city.value,
-                  state.value,
-                  zipcode.value,
-                  true
-                ),
-              },
-            }}
-            style={ButtonStyle.STATIC_LINK}
-          />
-          <LinkBase
-            link={{
-              value: {
-                text: formatPhoneNumber(phoneNumber.value),
-                href: `tel:${phoneNumber.value}`,
-              },
-            }}
-            style={ButtonStyle.STATIC_LINK}
-            styleClasses="body-sm"
-          />
+        <Flex
+          gap={{ initial: '8', sm: '6' }}
+          direction={{ initial: 'column', sm: 'row' }}
+          className="mb-12"
+        >
+          <div className="w-full max-w-[200px] min-[1000px]:max-w-[270px]">
+            <div>
+              <Link field={{ href: '/' }} aria-label="navigate to root site">
+                <NextImage
+                  field={footerLogo}
+                  unoptimized={isSvg}
+                  height="50"
+                  width="196"
+                  alt="american college of radiology logo"
+                />
+              </Link>
+            </div>
+            <Flex gap="4" pt="5">
+              {socialLinks?.map((socialLink: SocialLink, index) => (
+                <FooterSocialIcon key={index} {...socialLink} iconClassName="h-6 w-6" />
+              ))}
+            </Flex>
+          </div>
+          <FooterLinkColumns {...props} rowId="1" />
+          {renderFooterEngageForum && (
+            <div>
+              <Text tag="p" className="mb-2 font-bold" field={engageTitle} />
+              <Text tag="p" className="body-xs mb-2 !font-medium" field={engageDescription} />
+              <LinkBase link={engageLink} style={ButtonStyle.CTA} />
+            </div>
+          )}
         </Flex>
-        <div className="w-full max-w-[270px]">
-          <Text tag="p" className="mb-2 font-bold" field={directoryTitle} />
-          <Text tag="p" className="body-sm mb-4 !font-medium" field={directoryDescription} />
-          <LinkBase link={directoryLink} style={ButtonStyle.CTA} />
-        </div>
-        <div>
-          <FooterLinkColumns {...props} rowId="2" />
-          {copyrightStatement && <Text tag="p" className="body-xs" field={copyrightStatement} />}
-        </div>
-      </Flex>
+        <Separator size="4" className="mb-12 bg-white" />
+        <Flex
+          gap={{ initial: '8', sm: '6' }}
+          direction={{ initial: 'column', sm: 'row' }}
+          className="shrink"
+        >
+          <Flex direction="column" className="w-full max-w-[200px] grow min-[1000px]:max-w-[270px]">
+            <Text tag="p" className="mb-2 font-bold" field={locationName} />
+            <LinkBase
+              styleClasses="whitespace-pre-line mb-4 body-sm"
+              link={{
+                value: {
+                  text: formatAddress(
+                    address1?.value,
+                    address2?.value,
+                    city.value,
+                    state.value,
+                    zipcode.value
+                  ),
+                  href: formatAddress(
+                    address1?.value,
+                    address2?.value,
+                    city.value,
+                    state.value,
+                    zipcode.value,
+                    true
+                  ),
+                },
+              }}
+              style={ButtonStyle.STATIC_LINK}
+            />
+            <LinkBase
+              link={{
+                value: {
+                  text: formatPhoneNumber(phoneNumber.value),
+                  href: `tel:${phoneNumber.value}`,
+                },
+              }}
+              style={ButtonStyle.STATIC_LINK}
+              styleClasses="body-sm"
+            />
+          </Flex>
+          <div className="w-full max-w-[270px]">
+            <Text tag="p" className="mb-2 font-bold" field={directoryTitle} />
+            <Text tag="p" className="body-sm mb-4 !font-medium" field={directoryDescription} />
+            <LinkBase link={directoryLink} style={ButtonStyle.CTA} />
+          </div>
+          <div>
+            <FooterLinkColumns {...props} rowId="2" />
+            {copyrightStatement && <Text tag="p" className="body-xs" field={copyrightStatement} />}
+          </div>
+        </Flex>
+      </div>
     </div>
   );
 };
