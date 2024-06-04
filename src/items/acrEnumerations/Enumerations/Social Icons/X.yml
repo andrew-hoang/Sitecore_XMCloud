@@ -6,7 +6,7 @@ Path: /sitecore/content/ACR/ACR/Data/Enumerations/Social Icons/X
 SharedFields:
 - ID: "f917c951-1f75-4d62-b14a-bc6888d7eeca"
   Hint: Value
-  Value: x
+  Value: TwitterX
 Languages:
 - Language: en
   Versions:
@@ -25,11 +25,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "5efbe67e-3f34-4a37-8d71-db29b20cc995"
+      Value: "9a26d794-374e-4ac8-a73d-d5547756d47b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240603T200838Z
+      Value: 20240604T152713Z
