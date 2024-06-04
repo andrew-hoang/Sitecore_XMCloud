@@ -26,7 +26,7 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
 
   const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
-    router.push(link?.value.href);
+    link?.value.href && router.push(link?.value.href);
   };
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
