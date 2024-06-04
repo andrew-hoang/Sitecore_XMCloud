@@ -1,0 +1,31 @@
+﻿---
+ID: "f6380b93-4063-4476-b354-621f08f3678c"
+Parent: "e4ddbb13-24bc-482c-9521-b3fc9fefad36"
+Template: "e4ddbb13-24bc-482c-9521-b3fc9fefad36"
+Path: /sitecore/templates/Feature/ACR/Multimedia/Rendering Parameters/Image Rendering Parameter/__Standard Values
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: /~/icon/applications/32x32/photo_scenery.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ca9556d0-cd32-4579-8f9b-17eb0b2f2317"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240604T160939Z

@@ -11,7 +11,8 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type ${componentName}Props = ComponentProps & TestProps &
+export type ${componentName}Props = ComponentProps & 
+  TestProps &
   ${componentName}Params &
   ${componentName}Fields &
   ${componentName}Data;
