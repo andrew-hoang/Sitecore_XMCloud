@@ -33,7 +33,7 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
     e.preventDefault();
 
     if (e.key === 'Enter') {
-      router.push(link?.value.href);
+      link?.value.href && router.push(link?.value.href);
     }
   };
 
