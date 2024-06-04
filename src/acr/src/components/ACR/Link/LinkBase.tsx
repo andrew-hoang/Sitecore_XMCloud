@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { LinkBaseProps } from './Link.props';
 import { Link, LinkField } from '@sitecore-jss/sitecore-jss-react';
 import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
@@ -29,13 +30,24 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
 
+  const [shouldRenderIcon, setShouldRenderIcon] = useState<boolean>(false);
+
+  const linkType = link?.value?.linktype;
   const linkText = children ? children : link?.value?.text;
 
   const linkIsValid = (link: LinkField) => {
     return !!linkText && (!!link?.value?.href || !!link?.value?.url);
   };
 
-  const isCTALink = style === ButtonStyle.CTA;
+  useEffect(() => {
+    if (hasIcon || linkType === 'external' || linkType === 'media' || linkType === 'download') {
+      setShouldRenderIcon(true);
+    }
+  }, [hasIcon, linkType]);
+
+  const isInternal =
+    link?.value?.linktype === 'internal' || link?.value?.linktype === '' || !link?.value?.linktype;
+  const isCTALink = style === ButtonStyle.CTA && isInternal;
 
   const getIcon = () => {
     if (isCTALink) {
@@ -111,7 +123,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
         >
           {linkText}
         </span>
-        {hasIcon && !isCTALink && renderIcon()}
+        {shouldRenderIcon && !isCTALink && renderIcon()}
       </Link>
     );
   };

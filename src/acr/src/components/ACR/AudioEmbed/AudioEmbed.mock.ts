@@ -8,6 +8,6 @@ export const defaultMockData: AudioEmbedProps = {
     dataSource: '/',
   },
   fields: {
-    heading: { value: 'MOCK_DATA_HEADING' },
+    playerId: { value: 'MOCK_DATA_HEADING' },
   },
 };

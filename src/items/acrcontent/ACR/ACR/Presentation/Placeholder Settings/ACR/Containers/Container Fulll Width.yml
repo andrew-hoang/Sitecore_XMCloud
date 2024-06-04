@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "2136c866-84e2-40bb-8caf-5a169c9b61f0"
 Parent: "946e118a-81ee-4eb6-b1e0-214c02c08075"
 Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
@@ -27,6 +27,7 @@ SharedFields:
     {7B719321-5D9F-470D-AB7C-E39DB2589030}
     {94390289-1DDE-4AC8-A2EE-5CD4792061EA}
     {92C544E8-6F01-4A4E-BB0F-24A84214E0D8}
+    {29E82F5B-5895-477E-A048-43B4D687FE47}
 Languages:
 - Language: en
   Versions:
@@ -45,11 +46,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "dfc1e943-4d7d-4500-82f2-829d81d34cd0"
+      Value: "57a6fc39-eeb3-4dc1-9984-ea33307069e4"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240530T215302Z
+      Value: 20240603T143517Z

@@ -10,6 +10,9 @@ SharedFields:
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
   Value: /sitecore/templates/Feature/ACR/Page Components/Banners/Text Banner/Text Banner
+- ID: "a77e8568-1ab3-44f1-a664-b7c37ec7810d"
+  Hint: Parameters Template
+  Value: "{DB1CA46D-29A8-4B1C-A9AB-49FE523C0853}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
   Value: "query:$site/*[@@name='Data']/*[@@templatename='Banners Folder']"
@@ -17,6 +20,9 @@ SharedFields:
   Hint: __Thumbnail
   Value: |
     <image mediaid="{1E122894-B2B1-44BD-A88A-4CB9A74356D6}" />
+- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
+  Hint: OtherProperties
+  Value: IsRenderingsWithDynamicPlaceholders=true
 Languages:
 - Language: en
   Versions:
@@ -35,11 +41,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "19b74e98-b607-4a0a-b752-668fa49cca06"
+      Value: "14233a6a-167e-4899-9d45-ae6e8507fa49"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\kenneth.robinson@velir.com
+        sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240514T135156Z
+      Value: 20240604T161646Z
