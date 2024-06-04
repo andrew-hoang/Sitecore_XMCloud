@@ -1,15 +1,14 @@
 ﻿---
-ID: "aacdc2cd-9515-4a65-8d9a-f28f9c6e3796"
-Parent: "d461c1c5-bf6c-4c76-b505-df53abdf002d"
-Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
-Path: /sitecore/templates/Branches/Feature/ACR/Multimedia/Available Headless Multimedia Renderings/$name
+ID: "bac768f8-f6f1-4651-b68e-e86ddc2a46f4"
+Parent: "8ad2c242-5e9c-4a78-860e-7f70ed1b3f81"
+Template: "8ad2c242-5e9c-4a78-860e-7f70ed1b3f81"
+Path: /sitecore/templates/Feature/ACR/Multimedia/Video Folder/__Standard Values
 SharedFields:
-- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
-  Hint: Renderings
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
   Value: |
-    {29E82F5B-5895-477E-A048-43B4D687FE47}
-    {E2A6BB73-333A-4665-BF9A-635700942608}
-    {C61D54A3-5ABC-4EEF-A110-266B89A6A213}
+    {379ED2C1-EE38-4EB6-B93A-8FB209915D20}
+    {8AD2C242-5E9C-4A78-860E-7F70ED1B3F81}
 Languages:
 - Language: en
   Versions:
@@ -17,14 +16,14 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20171113T104335Z
+      Value: 20120621T071605Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "aaf81779-79bf-40b0-ba19-1bd80880b1dd"
+      Value: "1f528246-9ec5-4bd0-ba2d-7e73343bb58c"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |

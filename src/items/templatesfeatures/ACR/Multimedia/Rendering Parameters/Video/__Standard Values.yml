@@ -1,0 +1,27 @@
+﻿---
+ID: "73867919-7820-4be2-aa99-50de1041610f"
+Parent: "22f33eb8-a938-4af9-94fa-2b5ff0602b3e"
+Template: "22f33eb8-a938-4af9-94fa-2b5ff0602b3e"
+Path: /sitecore/templates/Feature/ACR/Multimedia/Rendering Parameters/Video/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "ace6a1bc-71c1-48d9-8f25-6bc1eb0fd22c"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240604T163145Z
