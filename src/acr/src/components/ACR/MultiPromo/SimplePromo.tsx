@@ -24,7 +24,7 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
 
   const router = useRouter();
 
-  const handleClick = (e: any) => {
+  const handleClick = (e: React.MouseEvent<HTMLDivElement>) => {
     e.preventDefault();
     router.push(link?.value.href);
   };
