@@ -16,8 +16,7 @@ export const twoPromoData: MultiPromoProps = {
           fields: {
             title: { value: 'Reporting and Data Systems (RADS)' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: 'https://www.acr.org/', text: 'Read more', linktype: 'link' } },
             image: {
@@ -28,7 +27,7 @@ export const twoPromoData: MultiPromoProps = {
                 width: '368',
               },
             },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -37,8 +36,7 @@ export const twoPromoData: MultiPromoProps = {
           fields: {
             title: { value: 'ACR Reporting and Data Systems (RADS) Criteria' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: 'https://www.acr.org/', text: 'Read more', linktype: 'link' } },
             image: {
@@ -49,14 +47,17 @@ export const twoPromoData: MultiPromoProps = {
                 width: '310',
               },
             },
-          }
+          },
         },
-      ]
-    }
+      ],
+    },
   },
   fields: {
     heading: { value: 'Clinical Tools & References' },
-    description: { value: 'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.' },
+    description: {
+      value:
+        'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.',
+    },
     link: {
       value: { href: '/', text: 'View all Clinical Tools & References', linktype: 'link' },
     },
@@ -81,8 +82,7 @@ export const threePromoData: MultiPromoProps = {
             eyebrowText: { value: 'Template' },
             title: { value: 'Reporting and Data Systems (RADS)' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Use the Template', linktype: 'link' } },
             image: {
@@ -93,7 +93,7 @@ export const threePromoData: MultiPromoProps = {
                 width: '310',
               },
             },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -101,13 +101,15 @@ export const threePromoData: MultiPromoProps = {
           dataSource: '/',
           fields: {
             eyebrowText: { value: 'Resource' },
-            title: { value: 'How to Cite the ACR Reporting and Data Systems (RADS) Publications and Content' },
-            description: {
+            title: {
               value:
-                '',
+                'How to Cite the ACR Reporting and Data Systems (RADS) Publications and Content',
+            },
+            description: {
+              value: '',
             },
             link: { value: { href: '/', text: 'Learn more', linktype: 'link' } },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -117,18 +119,20 @@ export const threePromoData: MultiPromoProps = {
             eyebrowText: { value: 'Webinar' },
             title: { value: 'Lung-RADS Assistant (Computer Assisted Reporting) ' },
             description: {
-              value:
-                '',
+              value: '',
             },
             link: { value: { href: '/', text: 'Learn more', linktype: 'link' } },
-          }
+          },
         },
-      ]
-    }
+      ],
+    },
   },
   fields: {
     heading: { value: 'Clinical Tools & References' },
-    description: { value: 'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.' },
+    description: {
+      value:
+        'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.',
+    },
     link: {
       value: { href: '/', text: 'View all Clinical Tools & References', linktype: 'link' },
     },
@@ -152,8 +156,7 @@ export const fourPromoData: MultiPromoProps = {
           fields: {
             title: { value: 'Reporting and Data Systems (RADS)' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
             image: {
@@ -164,7 +167,7 @@ export const fourPromoData: MultiPromoProps = {
                 width: '368',
               },
             },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -173,8 +176,7 @@ export const fourPromoData: MultiPromoProps = {
           fields: {
             title: { value: 'ACR Reporting and Data Systems (RADS) Criteria' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
             image: {
@@ -185,7 +187,7 @@ export const fourPromoData: MultiPromoProps = {
                 width: '310',
               },
             },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -194,11 +196,10 @@ export const fourPromoData: MultiPromoProps = {
           fields: {
             title: { value: 'ACR Reporting and Data Systems (RADS) Criteria' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -207,8 +208,7 @@ export const fourPromoData: MultiPromoProps = {
           fields: {
             title: { value: 'Reporting and Data Systems (RADS)' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
             image: {
@@ -219,14 +219,17 @@ export const fourPromoData: MultiPromoProps = {
                 width: '368',
               },
             },
-          }
+          },
         },
-      ]
-    }
+      ],
+    },
   },
   fields: {
     heading: { value: 'Clinical Tools & References' },
-    description: { value: 'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.' },
+    description: {
+      value:
+        'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.',
+    },
     link: {
       value: { href: '/', text: 'View all Clinical Tools & References', linktype: 'link' },
     },
@@ -251,8 +254,7 @@ export const fivePromoData: MultiPromoProps = {
             eyebrowText: { value: 'Template' },
             title: { value: 'Reporting and Data Systems (RADS)' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
             image: {
@@ -263,7 +265,7 @@ export const fivePromoData: MultiPromoProps = {
                 width: '368',
               },
             },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -273,11 +275,10 @@ export const fivePromoData: MultiPromoProps = {
             eyebrowText: { value: 'Webinar' },
             title: { value: 'ACR Reporting and Data Systems (RADS) Criteria' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -287,11 +288,10 @@ export const fivePromoData: MultiPromoProps = {
             eyebrowText: { value: 'Template' },
             title: { value: 'Reporting and Data Systems (RADS)' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -301,8 +301,7 @@ export const fivePromoData: MultiPromoProps = {
             eyebrowText: { value: 'Webinar' },
             title: { value: 'ACR Reporting and Data Systems (RADS) Criteria' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
             image: {
@@ -313,7 +312,7 @@ export const fivePromoData: MultiPromoProps = {
                 width: '310',
               },
             },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -323,18 +322,20 @@ export const fivePromoData: MultiPromoProps = {
             eyebrowText: { value: 'Webinar' },
             title: { value: 'ACR Reporting and Data Systems (RADS) Criteria' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
-      ]
-    }
+      ],
+    },
   },
   fields: {
     heading: { value: 'Clinical Tools & References' },
-    description: { value: 'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.' },
+    description: {
+      value:
+        'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.',
+    },
     link: {
       value: { href: '/', text: 'View all Clinical Tools & References', linktype: 'link' },
     },
@@ -359,8 +360,7 @@ export const sixPromoData: MultiPromoProps = {
             eyebrowText: { value: 'Template' },
             title: { value: 'Reporting and Data Systems (RADS)' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
             image: {
@@ -371,7 +371,7 @@ export const sixPromoData: MultiPromoProps = {
                 width: '368',
               },
             },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -381,11 +381,10 @@ export const sixPromoData: MultiPromoProps = {
             eyebrowText: { value: 'Webinar' },
             title: { value: 'ACR Reporting and Data Systems (RADS) Criteria' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -395,11 +394,10 @@ export const sixPromoData: MultiPromoProps = {
             eyebrowText: { value: 'Template' },
             title: { value: 'Reporting and Data Systems (RADS)' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -409,11 +407,10 @@ export const sixPromoData: MultiPromoProps = {
             eyebrowText: { value: 'Webinar' },
             title: { value: 'ACR Reporting and Data Systems (RADS) Criteria' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -423,11 +420,10 @@ export const sixPromoData: MultiPromoProps = {
             eyebrowText: { value: 'Template' },
             title: { value: 'Reporting and Data Systems (RADS)' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -437,18 +433,20 @@ export const sixPromoData: MultiPromoProps = {
             eyebrowText: { value: 'Webinar' },
             title: { value: 'ACR Reporting and Data Systems (RADS) Criteria' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
-      ]
-    }
+      ],
+    },
   },
   fields: {
     heading: { value: 'Clinical Tools & References' },
-    description: { value: 'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.' },
+    description: {
+      value:
+        'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.',
+    },
     link: {
       value: { href: '/', text: 'View all Clinical Tools & References', linktype: 'link' },
     },
@@ -473,8 +471,7 @@ export const sevenPromoData: MultiPromoProps = {
             eyebrowText: { value: 'Template' },
             title: { value: 'Reporting and Data Systems (RADS)' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
             image: {
@@ -485,7 +482,7 @@ export const sevenPromoData: MultiPromoProps = {
                 width: '310',
               },
             },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -495,8 +492,7 @@ export const sevenPromoData: MultiPromoProps = {
             eyebrowText: { value: 'Webinar' },
             title: { value: 'ACR Reporting and Data Systems (RADS) Criteria' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
             image: {
@@ -507,7 +503,7 @@ export const sevenPromoData: MultiPromoProps = {
                 width: '310',
               },
             },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -517,11 +513,10 @@ export const sevenPromoData: MultiPromoProps = {
             eyebrowText: { value: 'Template' },
             title: { value: 'Reporting and Data Systems (RADS)' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -531,11 +526,10 @@ export const sevenPromoData: MultiPromoProps = {
             eyebrowText: { value: 'Webinar' },
             title: { value: 'ACR Reporting and Data Systems (RADS) Criteria' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -545,11 +539,10 @@ export const sevenPromoData: MultiPromoProps = {
             eyebrowText: { value: 'Template' },
             title: { value: 'Reporting and Data Systems (RADS)' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -559,11 +552,10 @@ export const sevenPromoData: MultiPromoProps = {
             eyebrowText: { value: 'Webinar' },
             title: { value: 'ACR Reporting and Data Systems (RADS) Criteria' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
@@ -573,18 +565,20 @@ export const sevenPromoData: MultiPromoProps = {
             eyebrowText: { value: 'Webinar' },
             title: { value: 'ACR Reporting and Data Systems (RADS) Criteria' },
             description: {
-              value:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+              value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
             link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
-          }
+          },
         },
-      ]
-    }
+      ],
+    },
   },
   fields: {
     heading: { value: 'Clinical Tools & References' },
-    description: { value: 'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.' },
+    description: {
+      value:
+        'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.',
+    },
     link: {
       value: { href: '/', text: 'View all Clinical Tools & References', linktype: 'link' },
     },

@@ -4,7 +4,14 @@ import MultiPromo from 'components/ACR/MultiPromo/MultiPromo';
 import ContainerFullBleed from '../Container/ContainerFullBleed/ContainerFullBleed';
 import ContainerFullWidth from '../Container/ContainerFullWidth/ContainerFullWidth';
 
-import { twoPromoData, threePromoData, fourPromoData, fivePromoData, sixPromoData, sevenPromoData } from './MultiPromo.mock';
+import {
+  twoPromoData,
+  threePromoData,
+  fourPromoData,
+  fivePromoData,
+  sixPromoData,
+  sevenPromoData,
+} from './MultiPromo.mock';
 import { defaultMockData as containerFullBleedMockData } from 'components/ACR/Container/ContainerFullBleed/ContainerFullBleed.mock';
 import { defaultMockData as containerFullWidthMockData } from 'components/ACR/Container/ContainerFullWidth/ContainerFullWidth.mock';
 
