@@ -1,20 +1,28 @@
 import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
-import { Text } from '@sitecore-jss/sitecore-jss-react';
 
 import { GlobalHeaderProps } from 'components/ACR/GlobalHeader/GlobalHeader.props';
 
 import { getStaticPropsForGlobalHeader } from 'components/ACR/GlobalHeader/GlobalHeader.util';
+import PrimaryNavigation from './PrimaryNavigation/PrimaryNavigation';
+import { GlobalHeaderProvider } from './GlobalHeader.context';
+import UtilityNavigation from './UtilityNavigation/UtilityNavigation';
+import MobileNavigation from './MobileNavigation/MobileNavigation';
 
 const GlobalHeader = (props: GlobalHeaderProps): JSX.Element => {
-  const { fields, testId } = props;
-
-  const { heading } = fields ?? {};
+  const { testId } = props;
 
   return (
-    <div data-ref="global-header" data-testid={testId}>
-      <Text tag="h2" field={heading} />
-      <p>The GlobalHeader Component</p>
-    </div>
+    <GlobalHeaderProvider>
+      <div
+        data-ref="global-header"
+        className="relative px-[30px] pt-8 lg:pt-0"
+        data-testid={testId}
+      >
+        <UtilityNavigation {...props} />
+        <PrimaryNavigation {...props} />
+        <MobileNavigation {...props} />
+      </div>
+    </GlobalHeaderProvider>
   );
 };
 
