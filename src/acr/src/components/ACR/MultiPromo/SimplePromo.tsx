@@ -60,7 +60,7 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
       tabIndex={0}
     >
       <Flex direction="column" className="lg:flex-1">
-        <Text field={eyebrowText} tag="p" className="body-xs mb-4" />
+        <Text field={eyebrowText} tag="p" className="body-xs mb-2" />
         <Text field={title} tag="h2" className="title-c mb-4" />
         <Text field={description} tag="p" className="mb-6" />
 
