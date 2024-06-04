@@ -11,23 +11,23 @@ import { Component } from 'react';
 export type MultiPromoProps = ComponentProps &
   TestProps &
   PlaceholderProps &
-  MultiPromoFields &
-  { promos: Component[] };
+  MultiPromoFields & { promos: Component[] };
 
 export type MultiPromoFields = {
   fields: {
-    heading?: Field<string>; 
-    description?: Field<string>; 
+    heading?: Field<string>;
+    description?: Field<string>;
     link?: LinkField;
   };
 };
 
-export type SimplePromoProps = ComponentProps & StyleProps & {
-  fields: {
-    eyebrowText?: Field<string>;
-    title: Field<string>;
-    description?: Field<string>;
-    link?: LinkField;
-    image?: ImageField;
+export type SimplePromoProps = ComponentProps &
+  StyleProps & {
+    fields: {
+      eyebrowText?: Field<string>;
+      title: Field<string>;
+      description?: Field<string>;
+      link?: LinkField;
+      image?: ImageField;
+    };
   };
-};

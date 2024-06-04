@@ -16,8 +16,7 @@ import { MultiPromoProps, SimplePromoProps } from 'components/ACR/MultiPromo/Mul
 
 const MultiPromo = (props: MultiPromoProps): JSX.Element => {
   const { fields, promos, testId } = props;
-  const { heading, description, link } =
-    fields ?? {};
+  const { heading, description, link } = fields ?? {};
 
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
@@ -28,54 +27,69 @@ const MultiPromo = (props: MultiPromoProps): JSX.Element => {
     switch (promos.length) {
       case 2:
         return (
-          <SimplePromo key={index} {...promo?.props} styleClasses={cn({
-            "md:col-span-8 md:flex-row gap-[30px]": index === 0,
-            "md:col-span-4": index > 0,
-          })}
+          <SimplePromo
+            key={index}
+            {...promo?.props}
+            styleClasses={cn({
+              'md:col-span-8 md:flex-row gap-[30px]': index === 0,
+              'md:col-span-4': index > 0,
+            })}
           />
-        )
+        );
       case 3:
         return (
           <SimplePromo key={index} {...promo?.props} styleClasses="md:col-span-6 lg:col-span-4" />
-        )
+        );
       case 4:
         return (
-          <SimplePromo key={index} {...promo?.props} styleClasses={cn({
-            "md:col-span-12 lg:col-span-8 md:flex-row gap-[30px]": index === 0 || index === 3,
-            "md:col-span-6 lg:col-span-4": index === 1 || index === 2,
-          })}
+          <SimplePromo
+            key={index}
+            {...promo?.props}
+            styleClasses={cn({
+              'md:col-span-12 lg:col-span-8 md:flex-row gap-[30px]': index === 0 || index === 3,
+              'md:col-span-6 lg:col-span-4': index === 1 || index === 2,
+            })}
           />
-        )
+        );
       case 5:
         return (
-          <SimplePromo key={index} {...promo?.props} styleClasses={cn({
-            "md:col-span-12 lg:col-span-8 lg:flex-row gap-[30px]": index === 0,
-            "md:col-span-6 lg:col-span-4": index > 0,
-          })}
+          <SimplePromo
+            key={index}
+            {...promo?.props}
+            styleClasses={cn({
+              'md:col-span-12 lg:col-span-8 lg:flex-row gap-[30px]': index === 0,
+              'md:col-span-6 lg:col-span-4': index > 0,
+            })}
           />
-        )
+        );
       case 6:
         return (
-          <SimplePromo key={index} {...promo?.props} styleClasses={cn("md:col-span-6", {
-            "lg:col-span-8 lg:flex-row gap-[30px]": index === 0,
-            "lg:col-span-4": index === 1,
-            "lg:col-span-3 lg:row-start-2": index >= 2
-          })}
+          <SimplePromo
+            key={index}
+            {...promo?.props}
+            styleClasses={cn('md:col-span-6', {
+              'lg:col-span-8 lg:flex-row gap-[30px]': index === 0,
+              'lg:col-span-4': index === 1,
+              'lg:col-span-3 lg:row-start-2': index >= 2,
+            })}
           />
-        )
+        );
       case 7:
         return (
-          <SimplePromo key={index} {...promo?.props} styleClasses={cn("md:col-span-6", {
-            "lg:col-span-4": index <= 2,
-            "lg:col-span-3 lg:row-start-2": index >= 3
-          })}
+          <SimplePromo
+            key={index}
+            {...promo?.props}
+            styleClasses={cn('md:col-span-6', {
+              'lg:col-span-4': index <= 2,
+              'lg:col-span-3 lg:row-start-2': index >= 3,
+            })}
           />
-        )
+        );
       default:
         return;
     }
-  }
-  
+  };
+
   return (
     <Flex data-ref="multi-promo" data-testid={testId} direction="column" gap="6">
       <div>

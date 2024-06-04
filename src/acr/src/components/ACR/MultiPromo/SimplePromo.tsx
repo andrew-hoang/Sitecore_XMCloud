@@ -1,5 +1,5 @@
 import { Text } from '@sitecore-jss/sitecore-jss-nextjs';
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 import { Flex } from '@radix-ui/themes';
 import cn from 'classnames';
 import { twMerge } from 'tailwind-merge';
@@ -17,8 +17,7 @@ import { ThemeContext } from 'src/context/Theme.context';
 const SimplePromo = (props: SimplePromoProps): JSX.Element => {
   const { fields, styleClasses } = props;
 
-  const { eyebrowText, title, description, link, image } =
-    fields ?? {};
+  const { eyebrowText, title, description, link, image } = fields ?? {};
 
   // Theme sourced from ContainerFullBleed
   const { theme } = useContext(ThemeContext);
@@ -33,7 +32,7 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
   const handleKeyDown = (e: any) => {
     e.preventDefault();
 
-    if (e.key === "Enter") {
+    if (e.key === 'Enter') {
       router.push(link?.value.href);
     }
   };
@@ -44,11 +43,17 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
       py="32px"
       px="30px"
       justify="between"
-      className={twMerge(cn(`group focus:ring h-fit flex-col gap-6 border-1 duration-300 ease-in-out hover:cursor-pointer hover:bg-t-secondary ${styleClasses}`, {
-        'bg-indigo-100 text-white ': theme === Theme.WHITE,
-        'border-white hover:border-t-secondary hover:text-t-btn-text': theme === Theme.PURPLE || theme === Theme.INDIGO,
-        'border-black hover:border-t-secondary hover:text-white': theme === Theme.LIGHT_INDIGO,
-      }))}
+      className={twMerge(
+        cn(
+          `group h-fit flex-col gap-6 border-1 duration-300 ease-in-out hover:cursor-pointer hover:bg-t-secondary focus:ring ${styleClasses}`,
+          {
+            'bg-indigo-100 text-white ': theme === Theme.WHITE,
+            'border-white hover:border-t-secondary hover:text-t-btn-text':
+              theme === Theme.PURPLE || theme === Theme.INDIGO,
+            'border-black hover:border-t-secondary hover:text-white': theme === Theme.LIGHT_INDIGO,
+          }
+        )
+      )}
       onClick={handleClick}
       onKeyDown={handleKeyDown}
       role="link"
@@ -59,19 +64,21 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
         <Text field={title} tag="h2" className="title-c mb-4" />
         <Text field={description} tag="p" className="mb-6" />
 
-        {link && <LinkBase link={link} style={ButtonStyle.CTA} styleClasses={cn({
-          "text-white hover:text-white": theme === Theme.WHITE,
-          "group-hover:text-t-btn-text": theme === Theme.INDIGO || theme === Theme.PURPLE,
-        })} />}
+        {link && (
+          <LinkBase
+            link={link}
+            style={ButtonStyle.CTA}
+            styleClasses={cn({
+              'text-white hover:text-white': theme === Theme.WHITE,
+              'group-hover:text-t-btn-text': theme === Theme.INDIGO || theme === Theme.PURPLE,
+            })}
+          />
+        )}
       </Flex>
 
-      <ImageBase
-        image={image}
-        animate={false}
-      />
+      <ImageBase image={image} animate={false} />
     </Flex>
   );
 };
 
 export default SimplePromo;
-
