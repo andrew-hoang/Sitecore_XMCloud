@@ -10,10 +10,10 @@ export const defaultMockData: VideoProps = {
   fields: {
     coverImage: {
       value: {
-        src: '/-/media/Feature/JSS-Experience-Accelerator/Basic-Site/banner-image.jpg?h=2001&iar=0&w=3000',
+        src: 'https://placehold.co/600x400',
         alt: '',
-        width: '3000',
-        height: '2001',
+        width: '600',
+        height: '400',
       },
     },
     video: {
