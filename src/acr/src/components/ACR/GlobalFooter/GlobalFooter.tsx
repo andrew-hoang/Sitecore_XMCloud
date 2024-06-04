@@ -3,7 +3,7 @@ import { NextImage } from '@sitecore-jss/sitecore-jss-nextjs';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
 import { Link } from '@sitecore-jss/sitecore-jss-react';
 
-import { Flex, Separator } from '@radix-ui/themes';
+import { Flex, Separator, Container } from '@radix-ui/themes';
 import LinkBase from '../Link/LinkBase';
 import FooterSocialIcon from './FooterSocialIcon/FooterSocialIcon';
 import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
@@ -44,15 +44,21 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
   const isSvg = src?.includes('.svg');
 
   return (
-    <div
-      className="mx-auto w-full max-w-[1440px] bg-t-background px-[35px] py-12 text-t-body lg:px-[135px]"
+    <Container
+      px="6"
+      className="w-full bg-t-background px-[35px] py-12 text-t-body lg:px-[135px]"
       data-ref="global-footer"
       data-testid={testId}
       data-theme={Theme.INDIGO}
     >
       {footerNewsletterLink && footerNewsletterText && (
         <div className="mb-12">
-          <Flex justify="between" className="py-8">
+          <Flex
+            direction={{ initial: 'column', sm: 'row' }}
+            justify="between"
+            align={{ initial: 'start', sm: 'center' }}
+            className="gap-8 py-8"
+          >
             <Text tag="h4" className="heading-d text-green-100" field={footerNewsletterText} />
             <LinkBase link={footerNewsletterLink} styleClasses="bg-green-100 text-black" />
           </Flex>
@@ -78,7 +84,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
           </div>
           <Flex gap="4" pt="5">
             {socialLinks?.map((socialLink: SocialLink, index) => (
-              <FooterSocialIcon key={index} {...socialLink} iconClassName="h-6 w-6" />
+              <FooterSocialIcon key={index} {...socialLink} iconClassName="h-[30px] w-[30px]" />
             ))}
           </Flex>
         </div>
@@ -86,7 +92,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
         {renderFooterEngageForum && (
           <div>
             <Text tag="p" className="mb-2 font-bold" field={engageTitle} />
-            <Text tag="p" className="body-xs mb-2 !font-medium" field={engageDescription} />
+            <Text tag="p" className="body-xs mb-4 !font-medium" field={engageDescription} />
             <LinkBase link={engageLink} style={ButtonStyle.CTA} />
           </div>
         )}
@@ -143,7 +149,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
           {copyrightStatement && <Text tag="p" className="body-xs" field={copyrightStatement} />}
         </div>
       </Flex>
-    </div>
+    </Container>
   );
 };
 
