@@ -16,18 +16,17 @@ const FooterLinkColumnB = (props: FooterLinkColumnProps): JSX.Element | null => 
   if (!isPageEditing && !links?.length) return null;
 
   return (
-    <Flex
-      gap="3"
-      direction="column"
-      className='w-full max-w-[270px]'
-    >
+    <Flex gap="3" direction="column" className="w-full max-w-[270px]">
       {isPageEditing && (
         <Placeholder
           name={`acr-container-footer-links-b-${props.params.DynamicPlaceholderId}`}
           rendering={rendering}
         ></Placeholder>
       )}
-      {!isPageEditing && links.map((link: React.Component<FooterLinkItemProps>, index: number) => <FooterLink key={index} {...link?.props} rowId='1' />)}
+      {!isPageEditing &&
+        links.map((link: React.Component<FooterLinkItemProps>, index: number) => (
+          <FooterLink key={index} {...link?.props} rowId="1" />
+        ))}
     </Flex>
   );
 };

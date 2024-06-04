@@ -45,7 +45,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
 
   return (
     <div
-      className="mx-auto w-full max-w-[1440px] px-[35px] py-12 lg:px-[135px] bg-t-background text-t-body"
+      className="mx-auto w-full max-w-[1440px] bg-t-background px-[35px] py-12 text-t-body lg:px-[135px]"
       data-ref="global-footer"
       data-testid={testId}
       data-theme={Theme.INDIGO}

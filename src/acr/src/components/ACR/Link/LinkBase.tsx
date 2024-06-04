@@ -16,7 +16,15 @@ import cn from 'classnames';
  * @returns
  */
 const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
-  const { link, testId, styleClasses, spanStyleClasses, style = ButtonStyle.BUTTON, hasIcon, children } = props;
+  const {
+    link,
+    testId,
+    styleClasses,
+    spanStyleClasses,
+    style = ButtonStyle.BUTTON,
+    hasIcon,
+    children,
+  } = props;
 
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
