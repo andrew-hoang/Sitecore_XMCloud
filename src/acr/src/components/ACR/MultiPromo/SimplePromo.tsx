@@ -29,7 +29,7 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
     router.push(link?.value.href);
   };
 
-  const handleKeyDown = (e: any) => {
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
     e.preventDefault();
 
     if (e.key === 'Enter') {
