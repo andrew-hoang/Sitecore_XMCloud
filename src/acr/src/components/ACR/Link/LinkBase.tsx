@@ -11,13 +11,17 @@ import { IconName } from 'src/enumerations/Icon.enum';
 import { twMerge } from 'tailwind-merge';
 import cn from 'classnames';
 
+type LinkProps = Partial<LinkBaseProps> & {
+  animate?: boolean;
+};
+
 /**
  * ACRAR-333
  * @param props The UI data coming from the parent component
  * @returns
  */
-const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
-  const { link, testId, styleClasses, style = ButtonStyle.BUTTON, hasIcon } = props;
+const LinkBase = (props: LinkProps): JSX.Element | null => {
+  const { link, testId, styleClasses, style = ButtonStyle.BUTTON, hasIcon, animate = true } = props;
 
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
@@ -104,7 +108,9 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
         )}
       >
         {isCTALink && renderIcon()}
-        <span className={cn({ 'link-underline': style !== ButtonStyle.BUTTON })}>{linkText}</span>
+        <span className={cn({ 'link-underline': animate && style !== ButtonStyle.BUTTON })}>
+          {linkText}
+        </span>
         {shouldRenderIcon && !isCTALink && renderIcon()}
       </Link>
     );
