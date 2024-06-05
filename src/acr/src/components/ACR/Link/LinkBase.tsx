@@ -11,16 +11,12 @@ import { IconName } from 'src/enumerations/Icon.enum';
 import { twMerge } from 'tailwind-merge';
 import cn from 'classnames';
 
-type LinkProps = Partial<LinkBaseProps> & {
-  animate?: boolean;
-};
-
 /**
  * ACRAR-333
  * @param props The UI data coming from the parent component
  * @returns
  */
-const LinkBase = (props: LinkProps): JSX.Element | null => {
+const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
   const { link, testId, styleClasses, style = ButtonStyle.BUTTON, hasIcon, animate = true } = props;
 
   const { sitecoreContext } = useSitecoreContext();
