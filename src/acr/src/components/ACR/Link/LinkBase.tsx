@@ -17,7 +17,7 @@ import cn from 'classnames';
  * @returns
  */
 const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
-  const { link, testId, styleClasses, style = ButtonStyle.BUTTON, hasIcon } = props;
+  const { link, testId, styleClasses, style = ButtonStyle.BUTTON, hasIcon, animate = true } = props;
 
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
@@ -97,14 +97,21 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
               button: style === ButtonStyle.BUTTON,
             },
             {
-              'text-t-body hover:text-t-link-hover': style !== ButtonStyle.BUTTON,
+              'text-t-primary hover:text-t-link-hover': style !== ButtonStyle.BUTTON,
             }
           ),
           styleClasses
         )}
       >
         {isCTALink && renderIcon()}
-        <span className={cn({ 'link-underline': style !== ButtonStyle.BUTTON })}>{linkText}</span>
+        <span
+          className={cn({
+            'link-underline': animate,
+            'before:bg-t-contrast': style === ButtonStyle.BUTTON,
+          })}
+        >
+          {linkText}
+        </span>
         {shouldRenderIcon && !isCTALink && renderIcon()}
       </Link>
     );
