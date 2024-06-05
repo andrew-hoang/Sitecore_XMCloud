@@ -2,7 +2,7 @@
 ID: "2a005cd6-cf5b-4a4d-9f96-248f935fded5"
 Parent: "d92adcda-8ee0-490f-a092-23016cafa7a5"
 Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
-Path: /sitecore/content/ACR/ACR/Presentation/Placeholder Settings/ACR/Page Components/Accordion/Accordian
+Path: /sitecore/content/ACR/ACR/Presentation/Placeholder Settings/ACR/Page Components/Accordion/Accordion
 SharedFields:
 - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
   Hint: Placeholder Key

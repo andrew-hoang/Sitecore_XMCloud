@@ -9,7 +9,7 @@ SharedFields:
   Value: Accordion
 - ID: "069a8361-b1cd-437c-8c32-a3be78941446"
   Hint: Placeholders
-  Value: "{1588C785-A9E5-48EC-BA34-220835251666}"
+  Value: "{2A005CD6-CF5B-4A4D-9F96-248F935FDED5}"
 - ID: "1a7c85e5-dc0b-490d-9187-bb1dbcb4c72f"
   Hint: Datasource Template
   Value: /sitecore/templates/Feature/ACR/Page Components/Accordion/Accordion
@@ -44,11 +44,11 @@ Languages:
         sitecore\akhanal@acr.org
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "ef38c6c5-9a3a-4f0f-898d-dd829a214816"
+      Value: "de1ac809-3539-4604-9550-a20c7eca470b"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\akhanal@acr.org
+        sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240605T181144Z
+      Value: 20240605T195807Z
