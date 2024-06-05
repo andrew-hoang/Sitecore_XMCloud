@@ -58,7 +58,7 @@ const LinkList = (props: LinkListProps): JSX.Element => {
           invisible
           absolute
           left-0
-          top-[2.6rem]
+          top-[3.2rem]
           inline-block
           h-2.5 
           w-4
@@ -71,7 +71,7 @@ const LinkList = (props: LinkListProps): JSX.Element => {
           peer-hover:left-2
 
           md:-left-2
-          md:top-[2.8rem]
+          md:top-[3.3rem]
           md:w-5
           md:peer-hover:left-0
         `}
@@ -82,24 +82,31 @@ const LinkList = (props: LinkListProps): JSX.Element => {
   };
 
   return (
-    <ul className="columns-md md:block" data-ref="link-list" data-testid={testId}>
+    <ul className="columns-md overflow-hidden md:block" data-ref="link-list" data-testid={testId}>
       {links.map((link, i) => (
-        <li className="relative mb-4 w-full px-8 pt-8" key={i}>
+        <li
+          className="relative top-[calc(-1px-1rem)] 
+         px-8 "
+          key={i}
+        >
           <LinkBase
             link={link}
             hasIcon={hasIcon}
             style={style}
             styleClasses={`
             !title-c
+            text-t-primary
             pb-6
+            pt-10
             justify-between
             w-full
-            border-b-1
+            border-t-1 
             border-t-body
             peer
 
             hover:no-underline
           `}
+            animate={false}
           />
           {renderBulletIcon()}
         </li>

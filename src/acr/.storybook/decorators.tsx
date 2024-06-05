@@ -1,11 +1,17 @@
 import React from 'react';
+import { StoryFn } from '@storybook/react';
+import { StoryContext } from '@storybook/react';
 import { DecoratorHelpers } from '@storybook/addon-themes';
-import colorThemes from './radixThemePresets';
+import colorThemes, { ColorThemesType } from './radixThemePresets';
 import { ImageOptimizationProvider } from '../src/context/ImageOptimization.context';
+import { dictionaryKeys, mockDictionary } from '../src/variables/dictionary';
 
+import { AtomicSearchInterface } from '@coveo/atomic-react';
 const { initializeThemeState, pluckThemeFromContext, useThemeParameters } = DecoratorHelpers;
 
-import { Theme } from '@radix-ui/themes';
+import { Theme as RadixTheme } from '@radix-ui/themes';
+import { ThemeContext } from 'src/context/Theme.context';
+import { Theme } from 'src/enumerations/Theme.enum';
 
 import { playFair } from '../src/fonts';
 import localFont from 'next/font/local';
@@ -26,43 +32,57 @@ import { I18nProvider } from 'next-localization';
 
 import cn from 'classnames';
 
-export const withRadixTheme = ({ themes, defaultTheme }) => {
+export const withRadixTheme = ({
+  themes,
+  defaultTheme,
+}: {
+  themes: ColorThemesType;
+  defaultTheme: string;
+}) => {
   initializeThemeState(Object.keys(themes), defaultTheme);
 
-  return (Story, context) => {
+  return (Story: StoryFn, context: StoryContext) => {
     const selectedTheme = pluckThemeFromContext(context);
     const { themeOverride } = useThemeParameters();
     const selected = themeOverride || selectedTheme || defaultTheme;
     const radixTheme = colorThemes[selected];
 
     return (
-      <Theme {...radixTheme} style={{ minHeight: 0 }}>
-        {context?.componentId === 'components-container' ? (
-          <Story />
-        ) : (
-          <div className="bg-t-background text-t-body">
+      <RadixTheme {...radixTheme} style={{ minHeight: 0 }}>
+        <ThemeContext.Provider value={{ theme: radixTheme['data-theme'] as Theme }}>
+          {context?.componentId === 'components-container' ? (
             <Story />
-          </div>
-        )}
-      </Theme>
+          ) : (
+            <div className="min-h-screen bg-t-background text-t-body">
+              <Story />
+            </div>
+          )}
+        </ThemeContext.Provider>
+      </RadixTheme>
     );
   };
 };
 
-export const withFonts = (Story) => (
+export const withFonts = (Story: StoryFn) => (
   <div className={cn(beausite.variable, playFair.variable)}>
     <Story />
   </div>
 );
 
-export const withImageOptimiziation = (Story) => (
+export const withImageOptimiziation = (Story: StoryFn) => (
   <ImageOptimizationProvider unoptimized={true}>
     <Story />
   </ImageOptimizationProvider>
 );
 
-export const withI18n = (Story) => (
-  <I18nProvider locale="en">
+export const withI18n = (Story: StoryFn) => (
+  <I18nProvider locale="en" lngDict={mockDictionary(dictionaryKeys)}>
     <Story />
   </I18nProvider>
+);
+
+export const withCoveoSearch = (Story: StoryFn) => (
+  <AtomicSearchInterface>
+    <Story />
+  </AtomicSearchInterface>
 );

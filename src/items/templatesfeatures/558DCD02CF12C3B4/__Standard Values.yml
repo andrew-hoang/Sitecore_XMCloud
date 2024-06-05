@@ -1,0 +1,31 @@
+﻿---
+ID: "bfd2baf6-5047-4847-8c01-a2b516bd381e"
+Parent: "8ccc76a9-8366-4c60-98ad-13ceb646b914"
+Template: "8ccc76a9-8366-4c60-98ad-13ceb646b914"
+Path: /sitecore/templates/Feature/ACR/Page Components/PageHeaderWithIcon/Rendering Parameters/PageHeaderWithIcon Rendering Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240510T185736Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "3c371428-da75-4865-8e8e-588c8103f8e1"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\nbansal@acr.org
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240527T111211Z

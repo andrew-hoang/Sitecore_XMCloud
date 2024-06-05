@@ -1,34 +1,56 @@
-import { GetStaticComponentProps } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Flex } from '@radix-ui/themes';
+import { Grid } from '@radix-ui/themes';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
 
+import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
 import { PromoProps } from 'components/ACR/Promo/Promo.props';
 
-import { getStaticPropsForPromo } from 'components/ACR/Promo/Promo.util';
+import LinkBase from '../Link/LinkBase';
+import ImageBase from '../Image/ImageBase';
+
+import { Orientation } from 'src/enumerations/Orientation.enum';
+
+import cn from 'classnames';
 
 const Promo = (props: PromoProps): JSX.Element => {
-  const { fields, testId } = props;
+  const { fields, testId, params } = props;
 
-  const { heading } = fields ?? {};
+  const { eyebrowText, title, titleHighlight, description, primaryLink, secondaryLink, image } =
+    fields ?? {};
+
+  const { orientation } = params ?? {};
 
   return (
-    <div data-ref="promo" data-testid={testId}>
-      <Text tag="h2" field={heading} />
-      <p>The Promo Component</p>
+    <div className="@container/column">
+      <Grid
+        data-testid={testId}
+        data-ref="promo"
+        gap="6"
+        className="grid-cols-1 @2xl/column:grid-cols-2"
+      >
+        <Flex direction="column" justify="center">
+          <Text field={eyebrowText} tag="p" className="body-xs mb-4 text-t-primary" />
+          <Text field={title} tag="h2" className="heading-c text-t-primary" />
+          <Text field={titleHighlight} tag="h2" className="heading-c-serif" />
+          <Text field={description} tag="p" className="mb-8 mt-6" />
+
+          <Flex
+            direction={{ initial: 'column', sm: 'row' }}
+            align={{ initial: 'start', sm: 'center' }}
+            gap="4"
+          >
+            {primaryLink && <LinkBase link={primaryLink} style={ButtonStyle.BUTTON} />}
+            {secondaryLink && <LinkBase link={secondaryLink} style={ButtonStyle.CTA} hasIcon />}
+          </Flex>
+        </Flex>
+
+        <ImageBase
+          image={image}
+          className={cn({ '@2xl/column:order-first': orientation === Orientation.IMAGE_LEFT })}
+        />
+      </Grid>
     </div>
   );
-};
-
-/**
- * "Data" developer method
- * TODO_SCAFFOLD_BE: If "getStaticProps" was deleted remove "useComponentProps". They work together.
- * TODO_SCAFFOLD_BE: Populate if needed, remove if not
- * Will be called during SSG.  Do NOT return null.
- * @param {ComponentRendering} _rendering
- * @param {LayoutServiceData} _layoutData
- * @param {GetStaticPropsContext} _context
- */
-export const getStaticProps: GetStaticComponentProps = async (_rendering, _layoutData) => {
-  return getStaticPropsForPromo(_rendering, _layoutData);
 };
 
 export default Promo;

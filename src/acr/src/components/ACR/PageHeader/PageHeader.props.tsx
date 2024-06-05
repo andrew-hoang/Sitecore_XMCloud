@@ -1,36 +1,27 @@
-import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field, ImageField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
+import { Alignment } from 'src/enumerations/Aligment.enum';
+import { ReferenceField } from 'src/types/ReferenceField.props';
 import { TestProps } from 'src/types/Test.props';
 
 /**
  * Model used for Sitecore Component integration
  */
-export type PageHeaderProps = ComponentProps &
-  TestProps &
-  PageHeaderParams &
-  PageHeaderFields &
-  PageHeaderData;
+export type PageHeaderProps = ComponentProps & TestProps & PageHeaderParams & PageHeaderData;
 
 // Component Rendering Parameter fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type PageHeaderParams = {
   params: {
-    mock_param?: string;
+    alignment?: Alignment;
   };
 };
 
-// Non-component data source fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
 export type PageHeaderData = {
-  externalFields?: {
-    mock_external_data: Field<string>;
-  };
-};
-
-export type PageHeaderFields = {
-  fields: {
-    heading: Field<string>; // Sitecore editable text field
-    image?: ImageField; // Sitecore editable image field
-    link?: LinkField; // Sitecore editable link field
+  externalFields: {
+    headerTitle: Field<string>;
+    subtitle?: Field<string>;
+    contentType?: ReferenceField;
+    image1x1?: ImageField;
+    image16x9?: ImageField;
   };
 };
