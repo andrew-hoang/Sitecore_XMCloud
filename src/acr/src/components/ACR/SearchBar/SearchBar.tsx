@@ -19,7 +19,7 @@ const SearchBar = (props: SearchBarProps): JSX.Element => {
 
   return (
     <div
-      className="rounded-lg mx-auto w-full max-w-[1268px] bg-t-background p-[30px] text-t-body sm:px-[65px] sm:py-12"
+      className="mx-auto w-full max-w-[1268px] rounded-lg bg-t-background p-[30px] text-t-body sm:px-[65px] sm:py-12"
       data-ref="searchbox"
       data-testid={testId}
       data-theme={setAltTheme()}

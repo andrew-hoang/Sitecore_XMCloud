@@ -9,10 +9,13 @@ const OktaTokenTest = (props: OktaTokenTestProps): JSX.Element => {
   return (
     <div data-ref="oktaToken-test" data-testid={testId}>
       <b>Okta Tokens for Boomi API call</b>
-      <p><br></br>
-      <b>Access Token</b>: {oktaToken?.access_token}
-      </p><p><br></br>
-      <b>Refresh Token</b>: {oktaToken?.refresh_token}
+      <p>
+        <br></br>
+        <b>Access Token</b>: {oktaToken?.access_token}
+      </p>
+      <p>
+        <br></br>
+        <b>Refresh Token</b>: {oktaToken?.refresh_token}
       </p>
     </div>
   );

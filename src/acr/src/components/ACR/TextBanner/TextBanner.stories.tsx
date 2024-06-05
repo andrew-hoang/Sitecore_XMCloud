@@ -39,3 +39,33 @@ export const Default: Story = {
     );
   },
 };
+
+export const WithTheme: Story = {
+  args: defaultMockData,
+  render: (args) => {
+    return (
+      <>
+        <ContainerFullBleed {...containerFullBleedMockData} params={{ theme: Theme.WHITE }}>
+          <ContainerFullWidth {...containerFullWidthMockData}>
+            <TextBanner {...args} />
+          </ContainerFullWidth>
+        </ContainerFullBleed>
+        <ContainerFullBleed {...containerFullBleedMockData} params={{ theme: Theme.LIGHT_INDIGO }}>
+          <ContainerFullWidth {...containerFullWidthMockData}>
+            <TextBanner {...args} />
+          </ContainerFullWidth>
+        </ContainerFullBleed>
+        <ContainerFullBleed {...containerFullBleedMockData} params={{ theme: Theme.PURPLE }}>
+          <ContainerFullWidth {...containerFullWidthMockData}>
+            <TextBanner {...args} />
+          </ContainerFullWidth>
+        </ContainerFullBleed>
+        <ContainerFullBleed {...containerFullBleedMockData} params={{ theme: Theme.INDIGO }}>
+          <ContainerFullWidth {...containerFullWidthMockData}>
+            <TextBanner {...args} />
+          </ContainerFullWidth>
+        </ContainerFullBleed>
+      </>
+    );
+  },
+};
