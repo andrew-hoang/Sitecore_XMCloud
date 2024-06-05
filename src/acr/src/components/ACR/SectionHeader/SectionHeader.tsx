@@ -19,7 +19,7 @@ const SectionHeader = (props: SectionHeaderProps): JSX.Element => {
     <div
       data-ref="section-header"
       data-testid={testId}
-      className={cn('', { '-mb-4': includeBottomMargin === '0' })}
+      className={cn('', { '-mb-4': !includeBottomMargin || includeBottomMargin !== '1' })}
     >
       <Text tag="h2" field={title} className="heading-c max-w-[770px]" />
       <Text tag="p" field={subtitle} className="mt-4 max-w-[770px]" />
