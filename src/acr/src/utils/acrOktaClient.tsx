@@ -2,9 +2,9 @@ import { OktaTokenResponse } from 'src/types/Okta/OktaTokenResponse.props';
 import axios from 'axios';
 
 const url = process.env.OKTA_TOKEN_ENDPOINT ?? 'https://sso.acr.org/oauth2/default/v1/token';
-const refreshToken = process.env.OKTA_REFRESH_TOKEN ?? 'FrfeXOtojZ3MeyxLdS8uukYOthAGqLk4PPDZmmdGGOM';
-const clientId = process.env.OKTA_CLIENT_ID ?? '0oa94er7y3GvKcTOG357';
-const clientSecret = process.env.OKTA_CLIENT_SECRET ?? 'TajJz-ovTqLCGoo4bwdKgC-MNAgWrdXuB2wUFvA0';
+const refreshToken = process.env.OKTA_REFRESH_TOKEN ?? '';
+const clientId = process.env.OKTA_CLIENT_ID ?? '';
+const clientSecret = process.env.OKTA_CLIENT_SECRET ?? '';
 
 export const getOktaAcessToken = async (): Promise<OktaTokenResponse> => { 
   try {
