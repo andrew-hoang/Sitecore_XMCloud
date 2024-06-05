@@ -16,15 +16,7 @@ import cn from 'classnames';
  * @returns
  */
 const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
-  const {
-    link,
-    testId,
-    styleClasses,
-    spanStyleClasses,
-    style = ButtonStyle.BUTTON,
-    hasIcon,
-    children,
-  } = props;
+  const { ariaProps, link, testId, styleClasses, spanStyleClasses, style = ButtonStyle.BUTTON, hasIcon, children } = props;
 
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
@@ -86,6 +78,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
       <Link
         field={link}
         data-testid={testId}
+        {...ariaProps}
         className={twMerge(
           cn(
             'body-xs group inline-flex items-center gap-2 !font-medium',
@@ -97,7 +90,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
                 style !== ButtonStyle.BUTTON && style !== ButtonStyle.STATIC_LINK,
             },
             {
-              'text-t-body underline underline-offset-4': style === ButtonStyle.STATIC_LINK,
+              'text-t-body underline underline-offset-4 hover:text-t-link-hover': style === ButtonStyle.STATIC_LINK,
             }
           ),
           styleClasses

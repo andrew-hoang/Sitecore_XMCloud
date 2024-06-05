@@ -137,6 +137,9 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
             }}
             style={ButtonStyle.STATIC_LINK}
             styleClasses="body-sm"
+            ariaProps={{
+              'aria-label': `Click to call ${phoneNumber.value}`
+            }}
           />
         </Flex>
         <div className="w-full max-w-[270px]">
