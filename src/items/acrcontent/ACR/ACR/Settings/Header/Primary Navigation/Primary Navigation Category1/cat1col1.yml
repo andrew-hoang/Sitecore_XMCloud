@@ -1,0 +1,39 @@
+﻿---
+ID: "d8935e49-2535-42c8-8a21-dad85330ac0f"
+Parent: "233bb281-29ad-45a7-aa13-063c90120dfc"
+Template: "f40b79ea-4e98-49d6-bba1-2d50282ca1c1"
+Path: /sitecore/content/ACR/ACR/Settings/Header/Primary Navigation/Primary Navigation Category1/cat1col1
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/table_selection_column.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0c86fad1-884f-4167-afd2-11a8f99973b8"
+      Hint: title
+      Value: cat1col1
+    - ID: "15e26279-316f-4405-9185-542a545f1f33"
+      Hint: primaryNavLinks
+      Value: |
+        {CDC7CB4E-D8FC-4378-B126-994C3EB80856}
+        {338154F9-8E69-4A2F-8902-7E9A5160D97E}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240603T201013Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "85ea2546-0ceb-4305-ba96-d2fae8c798b7"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "c214b73c-ca32-43be-9368-cde35519317c"
+      Hint: link
+      Value: |
+        <link text="cat1col1 Desc" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}" />
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240604T144113Z
