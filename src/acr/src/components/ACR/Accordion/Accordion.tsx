@@ -16,7 +16,7 @@ const Accordion = (props: AccordionProps): JSX.Element => {
   const PLACEHOLDER_NAME = `${PLACEHOLDER_FRAGMENT}-${props.params.DynamicPlaceholderId}`;
   
   return (
-    <div className="accordion" data-ref="accordian" data-testid={testId}>
+    <div className="accordion" data-ref="accordion" data-testid={testId}>
      <Text tag="h2" field={title} className="heading-c text-t-primary" />
         <Text tag="p" field={titleHighlight} className="sub-heading-b" />
         <Text tag="p" field={description} className="sub-heading-b" />

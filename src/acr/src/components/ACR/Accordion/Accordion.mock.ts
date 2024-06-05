@@ -2,14 +2,14 @@
 import { AccordionProps,AccordionRowProps} from './Accordion.props';
 
 export const defaultMockData: AccordionProps = {
-  name: 'Accordian',
+  name: 'Accordion',
   params: {},
   rendering: {
     uid: '{00000000-0000-0000-0000-000000000000}',
     componentName: 'Accordion',
     dataSource: '/',
     placeholders: {
-      'acr-accordian-{*}': [
+      'acr-accordion-{*}': [
         {
           uid: '{00000000-0000-0000-0000-000000000000}',
           componentName: 'AccordionRow',
@@ -62,7 +62,7 @@ export const defaultRowMockData:AccordionRowProps={
   params: {},
   rendering: {
     uid: '{00000000-0000-0000-0000-000000000000}',
-    componentName: 'AccordianRow',
+    componentName: 'AccordionRow',
     dataSource: '/',
   },
   fields: {
