@@ -1,0 +1,31 @@
+﻿---
+ID: "b1ef5cca-f53c-4c7a-97bf-8dc6a4870dc5"
+Parent: "44eb7172-f72e-4bd4-a7d8-356f7659e6bc"
+Template: "44eb7172-f72e-4bd4-a7d8-356f7659e6bc"
+Path: /sitecore/templates/Feature/ACR/Page Components/Accordion/Rendering Parameters/Accordian Item Rendering Parameters/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240520T175901Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "145d343b-9047-482f-ac2e-5ac7feee4189"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\akhanal@acr.org
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240601T073541Z
