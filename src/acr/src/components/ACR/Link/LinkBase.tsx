@@ -101,14 +101,19 @@ const LinkBase = (props: LinkProps): JSX.Element | null => {
               button: style === ButtonStyle.BUTTON,
             },
             {
-              'text-t-body hover:text-t-link-hover': style !== ButtonStyle.BUTTON,
+              'text-t-primary hover:text-t-link-hover': style !== ButtonStyle.BUTTON,
             }
           ),
           styleClasses
         )}
       >
         {isCTALink && renderIcon()}
-        <span className={cn({ 'link-underline': animate && style !== ButtonStyle.BUTTON })}>
+        <span
+          className={cn({
+            'link-underline': animate,
+            'before:bg-t-contrast': style === ButtonStyle.BUTTON,
+          })}
+        >
           {linkText}
         </span>
         {shouldRenderIcon && !isCTALink && renderIcon()}
