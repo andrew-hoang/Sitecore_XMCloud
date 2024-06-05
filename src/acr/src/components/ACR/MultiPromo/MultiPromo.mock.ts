@@ -18,7 +18,7 @@ export const twoPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: 'https://www.acr.org/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: 'https://www.acr.org/', text: 'Read more' } },
             image: {
               value: {
                 src: 'https://picsum.photos/368/368',
@@ -38,7 +38,7 @@ export const twoPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: 'https://www.acr.org/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: 'https://www.acr.org/', text: 'Read more' } },
             image: {
               value: {
                 src: 'https://picsum.photos/310/174',
@@ -59,7 +59,7 @@ export const twoPromoData: MultiPromoProps = {
         'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.',
     },
     link: {
-      value: { href: '/', text: 'View all Clinical Tools & References', linktype: 'link' },
+      value: { href: '/', text: 'View all Clinical Tools & References' },
     },
   },
   promos: [],
@@ -84,7 +84,7 @@ export const threePromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Use the Template', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Use the Template' } },
             image: {
               value: {
                 src: 'https://picsum.photos/310/174',
@@ -108,7 +108,7 @@ export const threePromoData: MultiPromoProps = {
             description: {
               value: '',
             },
-            link: { value: { href: '/', text: 'Learn more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Learn more' } },
           },
         },
         {
@@ -121,7 +121,7 @@ export const threePromoData: MultiPromoProps = {
             description: {
               value: '',
             },
-            link: { value: { href: '/', text: 'Learn more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Learn more' } },
           },
         },
       ],
@@ -134,7 +134,7 @@ export const threePromoData: MultiPromoProps = {
         'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.',
     },
     link: {
-      value: { href: '/', text: 'View all Clinical Tools & References', linktype: 'link' },
+      value: { href: '/', text: 'View all Clinical Tools & References' },
     },
   },
   promos: [],
@@ -158,7 +158,7 @@ export const fourPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
             image: {
               value: {
                 src: 'https://picsum.photos/368/368',
@@ -178,7 +178,7 @@ export const fourPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
             image: {
               value: {
                 src: 'https://picsum.photos/310/174',
@@ -198,7 +198,7 @@ export const fourPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
         {
@@ -210,7 +210,7 @@ export const fourPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
             image: {
               value: {
                 src: 'https://picsum.photos/368/368',
@@ -231,7 +231,7 @@ export const fourPromoData: MultiPromoProps = {
         'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.',
     },
     link: {
-      value: { href: '/', text: 'View all Clinical Tools & References', linktype: 'link' },
+      value: { href: '/', text: 'View all Clinical Tools & References' },
     },
   },
   promos: [],
@@ -256,7 +256,7 @@ export const fivePromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
             image: {
               value: {
                 src: 'https://picsum.photos/368/368',
@@ -277,7 +277,7 @@ export const fivePromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
         {
@@ -290,7 +290,7 @@ export const fivePromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
         {
@@ -303,7 +303,7 @@ export const fivePromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
             image: {
               value: {
                 src: 'https://picsum.photos/310/174',
@@ -324,7 +324,7 @@ export const fivePromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
       ],
@@ -337,7 +337,7 @@ export const fivePromoData: MultiPromoProps = {
         'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.',
     },
     link: {
-      value: { href: '/', text: 'View all Clinical Tools & References', linktype: 'link' },
+      value: { href: '/', text: 'View all Clinical Tools & References' },
     },
   },
   promos: [],
@@ -362,7 +362,7 @@ export const sixPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
             image: {
               value: {
                 src: 'https://picsum.photos/368/368',
@@ -383,7 +383,7 @@ export const sixPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
         {
@@ -396,7 +396,7 @@ export const sixPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
         {
@@ -409,7 +409,7 @@ export const sixPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
         {
@@ -422,7 +422,7 @@ export const sixPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
         {
@@ -435,7 +435,7 @@ export const sixPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
       ],
@@ -448,7 +448,7 @@ export const sixPromoData: MultiPromoProps = {
         'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.',
     },
     link: {
-      value: { href: '/', text: 'View all Clinical Tools & References', linktype: 'link' },
+      value: { href: '/', text: 'View all Clinical Tools & References' },
     },
   },
   promos: [],
@@ -473,7 +473,7 @@ export const sevenPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
             image: {
               value: {
                 src: 'https://picsum.photos/310/174',
@@ -494,7 +494,7 @@ export const sevenPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
             image: {
               value: {
                 src: 'https://picsum.photos/310/174',
@@ -515,7 +515,7 @@ export const sevenPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
         {
@@ -528,7 +528,7 @@ export const sevenPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
         {
@@ -541,7 +541,7 @@ export const sevenPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
         {
@@ -554,7 +554,7 @@ export const sevenPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
         {
@@ -567,7 +567,7 @@ export const sevenPromoData: MultiPromoProps = {
             description: {
               value: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             },
-            link: { value: { href: '/', text: 'Read more', linktype: 'link' } },
+            link: { value: { href: '/', text: 'Read more' } },
           },
         },
       ],
@@ -580,7 +580,7 @@ export const sevenPromoData: MultiPromoProps = {
         'Evidence-based guidelines assist imaging professionals and referring providers in making the most approrpiate imaging or treatment decision for a specific clinical condition.',
     },
     link: {
-      value: { href: '/', text: 'View all Clinical Tools & References', linktype: 'link' },
+      value: { href: '/', text: 'View all Clinical Tools & References' },
     },
   },
   promos: [],
