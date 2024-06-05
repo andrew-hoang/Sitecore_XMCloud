@@ -1,18 +1,44 @@
-import { OktaClientInfo } from 'src/types/Okta/OktaClientInfo.props';
 import { OktaTokenResponse } from 'src/types/Okta/OktaTokenResponse.props';
+import axios from 'axios';
 
-const url = process.env.OKTA_TOKEN_ENDPOINT ?? '';
+const url = process.env.OKTA_TOKEN_ENDPOINT ?? 'https://sso.acr.org/oauth2/default/v1/token';
+const refreshToken = process.env.OKTA_REFRESH_TOKEN ?? 'FrfeXOtojZ3MeyxLdS8uukYOthAGqLk4PPDZmmdGGOM';
+const clientId = process.env.OKTA_CLIENT_ID ?? '0oa94er7y3GvKcTOG357';
+const clientSecret = process.env.OKTA_CLIENT_SECRET ?? 'TajJz-ovTqLCGoo4bwdKgC-MNAgWrdXuB2wUFvA0';
 
-export const getOktaAcessToken = async (request: OktaClientInfo): Promise<OktaTokenResponse> => {
-  const response = await fetch(url, {
-    method: 'POST',
-    body: JSON.stringify(request),
-    headers: {
-      'Content-Type': 'application/x-www-form-urlencoded',
-    },
-  });
-  if (!response.ok) {
-    throw new Error(`Error in request getOktaAcessToken ${response.statusText}`);
+export const getOktaAcessToken = async (): Promise<OktaTokenResponse> => { 
+  try {
+  const response = await axios.post(
+    url, 
+    new URLSearchParams({
+      grant_type: 'refresh_token',
+      refresh_token: refreshToken,
+      client_id: clientId,
+      client_secret: clientSecret,
+    }).toString(),
+    {
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      }
+    }
+  ); 
+  if (response.status===200) {    
+    const tokenResponse: OktaTokenResponse = {
+    token_type: response.data.token_type,
+    expires_in: response.data.expires_in,
+    access_token: response.data.access_token,
+    scope: response.data.scope,
+    refresh_token: response.data.refresh_token,
+    id_token: response.data.id_token
+    };
+    return tokenResponse;
   }
-  return await response.json().then((data: OktaTokenResponse) => data);
+  else
+  {
+    throw new Error(`Error in request getAccount ${response.statusText}`);
+  }  
+ } catch (error) {
+   throw new Error(`Error while getting access token: ${error}`); 
+ }
 };
+
