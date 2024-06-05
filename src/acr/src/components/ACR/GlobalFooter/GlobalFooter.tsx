@@ -144,7 +144,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
               style={ButtonStyle.STATIC_LINK}
               styleClasses="body-sm"
               ariaProps={{
-                'aria-label': `Click to call ${phoneNumber.value}`,
+                'aria-label': `${locationName?.value} - ${phoneNumber.value}`,
               }}
             />
           )}
