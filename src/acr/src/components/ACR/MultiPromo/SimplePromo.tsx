@@ -38,40 +38,61 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
   };
 
   return (
-    <Flex
-      data-ref="promo"
-      py="32px"
-      px="30px"
-      justify="between"
-      className={twMerge(
-        cn(
-          `group h-fit flex-col gap-6 border-1 duration-300 ease-in-out hover:cursor-pointer hover:bg-t-secondary focus:bg-t-secondary ${styleClasses}`,
-          {
-            'bg-indigo-100 text-white ': theme === Theme.WHITE,
-            'border-white hover:border-t-secondary hover:text-t-btn-text focus:border-t-secondary focus:text-t-btn-text':
-              theme === Theme.PURPLE || theme === Theme.INDIGO,
-            'border-black hover:border-t-secondary hover:text-white focus:border-t-secondary focus:text-white':
-              theme === Theme.LIGHT_INDIGO,
-          }
-        )
-      )}
-      onClick={handleClick}
-      onKeyDown={handleKeyDown}
-      role="link"
-      tabIndex={0}
-      asChild
-    >
-      <li>
+    <li className={styleClasses}>
+      <Flex
+        data-ref="promo"
+        py="32px"
+        px="30px"
+        justify="between"
+        className={twMerge(
+          cn(
+            `group h-fit flex-col gap-6 border-1 duration-300 ease-in-out hover:cursor-pointer hover:bg-t-secondary focus:bg-t-secondary`,
+            {
+              'bg-indigo-100 text-white ': theme === Theme.WHITE,
+              'border-white hover:border-t-secondary hover:text-t-btn-text focus:border-t-secondary focus:text-t-btn-text':
+                theme === Theme.PURPLE || theme === Theme.INDIGO,
+              'border-black hover:border-t-secondary hover:text-white focus:border-t-secondary focus:text-white':
+                theme === Theme.LIGHT_INDIGO,
+            }
+          )
+        )}
+        onClick={handleClick}
+        onKeyDown={handleKeyDown}
+        role="link"
+        tabIndex={0}
+      >
         <Flex direction="column" className="lg:flex-1">
-          <Text field={eyebrowText} tag="p" className="body-xs mb-2" />
-          <Text field={title} tag="h2" className="title-c mb-4" />
-          <Text field={description} tag="p" className="mb-6" />
+          <Text
+            field={eyebrowText}
+            tag="p"
+            className={cn('body-xs mb-2 text-t-primary group-hover:text-white', {
+              'text-white': !(theme === Theme.LIGHT_INDIGO),
+              'group-hover:!text-t-btn-text': theme === Theme.INDIGO || theme === Theme.PURPLE,
+            })}
+          />
+          <Text
+            field={title}
+            tag="h2"
+            className={cn('title-c mb-4 text-t-primary group-hover:text-white', {
+              'text-white': !(theme === Theme.LIGHT_INDIGO),
+              'group-hover:!text-t-btn-text': theme === Theme.INDIGO || theme === Theme.PURPLE,
+            })}
+          />
+          <Text
+            field={description}
+            tag="p"
+            className={cn('mb-6 text-t-primary group-hover:text-white', {
+              'text-white': !(theme === Theme.LIGHT_INDIGO),
+              'group-hover:!text-t-btn-text': theme === Theme.INDIGO || theme === Theme.PURPLE,
+            })}
+          />
 
           {link && (
             <LinkBase
               link={link}
               style={ButtonStyle.CTA}
-              styleClasses={cn('group-hover:underline', {
+              animate={false}
+              styleClasses={cn('group-hover:underline group-focus:underline', {
                 'text-white hover:text-white focus:text-white': theme === Theme.WHITE,
                 'group-hover:text-white group-focus:text-white': theme === Theme.LIGHT_INDIGO,
                 'group-hover:text-t-btn-text group-focus:text-t-btn-text':
@@ -92,8 +113,8 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
           animate={false}
           imageClassName="w-full lg:w-auto lg:max-w-[368px]"
         />
-      </li>
-    </Flex>
+      </Flex>
+    </li>
   );
 };
 

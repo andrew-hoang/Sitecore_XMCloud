@@ -94,7 +94,7 @@ const MultiPromo = (props: MultiPromoProps): JSX.Element => {
     <Flex data-ref="multi-promo" data-testid={testId} direction="column" gap="6">
       <div>
         <Text field={heading} tag="h2" className="heading-c text-t-primary" />
-        <Text field={description} tag="p" className="mb-8 mt-6" />
+        <Text field={description} tag="p" className="mb-8 mt-6 fill-t-btn-text" />
         {link && <LinkBase link={link} style={ButtonStyle.CTA} />}
       </div>
 
