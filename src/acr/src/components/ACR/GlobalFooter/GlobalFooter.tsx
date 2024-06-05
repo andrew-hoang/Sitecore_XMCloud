@@ -105,16 +105,16 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
       >
         <Flex direction="column" className="w-full max-w-[200px] grow min-[1000px]:max-w-[270px]">
           <Text tag="p" className="mb-2 font-bold" field={locationName} />
-          <LinkBase
+          {(address1 && city && state && zipcode) && <LinkBase
             styleClasses="whitespace-pre-line mb-4 body-sm"
             link={{
               value: {
                 text: formatAddress(
                   address1?.value,
                   address2?.value,
-                  city.value,
-                  state.value,
-                  zipcode.value
+                  city?.value,
+                  state?.value,
+                  zipcode?.value
                 ),
                 href: formatAddress(
                   address1?.value,
@@ -127,8 +127,8 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
               },
             }}
             style={ButtonStyle.STATIC_LINK}
-          />
-          <LinkBase
+          />}
+          {phoneNumber.value && <LinkBase
             link={{
               value: {
                 text: formatPhoneNumber(phoneNumber.value),
@@ -140,7 +140,7 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
             ariaProps={{
               'aria-label': `Click to call ${phoneNumber.value}`
             }}
-          />
+          />}
         </Flex>
         <div className="w-full max-w-[270px]">
           <Text tag="p" className="mb-2 font-bold" field={directoryTitle} />
