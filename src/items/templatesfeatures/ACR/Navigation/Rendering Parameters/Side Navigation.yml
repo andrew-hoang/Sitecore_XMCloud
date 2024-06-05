@@ -6,7 +6,7 @@ Path: /sitecore/templates/Feature/ACR/Navigation/Rendering Parameters/Side Navig
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: sxa/16x16/promo.png
+  Value: /~/icon/applicationsv2/32x32/window_sidebar.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Value: |
@@ -16,7 +16,7 @@ SharedFields:
     {3DB3EB10-F8D0-4CC9-BE26-18CE7B139EC8}
 - ID: "9c6106ea-7a5a-48e2-8cad-f0f693b1e2d4"
   Hint: __Read Only
-  Value: 0
+  Value: 
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
   Value: "{F82CB5F7-DD22-41A3-B745-E7A8B5B648DC}"
@@ -63,14 +63,14 @@ Languages:
         sitecore\JssImport
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "383ad817-fb46-455b-8150-603898ed294d"
+      Value: "567dd71c-ce8d-4f9b-9b6a-5a320ae8054e"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240605T143935Z
+      Value: 20240605T182954Z
 - Language: "ja-JP"
   Fields:
   - ID: "b5e02ad9-d56f-4c41-a065-a133db87bdeb"
