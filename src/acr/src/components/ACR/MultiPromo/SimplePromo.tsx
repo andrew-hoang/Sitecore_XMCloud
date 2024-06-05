@@ -76,7 +76,7 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
         )}
       </Flex>
 
-      <ImageBase image={image} animate={false} />
+      <ImageBase image={image} animate={false} imageClassName="w-full lg:w-auto lg:max-w-[368px]" />
     </Flex>
   );
 };

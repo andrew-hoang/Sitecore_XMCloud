@@ -11,11 +11,12 @@ import { useInView } from 'react-intersection-observer';
 
 type ImageBaseProps = Partial<ImageProps> & {
   image?: ImageField | null;
+  imageClassName?: string;
   animate?: boolean;
 };
 
 const ImageBase = (props: ImageBaseProps) => {
-  const { image, animate = true, className, ...rest } = props;
+  const { image, animate = true, className, imageClassName, ...rest } = props;
 
   const src = image?.value?.src;
 
@@ -51,6 +52,7 @@ const ImageBase = (props: ImageBaseProps) => {
         unoptimized={unoptimized || isSvg}
         onLoad={() => setIsLoaded(true)}
         {...rest}
+        className={imageClassName}
       />
     </div>
   );
