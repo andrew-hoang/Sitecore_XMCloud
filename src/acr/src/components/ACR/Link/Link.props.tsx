@@ -18,4 +18,5 @@ export type LinkBaseProps = TestProps &
     };
     animate?: boolean;
     hideExternalIcon?: boolean;
+    iconStyleClasses?: string;
   };

@@ -99,10 +99,12 @@ const MultiPromo = (props: MultiPromoProps): JSX.Element => {
       </div>
 
       {!isPageEditing && (
-        <Grid gap="6" className="grid-cols-1 md:grid-cols-12">
-          {promos?.map((promo: React.Component<SimplePromoProps>, index) => {
-            return renderSimplePromo(promo, index);
-          })}
+        <Grid gap="6" className="grid-cols-1 md:grid-cols-12" asChild>
+          <ul>
+            {promos?.map((promo: React.Component<SimplePromoProps>, index) => {
+              return renderSimplePromo(promo, index);
+            })}
+          </ul>
         </Grid>
       )}
 

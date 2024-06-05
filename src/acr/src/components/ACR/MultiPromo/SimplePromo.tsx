@@ -45,12 +45,13 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
       justify="between"
       className={twMerge(
         cn(
-          `group h-fit flex-col gap-6 border-1 duration-300 ease-in-out hover:cursor-pointer hover:bg-t-secondary focus:ring ${styleClasses}`,
+          `group h-fit flex-col gap-6 border-1 duration-300 ease-in-out hover:cursor-pointer hover:bg-t-secondary focus:bg-t-secondary ${styleClasses}`,
           {
             'bg-indigo-100 text-white ': theme === Theme.WHITE,
-            'border-white hover:border-t-secondary hover:text-t-btn-text':
+            'border-white hover:border-t-secondary hover:text-t-btn-text focus:border-t-secondary focus:text-t-btn-text':
               theme === Theme.PURPLE || theme === Theme.INDIGO,
-            'border-black hover:border-t-secondary hover:text-white': theme === Theme.LIGHT_INDIGO,
+            'border-black hover:border-t-secondary hover:text-white focus:border-t-secondary focus:text-white':
+              theme === Theme.LIGHT_INDIGO,
           }
         )
       )}
@@ -58,25 +59,40 @@ const SimplePromo = (props: SimplePromoProps): JSX.Element => {
       onKeyDown={handleKeyDown}
       role="link"
       tabIndex={0}
+      asChild
     >
-      <Flex direction="column" className="lg:flex-1">
-        <Text field={eyebrowText} tag="p" className="body-xs mb-2" />
-        <Text field={title} tag="h2" className="title-c mb-4" />
-        <Text field={description} tag="p" className="mb-6" />
+      <li>
+        <Flex direction="column" className="lg:flex-1">
+          <Text field={eyebrowText} tag="p" className="body-xs mb-2" />
+          <Text field={title} tag="h2" className="title-c mb-4" />
+          <Text field={description} tag="p" className="mb-6" />
 
-        {link && (
-          <LinkBase
-            link={link}
-            style={ButtonStyle.CTA}
-            styleClasses={cn({
-              'text-white hover:text-white': theme === Theme.WHITE,
-              'group-hover:text-t-btn-text': theme === Theme.INDIGO || theme === Theme.PURPLE,
-            })}
-          />
-        )}
-      </Flex>
+          {link && (
+            <LinkBase
+              link={link}
+              style={ButtonStyle.CTA}
+              styleClasses={cn('group-hover:underline', {
+                'text-white hover:text-white focus:text-white': theme === Theme.WHITE,
+                'group-hover:text-white group-focus:text-white': theme === Theme.LIGHT_INDIGO,
+                'group-hover:text-t-btn-text group-focus:text-t-btn-text':
+                  theme === Theme.INDIGO || theme === Theme.PURPLE,
+              })}
+              iconStyleClasses={cn({
+                'group-hover:[&>circle]:fill-white group-hover:[&>circle]:!stroke-white group-hover:[&>path]:!fill-t-secondary group-focus:[&>circle]:fill-white group-focus:[&>circle]:!stroke-white group-focus:[&>path]:!fill-t-secondary':
+                  theme === Theme.WHITE || theme === Theme.LIGHT_INDIGO,
+                'group-hover:[&>circle]:fill-t-btn-text group-hover:[&>circle]:!stroke-t-btn-text group-hover:[&>path]:!fill-white group-focus:[&>circle]:fill-t-btn-text group-focus:[&>circle]:!stroke-t-btn-text group-focus:[&>path]:!fill-white':
+                  theme === Theme.PURPLE || theme === Theme.INDIGO,
+              })}
+            />
+          )}
+        </Flex>
 
-      <ImageBase image={image} animate={false} imageClassName="w-full lg:w-auto lg:max-w-[368px]" />
+        <ImageBase
+          image={image}
+          animate={false}
+          imageClassName="w-full lg:w-auto lg:max-w-[368px]"
+        />
+      </li>
     </Flex>
   );
 };
