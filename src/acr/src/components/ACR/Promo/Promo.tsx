@@ -26,7 +26,7 @@ const Promo = (props: PromoProps): JSX.Element => {
         data-testid={testId}
         data-ref="promo"
         gap="6"
-        className="grid-cols-1 @5xl/column:grid-cols-2"
+        className="grid-cols-1 @2xl/column:grid-cols-2"
       >
         <Flex direction="column" justify="center">
           <Text field={eyebrowText} tag="p" className="body-xs mb-4 text-t-primary" />
@@ -35,20 +35,18 @@ const Promo = (props: PromoProps): JSX.Element => {
           <Text field={description} tag="p" className="mb-8 mt-6" />
 
           <Flex
-            direction={{ initial: 'column', md: 'row' }}
-            align={{ initial: 'start', md: 'center' }}
+            direction={{ initial: 'column', sm: 'row' }}
+            align={{ initial: 'start', sm: 'center' }}
             gap="4"
           >
-            {primaryLink && (
-              <LinkBase link={primaryLink} style={ButtonStyle.BUTTON} hasIcon={!secondaryLink} />
-            )}
-            {secondaryLink && <LinkBase link={secondaryLink} style={ButtonStyle.CTA} />}
+            {primaryLink && <LinkBase link={primaryLink} style={ButtonStyle.BUTTON} />}
+            {secondaryLink && <LinkBase link={secondaryLink} style={ButtonStyle.CTA} hasIcon />}
           </Flex>
         </Flex>
 
         <ImageBase
           image={image}
-          className={cn({ '@5xl/column:order-first': orientation === Orientation.IMAGE_LEFT })}
+          className={cn({ '@2xl/column:order-first': orientation === Orientation.IMAGE_LEFT })}
         />
       </Grid>
     </div>

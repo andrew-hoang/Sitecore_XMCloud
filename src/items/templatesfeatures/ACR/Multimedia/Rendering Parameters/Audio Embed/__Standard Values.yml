@@ -1,0 +1,31 @@
+﻿---
+ID: "3b93ea0d-d720-4f95-9976-633c9db6f381"
+Parent: "eeca17d0-7033-4b8a-9113-a0b0df163dcd"
+Template: "eeca17d0-7033-4b8a-9113-a0b0df163dcd"
+Path: /sitecore/templates/Feature/ACR/Multimedia/Rendering Parameters/Audio Embed/__Standard Values
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: /~/icon/applicationsv2/32x32/document_music.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "78956e7b-127c-4dc9-978c-3f886ac6e0a6"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240603T143328Z

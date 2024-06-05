@@ -16,4 +16,5 @@ export type LinkBaseProps = TestProps &
     ariaProps?: {
       'aria-label'?: string;
     };
+    animate?: boolean;
   };

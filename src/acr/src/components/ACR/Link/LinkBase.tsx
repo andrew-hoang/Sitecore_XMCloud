@@ -1,3 +1,4 @@
+import { useEffect, useState } from 'react';
 import { LinkBaseProps } from './Link.props';
 import { Link, LinkField } from '@sitecore-jss/sitecore-jss-react';
 import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
@@ -16,18 +17,39 @@ import cn from 'classnames';
  * @returns
  */
 const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
-  const { ariaProps, link, testId, styleClasses, spanStyleClasses, style = ButtonStyle.BUTTON, hasIcon, children } = props;
+  const {
+    ariaProps,
+    link,
+    testId,
+    styleClasses,
+    spanStyleClasses,
+    style = ButtonStyle.BUTTON,
+    hasIcon,
+    children,
+    animate = true,
+  } = props;
 
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
 
+  const [shouldRenderIcon, setShouldRenderIcon] = useState<boolean>(false);
+
   const linkText = children ? children : link?.value?.text;
+  const linkType = link?.value?.linktype;
 
   const linkIsValid = (link: LinkField) => {
     return !!linkText && (!!link?.value?.href || !!link?.value?.url);
   };
 
-  const isCTALink = style === ButtonStyle.CTA;
+  useEffect(() => {
+    if (hasIcon || linkType === 'external' || linkType === 'media' || linkType === 'download') {
+      setShouldRenderIcon(true);
+    }
+  }, [hasIcon, linkType]);
+
+  const isInternal =
+    link?.value?.linktype === 'internal' || link?.value?.linktype === '' || !link?.value?.linktype;
+  const isCTALink = style === ButtonStyle.CTA && isInternal;
 
   const getIcon = () => {
     if (isCTALink) {
@@ -90,7 +112,9 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
                 style !== ButtonStyle.BUTTON && style !== ButtonStyle.STATIC_LINK,
             },
             {
-              'text-t-body underline underline-offset-4 hover:text-t-link-hover': style === ButtonStyle.STATIC_LINK,
+              'text-t-body underline underline-offset-4 hover:text-t-link-hover':
+                style === ButtonStyle.STATIC_LINK,
+              'text-t-primary hover:text-t-link-hover': style !== ButtonStyle.BUTTON,
             }
           ),
           styleClasses
@@ -99,12 +123,13 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
         {isCTALink && renderIcon()}
         <span
           className={cn(spanStyleClasses, {
-            'link-underline': style !== ButtonStyle.BUTTON && style !== ButtonStyle.STATIC_LINK,
+            'link-underline': animate,
+            'before:bg-t-contrast': style === ButtonStyle.BUTTON,
           })}
         >
           {linkText}
         </span>
-        {hasIcon && !isCTALink && renderIcon()}
+        {shouldRenderIcon && !isCTALink && renderIcon()}
       </Link>
     );
   };
