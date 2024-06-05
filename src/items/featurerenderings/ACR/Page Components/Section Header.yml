@@ -20,6 +20,9 @@ SharedFields:
   Hint: __Thumbnail
   Value: |
     <image mediaid="{72E48FF7-7C8C-4954-ADF8-43AEECB3B5CF}" />
+- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
+  Hint: OtherProperties
+  Value: IsRenderingsWithDynamicPlaceholders=true
 Languages:
 - Language: en
   Versions:
@@ -38,11 +41,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "018adfc0-d2f7-4b19-9650-19690f6db7d7"
+      Value: "bf8e03f7-f10b-4c22-9613-6eb0d565572f"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\kenneth.robinson@velir.com
+        sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240513T140335Z
+      Value: 20240604T161247Z
