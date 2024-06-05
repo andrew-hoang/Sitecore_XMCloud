@@ -25,6 +25,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
     style = ButtonStyle.BUTTON,
     hasIcon,
     children,
+    animate = true,
   } = props;
 
   const { sitecoreContext } = useSitecoreContext();
@@ -105,11 +106,11 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
               button: style === ButtonStyle.BUTTON,
             },
             {
-              'text-t-body hover:text-t-link-hover':
+              'text-t-primary hover:text-t-link-hover':
                 style !== ButtonStyle.BUTTON && style !== ButtonStyle.STATIC_LINK,
             },
             {
-              'text-t-body underline underline-offset-4': style === ButtonStyle.STATIC_LINK,
+              'text-t-primary underline underline-offset-4': style === ButtonStyle.STATIC_LINK,
             }
           ),
           styleClasses
@@ -118,7 +119,8 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
         {isCTALink && renderIcon()}
         <span
           className={cn(spanStyleClasses, {
-            'link-underline': style !== ButtonStyle.BUTTON && style !== ButtonStyle.STATIC_LINK,
+            'link-underline': animate,
+            'before:bg-t-contrast': style === ButtonStyle.BUTTON,
           })}
         >
           {linkText}

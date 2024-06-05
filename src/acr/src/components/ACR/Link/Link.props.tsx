@@ -13,4 +13,5 @@ export type LinkBaseProps = TestProps &
     hasIcon?: boolean;
     children?: JSX.Element | JSX.Element[] | React.ReactNode;
     spanStyleClasses?: string;
+    animate?: boolean;
   };
