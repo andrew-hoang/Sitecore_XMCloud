@@ -53,14 +53,9 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
     >
       {footerNewsletterLink && footerNewsletterText && (
         <div className="mb-12">
-          <Flex
-            direction={{ initial: 'column', sm: 'row' }}
-            justify="between"
-            align={{ initial: 'start', sm: 'center' }}
-            className="gap-8 py-8"
-          >
+          <Flex justify={{ initial: 'center', sm: 'between' }} direction={{ initial: 'column', sm: 'row' }} className="py-8 max-[768px]:gap-6 gap-0">
             <Text tag="h4" className="heading-d text-green-100" field={footerNewsletterText} />
-            <LinkBase link={footerNewsletterLink} styleClasses="bg-green-100 text-black" />
+            <LinkBase link={footerNewsletterLink} styleClasses="bg-green-100 text-black w-fit" />
           </Flex>
           <Separator my="3" size="4" className="bg-green-100" />
         </div>
