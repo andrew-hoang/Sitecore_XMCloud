@@ -1,0 +1,33 @@
+﻿---
+ID: "6653bd3e-1aec-4d94-9a63-f788e0d9e7ef"
+Parent: "7e7f3b44-d5a9-48ec-9a98-5cc034872a49"
+Template: "7e7f3b44-d5a9-48ec-9a98-5cc034872a49"
+Path: /sitecore/templates/Feature/ACR/Global/Social Link Folder/__Standard Values
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Value: |
+    {2407033E-0C7E-45C7-A673-2CCF6D74F368}
+    {7E7F3B44-D5A9-48EC-9A98-5CC034872A49}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20120621T071605Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "03c1b396-937e-47f5-957c-acd7ce91ebe0"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240603T200236Z

@@ -8,4 +8,9 @@ export enum IconName {
   RIGHT_ARROW_CIRCLE = 'right-arrow-circle',
   LEFT_ARROW_CIRCLE = 'left-arrow-circle',
   BULLET = 'bullet',
+  TWITTERX = 'twitterx',
+  YOUTUBE = 'youtube',
+  INSTAGRAM = 'instagram',
+  FACEBOOK = 'facebook',
+  LINKEDIN = 'linkedin',
 }

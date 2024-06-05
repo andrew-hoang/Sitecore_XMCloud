@@ -15,11 +15,14 @@ SharedFields:
   Value: "{F920C2A1-8C66-4337-BB14-AC0CCF1FB030}"
 - ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
   Hint: Datasource Location
-  Value: "query:$site/*[@@name='Data']/*[@@templatename='Text Cards Folder']|query:$site/*[@@name='Data']/*[@@templatename='Text Cards Folder']/*[@@templatename='Text Cards']"
+  Value: "query:$site/*[@@name='Data']/*[@@templatename='Text Cards Folder']|query:./*[@@templatename='Text Cards']"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
     <image mediaid="{CCAAA165-E69C-41C8-B194-7CCC91EC1976}" />
+- ID: "e829c217-5e94-4306-9c48-2634b094fdc2"
+  Hint: OtherProperties
+  Value: IsRenderingsWithDynamicPlaceholders=true
 Languages:
 - Language: en
   Versions:
@@ -38,11 +41,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "779c8ece-53f1-4e38-9bae-bb72ac420edd"
+      Value: "1226eed7-248f-46fa-a6e9-9bc9fce68a21"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240530T165304Z
+      Value: 20240531T193936Z
