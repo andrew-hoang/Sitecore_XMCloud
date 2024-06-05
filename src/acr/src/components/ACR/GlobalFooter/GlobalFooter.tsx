@@ -53,7 +53,11 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
     >
       {footerNewsletterLink && footerNewsletterText && (
         <div className="mb-12">
-          <Flex justify={{ initial: 'center', sm: 'between' }} direction={{ initial: 'column', sm: 'row' }} className="py-8 max-[768px]:gap-6 gap-0">
+          <Flex
+            justify={{ initial: 'center', sm: 'between' }}
+            direction={{ initial: 'column', sm: 'row' }}
+            className="gap-0 py-8 max-[768px]:gap-6"
+          >
             <Text tag="h4" className="heading-d text-green-100" field={footerNewsletterText} />
             <LinkBase link={footerNewsletterLink} styleClasses="bg-green-100 text-black w-fit" />
           </Flex>
@@ -100,42 +104,46 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
       >
         <Flex direction="column" className="w-full max-w-[200px] grow min-[1000px]:max-w-[270px]">
           <Text tag="p" className="mb-2 font-bold" field={locationName} />
-          {(address1 && city && state && zipcode) && <LinkBase
-            styleClasses="whitespace-pre-line mb-4 body-sm"
-            link={{
-              value: {
-                text: formatAddress(
-                  address1?.value,
-                  address2?.value,
-                  city?.value,
-                  state?.value,
-                  zipcode?.value
-                ),
-                href: formatAddress(
-                  address1?.value,
-                  address2?.value,
-                  city.value,
-                  state.value,
-                  zipcode.value,
-                  true
-                ),
-              },
-            }}
-            style={ButtonStyle.STATIC_LINK}
-          />}
-          {phoneNumber.value && <LinkBase
-            link={{
-              value: {
-                text: formatPhoneNumber(phoneNumber.value),
-                href: `tel:${phoneNumber.value}`,
-              },
-            }}
-            style={ButtonStyle.STATIC_LINK}
-            styleClasses="body-sm"
-            ariaProps={{
-              'aria-label': `Click to call ${phoneNumber.value}`
-            }}
-          />}
+          {address1 && city && state && zipcode && (
+            <LinkBase
+              styleClasses="whitespace-pre-line mb-4 body-sm"
+              link={{
+                value: {
+                  text: formatAddress(
+                    address1?.value,
+                    address2?.value,
+                    city?.value,
+                    state?.value,
+                    zipcode?.value
+                  ),
+                  href: formatAddress(
+                    address1?.value,
+                    address2?.value,
+                    city.value,
+                    state.value,
+                    zipcode.value,
+                    true
+                  ),
+                },
+              }}
+              style={ButtonStyle.STATIC_LINK}
+            />
+          )}
+          {phoneNumber.value && (
+            <LinkBase
+              link={{
+                value: {
+                  text: formatPhoneNumber(phoneNumber.value),
+                  href: `tel:${phoneNumber.value}`,
+                },
+              }}
+              style={ButtonStyle.STATIC_LINK}
+              styleClasses="body-sm"
+              ariaProps={{
+                'aria-label': `Click to call ${phoneNumber.value}`,
+              }}
+            />
+          )}
         </Flex>
         <div className="w-full max-w-[270px]">
           <Text tag="p" className="mb-2 font-bold" field={directoryTitle} />

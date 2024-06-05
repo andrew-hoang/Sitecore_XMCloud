@@ -17,4 +17,5 @@ export type LinkBaseProps = TestProps &
       'aria-label'?: string;
     };
     animate?: boolean;
+    hideExternalIcon?: boolean;
   };

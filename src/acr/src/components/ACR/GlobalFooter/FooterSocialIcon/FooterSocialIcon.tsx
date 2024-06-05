@@ -13,7 +13,13 @@ const FooterSocialIcon = (props: SocialLink) => {
   }
 
   return (
-    <LinkBase link={link} style={ButtonStyle.LINK} spanStyleClasses="link-no-underline" ariaProps={{ 'aria-label': socialIcon?.fields?.Value?.value }}>
+    <LinkBase
+      link={link}
+      style={ButtonStyle.LINK}
+      spanStyleClasses="link-no-underline"
+      ariaProps={{ 'aria-label': socialIcon?.fields?.Value?.value }}
+      hideExternalIcon
+    >
       <Icon iconName={socialIcon?.fields?.Value?.value} className={cn(iconClassName)} />
     </LinkBase>
   );

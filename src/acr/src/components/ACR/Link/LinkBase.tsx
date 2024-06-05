@@ -27,6 +27,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
     hasIcon,
     children,
     animate = true,
+    hideExternalIcon = false,
   } = props;
 
   const { sitecoreContext } = useSitecoreContext();
@@ -43,9 +44,10 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
 
   useEffect(() => {
     if (hasIcon || linkType === 'external' || linkType === 'media' || linkType === 'download') {
+      if (linkType === 'external' && hideExternalIcon) return;
       setShouldRenderIcon(true);
     }
-  }, [hasIcon, linkType]);
+  }, [hasIcon, linkType, hideExternalIcon]);
 
   const isInternal =
     link?.value?.linktype === 'internal' || link?.value?.linktype === '' || !link?.value?.linktype;
