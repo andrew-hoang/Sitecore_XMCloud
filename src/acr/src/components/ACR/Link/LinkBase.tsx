@@ -18,6 +18,7 @@ import cn from 'classnames';
  */
 const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
   const {
+    ariaProps,
     link,
     testId,
     styleClasses,
@@ -26,6 +27,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
     hasIcon,
     children,
     animate = true,
+    hideExternalIcon = false,
   } = props;
 
   const { sitecoreContext } = useSitecoreContext();
@@ -33,8 +35,8 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
 
   const [shouldRenderIcon, setShouldRenderIcon] = useState<boolean>(false);
 
-  const linkType = link?.value?.linktype;
   const linkText = children ? children : link?.value?.text;
+  const linkType = link?.value?.linktype;
 
   const linkIsValid = (link: LinkField) => {
     return !!linkText && (!!link?.value?.href || !!link?.value?.url);
@@ -42,9 +44,10 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
 
   useEffect(() => {
     if (hasIcon || linkType === 'external' || linkType === 'media' || linkType === 'download') {
+      if (linkType === 'external' && hideExternalIcon) return;
       setShouldRenderIcon(true);
     }
-  }, [hasIcon, linkType]);
+  }, [hasIcon, linkType, hideExternalIcon]);
 
   const isInternal =
     link?.value?.linktype === 'internal' || link?.value?.linktype === '' || !link?.value?.linktype;
@@ -99,6 +102,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
       <Link
         field={link}
         data-testid={testId}
+        {...ariaProps}
         className={twMerge(
           cn(
             'body-xs group inline-flex items-center gap-2 !font-medium',
@@ -106,11 +110,13 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
               button: style === ButtonStyle.BUTTON,
             },
             {
-              'text-t-primary hover:text-t-link-hover':
+              'text-t-body hover:text-t-link-hover':
                 style !== ButtonStyle.BUTTON && style !== ButtonStyle.STATIC_LINK,
             },
             {
-              'text-t-primary underline underline-offset-4': style === ButtonStyle.STATIC_LINK,
+              'text-t-body underline underline-offset-4 hover:text-t-link-hover':
+                style === ButtonStyle.STATIC_LINK,
+              'text-t-primary hover:text-t-link-hover': style !== ButtonStyle.BUTTON,
             }
           ),
           styleClasses
