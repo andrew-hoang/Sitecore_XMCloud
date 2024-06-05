@@ -59,7 +59,11 @@ const GlobalFooter = (props: GlobalFooterProps): JSX.Element => {
             className="gap-0 py-8 max-[768px]:gap-6"
           >
             <Text tag="h4" className="heading-d text-green-100" field={footerNewsletterText} />
-            <LinkBase link={footerNewsletterLink} styleClasses="bg-green-100 text-black w-fit" />
+            <LinkBase
+              link={footerNewsletterLink}
+              styleClasses="bg-green-100 text-black w-fit"
+              hideExternalIcon
+            />
           </Flex>
           <Separator my="3" size="4" className="bg-green-100" />
         </div>
