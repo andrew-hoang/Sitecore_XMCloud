@@ -1,12 +1,8 @@
 ﻿---
-ID: "4f65f176-7e22-4969-966b-c9539a97da6a"
-Parent: "87833687-81bb-47e7-ac01-ed41487582d4"
-Template: "bed31d6f-d968-45a9-b54e-12d7f977d861"
-Path: /sitecore/system/Settings/Feature/ACR/Navigation/Navigation Headless Site Setup
-SharedFields:
-- ID: "40deee2f-7595-40bd-b2c9-51f9e2346100"
-  Hint: Dependencies
-  Value: "{24EC97FA-F22A-404E-BC39-9B0673D46271}"
+ID: "1c43b32b-a260-42e5-8b22-194b0b835d49"
+Parent: "59549afd-954e-430c-aa9d-17bce6a815ad"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Feature/ACR/Navigation/Rendering Parameters
 Languages:
 - Language: en
   Versions:
@@ -14,7 +10,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240514T001539Z
+      Value: 20240605T143935Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -25,14 +21,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "8156d5cd-cc6d-419b-8c32-5264ec133b22"
+      Value: "a9eb7b67-486f-4d2d-b518-a08d6d027287"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
-    - ID: "c202067e-7fab-4606-afb4-e76df2185ddc"
-      Hint: Name
-      Value: Navigation
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240605T143936Z
+      Value: 20240605T143935Z
