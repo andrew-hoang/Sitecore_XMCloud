@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react';
 
-import GlobalHeader from 'components/ACR/GlobalHeader/GlobalHeader';
+import GlobalHeader from 'components/ACR/GlobalHeader/GlobalHeaderContainer';
 
 import { defaultMockData } from './GlobalHeader.mock';
 import { withCoveoSearch } from 'storybook/decorators';
