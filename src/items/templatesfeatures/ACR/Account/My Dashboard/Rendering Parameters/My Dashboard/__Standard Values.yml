@@ -1,0 +1,27 @@
+﻿---
+ID: "d512f995-8877-4851-a203-dcba3c97bb8a"
+Parent: "24ae98c4-938c-4a88-bebb-0aeda6bf7bec"
+Template: "24ae98c4-938c-4a88-bebb-0aeda6bf7bec"
+Path: /sitecore/templates/Feature/ACR/Account/My Dashboard/Rendering Parameters/My Dashboard/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20211012T120926Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\JssImport
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "24d2ce7e-4f54-4dee-b12b-fbf121ba1a3e"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240606T133345Z
