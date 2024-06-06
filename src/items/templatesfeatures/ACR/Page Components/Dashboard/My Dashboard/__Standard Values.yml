@@ -1,0 +1,41 @@
+﻿---
+ID: "8abcf74b-0d11-46a4-992a-abeee53455ab"
+Parent: "a5491f2f-8809-4087-a36a-eae745d15b7c"
+Template: "a5491f2f-8809-4087-a36a-eae745d15b7c"
+Path: /sitecore/templates/Feature/ACR/Page Components/Dashboard/My Dashboard/__Standard Values
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240606T133708Z
+    - ID: "32d4051b-ee41-4a00-a20c-15aa949490cb"
+      Hint: creditsTitle
+      Value: Credits
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "782d2312-07a8-48a7-a3c2-c1a02e77a7b5"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240606T135907Z
+    - ID: "f29abcc6-0f07-43e7-bbd4-c87182c836e0"
+      Hint: myCommitteesLink
+      Value: |
+        <link text="View All" linktype="external" url="https://myacr.acr.org/communityhub/my-committees" anchor="" target="" />
+    - ID: "fc2427bb-221e-4db6-aba8-91c48d88266b"
+      Hint: profileTitle
+      Value: Profile

@@ -4,38 +4,39 @@ Parent: "70b3aea4-e99d-4db7-8351-9af355a8e3d5"
 Template: "d2a6884c-04d5-4089-a64e-d27ca9d68d4c"
 Path: /sitecore/content/ACR/ACR/Presentation/Placeholder Settings/ACR/Containers/Container 30 70/Container 70
 SharedFields:
-  - ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
-    Hint: Placeholder Key
-    Value: "acr-container-seventy-right-{*}"
-  - ID: "e391b526-d0c5-439d-803e-17512eae6222"
-    Hint: Allowed Controls
-    Value: |
-      {F6D406E5-FD53-410E-9E79-B627B6B4BEDE}
-      {E2A6BB73-333A-4665-BF9A-635700942608}
-      {EA0CAEDC-A342-41DE-B9D7-0CBB85421606}
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: "acr-container-seventy-right-{*}"
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Value: |
+    {F6D406E5-FD53-410E-9E79-B627B6B4BEDE}
+    {E2A6BB73-333A-4665-BF9A-635700942608}
+    {EA0CAEDC-A342-41DE-B9D7-0CBB85421606}
+    {4F001930-9494-4C3B-995F-8948E08E1407}
 Languages:
-  - Language: en
-    Versions:
-      - Version: 1
-        Fields:
-          - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
-            Hint: __Created
-            Value: 20240510T155104Z
-          - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
-            Hint: __Owner
-            Value: |
-              sitecore\minyie.diaz@velir.com
-          - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
-            Hint: __Created by
-            Value: |
-              sitecore\minyie.diaz@velir.com
-          - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
-            Hint: __Revision
-            Value: "42469dcb-9e93-4c34-a63b-81bb77ed5f7b"
-          - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
-            Hint: __Updated by
-            Value: |
-              sitecore\kenneth.robinson@velir.com
-          - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
-            Hint: __Updated
-            Value: 20240516T194504Z
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240510T155104Z
+    - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
+      Hint: __Owner
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\minyie.diaz@velir.com
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "76a57384-c817-4ccc-ac9b-0f5683b9af42"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240606T134538Z
