@@ -29,7 +29,7 @@ const TextCards = (props: TextCardsProps): JSX.Element => {
     <div data-ref="text-cards" data-testid={testId}>
       <Flex gap="4" direction="column" className="mb-8 text-center md:mb-12">
         <Text tag="h2" field={title} className="heading-c text-t-primary" />
-        <Text tag="p" field={description} className="sub-heading-b text-t-body" />
+        <Text tag="p" field={description} className="sub-heading-b" />
       </Flex>
       <Flex direction="column" gap="4">
         {!isPageEditing &&
