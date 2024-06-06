@@ -14,7 +14,7 @@ import LinkBase from '../../Link/LinkBase';
 import cn from 'classnames';
 
 const PrimaryNavItem = (props: PrimaryNavItemProps) => {
-  const { fields } = props;
+  const { fields, index } = props;
   const { title, link, columns } = fields ?? {};
 
   const { activeNavItem, setActiveNavItem } = useContext(GlobalHeaderContext);
@@ -35,6 +35,7 @@ const PrimaryNavItem = (props: PrimaryNavItemProps) => {
               'before:scale-x-100': isOpen,
             }
           )}
+          aria-controls={`nav-item-${index}`}
           aria-expanded={isOpen}
           onClick={() => toggleMenu(title?.value)}
         >
@@ -47,7 +48,7 @@ const PrimaryNavItem = (props: PrimaryNavItemProps) => {
       </Flex>
       {isOpen && (
         <div
-          role="list"
+          id={`nav-item-${index}`}
           className={cn(
             'absolute left-0 top-full w-full rounded-b-4 border-t-1 border-t-gray-100 bg-white pb-10'
           )}

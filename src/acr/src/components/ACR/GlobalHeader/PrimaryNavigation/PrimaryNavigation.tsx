@@ -63,11 +63,11 @@ const PrimaryNavigation = (props: PrimaryNavigationProps): JSX.Element => {
           styleClasses="max-h-10 flex-shrink-0 relative"
         />
       </a>
-      <nav ref={navRef}>
+      <nav ref={navRef} aria-label="Primary Navigation">
         <Flex asChild gap="4" align="center" className="hidden gh:flex">
           <ul>
             {primaryNavCategories?.map((item: PrimaryNavItemProps, index) => (
-              <PrimaryNavItem key={index} {...item} />
+              <PrimaryNavItem key={index} {...item} index={index} />
             ))}
           </ul>
         </Flex>
@@ -75,13 +75,23 @@ const PrimaryNavigation = (props: PrimaryNavigationProps): JSX.Element => {
       {/* Mobile View */}
       <Flex gap="4" className="flex gh:hidden">
         <Flex direction="column" align="center" asChild className="text-[14px]">
-          <button className="text-indigo-100" onClick={toggleSearch}>
+          <button
+            className="text-indigo-100"
+            aria-expanded={isMobileSearchOpen}
+            aria-controls="gh-quick-search"
+            onClick={toggleSearch}
+          >
             <Icon iconName={isMobileSearchOpen ? IconName.CLOSE : IconName.SEARCH} />
             {isMobileSearchOpen ? closeLabel : searchLabel}
           </button>
         </Flex>
         <Flex direction="column" align="center" asChild className="text-[14px]">
-          <button className="text-indigo-100" onClick={toggleMobileMenu}>
+          <button
+            className="text-indigo-100"
+            aria-expanded={isMobileMenuOpen}
+            aria-controls="gh-mobile-nav"
+            onClick={toggleMobileMenu}
+          >
             <Icon iconName={isMobileMenuOpen ? IconName.CLOSE : IconName.MENU} />
             {isMobileMenuOpen ? closeLabel : menuLabel}
           </button>

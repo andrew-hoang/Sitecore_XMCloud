@@ -7,6 +7,7 @@ export type PrimaryNavigationProps = ComponentProps & GlobalHeaderFields;
 export type PrimaryNavItemProps = ComponentProps & PrimaryNavItem;
 
 export type PrimaryNavItem = {
+  index?: number;
   fields: {
     title: Field<string>;
     link: LinkField;

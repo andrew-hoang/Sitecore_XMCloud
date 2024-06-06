@@ -25,6 +25,7 @@ const MobileNavigation = (props: PrimaryNavigationProps) => {
 
   return (
     <div
+      id="gh-mobile-nav"
       data-ref="mobile-navigation"
       role="list"
       className={twMerge(

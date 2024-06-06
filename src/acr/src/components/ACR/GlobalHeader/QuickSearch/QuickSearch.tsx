@@ -32,13 +32,17 @@ const QuickSearch = (props: QuickSearchProps) => {
     >
       <style>{styles}</style>
       {(isSearchOpen || isMobileSearchOpen) && (
-        <div className="w-full py-8 gh:py-0">
+        <div id="gh-quick-search" className="w-full py-8 gh:py-0">
           <AtomicSearchBox redirectionUrl={''} />
         </div>
       )}
 
       <Flex align="center" gap="2" className="hidden gh:flex" asChild>
-        <button onClick={() => setIsSearchOpen(!isSearchOpen)} aria-expanded={isSearchOpen}>
+        <button
+          onClick={() => setIsSearchOpen(!isSearchOpen)}
+          aria-expanded={isSearchOpen}
+          aria-controls="gh-quick-search"
+        >
           {isSearchOpen ? closeLabel : searchLabel}{' '}
           <Icon
             iconName={isSearchOpen ? IconName.CLOSE : IconName.SEARCH}
