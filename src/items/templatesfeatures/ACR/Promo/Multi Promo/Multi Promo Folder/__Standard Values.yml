@@ -1,14 +1,14 @@
 ﻿---
-ID: "ee257024-891f-49af-b538-509a31445bfd"
-Parent: "86cdb8d5-7fe3-4cb3-90cb-a667a86c24ae"
-Template: "76da0a8d-fc7e-42b2-af1e-205b49e43f98"
-Path: /sitecore/templates/Branches/Feature/ACR/Promo/Available Promo Components Renderings/$name
+ID: "bd588564-11ac-4545-b752-9e4b815f5d8b"
+Parent: "d2ed9594-10f9-4e74-b565-30e29a0f521e"
+Template: "d2ed9594-10f9-4e74-b565-30e29a0f521e"
+Path: /sitecore/templates/Feature/ACR/Promo/Multi Promo/Multi Promo Folder/__Standard Values
 SharedFields:
-- ID: "715ae6c0-71c8-4744-ab4f-65362d20ad65"
-  Hint: Renderings
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
   Value: |
-    {7B719321-5D9F-470D-AB7C-E39DB2589030}
-    {F4F9299C-7543-42C0-B07E-6AE2EB072D31}
+    {46E8F6C0-3835-4517-BD41-B2FA2EB9D79E}
+    {D2ED9594-10F9-4E74-B565-30E29A0F521E}
 Languages:
 - Language: en
   Versions:
@@ -16,18 +16,18 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20160711T091836Z
+      Value: 20120621T071605Z
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
         sitecore\admin
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "a224e3af-c631-4c90-8d5a-01562a56e22f"
+      Value: "ea769c10-edc8-400e-84e6-4ec9fa5db360"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240606T183311Z
+      Value: 20240529T145437Z
