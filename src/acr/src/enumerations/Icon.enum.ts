@@ -1,9 +1,12 @@
 export enum IconName {
   CHEVRON_RIGHT = 'chevron-right',
   CHEVRON_DOWN = 'chevron-down',
+  CHEVRON_LEFT = 'chevron-left',
   DOWNLOAD = 'download',
   EXTERNAL = 'external',
   MENU = 'menu',
+  CLOSE = 'close',
+  SEARCH = 'search',
   RIGHT_ARROW = 'right-arrow',
   RIGHT_ARROW_CIRCLE = 'right-arrow-circle',
   LEFT_ARROW_CIRCLE = 'left-arrow-circle',

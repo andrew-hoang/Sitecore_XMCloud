@@ -26,21 +26,23 @@ const PrimaryNavigationColumn = (props: PrimaryNavItemColumn) => {
   const columnLinks = chunk(navigationLinks, numberOfColumns?.value);
 
   return (
-    <div data-ref="primary-navigation-column" className="basis-1/3">
-      <div className="mb-4 border-b-1 border-b-gray-50 pb-4">
-        <Link field={link}>
-          <Text field={title} tag="p" className=" font-medium" />
-        </Link>
-      </div>
+    <div data-ref="primary-navigation-column" className="flex-grow">
+      {link?.value && title?.value && (
+        <div className="mb-4 border-b-1 border-b-gray-50 pb-4 text-indigo-100">
+          <Link field={link} className="focus:outline-indigo-100">
+            <Text field={title} tag="p" className="font-medium" />
+          </Link>
+        </div>
+      )}
       <Flex gap="6">
         {columnLinks?.map((links: PrimaryNavItemLink[], index: number) => (
-          <Flex key={index} direction="column" gap="4">
+          <Flex key={index} direction="column" gap="4" className="flex-grow">
             {links?.map((link, linkIndex) => (
               <LinkBase
                 key={linkIndex}
                 link={link?.fields?.link}
                 style={ButtonStyle.LINK}
-                styleClasses={cn({
+                styleClasses={cn('text-indigo-100 focus:outline-indigo-100', {
                   '!font-regular': !link?.fields?.alternateStyle?.value,
                   '!font-bold': link?.fields?.alternateStyle?.value,
                 })}

@@ -5,10 +5,10 @@ import { LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 export type UtilityNavigationProps = ComponentProps & GlobalHeaderFields;
 
 export type UtilityNavItems = {
-  links: UtilityNavItemProps;
+  links: UtilityNavItem;
 };
 
-export type UtilityNavItemProps = {
+export type UtilityNavItem = {
   fields: {
     link: LinkField;
   };

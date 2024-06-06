@@ -1,104 +1,75 @@
-import { useContext, useState } from 'react';
-import { PrimaryNavigationProps } from '../PrimaryNavigation/PrimaryNavigation.props';
+import { useContext } from 'react';
+import {
+  PrimaryNavItemProps,
+  PrimaryNavigationProps,
+} from '../PrimaryNavigation/PrimaryNavigation.props';
 import { GlobalHeaderContext } from '../GlobalHeader.context';
 import { Flex } from '@radix-ui/themes';
 
-import { Link, Text } from '@sitecore-jss/sitecore-jss-nextjs';
-import Icon from '../../Icon/Icon';
-import { IconName } from 'src/enumerations/Icon.enum';
+import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
+
+import MobileNavItem from './MobileNavItem';
+import MobileNavSubMenu from './MobileNavSubMenu';
+import LinkBase from '../../Link/LinkBase';
 
 import cn from 'classnames';
-import LinkBase from '../../Link/LinkBase';
-import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
+import { twMerge } from 'tailwind-merge';
 
 const MobileNavigation = (props: PrimaryNavigationProps) => {
   const { fields } = props;
-  const { primaryNavItems } = fields ?? {};
+  const { primaryNavCategories, utilityNavLinks, loginPage } = fields ?? {};
 
-  const { isMobileMenuOpen } = useContext(GlobalHeaderContext);
+  const { isMobileMenuOpen, activeChildItem } = useContext(GlobalHeaderContext);
 
-  const [activeNavItem, setActiveNavItem] = useState<string | null>(null);
-
-  const toggleMenu = (title: string) => {
-    activeNavItem === title ? setActiveNavItem(null) : setActiveNavItem(title);
-  };
+  const isSubMenuOpen = activeChildItem !== null;
 
   return (
     <div
       data-ref="mobile-navigation"
       role="list"
-      className={cn(
-        'grid w-full grid-rows-[0fr] overflow-hidden rounded-b-4 bg-white px-[15px] transition-all duration-300 ease-in-out',
-        { 'grid-rows-[1fr]': isMobileMenuOpen }
+      className={twMerge(
+        cn(
+          'ease grid max-h-[calc(100%-73px)] w-full grid-rows-[0fr] rounded-b-4 bg-white px-[15px] transition-all duration-300',
+          { 'grid-rows-[1fr]': isMobileMenuOpen }
+        )
       )}
     >
-      <Flex direction="column" asChild className="overflow-hidden">
-        <ul>
-          {primaryNavItems?.map((item, index) => (
-            <li key={index}>
-              <Flex asChild gap="2" align="center">
-                <button
-                  className={cn(
-                    'w-full border-b-1 border-b-gray-100 py-6 text-[20px] font-medium text-indigo-100'
-                  )}
-                  onClick={() => toggleMenu(item?.fields?.title?.value)}
-                >
-                  <Text field={item?.fields?.title} />
-                  <Icon
-                    iconName={IconName.CHEVRON_DOWN}
-                    className={cn('h-[10px] w-[10px]', {
-                      'rotate-180 transition-all': activeNavItem === item?.fields?.title?.value,
-                    })}
-                  />
-                </button>
-              </Flex>
-              {activeNavItem === item?.fields?.title?.value && (
-                <div key={index}>
-                  <LinkBase
-                    link={item?.fields?.link}
-                    style={ButtonStyle.LINK}
-                    hasIcon
-                    styleClasses="!title-b !font-regular text-indigo-100 my-6"
-                  />
-                  <Flex direction="column" gap="4">
-                    {item?.fields?.columns?.map((column, index) => {
-                      const { fields } = column;
-                      const { title, link, navigationLinks } = fields ?? {};
-
-                      return (
-                        <div key={index}>
-                          <div className="mb-4 border-b-1 border-b-gray-50 pb-4">
-                            <Link field={link}>
-                              <Text field={title} tag="p" className=" font-medium" />
-                            </Link>
-                          </div>
-                          <Flex gap="4" direction="column">
-                            {navigationLinks?.map((link, linkIndex) => (
-                              <LinkBase
-                                key={linkIndex}
-                                link={link?.fields?.link}
-                                style={ButtonStyle.LINK}
-                                styleClasses={cn({
-                                  '!font-regular': !link?.fields?.alternateStyle?.value,
-                                  '!font-bold': link?.fields?.alternateStyle?.value,
-                                })}
-                                hasIcon={link?.fields?.alternateStyle?.value}
-                              />
-                            ))}
-                          </Flex>
-                        </div>
-                      );
-                    })}
-                  </Flex>
-                </div>
+      <Flex direction="column" className="overflow-scroll">
+        {!isSubMenuOpen ? (
+          <>
+            {/* Primary Nav Items */}
+            <Flex direction="column" asChild>
+              <ul>
+                {primaryNavCategories?.map((item: PrimaryNavItemProps, index) => (
+                  <MobileNavItem key={index} {...item} />
+                ))}
+              </ul>
+            </Flex>
+            {/* Utility Nav Items */}
+            <Flex direction="column" gap="4" className="my-6">
+              {utilityNavLinks?.map((link, index) => (
+                <LinkBase
+                  key={index}
+                  link={link?.fields?.link}
+                  style={ButtonStyle.LINK}
+                  styleClasses="!font-regular text-indigo-100"
+                />
+              ))}
+              {loginPage && (
+                <LinkBase
+                  link={loginPage}
+                  style={ButtonStyle.LINK}
+                  styleClasses="!font-regular text-indigo-100"
+                />
               )}
-            </li>
-          ))}
-        </ul>
+            </Flex>
+          </>
+        ) : (
+          <MobileNavSubMenu />
+        )}
       </Flex>
     </div>
   );
 };
 
 export default MobileNavigation;
-

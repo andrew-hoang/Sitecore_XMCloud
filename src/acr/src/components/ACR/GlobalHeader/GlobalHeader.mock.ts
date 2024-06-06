@@ -8,7 +8,7 @@ export const defaultMockData: GlobalHeaderProps = {
     dataSource: '/',
   },
   fields: {
-    primaryNavItems: [
+    primaryNavCategories: [
       {
         fields: {
           title: {
@@ -17,13 +17,7 @@ export const defaultMockData: GlobalHeaderProps = {
           link: {
             value: {
               text: 'Clinical Resources Overview',
-              anchor: '',
               linktype: 'internal',
-              class: '',
-              title: '',
-              target: '',
-              querystring: '',
-              id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
               href: '/',
             },
           },
@@ -31,18 +25,12 @@ export const defaultMockData: GlobalHeaderProps = {
             {
               fields: {
                 title: {
-                  value: 'Column 1 Title',
+                  value: 'Clinical Tools and Reference',
                 },
                 link: {
                   value: {
-                    text: 'See All',
-                    anchor: '',
+                    text: '',
                     linktype: 'internal',
-                    class: '',
-                    title: '',
-                    target: '',
-                    querystring: '',
-                    id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
                     href: '/',
                   },
                 },
@@ -54,14 +42,8 @@ export const defaultMockData: GlobalHeaderProps = {
                     fields: {
                       link: {
                         value: {
-                          text: 'Column 1 Link 1',
-                          anchor: '',
+                          text: 'Reporting and Data Systems (RADS)',
                           linktype: 'internal',
-                          class: '',
-                          title: '',
-                          target: '',
-                          querystring: '',
-                          id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
                           href: '/',
                         },
                       },
@@ -74,14 +56,8 @@ export const defaultMockData: GlobalHeaderProps = {
                     fields: {
                       link: {
                         value: {
-                          text: 'Column 1 Link 2',
-                          anchor: '',
+                          text: 'ACR Appropriateness Criteria',
                           linktype: 'internal',
-                          class: '',
-                          title: '',
-                          target: '',
-                          querystring: '',
-                          id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
                           href: '/',
                         },
                       },
@@ -94,14 +70,8 @@ export const defaultMockData: GlobalHeaderProps = {
                     fields: {
                       link: {
                         value: {
-                          text: 'Column 1 Link 3',
-                          anchor: '',
+                          text: 'Clinical Decision Support',
                           linktype: 'internal',
-                          class: '',
-                          title: '',
-                          target: '',
-                          querystring: '',
-                          id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
                           href: '/',
                         },
                       },
@@ -114,14 +84,78 @@ export const defaultMockData: GlobalHeaderProps = {
                     fields: {
                       link: {
                         value: {
-                          text: 'Column 1 Link 4',
-                          anchor: '',
+                          text: 'Manual on Contrast Media',
                           linktype: 'internal',
-                          class: '',
-                          title: '',
-                          target: '',
-                          querystring: '',
-                          id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Practice Parameters and Technical Standards',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Subspecialties',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Screening Resources',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'National Radiology Data Registries',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'All Clinical Tools and Reference',
+                          linktype: 'internal',
                           href: '/',
                         },
                       },
@@ -136,37 +170,25 @@ export const defaultMockData: GlobalHeaderProps = {
             {
               fields: {
                 title: {
-                  value: 'Column 2',
+                  value: 'Publications and Research',
                 },
                 link: {
                   value: {
-                    text: 'Column 2 Desc',
-                    anchor: '',
+                    text: '',
                     linktype: 'internal',
-                    class: '',
-                    title: '',
-                    target: '',
-                    querystring: '',
-                    id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
                     href: '/',
                   },
                 },
                 numberOfColumns: {
-                  value: 2,
+                  value: 1,
                 },
                 navigationLinks: [
                   {
                     fields: {
                       link: {
                         value: {
-                          text: 'Column 2 Link 1',
-                          anchor: '',
+                          text: 'ACR Bulletin',
                           linktype: 'internal',
-                          class: '',
-                          title: '',
-                          target: '',
-                          querystring: '',
-                          id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
                           href: '/',
                         },
                       },
@@ -179,19 +201,200 @@ export const defaultMockData: GlobalHeaderProps = {
                     fields: {
                       link: {
                         value: {
-                          text: 'Column 2 Link 2',
-                          anchor: '',
+                          text: 'Journal of the ACR (JACR)',
                           linktype: 'internal',
-                          class: '',
-                          title: '',
-                          target: '',
-                          querystring: '',
-                          id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
                           href: '/',
                         },
                       },
                       alternateStyle: {
                         value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Clinical Research',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'ACR Center for Research and Innovation',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Fund for Collaborative Research in Imaging Grant',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'All Publications & Research',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: true,
+                      },
+                    },
+                  },
+                ],
+              },
+            },
+            {
+              fields: {
+                title: {
+                  value: 'Practice Management',
+                },
+                link: {
+                  value: {
+                    text: '',
+                    linktype: 'internal',
+                    href: '/',
+                  },
+                },
+                numberOfColumns: {
+                  value: 1,
+                },
+                navigationLinks: [
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Legal Practices',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Coding Source',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Practice Toolkit',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Practice Toolkit',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Medicare Value-Based Programs',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Patient- and Family-Centered Care',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Population Health Management Resources',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'All Practice Management',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: true,
                       },
                     },
                   },
@@ -209,35 +412,13 @@ export const defaultMockData: GlobalHeaderProps = {
           link: {
             value: {
               text: 'Education and CME Overview',
-              anchor: '',
               linktype: 'internal',
-              class: '',
-              title: '',
-              target: '',
-              querystring: '',
-              id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
               href: '/',
             },
           },
           columns: [
             {
               fields: {
-                title: {
-                  value: 'cat2col1',
-                },
-                link: {
-                  value: {
-                    text: 'cat2col1desc',
-                    anchor: '',
-                    linktype: 'internal',
-                    class: '',
-                    title: '',
-                    target: '',
-                    querystring: '',
-                    id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
-                    href: '/',
-                  },
-                },
                 numberOfColumns: {
                   value: 1,
                 },
@@ -246,19 +427,148 @@ export const defaultMockData: GlobalHeaderProps = {
                     fields: {
                       link: {
                         value: {
-                          text: 'link5 Desc',
-                          anchor: '',
+                          text: 'ACR Catalog',
                           linktype: 'internal',
-                          class: '',
-                          title: '',
-                          target: '',
-                          querystring: '',
-                          id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
                           href: '/',
                         },
                       },
                       alternateStyle: {
                         value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Case in Point',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Education Center',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Case-Based Learning',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Trainee Education',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                ],
+              },
+            },
+            {
+              fields: {
+                numberOfColumns: {
+                  value: 1,
+                },
+                navigationLinks: [
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Cancer Screening and Staging',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Meeting and Course Calendar',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'ACR Institute for Radiologic Pathology (AIRP)',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Radiology Leadership Institute',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'All Education and CME',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: true,
                       },
                     },
                   },
@@ -276,13 +586,7 @@ export const defaultMockData: GlobalHeaderProps = {
           link: {
             value: {
               text: 'Membership Overview',
-              anchor: '',
               linktype: 'internal',
-              class: '',
-              title: '',
-              target: '',
-              querystring: '',
-              id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
               href: '/',
             },
           },
@@ -290,18 +594,12 @@ export const defaultMockData: GlobalHeaderProps = {
             {
               fields: {
                 title: {
-                  value: 'cat2col1',
+                  value: 'Become a Member',
                 },
                 link: {
                   value: {
-                    text: 'cat2col1desc',
-                    anchor: '',
+                    text: '',
                     linktype: 'internal',
-                    class: '',
-                    title: '',
-                    target: '',
-                    querystring: '',
-                    id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
                     href: '/',
                   },
                 },
@@ -313,19 +611,270 @@ export const defaultMockData: GlobalHeaderProps = {
                     fields: {
                       link: {
                         value: {
-                          text: 'link5 Desc',
-                          anchor: '',
+                          text: 'Join',
                           linktype: 'internal',
-                          class: '',
-                          title: '',
-                          target: '',
-                          querystring: '',
-                          id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
                           href: '/',
                         },
                       },
                       alternateStyle: {
                         value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Member Benefits',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'About ACR',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Diversity at ACR',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                ],
+              },
+            },
+            {
+              fields: {
+                title: {
+                  value: 'Current Members',
+                },
+                link: {
+                  value: {
+                    text: '',
+                    linktype: 'internal',
+                    href: '/',
+                  },
+                },
+                numberOfColumns: {
+                  value: 2,
+                },
+                navigationLinks: [
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Welcome Hub',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Renew Membership',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Member Resources',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'ACR Chapters',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Commissions and Committees',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Member Sections',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'ACR Bulletin',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'ACR Annual Meeting',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Membership Directory',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Career Center',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'ACR Bulletin',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Engage',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Volunteer',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'All Member Links',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: true,
                       },
                     },
                   },
@@ -343,13 +892,7 @@ export const defaultMockData: GlobalHeaderProps = {
           link: {
             value: {
               text: 'Advocacy Overview',
-              anchor: '',
               linktype: 'internal',
-              class: '',
-              title: '',
-              target: '',
-              querystring: '',
-              id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
               href: '/',
             },
           },
@@ -357,18 +900,12 @@ export const defaultMockData: GlobalHeaderProps = {
             {
               fields: {
                 title: {
-                  value: 'cat2col1',
+                  value: 'Issues',
                 },
                 link: {
                   value: {
-                    text: 'cat2col1desc',
-                    anchor: '',
+                    text: '',
                     linktype: 'internal',
-                    class: '',
-                    title: '',
-                    target: '',
-                    querystring: '',
-                    id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
                     href: '/',
                   },
                 },
@@ -380,14 +917,36 @@ export const defaultMockData: GlobalHeaderProps = {
                     fields: {
                       link: {
                         value: {
-                          text: 'link5 Desc',
-                          anchor: '',
+                          text: 'Legislative Issues',
                           linktype: 'internal',
-                          class: '',
-                          title: '',
-                          target: '',
-                          querystring: '',
-                          id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'State Issues',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Regulatory Issues',
+                          linktype: 'internal',
                           href: '/',
                         },
                       },
@@ -410,13 +969,7 @@ export const defaultMockData: GlobalHeaderProps = {
           link: {
             value: {
               text: 'Data Science and Informatics Overview',
-              anchor: '',
               linktype: 'internal',
-              class: '',
-              title: '',
-              target: '',
-              querystring: '',
-              id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
               href: '/',
             },
           },
@@ -424,18 +977,12 @@ export const defaultMockData: GlobalHeaderProps = {
             {
               fields: {
                 title: {
-                  value: 'cat2col1',
+                  value: 'AI in Your Practice',
                 },
                 link: {
                   value: {
-                    text: 'cat2col1desc',
-                    anchor: '',
+                    text: '',
                     linktype: 'internal',
-                    class: '',
-                    title: '',
-                    target: '',
-                    querystring: '',
-                    id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
                     href: '/',
                   },
                 },
@@ -447,14 +994,78 @@ export const defaultMockData: GlobalHeaderProps = {
                     fields: {
                       link: {
                         value: {
-                          text: 'link5 Desc',
-                          anchor: '',
+                          text: 'AI Product Directory (AI Central)',
                           linktype: 'internal',
-                          class: '',
-                          title: '',
-                          target: '',
-                          querystring: '',
-                          id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'AI Use Cases (Define-AI)',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'AI Validation (Certify-AI)',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Performance Monitoring (Assess-AI)',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Structured Data (AI-Assist)',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Dataset Directory',
+                          linktype: 'internal',
                           href: '/',
                         },
                       },
@@ -477,35 +1088,13 @@ export const defaultMockData: GlobalHeaderProps = {
           link: {
             value: {
               text: 'Accreditation Overview',
-              anchor: '',
               linktype: 'internal',
-              class: '',
-              title: '',
-              target: '',
-              querystring: '',
-              id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
               href: '/',
             },
           },
           columns: [
             {
               fields: {
-                title: {
-                  value: 'cat2col1',
-                },
-                link: {
-                  value: {
-                    text: 'cat2col1desc',
-                    anchor: '',
-                    linktype: 'internal',
-                    class: '',
-                    title: '',
-                    target: '',
-                    querystring: '',
-                    id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
-                    href: '/',
-                  },
-                },
                 numberOfColumns: {
                   value: 1,
                 },
@@ -514,14 +1103,78 @@ export const defaultMockData: GlobalHeaderProps = {
                     fields: {
                       link: {
                         value: {
-                          text: 'link5 Desc',
-                          anchor: '',
+                          text: 'Apply or Renew',
                           linktype: 'internal',
-                          class: '',
-                          title: '',
-                          target: '',
-                          querystring: '',
-                          id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Modalities',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Designations',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Accreditation Resources',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Fees',
+                          linktype: 'internal',
+                          href: '/',
+                        },
+                      },
+                      alternateStyle: {
+                        value: false,
+                      },
+                    },
+                  },
+                  {
+                    fields: {
+                      link: {
+                        value: {
+                          text: 'Accredited Facility Search',
+                          linktype: 'internal',
                           href: '/',
                         },
                       },
@@ -537,20 +1190,66 @@ export const defaultMockData: GlobalHeaderProps = {
         },
       },
     ],
+    utilityNavLinks: [
+      {
+        fields: {
+          link: {
+            value: {
+              text: 'News and Publications',
+              linktype: 'internal',
+              href: '/',
+            },
+          },
+        },
+      },
+      {
+        fields: {
+          link: {
+            value: {
+              text: 'Blogs',
+              linktype: 'internal',
+              href: '/',
+            },
+          },
+        },
+      },
+      {
+        fields: {
+          link: {
+            value: {
+              text: 'About ACR',
+              linktype: 'internal',
+              href: '/',
+            },
+          },
+        },
+      },
+      {
+        fields: {
+          link: {
+            value: {
+              text: 'Contact',
+              linktype: 'internal',
+              href: '/',
+            },
+          },
+        },
+      },
+    ],
     headerLogoLarge: {
       value: {
-        src: 'https://picsum.photos/158/40',
+        src: 'https://picsum.photos/200/40',
         alt: '',
-        width: '158',
+        width: '200',
         height: '40',
       },
     },
     headerLogoSmall: {
       value: {
-        src: 'https://acr.xmcloudcm.localhost/-/media/Default-Website/sc_logo.png?h=374&iar=0&w=1728&hash=E6EF281E73368D81C416B29B319971BB',
+        src: 'https://picsum.photos/158/40',
         alt: '',
-        width: '1728',
-        height: '374',
+        width: '158',
+        height: '40',
       },
     },
     headerBrandingTitle: {
@@ -562,26 +1261,14 @@ export const defaultMockData: GlobalHeaderProps = {
     myACRLink: {
       value: {
         text: 'MyACR',
-        anchor: '',
         linktype: 'internal',
-        class: '',
-        title: '',
-        target: '',
-        querystring: '',
-        id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
         href: '/',
       },
     },
     loginPage: {
       value: {
         text: 'Login',
-        anchor: '',
         linktype: 'internal',
-        class: '',
-        title: '',
-        target: '',
-        querystring: '',
-        id: '{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}',
         href: '/',
       },
     },

@@ -17,7 +17,7 @@ export type PrimaryNavItem = {
 export type PrimaryNavItemColumn = {
   fields: {
     title?: Field<string>;
-    link: LinkField;
+    link?: LinkField;
     numberOfColumns: Field<number>;
     navigationLinks: PrimaryNavItemLink[];
   };

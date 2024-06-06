@@ -7,21 +7,36 @@ import PrimaryNavigation from './PrimaryNavigation/PrimaryNavigation';
 import { GlobalHeaderProvider } from './GlobalHeader.context';
 import UtilityNavigation from './UtilityNavigation/UtilityNavigation';
 import MobileNavigation from './MobileNavigation/MobileNavigation';
+import { Flex } from '@radix-ui/themes';
+import { useI18n } from 'next-localization';
+import { dictionaryKeys } from 'src/variables/dictionary';
+import QuickSearch from './QuickSearch/QuickSearch';
 
 const GlobalHeader = (props: GlobalHeaderProps): JSX.Element => {
   const { testId } = props;
 
+  const { t } = useI18n();
+
+  const labels = {
+    menuLabel: t(dictionaryKeys.GLOBAL_HEADER_MENU),
+    closeLabel: t(dictionaryKeys.GLOBAL_HEADER_CLOSE),
+    backLabel: t(dictionaryKeys.GLOBAL_HEADER_BACK),
+    searchLabel: t(dictionaryKeys.GLOBAL_HEADER_SEARCH),
+  };
+
   return (
-    <GlobalHeaderProvider>
-      <div
-        data-ref="global-header"
-        className="relative px-[30px] pt-8 lg:pt-0"
+    <GlobalHeaderProvider labels={labels}>
+      <Flex
         data-testid={testId}
+        data-ref="global-header"
+        direction="column"
+        className="relative h-screen px-[30px] py-8 gh:py-0"
       >
         <UtilityNavigation {...props} />
         <PrimaryNavigation {...props} />
         <MobileNavigation {...props} />
-      </div>
+        <QuickSearch className="flex gh:hidden" />
+      </Flex>
     </GlobalHeaderProvider>
   );
 };
