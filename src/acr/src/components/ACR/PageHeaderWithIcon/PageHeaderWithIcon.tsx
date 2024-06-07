@@ -22,7 +22,7 @@ const PageHeaderWithIcon = (props: PageHeaderWithIconProps): JSX.Element => {
   const headerImagecheck = externalFields?.image1x1?.value?.src;
 
   return (
-    <section className="py-[70px]" data-ref="PageHeaderWithIcon" data-testid={testId}>
+    <section className="py-[72px]" data-ref="PageHeaderWithIcon" data-testid={testId}>
       <Container px="6">
         <Flex
           direction={{ initial: 'column', sm: 'row' }}
@@ -37,15 +37,15 @@ const PageHeaderWithIcon = (props: PageHeaderWithIconProps): JSX.Element => {
               <div className="mt-6 md:mt-8">
                 <a
                   href={licenseLinkUrl}
-                  className="body-xs !font-medium text-t-body hover:text-t-link-hover"
+                  className="body-xs !font-medium text-t-primary hover:text-t-link-hover"
                 >
-                  <span className="link-underline">{linkText}</span>
+                  <span className="underline">{linkText}</span>
                 </a>
               </div>
             )}
           </div>
           <div className="max-h-[135px] max-w-[135px] ">
-            {headerImagecheck && <ImageBase image={headerImage} />}
+            {headerImagecheck && <ImageBase animate={false} image={headerImage} />}
           </div>
         </Flex>
       </Container>
