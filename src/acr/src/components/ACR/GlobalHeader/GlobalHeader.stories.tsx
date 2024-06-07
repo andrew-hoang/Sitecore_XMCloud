@@ -9,6 +9,7 @@ export default {
   title: 'Components/Global Header',
   component: GlobalHeader,
   tags: ['autodocs'],
+  parameters: { layout: 'fullscreen' },
   decorators: [withCoveoSearch],
 } as Meta<typeof GlobalHeader>;
 

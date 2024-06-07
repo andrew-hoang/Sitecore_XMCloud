@@ -125,7 +125,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
         {isCTALink && renderIcon()}
         <span
           className={cn(spanStyleClasses, {
-            'link-underline': animate,
+            'link-underline group-hover:before:origin-[0] group-hover:before:scale-x-100': animate,
             'before:bg-t-contrast': style === ButtonStyle.BUTTON,
           })}
         >

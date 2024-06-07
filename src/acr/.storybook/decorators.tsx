@@ -13,6 +13,11 @@ import { Theme as RadixTheme } from '@radix-ui/themes';
 import { ThemeContext } from 'src/context/Theme.context';
 import { Theme } from 'src/enumerations/Theme.enum';
 
+import { I18nProvider } from 'next-localization';
+import { SessionProvider } from 'next-auth/react';
+
+import cn from 'classnames';
+
 import { playFair } from '../src/fonts';
 import localFont from 'next/font/local';
 
@@ -27,10 +32,6 @@ const beausite = localFont({
   display: 'swap',
   variable: '--font-sans',
 });
-
-import { I18nProvider } from 'next-localization';
-
-import cn from 'classnames';
 
 export const withRadixTheme = ({
   themes,
@@ -85,4 +86,10 @@ export const withCoveoSearch = (Story: StoryFn) => (
   <AtomicSearchInterface>
     <Story />
   </AtomicSearchInterface>
+);
+
+export const withAuth = (Story: StoryFn) => (
+  <SessionProvider>
+    <Story />
+  </SessionProvider>
 );

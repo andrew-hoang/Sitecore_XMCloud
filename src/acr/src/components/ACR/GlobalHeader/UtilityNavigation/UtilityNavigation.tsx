@@ -3,10 +3,16 @@ import { UtilityNavigationProps } from './UtilityNavigation.props';
 import LinkBase from '../../Link/LinkBase';
 import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
 import QuickSearch from '../QuickSearch/QuickSearch';
+import Login from '../Login/Login';
+import { useSession } from 'next-auth/react';
 
 const UtilityNavigation = (props: UtilityNavigationProps) => {
   const { fields } = props;
   const { utilityNavLinks, myACRLink, loginPage } = fields ?? {};
+
+  const links = myACRLink ? [myACRLink] : [];
+
+  const { data: session } = useSession();
 
   return (
     <Flex
@@ -27,12 +33,10 @@ const UtilityNavigation = (props: UtilityNavigationProps) => {
       ))}
       <QuickSearch />
       <div className="h-5 w-[1px] bg-t-body" />
-      {myACRLink && (
+      {!session && myACRLink && (
         <LinkBase link={myACRLink} style={ButtonStyle.LINK} styleClasses="!font-regular" />
       )}
-      {loginPage && (
-        <LinkBase link={loginPage} style={ButtonStyle.LINK} styleClasses="!font-regular" />
-      )}
+      <Login login={loginPage} links={links} />
     </Flex>
   );
 };

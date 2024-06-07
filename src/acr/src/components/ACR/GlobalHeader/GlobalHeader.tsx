@@ -59,18 +59,18 @@ const GlobalHeader = (props: GlobalHeaderProps): JSX.Element => {
           }
         )}
       >
-        <a href="/" title="Home">
+        <a href="/" title="Home" className="focus:outline-indigo-100">
           <PictureBase
             desktopImage={headerLogoLarge}
             mobileImage={headerLogoSmall ? headerLogoSmall : headerLogoLarge}
-            styleClasses="max-h-10 flex-shrink-0 relative"
+            styleClasses="max-h-10 flex-shrink-0 relative ![&>img]:hover:scale-0"
           />
         </a>
         <PrimaryNavigation {...props} />
         {/* Mobile View */}
         <Flex gap="4" className="gh:hidden">
           <button
-            className="flex flex-col items-center text-[14px] text-indigo-100"
+            className="flex flex-col items-center text-[14px] text-indigo-100 focus:outline-indigo-100"
             aria-expanded={isMobileSearchOpen}
             aria-controls="gh-quick-search"
             onClick={toggleSearch}
@@ -79,7 +79,7 @@ const GlobalHeader = (props: GlobalHeaderProps): JSX.Element => {
             {isMobileSearchOpen ? closeLabel : searchLabel}
           </button>
           <button
-            className="flex flex-col items-center text-[14px] text-indigo-100"
+            className="flex flex-col items-center text-[14px] text-indigo-100 focus:outline-indigo-100"
             aria-expanded={isMobileMenuOpen}
             aria-controls="gh-mobile-nav"
             onClick={toggleMobileMenu}

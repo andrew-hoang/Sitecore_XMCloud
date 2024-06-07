@@ -30,7 +30,9 @@ const MobileNavItem = (props: PrimaryNavItemProps) => {
     <li className="relative border-b-1 border-b-gray-100 py-6">
       <Flex asChild gap="2" align="center">
         <button
-          className={cn('w-full text-[20px] font-medium text-indigo-100 focus:outline-indigo-100')}
+          className={cn(
+            'z-10 w-full text-[20px] font-medium text-indigo-100 focus:outline-indigo-100'
+          )}
           onClick={() => toggleMenu(title?.value)}
         >
           <Text field={title} />
@@ -44,8 +46,8 @@ const MobileNavItem = (props: PrimaryNavItemProps) => {
       </Flex>
       <Flex
         className={twMerge(
-          cn('ease grid grid-rows-[0fr] transition-all duration-300', {
-            'grid-rows-[1fr]': isOpen,
+          cn('ease invisible grid grid-rows-[0fr] transition-all duration-300', {
+            'visible grid-rows-[1fr]': isOpen,
           })
         )}
       >
@@ -53,7 +55,7 @@ const MobileNavItem = (props: PrimaryNavItemProps) => {
           <LinkBase
             link={link}
             style={ButtonStyle.LINK}
-            styleClasses="mt-5 !font-regular text-indigo-100 focus:outline-indigo-100"
+            styleClasses="mt-5 !font-regular text-indigo-100 focus:outline-indigo-100 max-w-max"
           />
           {columns?.map((column, index) => {
             const { fields } = column;
@@ -65,7 +67,7 @@ const MobileNavItem = (props: PrimaryNavItemProps) => {
               <Flex key={index} align="center" gap="2" asChild>
                 <button
                   type="button"
-                  className="text-indigo-100"
+                  className="text-indigo-100 focus:outline-indigo-100"
                   onClick={() => setActiveChildItem(column)}
                 >
                   <Text field={title} tag="p" className="body-xs !font-medium" />
@@ -79,7 +81,7 @@ const MobileNavItem = (props: PrimaryNavItemProps) => {
                     key={linkIndex}
                     link={link?.fields?.link}
                     style={ButtonStyle.LINK}
-                    styleClasses={cn('focus:outline-indigo-100 text-indigo-100', {
+                    styleClasses={cn('focus:outline-indigo-100 text-indigo-100 max-w-max', {
                       '!font-regular': !link?.fields?.alternateStyle?.value,
                       '!font-bold': link?.fields?.alternateStyle?.value,
                     })}

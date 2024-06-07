@@ -39,6 +39,7 @@ const QuickSearch = (props: QuickSearchProps) => {
 
       <Flex align="center" gap="2" className="hidden gh:flex" asChild>
         <button
+          className="link-underline hover:text-t-link-hover"
           onClick={() => setIsSearchOpen(!isSearchOpen)}
           aria-expanded={isSearchOpen}
           aria-controls="gh-quick-search"

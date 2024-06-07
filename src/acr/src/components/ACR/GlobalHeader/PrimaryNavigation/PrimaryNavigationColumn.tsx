@@ -42,7 +42,7 @@ const PrimaryNavigationColumn = (props: PrimaryNavItemColumn) => {
                 key={linkIndex}
                 link={link?.fields?.link}
                 style={ButtonStyle.LINK}
-                styleClasses={cn('text-indigo-100 focus:outline-indigo-100', {
+                styleClasses={cn('text-indigo-100 focus:outline-indigo-100 max-w-max', {
                   '!font-regular': !link?.fields?.alternateStyle?.value,
                   '!font-bold': link?.fields?.alternateStyle?.value,
                 })}
