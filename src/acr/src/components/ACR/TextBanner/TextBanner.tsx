@@ -36,7 +36,7 @@ const TextBanner = (props: TextBannerProps): JSX.Element => {
       justify="between"
     >
       <Flex direction="column" gap="4" width={{ initial: 'auto', md: '770px' }}>
-        <Text field={title} tag="h2" className="heading-d" />
+        <Text field={title} tag="h2" className="heading-d text-t-primary" />
         <Text field={description} tag="p" />
       </Flex>
       {link && <LinkBase link={link} style={ButtonStyle.CTA} styleClasses="shrink-0" />}

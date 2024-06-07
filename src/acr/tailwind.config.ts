@@ -76,12 +76,12 @@ const config: Config = {
       },
       borderRadius: {
         none: '0',
-        DEFAULT: "4px",
-        sm: "2px",
-        md: "6px",
-        lg: "8px",
-        xl: "12px",
-        full: "100%",
+        DEFAULT: '4px',
+        sm: '2px',
+        md: '6px',
+        lg: '8px',
+        xl: '12px',
+        full: '100%',
       },
       borderWidth: {
         '1': '1px',

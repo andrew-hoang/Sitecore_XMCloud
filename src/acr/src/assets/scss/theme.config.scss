@@ -59,5 +59,8 @@
   /* Grid Override */
   --space-6: 30px;
   --container-4: 1170px;
-}
 
+  [data-theme] {
+    @apply bg-t-background;
+  }
+}

@@ -5,7 +5,8 @@ import { TestProps } from 'src/types/Test.props';
 /**
  * Model used for Sitecore Component integration
  */
-export type GlobalHeaderProps = ComponentProps & TestProps &
+export type GlobalHeaderProps = ComponentProps &
+  TestProps &
   GlobalHeaderParams &
   GlobalHeaderFields &
   GlobalHeaderData;

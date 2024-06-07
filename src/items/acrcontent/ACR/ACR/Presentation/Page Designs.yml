@@ -5,9 +5,29 @@ Template: "1ce94865-120c-4765-b7ca-9a7e7d771d44"
 Path: /sitecore/content/ACR/ACR/Presentation/Page Designs
 BranchID: "45cf9f42-b3ac-4412-aab9-f8441c7e448e"
 SharedFields:
+- ID: "23c23f7b-2c76-4d3c-9b88-16b7a6d52d89"
+  Hint: DesignRules
+  Value: |
+    <ruleset>
+      <rule
+        uid="{9F7AA401-0C21-409C-A5AF-A8BD2A243AA6}">
+        <conditions>
+          <condition
+            id="{7D5DA661-BEF9-441C-B1F7-D80DE3E0972F}"
+            uid="4F450ECC462C4197995BF5104480FF96"
+            itemid="{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}" />
+        </conditions>
+        <actions>
+          <action
+            id="{5DC0A863-11FE-4A26-9F09-D8EADEA81E9A}"
+            uid="28FC1F60A10D4AD9931A9C69B19F2B67"
+            pagedesignid="{00A63967-CC92-4613-9CC2-BFE0BF402C53}" />
+        </actions>
+      </rule>
+    </ruleset>
 - ID: "ba1f60d6-3deb-40cc-bb61-eec772279ee1"
   Hint: TemplatesMapping
-  Value: "%7bC4B69474-B531-4DC0-9384-E659F6626A77%7d%3d%257B00A63967-CC92-4613-9CC2-BFE0BF402C53%257D"
+  Value: 
 - ID: "f6d8a61c-2f84-4401-bd24-52d2068172bc"
   Hint: __Originator
   Value: "{2EA756FA-AED6-4599-83B7-36FEFE229B31}"
@@ -29,11 +49,11 @@ Languages:
         sitecore\akhanal@acr.org
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "d8e5bd63-c847-43c9-9f97-14609eb6e82d"
+      Value: "5fd58e00-6b38-495e-863d-02bdda9cf9d9"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\akhanal@acr.org
+        sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240501T180155Z
+      Value: 20240520T191624Z

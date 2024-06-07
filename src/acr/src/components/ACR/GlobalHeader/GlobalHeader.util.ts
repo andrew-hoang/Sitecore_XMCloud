@@ -5,8 +5,8 @@ export const getStaticPropsForGlobalHeader = async (
   rendering: ComponentRendering,
   layoutData: LayoutServiceData
 ): Promise<GlobalHeaderData> => {
-  // console.log(rendering);
-  // console.log(layoutData);
+  console.log(rendering);
+  console.log(layoutData);
 
   const model: GlobalHeaderData = {
     externalFields: {

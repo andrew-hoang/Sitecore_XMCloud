@@ -7,7 +7,7 @@ SharedFields:
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Value: |
-    {4247AAD4-EBDE-4994-998F-E067A51B1FE4}
+    {DB1CA46D-29A8-4B1C-A9AB-49FE523C0853}
     {1930BBEB-7805-471A-A3BE-4858AC7CF696}
     {4888CCEB-7ADE-4852-B4E2-889F59E9C089}
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
@@ -31,11 +31,11 @@ Languages:
         sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "7547f68b-745e-43a5-a889-5f56fb24b928"
+      Value: "6691a73c-02d2-47a8-aff3-8781bd537224"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\nbansal@acr.org
+        sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240527T005546Z
+      Value: 20240604T161520Z
