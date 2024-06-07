@@ -1,12 +1,12 @@
-import { Flex } from '@radix-ui/themes';
-import React from 'react';
+import { signIn, signOut, useSession } from 'next-auth/react';
 import { LoginProps } from './Login.props';
-import { signOut, useSession } from 'next-auth/react';
+
+import { Flex } from '@radix-ui/themes';
 import LinkBase from '../../Link/LinkBase';
 import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
 
 const MobileLogin = (props: LoginProps) => {
-  const { login, links } = props;
+  const { links } = props;
 
   const { data: session } = useSession();
 
@@ -33,11 +33,12 @@ const MobileLogin = (props: LoginProps) => {
           </span>
         </button>
       ) : (
-        <LinkBase
-          link={login}
-          style={ButtonStyle.LINK}
-          styleClasses="!font-regular focus:outline-indigo-100 text-indigo-100 max-w-max"
-        />
+        <button
+          className="max-w-max !font-regular text-indigo-100 focus:outline-indigo-100"
+          onClick={() => signIn('')}
+        >
+          Login
+        </button>
       )}
     </Flex>
   );

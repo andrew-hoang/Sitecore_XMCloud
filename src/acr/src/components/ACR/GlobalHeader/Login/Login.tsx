@@ -53,7 +53,6 @@ const Login = (props: LoginProps) => {
       )}
     </Flex>
   ) : (
-    // <LinkBase link={loginPage} style={ButtonStyle.LINK} styleClasses="!font-regular" />
     <button
       className="body-xs link-underline font-regular text-t-body hover:text-t-link-hover"
       onClick={() => signIn('okta')}
