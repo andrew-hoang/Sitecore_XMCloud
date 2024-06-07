@@ -14,7 +14,7 @@ import cn from 'classnames';
 const MobileNavSubMenu = () => {
   const { labels, activeChildItem, setActiveChildItem } = useContext(GlobalHeaderContext);
 
-  const { link, title, navigationLinks } = activeChildItem?.fields ?? {};
+  const { link, title, primaryNavLinks } = activeChildItem?.fields ?? {};
   const { backLabel } = labels ?? {};
 
   return (
@@ -39,7 +39,7 @@ const MobileNavSubMenu = () => {
         )}
         <Flex className="my-6" direction="column" gap="5" asChild>
           <ul>
-            {navigationLinks?.map((link, index) => (
+            {primaryNavLinks?.map((link, index) => (
               <LinkBase
                 key={index}
                 link={link?.fields?.link}

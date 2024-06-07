@@ -15,7 +15,7 @@ import { twMerge } from 'tailwind-merge';
 
 const MobileNavItem = (props: PrimaryNavItemProps) => {
   const { fields } = props;
-  const { title, columns, link } = fields ?? {};
+  const { title, primaryNavColumns, link } = fields ?? {};
 
   const { activeMobileNavItem, setActiveMobileNavItem, setActiveChildItem } =
     useContext(GlobalHeaderContext);
@@ -57,9 +57,9 @@ const MobileNavItem = (props: PrimaryNavItemProps) => {
             style={ButtonStyle.LINK}
             styleClasses="mt-5 !font-regular text-indigo-100 focus:outline-indigo-100 max-w-max"
           />
-          {columns?.map((column, index) => {
+          {primaryNavColumns?.map((column, index) => {
             const { fields } = column;
-            const { title, navigationLinks } = fields ?? {};
+            const { title, primaryNavLinks } = fields ?? {};
 
             const hasChildren = title && title !== null;
 
@@ -76,7 +76,7 @@ const MobileNavItem = (props: PrimaryNavItemProps) => {
               </Flex>
             ) : (
               <Flex key={index} gap="5" direction="column">
-                {navigationLinks?.map((link, linkIndex) => (
+                {primaryNavLinks?.map((link, linkIndex) => (
                   <LinkBase
                     key={linkIndex}
                     link={link?.fields?.link}

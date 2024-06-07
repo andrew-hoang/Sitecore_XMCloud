@@ -18,7 +18,7 @@ import { twMerge } from 'tailwind-merge';
 
 const MobileNavigation = (props: PrimaryNavigationProps) => {
   const { fields } = props;
-  const { primaryNavCategories, utilityNavLinks, myACRLink, loginPage } = fields ?? {};
+  const { primaryNavCategories, utilityNavLinks, myACRLink } = fields ?? {};
 
   const { isMobileMenuOpen, activeChildItem } = useContext(GlobalHeaderContext);
 
@@ -59,7 +59,7 @@ const MobileNavigation = (props: PrimaryNavigationProps) => {
                 />
               ))}
             </Flex>
-            <MobileLogin login={loginPage} links={links} />
+            <MobileLogin links={links} />
           </>
         ) : (
           <MobileNavSubMenu />
