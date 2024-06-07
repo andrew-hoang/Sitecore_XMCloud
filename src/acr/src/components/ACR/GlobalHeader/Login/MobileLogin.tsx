@@ -11,7 +11,7 @@ const MobileLogin = (props: LoginProps) => {
   const { data: session } = useSession();
 
   return (
-    <Flex direction="column" gap="4" className="pb-6">
+    <Flex direction="column" gap="4" className="pb-6 text-indigo-100">
       {/* Auth Links */}
       {session && <strong> Welcome, {session?.user?.name}</strong>}
       {links?.map((link, index) => (
@@ -25,7 +25,7 @@ const MobileLogin = (props: LoginProps) => {
       {/* Login/Logout */}
       {session ? (
         <button
-          className="body-xs group inline-flex max-w-max font-regular hover:text-t-link-hover focus:outline-indigo-100"
+          className="body-xs group inline-flex max-w-max font-regular text-indigo-100 hover:text-t-link-hover focus:outline-indigo-100"
           onClick={() => signOut()}
         >
           <span className="link-underline group-hover:before:origin-[0] group-hover:before:scale-x-100">

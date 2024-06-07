@@ -8,7 +8,7 @@ import cn from 'classnames';
 
 const PrimaryNavigationColumn = (props: PrimaryNavItemColumn) => {
   const { fields } = props;
-  const { title, link, navigationLinks, numberOfColumns } = fields ?? {};
+  const { title, link, primaryNavLinks, numberOfColumns } = fields ?? {};
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const chunk = (target: any[], size: number) => {
@@ -23,7 +23,7 @@ const PrimaryNavigationColumn = (props: PrimaryNavItemColumn) => {
   };
 
   // Links can be displayed across multiple columns
-  const columnLinks = chunk(navigationLinks, numberOfColumns?.value);
+  const columnLinks = chunk(primaryNavLinks, numberOfColumns?.value);
 
   return (
     <div data-ref="primary-navigation-column" className="flex-grow">

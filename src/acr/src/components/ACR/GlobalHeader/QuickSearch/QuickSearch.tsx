@@ -26,7 +26,9 @@ const QuickSearch = (props: QuickSearchProps) => {
       data-ref="quick-search"
       gap="4"
       className={twMerge(
-        cn('rounded-b-4 bg-white px-[15px] gh:flex gh:bg-transparent gh:px-0 '),
+        cn(
+          'absolute left-[30px] right-[30px] top-[calc(100%-32px)] z-10 rounded-b-4 bg-white px-[15px] gh:relative gh:left-0 gh:right-0 gh:top-0 gh:flex gh:bg-transparent gh:px-0'
+        ),
         className
       )}
     >

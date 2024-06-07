@@ -1,4 +1,4 @@
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { PrimaryNavItemProps } from './PrimaryNavigation.props';
 import { Text } from '@sitecore-jss/sitecore-jss-react';
 
@@ -15,9 +15,13 @@ import cn from 'classnames';
 
 const PrimaryNavItem = (props: PrimaryNavItemProps) => {
   const { fields, index } = props;
-  const { title, link, columns } = fields ?? {};
+  const { title, link, primaryNavColumns } = fields ?? {};
 
   const { activeNavItem, setActiveNavItem } = useContext(GlobalHeaderContext);
+
+  useEffect(() => {
+    activeNavItem === title?.value && console.log('should open');
+  }, [title, activeNavItem]);
 
   const isOpen = activeNavItem === title?.value;
 
@@ -50,7 +54,7 @@ const PrimaryNavItem = (props: PrimaryNavItemProps) => {
         <div
           id={`nav-item-${index}`}
           className={cn(
-            'absolute left-0 top-full w-full rounded-b-4 border-t-1 border-t-gray-100 bg-white pb-10'
+            'absolute left-0 top-full z-10 w-full rounded-b-4 border-t-1 border-t-gray-100 bg-white pb-10'
           )}
         >
           <Container px="6">
@@ -61,7 +65,9 @@ const PrimaryNavItem = (props: PrimaryNavItemProps) => {
               styleClasses="!title-b !font-regular text-indigo-100 focus:outline-indigo-100 my-6"
             />
             <Flex gap="6">
-              {columns?.map((column, index) => <PrimaryNavigationColumn key={index} {...column} />)}
+              {primaryNavColumns?.map((column, index) => (
+                <PrimaryNavigationColumn key={index} {...column} />
+              ))}
             </Flex>
           </Container>
         </div>

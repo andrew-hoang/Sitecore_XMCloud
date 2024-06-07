@@ -27,20 +27,26 @@ const PictureBase = (props: PictureBaseProps) => {
 
   const { unoptimized } = useContext(ImageOptimizationContext);
 
-  const common = { fill, priority, sizes, style, ...rest } as ImageProps;
+  const common = {
+    fill,
+    priority,
+    sizes,
+    style,
+    ...rest,
+  } as ImageProps;
 
   const { srcSet: desktop } = getImageProps({
     ...common,
     ...desktopImage?.value,
     src: desktopImage?.value?.src ?? '',
-    unoptimized,
+    unoptimized: unoptimized || desktopImage?.value?.src?.includes('.svg'),
   }).props;
 
   const { srcSet: mobile, ...mobileRest } = getImageProps({
     ...common,
     ...mobileImage?.value,
     src: mobileImage?.value?.src ?? '',
-    unoptimized,
+    unoptimized: unoptimized || desktopImage?.value?.src?.includes('.svg'),
   }).props;
 
   const desktopMedia = `(min-width: ${BP_DESKTOP}px)`;
