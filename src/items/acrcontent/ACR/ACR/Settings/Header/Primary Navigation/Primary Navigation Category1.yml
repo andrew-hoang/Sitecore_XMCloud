@@ -1,0 +1,35 @@
+﻿---
+ID: "233bb281-29ad-45a7-aa13-063c90120dfc"
+Parent: "9830746e-5fdf-40cb-8802-86c0d2c8c131"
+Template: "61d6b796-90ac-4d07-b339-2823da144dc1"
+Path: /sitecore/content/ACR/ACR/Settings/Header/Primary Navigation/Primary Navigation Category1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240603T200945Z
+    - ID: "3a705e7d-101d-4c10-b7b8-eeaa9417a1a8"
+      Hint: title
+      Value: Primary Navigation Category1 Title
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "d34ae5a0-53f4-40ee-b719-62717318984a"
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "bca148b3-ccb2-42bb-85d8-20944faf8905"
+      Hint: link
+      Value: |
+        <link text="Category 1 Link Desc" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}" />
+    - ID: "cb0bd1ad-85e2-42ff-b3bf-e6a437723362"
+      Hint: primaryNavColumns
+      Value: |
+        {D8935E49-2535-42C8-8A21-DAD85330AC0F}
+        {2BE5AA86-ED42-4ADC-B201-2F09389379EC}
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240603T213415Z

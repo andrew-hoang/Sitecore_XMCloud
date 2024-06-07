@@ -1,4 +1,4 @@
-﻿---
+---
 ID: "00a63967-cc92-4613-9cc2-bfe0bf402c53"
 Parent: "5887b016-bda8-43cc-9f6a-edc69d144394"
 Template: "1105b8f8-1e00-426b-bf1f-c840742d827b"
@@ -6,11 +6,11 @@ Path: /sitecore/content/ACR/ACR/Presentation/Page Designs/Default
 SharedFields:
 - ID: "0966b999-0d0e-4278-acc9-9da69d461fe6"
   Hint: PartialDesigns
-  Value: "{9AD8DDBC-2441-47B7-A716-5B0EC5EA7C3F}"
+  Value: "{C8BC57FC-20B1-4331-B1D2-B4E9630E9993}|{9AD8DDBC-2441-47B7-A716-5B0EC5EA7C3F}"
 - ID: "c7c26117-dbb1-42b2-ab5e-f7223845cca3"
   Hint: __Thumbnail
   Value: |
-    <image mediaid="{3760A7A9-CB09-45EB-BEF6-8390DA4D315E}" />
+    <image mediaid="{14367712-4654-47E4-A545-3DFAA78B5A6A}" />
 Languages:
 - Language: en
   Versions:
@@ -29,11 +29,11 @@ Languages:
         sitecore\akhanal@acr.org
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "957626c6-b943-4394-9498-3303c2503a25"
+      Value: "459bbf75-62ca-4c75-b319-c51625f04e65"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\minyie.diaz@velir.com
+        sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240520T191545Z
+      Value: 20240605T190934Z

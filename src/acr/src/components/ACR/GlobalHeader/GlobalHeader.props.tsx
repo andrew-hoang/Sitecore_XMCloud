@@ -1,36 +1,35 @@
-import { Field, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { Field, FileField, ImageField, LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ComponentProps } from 'lib/component-props';
 import { TestProps } from 'src/types/Test.props';
+import { PrimaryNavItem } from './PrimaryNavigation/PrimaryNavigation.props';
+import { UtilityNavItem } from './UtilityNavigation/UtilityNavigation.props';
 
 /**
  * Model used for Sitecore Component integration
  */
-export type GlobalHeaderProps = ComponentProps &
-  TestProps &
-  GlobalHeaderParams &
-  GlobalHeaderFields &
-  GlobalHeaderData;
+export type GlobalHeaderProps = ComponentProps & TestProps & GlobalHeaderFields;
 
-// Component Rendering Parameter fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type GlobalHeaderParams = {
-  params: {
-    mock_param?: string;
-  };
-};
-
-// Non-component data source fields
-// TODO_SCAFFOLD_BE: Populate if needed, remove if not
-export type GlobalHeaderData = {
-  externalFields?: {
-    mock_external_data: Field<string>;
-  };
-};
-
-export type GlobalHeaderFields = {
+export type GlobalHeaderFields = GlobalHeaderLogoBranding & {
   fields: {
-    heading: Field<string>; // Sitecore editable text field
-    image?: ImageField; // Sitecore editable image field
-    link?: LinkField; // Sitecore editable link field
+    primaryNavCategories: PrimaryNavItem[];
+    utilityNavLinks: UtilityNavItem[];
+    myACRLink?: LinkField;
+    loginPage: LinkField;
   };
+};
+
+export type GlobalHeaderLogoBranding = {
+  fields: {
+    headerLogoLarge: ImageField;
+    headerLogoSmall?: ImageField;
+    headerBrandingTitle?: Field<string>;
+    favicon?: FileField | null;
+  };
+};
+
+export type GlobalHeaderLabels = {
+  menuLabel?: string;
+  closeLabel?: string;
+  backLabel?: string;
+  searchLabel?: string;
 };

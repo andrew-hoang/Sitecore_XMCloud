@@ -65,10 +65,12 @@ const config: Config = {
       serif: ['var(--font-serif)'],
     },
     screens: {
-      sm: '440px',
-      md: '800px',
-      lg: '1440px',
-      xl: '1800px',
+      xs: '470px',
+      sm: '680px',
+      md: '780px',
+      lg: '910px',
+      xl: '1440px',
+      gh: '1086px', // Global Header breakpoint
     },
     extend: {
       aspectRatio: {

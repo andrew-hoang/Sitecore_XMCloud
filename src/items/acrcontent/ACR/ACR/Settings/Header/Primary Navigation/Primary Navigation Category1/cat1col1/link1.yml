@@ -1,0 +1,27 @@
+﻿---
+ID: "cdc7cb4e-d8fc-4378-b126-994c3eb80856"
+Parent: "d8935e49-2535-42c8-8a21-dad85330ac0f"
+Template: "c3a09e59-d6b8-49ba-b281-abef65bab82a"
+Path: /sitecore/content/ACR/ACR/Settings/Header/Primary Navigation/Primary Navigation Category1/cat1col1/link1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20240603T201027Z
+    - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
+      Hint: __Revision
+      Value: "799421b1-6dd8-4689-b208-0a2fcb110e29"
+    - ID: "8ce78944-5814-4d3f-828a-cab45a92f4e7"
+      Hint: link
+      Value: |
+        <link text="Link 1 Desc" anchor="" linktype="internal" class="" title="" target="" querystring="" id="{7B68C3B0-3FBC-4D59-92EA-3E23535E7755}" />
+    - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
+      Hint: __Updated by
+      Value: |
+        sitecore\kenneth.robinson@velir.com
+    - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
+      Hint: __Updated
+      Value: 20240603T213434Z
