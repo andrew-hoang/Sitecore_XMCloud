@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { signIn, signOut, useSession } from 'next-auth/react';
 import { LoginProps } from './Login.props';
 
@@ -12,7 +11,7 @@ import { Flex } from '@radix-ui/themes';
 import cn from 'classnames';
 
 const Login = (props: LoginProps) => {
-  const { login, links } = props;
+  const { links } = props;
 
   const [isLoginOpen, setIsLoginOpen] = useState<boolean>(false);
 
@@ -57,7 +56,7 @@ const Login = (props: LoginProps) => {
     // <LinkBase link={loginPage} style={ButtonStyle.LINK} styleClasses="!font-regular" />
     <button
       className="body-xs link-underline font-regular text-t-body hover:text-t-link-hover"
-      onClick={() => signIn()}
+      onClick={() => signIn('okta')}
     >
       Login
     </button>
