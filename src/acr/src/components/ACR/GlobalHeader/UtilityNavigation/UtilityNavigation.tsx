@@ -8,7 +8,7 @@ import { useSession } from 'next-auth/react';
 
 const UtilityNavigation = (props: UtilityNavigationProps) => {
   const { fields } = props;
-  const { utilityNavLinks, myACRLink, loginPage } = fields ?? {};
+  const { utilityNavLinks, myACRLink } = fields ?? {};
 
   const links = myACRLink ? [myACRLink] : [];
 
@@ -36,7 +36,7 @@ const UtilityNavigation = (props: UtilityNavigationProps) => {
       {!session && myACRLink && (
         <LinkBase link={myACRLink} style={ButtonStyle.LINK} styleClasses="!font-regular" />
       )}
-      <Login login={loginPage} links={links} />
+      <Login links={links} />
     </Flex>
   );
 };
