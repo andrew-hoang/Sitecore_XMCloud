@@ -32,7 +32,7 @@ const MobileNavigation = (props: PrimaryNavigationProps) => {
       data-ref="mobile-navigation"
       className={twMerge(
         cn(
-          'ease grid max-h-[calc(100%-73px)] w-full grid-rows-[0fr] rounded-b-4 bg-white px-[15px] transition-all duration-300',
+          'ease absolute left-[30px] right-[30px] top-[calc(100%-32px)] z-10 grid max-h-[calc(100vh-140px)] w-auto grid-rows-[0fr] rounded-b-4 bg-white px-[15px] transition-all duration-300',
           { 'grid-rows-[1fr]': isMobileMenuOpen }
         )
       )}

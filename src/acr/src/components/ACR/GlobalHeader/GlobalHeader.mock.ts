@@ -21,7 +21,7 @@ export const defaultMockData: GlobalHeaderProps = {
               href: '/',
             },
           },
-          columns: [
+          primaryNavColumns: [
             {
               fields: {
                 title: {
@@ -37,7 +37,7 @@ export const defaultMockData: GlobalHeaderProps = {
                 numberOfColumns: {
                   value: 1,
                 },
-                navigationLinks: [
+                primaryNavLinks: [
                   {
                     fields: {
                       link: {
@@ -182,7 +182,7 @@ export const defaultMockData: GlobalHeaderProps = {
                 numberOfColumns: {
                   value: 1,
                 },
-                navigationLinks: [
+                primaryNavLinks: [
                   {
                     fields: {
                       link: {
@@ -285,7 +285,7 @@ export const defaultMockData: GlobalHeaderProps = {
                 numberOfColumns: {
                   value: 1,
                 },
-                navigationLinks: [
+                primaryNavLinks: [
                   {
                     fields: {
                       link: {
@@ -416,13 +416,13 @@ export const defaultMockData: GlobalHeaderProps = {
               href: '/',
             },
           },
-          columns: [
+          primaryNavColumns: [
             {
               fields: {
                 numberOfColumns: {
                   value: 1,
                 },
-                navigationLinks: [
+                primaryNavLinks: [
                   {
                     fields: {
                       link: {
@@ -501,7 +501,7 @@ export const defaultMockData: GlobalHeaderProps = {
                 numberOfColumns: {
                   value: 1,
                 },
-                navigationLinks: [
+                primaryNavLinks: [
                   {
                     fields: {
                       link: {
@@ -590,7 +590,7 @@ export const defaultMockData: GlobalHeaderProps = {
               href: '/',
             },
           },
-          columns: [
+          primaryNavColumns: [
             {
               fields: {
                 title: {
@@ -606,7 +606,7 @@ export const defaultMockData: GlobalHeaderProps = {
                 numberOfColumns: {
                   value: 1,
                 },
-                navigationLinks: [
+                primaryNavLinks: [
                   {
                     fields: {
                       link: {
@@ -681,7 +681,7 @@ export const defaultMockData: GlobalHeaderProps = {
                 numberOfColumns: {
                   value: 2,
                 },
-                navigationLinks: [
+                primaryNavLinks: [
                   {
                     fields: {
                       link: {
@@ -896,7 +896,7 @@ export const defaultMockData: GlobalHeaderProps = {
               href: '/',
             },
           },
-          columns: [
+          primaryNavColumns: [
             {
               fields: {
                 title: {
@@ -912,7 +912,7 @@ export const defaultMockData: GlobalHeaderProps = {
                 numberOfColumns: {
                   value: 1,
                 },
-                navigationLinks: [
+                primaryNavLinks: [
                   {
                     fields: {
                       link: {
@@ -973,7 +973,7 @@ export const defaultMockData: GlobalHeaderProps = {
               href: '/',
             },
           },
-          columns: [
+          primaryNavColumns: [
             {
               fields: {
                 title: {
@@ -989,7 +989,7 @@ export const defaultMockData: GlobalHeaderProps = {
                 numberOfColumns: {
                   value: 1,
                 },
-                navigationLinks: [
+                primaryNavLinks: [
                   {
                     fields: {
                       link: {
@@ -1092,13 +1092,13 @@ export const defaultMockData: GlobalHeaderProps = {
               href: '/',
             },
           },
-          columns: [
+          primaryNavColumns: [
             {
               fields: {
                 numberOfColumns: {
                   value: 1,
                 },
-                navigationLinks: [
+                primaryNavLinks: [
                   {
                     fields: {
                       link: {
@@ -1240,16 +1240,12 @@ export const defaultMockData: GlobalHeaderProps = {
       value: {
         src: 'https://picsum.photos/200/40',
         alt: '',
-        width: '200',
-        height: '40',
       },
     },
     headerLogoSmall: {
       value: {
         src: 'https://picsum.photos/158/40',
         alt: '',
-        width: '158',
-        height: '40',
       },
     },
     headerBrandingTitle: {

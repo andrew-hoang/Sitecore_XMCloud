@@ -44,7 +44,7 @@ const GlobalHeader = (props: GlobalHeaderProps): JSX.Element => {
       data-testid={testId}
       data-ref="global-header"
       direction="column"
-      className="relative h-screen px-[30px] py-8 gh:py-0"
+      className="relative px-[30px] py-8 gh:py-0"
     >
       <UtilityNavigation {...props} />
       <Flex
@@ -63,7 +63,8 @@ const GlobalHeader = (props: GlobalHeaderProps): JSX.Element => {
           <PictureBase
             desktopImage={headerLogoLarge}
             mobileImage={headerLogoSmall ? headerLogoSmall : headerLogoLarge}
-            styleClasses="max-h-10 flex-shrink-0 relative ![&>img]:hover:scale-0"
+            styleClasses="max-h-10 block flex-shrink-0 relative w-[158px] h-10"
+            fill
           />
         </a>
         <PrimaryNavigation {...props} />
