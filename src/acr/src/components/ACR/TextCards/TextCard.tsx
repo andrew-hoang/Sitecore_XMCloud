@@ -31,11 +31,7 @@ const TextCard = (props: TextCardProps): JSX.Element => {
       data-theme={bgLightIndigo ? Theme.LIGHT_INDIGO : Theme.WHITE}
       className={twMerge(
         cn(
-<<<<<<< HEAD
-          'flex-col gap-6 rounded-[4px] px-5 py-6 text-t-body md:min-h-[168px] md:flex-row md:gap-[35px]',
-=======
           'flex-col justify-center gap-6 rounded-[4px] px-5 py-6 text-t-body md:min-h-[168px] md:flex-row md:justify-start md:gap-[35px]',
->>>>>>> c7764189d03b1090497fe9f1136e92361deabfa2
           {
             'md:flex-row': orientation === Orientation.IMAGE_LEFT,
             'md:flex-row-reverse': orientation === Orientation.IMAGE_RIGHT,
@@ -44,18 +40,12 @@ const TextCard = (props: TextCardProps): JSX.Element => {
           }
         )
       )}
-<<<<<<< HEAD
-      justify={{ initial: 'center', md: 'between' }}
-    >
-      <ImageBase image={image} animate={false} className="shrink-0" />
-=======
     >
       <ImageBase
         image={image}
         animate={false}
         className="shrink-0 [&>img]:max-h-[120px] [&>img]:w-auto [&>img]:object-contain"
       />
->>>>>>> c7764189d03b1090497fe9f1136e92361deabfa2
       <Text field={description} tag="p" />
     </Flex>
   );

@@ -43,10 +43,6 @@ const TextCards = (props: TextCardsProps): JSX.Element => {
 };
 
 export default withPlaceholder({
-<<<<<<< HEAD
-  placeholder: 'acr-container-text-cards-{*}',
-=======
   placeholder: 'acr-text-cards-{*}',
->>>>>>> c7764189d03b1090497fe9f1136e92361deabfa2
   prop: 'items',
 })(TextCards);

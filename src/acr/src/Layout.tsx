@@ -90,28 +90,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
       </Head>
       <AtomicSearchInterface engine={engine}>
         <RadixThemes>
-<<<<<<< HEAD
-          {/* root placeholder for the app, which we add components to using route data */}
-          <div className={cn(beausite.variable, playFair.variable, mainClassPageEditing)}>
-            <header>
-              <Container
-                px="6"
-                data-ref="skip link"
-                className="absolute -top-full w-full opacity-0 transition-all focus-within:top-2 focus-within:opacity-100"
-              >
-                <LinkBase link={skipLink} style={ButtonStyle.BUTTON} />
-              </Container>
-              <Container px="9" data-ref="test login">
-                <form className="d-flex">{button}</form>
-              </Container>
-              <div id="header">
-                {route && <Placeholder name="headless-header" rendering={route} />}
-              </div>
-            </header>
-            <main>
-              <ThemeContext.Provider value={{ theme: theme?.name as Theme }}>
-                <div id="content" data-theme={theme?.name}>
-=======
           <ThemeContext.Provider value={{ theme: theme?.name as Theme }}>
             {/* root placeholder for the app, which we add components to using route data */}
             <div
@@ -140,7 +118,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               </header>
               <main className="flex-auto">
                 <div id="content">
->>>>>>> c7764189d03b1090497fe9f1136e92361deabfa2
                   <Container px="6">
                     <div id="main-content" tabIndex={-1} className="group inline-block">
                       <span className="hidden p-2 group-focus:block">{mainContentMsg}</span>
@@ -148,16 +125,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
                   </Container>
                   {route && <Placeholder name="headless-main" rendering={route} />}
                 </div>
-<<<<<<< HEAD
-              </ThemeContext.Provider>
-            </main>
-            <footer>
-              <div id="footer">
-                {route && <Placeholder name="headless-footer" rendering={route} />}
-              </div>
-            </footer>
-          </div>
-=======
               </main>
               <footer className="flex-none">
                 <div id="footer">
@@ -166,7 +133,6 @@ const Layout = ({ layoutData, headLinks }: LayoutProps): JSX.Element => {
               </footer>
             </div>
           </ThemeContext.Provider>
->>>>>>> c7764189d03b1090497fe9f1136e92361deabfa2
         </RadixThemes>
       </AtomicSearchInterface>
     </>
