@@ -60,13 +60,13 @@
   }
 
   .quotes {
-    @apply font-serif font-semibold leading-[1.33] text-indigo-100;
+    @apply font-serif font-semibold leading-[1.33] text-indigo-100 inline-block mb-6;
 
     font-size: clamp(1.5rem, 1.2097rem + 0.9677vw, 1.875rem); // 24 | 30
   }
 
   .quote-content {
-    @apply font-serif font-semibold leading-[1.33] text-indigo-100 mb-6 inline-block;
+    @apply font-serif font-semibold leading-[1.33] text-indigo-100 inline;
 
     font-size: clamp(1.5rem, 1.2097rem + 0.9677vw, 1.875rem); // 24 | 30
   }

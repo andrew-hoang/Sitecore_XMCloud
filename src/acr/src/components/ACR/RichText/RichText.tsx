@@ -15,13 +15,16 @@ const RichText = (props: RichTextProps): JSX.Element => {
       data-ref="rich-text"
       data-testid={testId}
       className={cn({
-        'grid gap-6 md:grid-cols-12': isTwoColumn,
+        'mx-auto grid max-w-[1170px] gap-6 px-[35px] md:grid-cols-12 min-[1000px]:px-[200px]':
+          !text2?.value,
+        'mx-auto grid max-w-[1170px] gap-6 px-[35px] md:grid-cols-12 lg:px-[100px]': isTwoColumn,
       })}
     >
       <SitecoreRichText
         field={text1}
         className={cn({
-          '*:flex *:flex-col *:gap-12 md:col-start-1 md:col-end-7': isTwoColumn,
+          'md:col-start-1 md:col-end-13': !text2?.value,
+          'md:col-start-1 md:col-end-7': isTwoColumn,
         })}
       />
       <SitecoreRichText
