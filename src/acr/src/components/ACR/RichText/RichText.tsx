@@ -15,7 +15,7 @@ const RichText = (props: RichTextProps): JSX.Element => {
       data-ref="rich-text"
       data-testid={testId}
       className={cn({
-        'gap-6 md:grid-cols-12': isTwoColumn,
+        'grid gap-6 md:grid-cols-12': isTwoColumn,
       })}
     >
       <SitecoreRichText
@@ -27,7 +27,7 @@ const RichText = (props: RichTextProps): JSX.Element => {
       <SitecoreRichText
         field={text2}
         className={cn({
-          '*:flex *:flex-col *:gap-12 md:col-start-1 md:col-end-7': isTwoColumn,
+          '*:flex *:flex-col *:gap-12 md:col-start-7 md:col-end-13': isTwoColumn,
         })}
       />
     </div>

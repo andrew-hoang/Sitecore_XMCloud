@@ -58,4 +58,33 @@
 
     font-size: clamp(1.75rem, 1.5565rem + 0.6452vw, 2rem); // 28 | 32
   }
+
+  .quotes {
+    @apply font-serif font-semibold leading-[1.33] text-indigo-100;
+
+    font-size: clamp(1.5rem, 1.2097rem + 0.9677vw, 1.875rem); // 24 | 30
+  }
+
+  .quote-content {
+    @apply font-serif font-semibold leading-[1.33] text-indigo-100 mb-6 inline-block;
+
+    font-size: clamp(1.5rem, 1.2097rem + 0.9677vw, 1.875rem); // 24 | 30
+  }
+
+  .quote-author {
+    @apply font-sans font-medium leading-[1.33] md:leading-[1.45] text-indigo-100 mb-2;
+
+    font-size: clamp(1.125rem, 0.9315rem + 0.6452vw, 1.375rem); // 18 / 22;
+  }
+
+  .quote-author-title,
+  .quote-author-university {
+    @apply font-sans font-regular leading-[1.5] text-gray-70;
+
+    font-size: rem(16);
+  }
+
+  .rte-image {
+    @apply object-cover aspect-6/1 max-w-[370px] max-h-[66px];
+  }
 }

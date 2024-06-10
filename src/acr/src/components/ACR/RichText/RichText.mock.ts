@@ -32,6 +32,38 @@ export const summaryRTE: RichTextProps = {
   },
 };
 
+export const quoteRTE: RichTextProps = {
+  params: {},
+  rendering: {
+    uid: '{00000000-0000-0000-0000-000000000000}',
+    componentName: 'RichText',
+    dataSource: '/',
+  },
+  fields: {
+    text1: {
+      value:
+        "<div><q class='quotes'><p class='quote-content'>It's the opportunity to combine research with your clinical care -- and education as well.</p></q><p class='quote-author'>Jadranka Stojanovaska, MD</p><p class='quote-author-title'>Diagnostic Radiologist</p><p class='quote-author-university'>Emory University</p></div>",
+    },
+    text2: { value: '' },
+  },
+};
+
+export const imageRTE: RichTextProps = {
+  params: {},
+  rendering: {
+    uid: '{00000000-0000-0000-0000-000000000000}',
+    componentName: 'RichText',
+    dataSource: '/',
+  },
+  fields: {
+    text1: {
+      value:
+        "<img class='rte-image' src='./rte-mock-image.png' alt='rte image' width='370px' height='66px' />",
+    },
+    text2: { value: '' },
+  },
+};
+
 export const twoColumnRTE: RichTextProps = {
   ...defaultMockData,
   fields: {
