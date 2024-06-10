@@ -17,6 +17,18 @@ const CortexTest = (props: CortexTestProps): JSX.Element => {
         <br></br>
         <b>Case History</b>: {cipItem?.history}
       </p>
+      <p>
+        <br></br>
+        <b>Published Date</b>: {cipItem?.publishDate}
+      </p>
+      <p>
+        <br></br>
+        <b>Case History</b>: {cipItem?.url}
+      </p>
+      <p>
+        <br></br>
+        <b>Case History</b>: {cipItem?.imageUrl}
+      </p>
     </div>
   );
 };

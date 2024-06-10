@@ -5,20 +5,44 @@ const apiKey = '78a0b86257cd437c8b94b6159e4d793c';
 
 export const getCortexData = async (): Promise<CaseInPointItem> => {
   try {
-    const currentDate = new Date();
-    const formattedDate = `${currentDate.getFullYear()}-${(currentDate.getMonth() + 1)
-      .toString()
-      .padStart(2, '0')}-${currentDate.getDate().toString().padStart(2, '0')}`;
+
+    const date = new Date();
+        let formattedDate = `${date.getFullYear()}-${(date.getMonth() + 1)
+          .toString()
+          .padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}`;
+
+      // Adjust date for Saturday and Sunday
+      if (date.getDay() === 6) {
+        date.setDate(date.getDate() - 1);
+        formattedDate = `${date.getFullYear()}-${(date.getMonth() + 1)
+          .toString()
+          .padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}`;
+      } else if (date.getDay() === 0) {
+        date.setDate(date.getDate() - 2);
+        formattedDate = `${date.getFullYear()}-${(date.getMonth() + 1)
+          .toString()
+          .padStart(2, '0')}-${date.getDate().toString().padStart(2, '0')}`;
+      }
+
+    //This is test date which has data
+     formattedDate = '2019-05-14'; 
+
     const response = await axios.get(`${apiUrl}/${formattedDate}/${apiKey}`);
+
     if (response.status === 200) {
-      const tokenResponse: CaseInPointItem = {
-        caseId: response.data.caseId,
-        history: response.data.expires_in,
-        publishDate: response.data.publishDate,
-        url: response.data.url,
-        imageUrl: response.data.imageUrl,
-      };
-      return tokenResponse;
+      if(!response.data.ErrorMessage){
+        const tokenResponse: CaseInPointItem = {
+          caseId: response.data.CaseId,
+          history: response.data.History,
+          publishDate: response.data.PublishDate,
+          url: response.data.Url,
+          imageUrl: response.data.ImageUrl,
+        };
+        return tokenResponse;
+      }
+      else{
+        throw new Error(`${response.data.ErrorMessage}`);
+    }
     } else {
       throw new Error(`Error in request getCortexData ${response.statusText}`);
     }
