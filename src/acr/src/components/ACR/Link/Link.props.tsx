@@ -11,4 +11,12 @@ export type LinkBaseProps = TestProps &
     link: LinkField;
     style?: ButtonStyle;
     hasIcon?: boolean;
+    children?: JSX.Element | JSX.Element[] | React.ReactNode;
+    spanStyleClasses?: string;
+    ariaProps?: {
+      'aria-label'?: string;
+    };
+    animate?: boolean;
+    hideExternalIcon?: boolean;
+    iconStyleClasses?: string;
   };

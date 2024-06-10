@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import MultiPromo from 'components/ACR/MultiPromo/MultiPromo';
-import { defaultMockData as mockData } from './MultiPromo.mock';
+import { twoPromoData as mockData } from './MultiPromo.mock';
 
 const TEST_ID = 'MultiPromo_TEST';
 

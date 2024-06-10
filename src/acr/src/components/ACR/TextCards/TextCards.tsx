@@ -23,7 +23,7 @@ const TextCards = (props: TextCardsProps): JSX.Element => {
   const { sitecoreContext } = useSitecoreContext();
   const isPageEditing = sitecoreContext?.pageEditing ?? false;
 
-  const phKey = `acr-container-text-cards-${props.params.DynamicPlaceholderId}`;
+  const phKey = `acr-text-cards-${props.params.DynamicPlaceholderId}`;
 
   return (
     <div data-ref="text-cards" data-testid={testId}>
@@ -43,6 +43,6 @@ const TextCards = (props: TextCardsProps): JSX.Element => {
 };
 
 export default withPlaceholder({
-  placeholder: 'acr-container-text-cards-{*}',
+  placeholder: 'acr-text-cards-{*}',
   prop: 'items',
 })(TextCards);
