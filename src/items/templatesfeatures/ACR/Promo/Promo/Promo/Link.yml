@@ -1,6 +1,6 @@
 ﻿---
 ID: "eaa66db9-cd18-42a9-9427-ebf0fb81744c"
-Parent: "b20a8856-5408-451a-a03c-ccfa2f281b52"
+Parent: "6b7d1c35-1929-4896-8ee3-932041808ada"
 Template: "e269fbb5-3750-427a-9149-7aa950b49301"
 Path: /sitecore/templates/Feature/ACR/Promo/Promo/Promo/Link
 SharedFields:
@@ -25,11 +25,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "fc9d79db-648d-4314-a2c5-5d12d4d8c385"
+      Value: "f2db46cc-e991-4e2b-829d-8cdcbd9c03d4"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240524T150044Z
+      Value: 20240610T175334Z
