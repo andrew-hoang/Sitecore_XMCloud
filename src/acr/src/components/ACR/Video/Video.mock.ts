@@ -38,6 +38,7 @@ export const defaultMockData: VideoProps = {
         extension: 'png',
         mimeType: 'image/png',
         size: '1356218',
+        linktype: 'download',
       },
     },
   },

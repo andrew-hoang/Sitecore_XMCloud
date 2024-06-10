@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 import { LinkBaseProps } from './Link.props';
 import { Link, LinkField } from '@sitecore-jss/sitecore-jss-react';
 import { useSitecoreContext } from '@sitecore-jss/sitecore-jss-nextjs';
@@ -36,11 +36,11 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
 
   const [shouldRenderIcon, setShouldRenderIcon] = useState<boolean>(false);
 
-  const linkText = children ? children : link?.value?.text;
+  const linkText = children ? children : link?.value?.text || link?.value?.displayName;
   const linkType = link?.value?.linktype;
 
   const linkIsValid = (link: LinkField) => {
-    return !!linkText && (!!link?.value?.href || !!link?.value?.url);
+    return !!linkText && (!!link?.value?.href || !!link?.value?.url || !!link?.value?.displayName);
   };
 
   useEffect(() => {
@@ -130,7 +130,7 @@ const LinkBase = (props: LinkBaseProps): JSX.Element | null => {
             'before:bg-t-contrast': style === ButtonStyle.BUTTON,
           })}
         >
-          {linkText}
+          {linkText as ReactNode}
         </span>
         {shouldRenderIcon && !isCTALink && renderIcon()}
       </Link>

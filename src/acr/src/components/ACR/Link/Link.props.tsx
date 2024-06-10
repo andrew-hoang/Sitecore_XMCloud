@@ -1,4 +1,4 @@
-import { LinkField } from '@sitecore-jss/sitecore-jss-nextjs';
+import { LinkField, FileField } from '@sitecore-jss/sitecore-jss-nextjs';
 import { ButtonStyle } from 'src/enumerations/ButtonStyle.enum';
 import { StyleProps } from 'src/types/Style.props';
 import { TestProps } from 'src/types/Test.props';
@@ -8,7 +8,7 @@ import { TestProps } from 'src/types/Test.props';
  */
 export type LinkBaseProps = TestProps &
   StyleProps & {
-    link: LinkField;
+    link: LinkField | FileField;
     style?: ButtonStyle;
     hasIcon?: boolean;
     children?: JSX.Element | JSX.Element[] | React.ReactNode;

@@ -73,6 +73,7 @@ const config: Config = {
     extend: {
       aspectRatio: {
         '4/3': '4 / 3',
+        '2/1': '2 / 1',
       },
       borderRadius: {
         none: '0',
