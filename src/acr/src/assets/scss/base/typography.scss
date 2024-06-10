@@ -142,7 +142,7 @@
   }
 
   .meta-c {
-    @apply font-medium uppercase leading-[1.5] tracking-[.04px] text-t-secondary md:leading-[1.33];
+    @apply font-medium uppercase leading-[1.5] tracking-[.04px] text-t-primary md:leading-[1.33];
 
     font-size: clamp(1rem, 0.9032rem + 0.3226vw, 1.125rem); // 16 | 18
   }
