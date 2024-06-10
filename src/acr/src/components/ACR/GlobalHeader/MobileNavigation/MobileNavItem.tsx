@@ -51,7 +51,7 @@ const MobileNavItem = (props: PrimaryNavItemProps) => {
           })
         )}
       >
-        <Flex align="start" direction="column" gap="5" className="overflow-y-scroll">
+        <Flex align="start" direction="column" gap="5" className="overflow-hidden">
           <LinkBase
             link={link}
             style={ButtonStyle.LINK}

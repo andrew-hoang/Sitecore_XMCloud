@@ -30,14 +30,15 @@ const MobileNavigation = (props: PrimaryNavigationProps) => {
     <div
       id="gh-mobile-nav"
       data-ref="mobile-navigation"
+      aria-hidden={!isMobileMenuOpen}
       className={twMerge(
         cn(
-          'ease absolute left-[30px] right-[30px] top-[calc(100%-32px)] z-10 grid max-h-[calc(100vh-140px)] w-auto grid-rows-[0fr] rounded-b-4 bg-white px-[15px] transition-all duration-300',
-          { 'grid-rows-[1fr]': isMobileMenuOpen }
+          'ease invisible absolute left-[30px] right-[30px] top-[calc(100%-32px)] z-10 grid max-h-[calc(100vh-140px)] w-auto grid-rows-[0fr] rounded-b-4 bg-white px-[15px] transition-all duration-300',
+          { 'visible grid-rows-[1fr]': isMobileMenuOpen }
         )
       )}
     >
-      <Flex direction="column" className="overflow-scroll">
+      <Flex direction="column" className="overflow-y-auto">
         {!isSubMenuOpen ? (
           <>
             {/* Primary Nav Items */}

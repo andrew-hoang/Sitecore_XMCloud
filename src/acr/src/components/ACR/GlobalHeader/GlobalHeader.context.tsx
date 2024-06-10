@@ -85,9 +85,7 @@ export const GlobalHeaderProvider = (props: ProviderProps) => {
     } else {
       document.body.style.overflow = '';
     }
-  }, [isMobileMenuOpen]);
 
-  useEffect(() => {
     setActiveNavItem(null);
     setActiveMobileNavItem(null);
     setActiveChildItem(null);
