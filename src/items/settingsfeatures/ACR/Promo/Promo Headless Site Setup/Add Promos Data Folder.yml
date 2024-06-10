@@ -1,8 +1,18 @@
 ﻿---
-ID: "ca417aee-617a-4e94-b915-51b370d35a47"
-Parent: "96fd313e-599d-4ae3-ae8e-aee18635d203"
-Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
-Path: /sitecore/templates/Feature/ACR/Promo/Promo
+ID: "b11e4acc-2a8a-4549-bbe7-1acf1ce5e282"
+Parent: "0af99245-d058-4aa5-a564-282e11d2ae0c"
+Template: "3aea335c-d06d-45b1-841a-cbc8d2d1ce40"
+Path: /sitecore/system/Settings/Feature/ACR/Promo/Promo Headless Site Setup/Add Promos Data Folder
+SharedFields:
+- ID: "52c91c75-6698-4701-a8a2-242ace59a8d6"
+  Hint: Location
+  Value: "{BA2F959D-A614-4C92-8B57-F1FC1A323ABE}"
+- ID: "7868e6bc-525c-4fce-ab8a-77da3e09b171"
+  Hint: Name
+  Value: Promos
+- ID: "e62c28f0-9d3b-46e2-8bec-a5e120542499"
+  Hint: Template
+  Value: "{89F98C22-60B9-4251-B6B5-D28112F19EBB}"
 Languages:
 - Language: en
   Versions:
@@ -10,7 +20,7 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240610T174831Z
+      Value: 20240524T151111Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
@@ -21,11 +31,11 @@ Languages:
         sitecore\minyie.diaz@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9dd7c6d3-764a-445a-8076-3be0fa7298f2"
+      Value: "5e24add1-06d6-4c76-a6be-8f1f4986daeb"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
         sitecore\minyie.diaz@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240610T174831Z
+      Value: 20240524T151132Z

@@ -1,8 +1,8 @@
 ﻿---
-ID: "ca417aee-617a-4e94-b915-51b370d35a47"
-Parent: "96fd313e-599d-4ae3-ae8e-aee18635d203"
-Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
-Path: /sitecore/templates/Feature/ACR/Promo/Promo
+ID: "bbb51ef0-ee5b-4d15-918b-ff686e5425f9"
+Parent: "e5967d32-61b4-49af-8a73-114a39802fe5"
+Template: "52288e39-7830-4694-b62d-32a54c6ef7ba"
+Path: /sitecore/content/ACR/ACR/Presentation/Placeholder Settings/ACR/Promo
 Languages:
 - Language: en
   Versions:
@@ -10,22 +10,22 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20240610T174831Z
+      Value: 20240606T183408Z
     - ID: "52807595-0f8f-4b20-8d2a-cb71d28c6103"
       Hint: __Owner
       Value: |
-        sitecore\minyie.diaz@velir.com
+        sitecore\kenneth.robinson@velir.com
     - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
       Hint: __Created by
       Value: |
-        sitecore\minyie.diaz@velir.com
+        sitecore\kenneth.robinson@velir.com
     - ID: "8cdc337e-a112-42fb-bbb4-4143751e123f"
       Hint: __Revision
-      Value: "9dd7c6d3-764a-445a-8076-3be0fa7298f2"
+      Value: "8ccfbac1-a9e1-406f-87ba-b66e236665fe"
     - ID: "badd9cf9-53e0-4d0c-bcc0-2d784c282f6a"
       Hint: __Updated by
       Value: |
-        sitecore\minyie.diaz@velir.com
+        sitecore\kenneth.robinson@velir.com
     - ID: "d9cf14b1-fa16-4ba6-9288-e8a174d4d522"
       Hint: __Updated
-      Value: 20240610T174831Z
+      Value: 20240606T183408Z
